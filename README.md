@@ -1,6 +1,7 @@
 # Repositorio del Equipo 11 - Introducción a Señales Biomédicas 
 ¡Hola a todos y bienvenidos al repositorio del Equipo 11 de Introducción a Señales Biomédicas 2024-1!
 
+<p align="justify">
 Es un placer darles la bienvenida a este espacio donde compartiremos y colaboraremos en el desarrollo de nuestro proyecto. Como equipo, estamos emocionados de trabajar juntos en la exploración y análisis de señales biomédicas, ¡y esperamos lograr resultados increíbles!
 
 # Tabla de contenidos
