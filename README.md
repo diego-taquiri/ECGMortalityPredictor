@@ -18,7 +18,7 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 | Descripción  | Foto |
 | ------------- | ------------- |
 | Diego Taquiri (colaborador). introduccion introduccion introduccion introduccion introduccion | ![](images/diego.jpeg)              |
-| Armando Flórez (colaborador). | ![](images/Armando.jpeg)              |
+| Armando Flórez (colaborador). - Estudiante de Ingeniería Biomédica PUCP- UPCH| ![](images/Armando.jpeg)              |
 | Ana Belen Mantilla (colaborador) - ana.mantilla@upch.pe. Estudiante de Ingeniería Biomédica de la Pontificia Universidad Católica del Perú (PUCP) y la Universidad Peruana Cayetano Heredia (UPCH). | ![](images/ana.jpg)              |
 | Erick Alexander Valdivia Esteba (colaborador). Estudiante de cuarto año de Ingeniería Biomédica. Interés en el área de ingeniería clínica| ![Alt Text 2](URL_to_Image_2)              |
 
