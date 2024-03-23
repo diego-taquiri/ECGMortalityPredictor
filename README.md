@@ -41,3 +41,4 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 
 ## Bibliografía
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=diego-taquiri)](https://github.com/diego-taquiri/ISB-equipo11.git)
