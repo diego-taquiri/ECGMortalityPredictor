@@ -29,7 +29,8 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 ## Materiales
 
 ## Métodos
-
+```pythonprint
+("Hola, mundo!")
 ## Temática del proyecto
 
 ## Contenido del curso
