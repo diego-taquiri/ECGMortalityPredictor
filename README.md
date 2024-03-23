@@ -1,4 +1,5 @@
 # Repositorio del Equipo 11 - Introducción a Señales Biomédicas 
+<p align="justify">
 ¡Hola a todos y bienvenidos al repositorio del Equipo 11 de Introducción a Señales Biomédicas 2024-1!
 
 <p align="justify">
@@ -23,6 +24,7 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 | Ana Belen Mantilla (colaborador) - ana.mantilla@upch.pe. Estudiante de Ingeniería Biomédica de la Pontificia Universidad Católica del Perú (PUCP) y la Universidad Peruana Cayetano Heredia (UPCH). | ![](images/ana.jpg)              |
 | Erick Alexander Valdivia Esteba (colaborador). Estudiante de cuarto año de Ingeniería Biomédica. Interés en el área de ingeniería clínica| ![Alt Text 2](URL_to_Image_2)              |
 
+<p align="justify">
 ¡Gracias por visitar nuestro repositorio y por ser parte de nuestro viaje hacia el conocimiento y la innovación en señales biomédicas!
 
 ## Introducción
