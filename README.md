@@ -19,8 +19,8 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 
 | Descripción  | Foto |
 | ------------- | ------------- |
-| Diego Taquiri (colaborador) diego.taquiri@upch.pe - Estudiante de último año de Biología UPCH. Mi área de investigación es la bioinformática y genómica. | ![](images/diego.jpeg)              |
-| Armando Flórez (colaborador). <p align="justify">Estudiante de Ingeniería Biomédica PUCP- UPCH. | ![](images/Armando.jpeg)              |
+| Diego Taquiri (colaborador) - diego.taquiri@upch.pe. <p align="justify"> Estudiante de último año de Biología UPCH. Mi área de investigación es la bioinformática y genómica. | ![](images/diego.jpeg)              |
+| Armando Flórez (colaborador). <p align="justify"> Estudiante de Ingeniería Biomédica PUCP- UPCH. | ![](images/Armando.jpeg)              |
 | Ana Belen Mantilla (colaborador) - ana.mantilla@upch.pe. <p align="justify"> Estudiante de Ingeniería Biomédica de la Pontificia Universidad Católica del Perú (PUCP) y la Universidad Peruana Cayetano Heredia (UPCH). | ![](images/ana.jpg)              |
 | Erick Alexander Valdivia Esteba (colaborador). <p align="justify">Estudiante de cuarto año de Ingeniería Biomédica con interés en el área de ingeniería clínica. | ![](images/Erick.jpg)              |
 
