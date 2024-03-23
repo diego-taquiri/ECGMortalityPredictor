@@ -35,12 +35,6 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 
 ## Temática del proyecto
 
-def main():
-    print("¡Hola, mundo!")
-
-if __name__ == "__main__":
-    main()
-
 ## Contenido del curso
 
 ## Docentes del curso
