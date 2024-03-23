@@ -1,4 +1,4 @@
-# ISB-equipo11
+# Repositorio del Equipo 11 - Introducción a Señales Biomédicas 
 
 # Tabla de contenidos
 - [Introducción](#Introducción)
