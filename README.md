@@ -4,10 +4,11 @@
 - [Introducción](#Introducción)
 - [Materiales](#Materiales)
 - [Métodos](#Métodos)
-- [Temática del proyecto](#Temática del proyecto)
-- [Contenido del curso](#Contenido del curso)
+- [Temática del proyecto](#Temática-del-proyecto)
+- [Contenido del curso](#Contenido-del-curso)
 - [Participantes](#Participantes)
-- [Docentes del curso](#Docentes del curso)
+- [Docentes del curso](#Docentes-del-curso)
+- [Bibliografía](#Bibliografía)
 
 ##Participantes
 
@@ -29,3 +30,5 @@
 ## Contenido del curso
 
 ## Docentes del curso
+
+## Bibliografía
