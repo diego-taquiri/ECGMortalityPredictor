@@ -1,5 +1,6 @@
 # Repositorio del Equipo 11 - Introducción a Señales Biomédicas 
-¡Hola a todos y bienvenidos al repositorio del Equipo 11 de Introducción a Señales Biomédicas!
+¡Hola a todos y bienvenidos al repositorio del Equipo 11 de Introducción a Señales Biomédicas 2024-1!
+
 Es un placer darles la bienvenida a este espacio donde compartiremos y colaboraremos en el desarrollo de nuestro proyecto. Como equipo, estamos emocionados de trabajar juntos en la exploración y análisis de señales biomédicas, ¡y esperamos lograr resultados increíbles!
 
 # Tabla de contenidos
@@ -14,12 +15,14 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 
 ## Participantes
 
-| Foto  | Descripción |
+| Descripción  | Foto |
 | ------------- | ------------- |
-| Diego Taquiri. introduccion introduccion introduccion introduccion introduccion | ![](images/diego.jpeg)              |
-| Armando Flórez | ![](images/Armando.jpeg)              |
-| Description Text 2 | ![Alt Text 2](URL_to_Image_2)              |
-| Erick Alexander Valdivia Esteba. Estudiante de cuarto año de Ingeniería Biomédica. Interés en el área de ingeniería clínica| ![Alt Text 2](URL_to_Image_2)              |
+| Diego Taquiri (colaborador). introduccion introduccion introduccion introduccion introduccion | ![](images/diego.jpeg)              |
+| Armando Flórez (colaborador). | ![](images/Armando.jpeg)              |
+| Ana Belen Mantilla (colaborador) - ana.mantilla@upch.pe. Estudiante de Ingeniería Biomédica de la Pontificia Universidad Católica del Perú (PUCP) y la Universidad Peruana Cayetano Heredia (UPCH). | ![Alt Text 2](URL_to_Image_2)              |
+| Erick Alexander Valdivia Esteba (colaborador). Estudiante de cuarto año de Ingeniería Biomédica. Interés en el área de ingeniería clínica| ![Alt Text 2](URL_to_Image_2)              |
+
+¡Gracias por visitar nuestro repositorio y por ser parte de nuestro viaje hacia el conocimiento y la innovación en señales biomédicas!
 
 ## Introducción
 
