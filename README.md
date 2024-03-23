@@ -38,7 +38,3 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 
 ## Bibliografía
 
-[![Language](https://img.shields.io/badge/Language-Python-blue)](https://www.python.org/)
-
-```pythonprint
-("Hola, mundo!")
