@@ -19,7 +19,7 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 | ------------- | ------------- |
 | Diego Taquiri (colaborador). introduccion introduccion introduccion introduccion introduccion | ![](images/diego.jpeg)              |
 | Armando Flórez (colaborador). | ![](images/Armando.jpeg)              |
-| Ana Belen Mantilla (colaborador) - ana.mantilla@upch.pe. Estudiante de Ingeniería Biomédica de la Pontificia Universidad Católica del Perú (PUCP) y la Universidad Peruana Cayetano Heredia (UPCH). | ![Alt Text 2](URL_to_Image_2)              |
+| Ana Belen Mantilla (colaborador) - ana.mantilla@upch.pe. Estudiante de Ingeniería Biomédica de la Pontificia Universidad Católica del Perú (PUCP) y la Universidad Peruana Cayetano Heredia (UPCH). | ![](images/ana.jpg)              |
 | Erick Alexander Valdivia Esteba (colaborador). Estudiante de cuarto año de Ingeniería Biomédica. Interés en el área de ingeniería clínica| ![Alt Text 2](URL_to_Image_2)              |
 
 ¡Gracias por visitar nuestro repositorio y por ser parte de nuestro viaje hacia el conocimiento y la innovación en señales biomédicas!
