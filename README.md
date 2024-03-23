@@ -1,6 +1,6 @@
 # ISB-equipo11
 
-#Tabla de contenidos
+# Tabla de contenidos
 - [Introducción](#Introducción)
 - [Materiales](#Materiales)
 - [Métodos](#Métodos)
@@ -10,7 +10,7 @@
 - [Docentes del curso](#Docentes-del-curso)
 - [Bibliografía](#Bibliografía)
 
-##Participantes
+## Participantes
 
 | Foto  | Descripción |
 | ------------- | ------------- |
