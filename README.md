@@ -41,4 +41,7 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 
 ## Bibliografía
 
+```python
+print("Hola, mundo!")
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=diego-taquiri&size_weight=0.5&count_weight=0.5)
