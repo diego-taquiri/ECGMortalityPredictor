@@ -36,6 +36,8 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 
 ## Temática del proyecto
 
+## Problemática
+
 ## Contenido del curso
 
 ## Docentes del curso
