@@ -10,6 +10,7 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 - [Materiales](#Materiales)
 - [Métodos](#Métodos)
 - [Temática del proyecto](#Temática-del-proyecto)
+- [Problemática](#Problemática)
 - [Contenido del curso](#Contenido-del-curso)
 - [Participantes](#Participantes)
 - [Docentes del curso](#Docentes-del-curso)
