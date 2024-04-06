@@ -31,13 +31,18 @@ Posteriormente, se procedió a evaluar una señal proveniente del generador de s
 
 <div style="text-align: center;">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/05.jpg" alt="Descripción de la primera imagen" width="300">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/07.jpg" alt="Descripción de la segunda imagen" width="300">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/08.jpg" alt="Descripción de la segunda imagen" width="300">
 </div>
 
 Podemos observar que la señal del osciloscopio tiene un parecido con la señal ploteada sin el condensador pero difiere bastante de la gráfica cuando el condensador es añadido.
 
 #### Señal 2
 A continuación, se analizó una segunda señal del generador, aplicando una frecuencia de muestreo de 500 Hz. La gráfica resultante reveló una señal de mayor frecuencia, y el condensador de igual manera filtró la mayoría de la señal, pero no hubo una atenuación como la de 50Hz (Figura 6). 
+
+<div style="text-align: center;">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/06.jpg" alt="Descripción de la primera imagen" width="300">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/07.jpg" alt="Descripción de la segunda imagen" width="300">
+</div>
 
 Si bien mantenemos una clara diferencia visual con la señal con condensador ahora la señal ploteada sin condensador no coincide de igual manera con la señal obtenida en el osciloscopio. Esto se debe a que la frecuencia de muestreo determina la cantidad de puntos de datos que se toman por unidad de tiempo así que su aumento lleva a una mayor cantidad de picos.
 
