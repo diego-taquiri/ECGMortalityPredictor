@@ -37,6 +37,7 @@ Posteriormente, se procedió a evaluar una señal proveniente del generador de s
 </div>
 Figura 3. Señal 1 sin condensador y con condensador, respectivamente. 
 
+
 Podemos observar que la señal del osciloscopio tiene un parecido con la señal ploteada sin el condensador pero difiere bastante de la gráfica cuando el condensador es añadido.
 
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/ab1.jpg" alt="Descripción de la imagen" width="300">
