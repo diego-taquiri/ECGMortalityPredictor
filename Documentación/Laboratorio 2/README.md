@@ -37,9 +37,9 @@ Figura 2. Ruido del ambiente sin condensador y con condensador, respectivamente.
 </div>
 Figura 3. Señal 1 sin condensador y con condensador, respectivamente. <br> <br>
 
-<p align="justify">Podemos observar que la señal del osciloscopio a 5Hz tiene un parecido con la señal ploteada sin el condensador, pero difiere bastante de la gráfica cuando el condensador es añadido. En este caso, como en los demás, se disminuyó el voltaje aplicado a 3V, ya que, al ser visualizado en el osciloscopio, observamos un aumento de este debido al ruido.<br> <br>
+<p align="justify">Podemos observar que la señal del osciloscopio a 5Hz tiene un parecido con la señal ploteada sin el condensador, pero difiere bastante de la gráfica cuando el condensador es añadido. En este caso, como en los demás, se disminuyó el voltaje aplicado a 3V, ya que, al ser visualizado en el osciloscopio, observamos un aumento de este debido al ruido.<br> 
 
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/ab1.jpg" alt="Descripción de la imagen" width="300"><br> <br>
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/ab1.jpg" alt="Descripción de la imagen" width="300"><br> 
 Figura 4. Señal 1 sin condensador representada en el osciloscopio.
 
 #### Señal 2
@@ -51,9 +51,9 @@ Figura 4. Señal 1 sin condensador representada en el osciloscopio.
 </div>
 Figura 5. Señal 2 sin condensador y con condensador, respectivamente. <br><br>
 
-<p align="justify">Si bien mantenemos una clara diferencia visual con la señal con condensador, ahora la señal ploteada sin condensador no coincide de igual manera con la señal obtenida en el osciloscopio. Esto se debe a que la frecuencia de muestreo determina la cantidad de puntos de datos que se toman por unidad de tiempo así que su aumento lleva a una mayor cantidad de picos, como se puede observar en la Figura 6. Para este caso, utilizamos una señal de 100Hz. <br> <br>
+<p align="justify">Si bien mantenemos una clara diferencia visual con la señal con condensador, ahora la señal ploteada sin condensador no coincide de igual manera con la señal obtenida en el osciloscopio. Esto se debe a que la frecuencia de muestreo determina la cantidad de puntos de datos que se toman por unidad de tiempo así que su aumento lleva a una mayor cantidad de picos, como se puede observar en la Figura 6. Para este caso, utilizamos una señal de 100Hz. <br> 
 
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/ab2.jpg" alt="Descripción de la imagen" width="300"><br> <br>
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/ab2.jpg" alt="Descripción de la imagen" width="300"><br> 
 Figura 6. Señal 2 sin condensador representada en el osciloscopio.
 
 #### Señal 3
@@ -65,15 +65,15 @@ Figura 6. Señal 2 sin condensador representada en el osciloscopio.
 </div>
 Figura 7. Señal 3 sin condensador y con condensador, respectivamente. <br><br>
 
-<p align="justify">Se observa que la gráfica ploteada a 500Hz sin condensador vuelve a ser más similar a la gráfica obtenida en el osciloscopio, aunque esto también puede ser influenciado por el cambio de escala. Sin embargo la señal ploteada también mantiene algunos picos randomizados que pueden ser efectos del ruido, lo cual no se observaba en la señal con frecuencia de muestreo de 50 Hz.<br> <br>
+<p align="justify">Se observa que la gráfica ploteada a 500Hz sin condensador vuelve a ser más similar a la gráfica obtenida en el osciloscopio, aunque esto también puede ser influenciado por el cambio de escala. Sin embargo la señal ploteada también mantiene algunos picos randomizados que pueden ser efectos del ruido, lo cual no se observaba en la señal con frecuencia de muestreo de 50 Hz.<br> 
 
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/ab3.jpg" alt="Descripción de la imagen" width="300"><br> <br>
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/ab3.jpg" alt="Descripción de la imagen" width="300"><br> 
 Figura 8. Señal 3 sin condensador representada en el osciloscopio.
 
 ### Filtro pasa altas
-<p align="justify">Como se mencionó previamente, la conexión realizada con el condensador de 470uF actúa como un filtro paso altos, considerando la resistencia interna del arduino. Esto es posible de visualizar a través de la atenuación realizada por cada cambio de frecuencia. Observamos que, al aumentar la frecuencia, la cantidad de información deseada es mayor; a diferencia de las frecuencias bajas, se obtiene una mayor amplitud en las señales. Aún así, el condensador sigue actuando como un atenuador en todos los casos. Si bien nuestras señales fueron obtenidas con ruido, es posible su interpretación gracias al circuito realizado en el protoboard y los mínimos cambios visibles del arduino. El comportamiento gráfico de este proceso se oberva en la Figura 9.<br> <br>
+<p align="justify">Como se mencionó previamente, la conexión realizada con el condensador de 470uF actúa como un filtro paso altos, considerando la resistencia interna del arduino. Esto es posible de visualizar a través de la atenuación realizada por cada cambio de frecuencia. Observamos que, al aumentar la frecuencia, la cantidad de información deseada es mayor; a diferencia de las frecuencias bajas, se obtiene una mayor amplitud en las señales. Aún así, el condensador sigue actuando como un atenuador en todos los casos. Si bien nuestras señales fueron obtenidas con ruido, es posible su interpretación gracias al circuito realizado en el protoboard y los mínimos cambios visibles del arduino. El comportamiento gráfico de este proceso se oberva en la Figura 9.<br> 
 
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/Diagrama-de-filtro-RC-paso-alto.png" alt="Descripción de la imagen" width="300"><br> <br>
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/Diagrama-de-filtro-RC-paso-alto.png" alt="Descripción de la imagen" width="300"><br> 
 Figura 9. Filtro paso alto. [1]
 
 ### Bibliografía
