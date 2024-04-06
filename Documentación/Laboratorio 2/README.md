@@ -29,6 +29,11 @@ Para comenzar, se llevó a cabo la medición del ruido ambiental utilizando el A
 #### Señal 1
 Posteriormente, se procedió a evaluar una señal proveniente del generador de señales, utilizando esta vez una frecuencia de muestreo de 50 Hz en el Arduino. Se capturó una señal limpia en el ploteo con el arduino (Figura 4). Los resultados fueron similares a los obtenidos con el ruido ambiental, el condensador filtró la señal del generador. 
 
+<div style="text-align: center;">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/03.jpg" alt="Descripción de la primera imagen" width="300">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/04.jpg" alt="Descripción de la segunda imagen" width="300">
+</div>
+
 Podemos observar que la señal del osciloscopio tiene un parecido con la señal ploteada sin el condensador pero difiere bastante de la gráfica cuando el condensador es añadido.
 
 #### Señal 2
