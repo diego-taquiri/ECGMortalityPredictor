@@ -7,7 +7,8 @@
    - [Señal 1]
    - [Señal 2]
    - [Señal 3]
-3. [Filtro pasa altas]()
+3. [Filtro pasa altas](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/README.md#filtro-pasa-altas)
+   
 ### Uso del Generador de Señales y Osciloscopio
 Se configuró el Generador de Señales para proporcionar una señal sinusoidal de 1 KHz de frecuencia, 3.3V de Amplitud y 0V de offset. Su amplitud (3.32V) y periodo (1.01ms) son mostrados a continuación:
 
