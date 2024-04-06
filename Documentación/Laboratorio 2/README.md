@@ -1,25 +1,8 @@
-# Fibrilación Auricular
+# ADQUISICIÓN DE SEÑALES Y GRAFICACIÓN EN ARDUINO
 
-## Definición de la arritmia
-La definición de este tipo de arritmia describe un ritmo cardíaco irregular y anormal que causa latidos muy rápidos. Los síntomas de esta arritmia incluyen palpitaciones, dolor en el pecho, mareos, fatiga, aturdimiento, menor capacidad para hacer ejercicio, falta de aire y debilidad. Posibles causas pueden ser defectos congénitos, enfermedades cardíacas, presión arterial alta, enfermedades pulmonares, trastornos de la tiroides y factores de estilo de vida, como el consumo excesivo de alcohol y tabaco. [1]
-## Contexto nacional y mundial
-Es importante recalcar que la fibrilación auricular es la arritmia más prevalente  en el mundo con una prevalencia mundial estimada del 2% a 4% en adultos y se incrementa hasta el 10% en pacientes mayores de 80 años. [2] Datos nacionales indican que esta es la enfermedad vascular más común entre varones con un 21.6 % y un 7% en mujeres y que en más de la mitad de los casos es una fibrilación permanente. Cabe mencionar que en un 85.5% de casos un EKG es utilizado para el diagnóstico de la arritmia. [3]
+## Uso del Generador de Señales y Osciloscopio
+Se configuró el Generador de Señales para proporcionar una señal sinusoidal de 1 KHz de frecuencia, 3.3V de Amplitud y 0V de offset. Su amplitud (3.32V) y periodo (1.01ms) son mostrados a continuación:
 
-## Planteamiento del problema
-La monitorización ambulatoria con electrocardiografía externa es eficaz como herramienta de diagnóstico basada en evidencia cuando la sospecha de arritmia cardíaca es alta. [4] Actualmente, se utiliza el monitor Holter de 12 derivaciones para establecer el origen de arritmias, ya que es muy preciso y puede diagnosticar instantáneamente fibrilación auricular. [5]
-
-La transformación de la arritmia basada en dispositivos de seguimiento desde el lanzamiento del primer monitor Holter cambió la forma en que se rastrean los ritmos cardíacos fuera del hospital. Después de mejoras y avances continuos, el Holter tiene el tamaño de un teléfono celular pequeño y proporciona 2 tipos de datos primarios para analizar. [5]
-
-Sin embargo, los avances en tecnología, evidencia científica, y las preferencias del paciente/consumidor van cambiando la forma en que se presta la atención sanitaria. [5] Aunque el "estándar de oro" para evaluar las anomalías del ritmo cardíaco sigue siendo un Holter de 12 derivaciones, existe un interés cada vez mayor en los dispositivos de monitorización portátiles que brindan la oportunidad de evaluar el ritmo cardíaco en entornos del mundo real, como el lugar de trabajo o el hogar. [6] 
-
-Además, aunque el ECG es fundamental en la práctica, se ha argumentado que su interpretación puede ser un arte en extinción. Esto puede contribuir a imprecisiones en el diagnóstico, lo cual no se limita sólo a un simple retraso en el diagnóstico, sino también en el tratamiento. Las imprecisiones no son consistentes en todos los estados patológicos, estas varían significativamente en precisión según el ritmo electrocardiográfico subyacente. [7]
-
-Entonces, ¿cómo podríamos diseñar un dispositivo más compacto que mantenga la precisión característica del monitor Holter de 12 derivaciones, considerando aspectos como la miniaturización de componentes electrónicos, algoritmos de procesamiento de señales avanzados e integración de tecnología inalámbrica para evitar irritar la piel subyacente, con el objetivo de mejorar la comodidad y la portabilidad para el monitoreo ambulatorio del ritmo cardíaco en entornos del mundo real?
-
-## Propuesta de solución
-Como propuesta de solución, se propone adquirir una señal electrocardiográfica a partir de 1 derivación y evaluar la señal obtenida mediante el análisis en dominio de  frecuencia de la señal de ECG, con el objetivo de determinar la posibilidad de realizar el diagnóstico de fibrilación auricular a partir de diferencias en las frecuencias obtenidas.
-
-El análisis en dominio de frecuencia es la identificación de patrones de frecuencia visibles tras someter la señal de ECG a una transformación del dominio del tiempo al dominio de la frecuencia [8], lo que tradicionalmente se logra mediante la transformada rápida de Fourier (FFT) o la transformada Wavelet. Esta ofrece algunas ventajas en comparación con el método de diagnóstico tradicional, para el cual detección temprana de fibrilación auricular requiere de un análisis de hasta 72 horas de monitoreo continuo.[8] Puede utilizarse para estimar la tasa de activación auricular en fibrilación auricular[9]. Esto permite identificar características de la enfermedad sin la necesidad de recurrir al análisis del ritmo en el tiempo, que es tradicionalmente utilizado por los especialistas al momento de interpretar ECG. 
 
 ### Bibliografía
 
