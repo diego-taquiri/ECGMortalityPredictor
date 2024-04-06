@@ -1,5 +1,5 @@
 # ADQUISICIÓN DE SEÑALES Y GRAFICACIÓN EN ARDUINO
-Mantilla M., Ana Belen; Valdivia Esteba, Erick Alexander;
+Mantilla M., Ana Belen; Valdivia E., Erick Alexander;
 ## Tabla de contenidos
 1. [Uso del Generador de Señales y Osciloscopio](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/README.md#uso-del-generador-de-se%C3%B1ales-y-osciloscopio)
 2. [Ploteo de las señales](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%202#ploteo-de-las-se%C3%B1ales)
@@ -70,8 +70,8 @@ Figura 7. Señal 3 sin condensador y con condensador, respectivamente. <br><br>
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/ab3.jpg" alt="Descripción de la imagen" width="300"><br> 
 Figura 8. Señal 3 sin condensador representada en el osciloscopio.
 
-### Filtro pasa altas
-<p align="justify">Como se mencionó previamente, la conexión realizada con el condensador de 470uF actúa como un filtro paso altos, considerando la resistencia interna del arduino. Esto es posible de visualizar a través de la atenuación realizada por cada cambio de frecuencia. Observamos que, al aumentar la frecuencia, la cantidad de información deseada es mayor; a diferencia de las frecuencias bajas, se obtiene una mayor amplitud en las señales. Aún así, el condensador sigue actuando como un atenuador en todos los casos. Si bien nuestras señales fueron obtenidas con ruido, es posible su interpretación gracias al circuito realizado en el protoboard y los mínimos cambios visibles del arduino. El comportamiento gráfico de este proceso se oberva en la Figura 9.<br> 
+### Filtro paso alto
+<p align="justify">Como se mencionó previamente, la conexión realizada con el condensador de 470uF actúa como un filtro paso alto, considerando la resistencia interna del arduino. Esto es posible de visualizar a través de la atenuación realizada por cada cambio de frecuencia. Observamos que, al aumentar la frecuencia, la cantidad de información deseada es mayor; a diferencia de las frecuencias bajas, se obtiene una mayor amplitud en las señales. Aún así, el condensador sigue actuando como un atenuador en todos los casos. Si bien nuestras señales fueron obtenidas con ruido, es posible su interpretación gracias al circuito realizado en el protoboard y los mínimos cambios visibles del arduino. El comportamiento gráfico de este proceso se oberva en la Figura 9.<br> 
 
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/Diagrama-de-filtro-RC-paso-alto.png" alt="Descripción de la imagen" width="300"><br> 
 Figura 9. Filtro paso alto. [1]
