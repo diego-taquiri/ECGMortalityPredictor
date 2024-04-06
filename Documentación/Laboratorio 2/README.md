@@ -4,9 +4,9 @@
 1. [Uso del Generador de Señales y Osciloscopio](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/README.md#uso-del-generador-de-se%C3%B1ales-y-osciloscopio)
 2. [Ploteo de las señales](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%202#ploteo-de-las-se%C3%B1ales)
    - [Ruido](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%202#ruido)
-   - [Señal 1]
-   - [Señal 2]
-   - [Señal 3]
+   - [Señal 1](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%202#se%C3%B1al-1)
+   - [Señal 2](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%202#se%C3%B1al-2)
+   - [Señal 3](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%202#se%C3%B1al-3)
 3. [Filtro pasa altas](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/README.md#filtro-pasa-altas)
    
 ### Uso del Generador de Señales y Osciloscopio
@@ -32,7 +32,7 @@ Finalmente, se experimentó con una tercera señal del generador, ajustando la f
 
 Se observa que la gráfica ploteada sin condensador vuelve a ser más similar a la gráfica obtenida en el osciloscopio, aunque esto también puede ser influenciado por el cambio de escala. Sin embargo la señal ploteada también mantiene algunos picos randomizados que pueden ser efectos del ruido lo cual no se observaba en la señal con frecuencia de muestreo de 50 Hz
 
-#### Filtro pasa altas
+### Filtro pasa altas
 Como se mencionó previamente, la conexión realizada con el condensador de 470uF actúa como un filtro pasa altos, considerando la resistencia interna del arduino. 
 
 
