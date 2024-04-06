@@ -31,7 +31,7 @@ Posteriormente, se procedió a evaluar una señal proveniente del generador de s
 
 <div style="text-align: center;">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/05.jpg" alt="Descripción de la primera imagen" width="300">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/06.jpg" alt="Descripción de la segunda imagen" width="300">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/07.jpg" alt="Descripción de la segunda imagen" width="300">
 </div>
 
 Podemos observar que la señal del osciloscopio tiene un parecido con la señal ploteada sin el condensador pero difiere bastante de la gráfica cuando el condensador es añadido.
