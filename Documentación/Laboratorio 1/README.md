@@ -1,5 +1,13 @@
 # Fibrilación Auricular
 
+### Tabla de contenidos
+1. [Definición de la arritmia]
+2. [Contexto nacional y mundial]
+3. [Definición de la arritmia]
+4. [Planteamiento del problema]
+5. [Propuesta de solución]
+6. [Bibliografía]
+   
 ## Definición de la arritmia
 La definición de este tipo de arritmia describe un ritmo cardíaco irregular y anormal que causa latidos muy rápidos. Los síntomas de esta arritmia incluyen palpitaciones, dolor en el pecho, mareos, fatiga, aturdimiento, menor capacidad para hacer ejercicio, falta de aire y debilidad. Posibles causas pueden ser defectos congénitos, enfermedades cardíacas, presión arterial alta, enfermedades pulmonares, trastornos de la tiroides y factores de estilo de vida, como el consumo excesivo de alcohol y tabaco. [1]
 ## Contexto nacional y mundial
