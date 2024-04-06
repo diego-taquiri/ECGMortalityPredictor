@@ -16,6 +16,7 @@ Se configuró el Generador de Señales para proporcionar una señal sinusoidal d
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/0001.jpg" alt="Descripción de la primera imagen" width="300">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/0002.jpg" alt="Descripción de la segunda imagen" width="300">
 </div>
+Figura 1. (a) Amplitud y (b) Periodo mostrados en el osciloscopio.
 
 ### Ploteo de las señales
 #### Ruido
