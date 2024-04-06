@@ -21,6 +21,11 @@ Se configuró el Generador de Señales para proporcionar una señal sinusoidal d
 #### Ruido
 Para comenzar, se llevó a cabo la medición del ruido ambiental utilizando el Arduino IoT, aplicando una tasa de sampleo de 10 Hz. Notamos que el ruido ambiental registró una forma sinusoidal. Para mejorar la calidad de la señal recogida, se incorporó un condensador como parte de un circuito de filtrado, actuando junto con la resistencia interna del ADC del Arduino para conformar un filtro tipo RC básico. Esta configuración permitió filtrar eficazmente la mayor parte del ruido ambiental, como se puede apreciar en la gráfica derecha de la figura 3.
 
+<div style="text-align: center;">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/01.jpg" alt="Descripción de la primera imagen" width="300">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/02.jpg" alt="Descripción de la segunda imagen" width="300">
+</div>
+
 #### Señal 1
 Posteriormente, se procedió a evaluar una señal proveniente del generador de señales, utilizando esta vez una frecuencia de muestreo de 50 Hz en el Arduino. Se capturó una señal limpia en el ploteo con el arduino (Figura 4). Los resultados fueron similares a los obtenidos con el ruido ambiental, el condensador filtró la señal del generador. 
 
