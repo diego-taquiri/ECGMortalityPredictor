@@ -10,6 +10,7 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 - [Materiales](#Materiales)
 - [Métodos](#Métodos)
 - [Temática del proyecto](#Temática-del-proyecto)
+- [Problemática](#Problemática)
 - [Contenido del curso](#Contenido-del-curso)
 - [Participantes](#Participantes)
 - [Docentes del curso](#Docentes-del-curso)
@@ -19,10 +20,10 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 
 | Descripción  | Foto |
 | ------------- | ------------- |
-| Diego Taquiri (colaborador) - diego.taquiri@upch.pe. <p align="justify"> Estudiante de último año de Biología UPCH. Mi área de investigación es la bioinformática y genómica. | ![](images/diego.jpeg)              |
-| Armando Flórez (colaborador) - armando.florez@upch.pe. <p align="justify"> Estudiante de Ingeniería Biomédica PUCP- UPCH. | ![](images/Armando.jpeg)              |
-| Ana Belen Mantilla (colaborador) - ana.mantilla@upch.pe. <p align="justify"> Estudiante de Ingeniería Biomédica de la Pontificia Universidad Católica del Perú (PUCP) y la Universidad Peruana Cayetano Heredia (UPCH). | ![](images/ana.jpg)              |
-| Erick Alexander Valdivia Esteba (colaborador) - erick.valdivia@upch.pe. <p align="justify">Estudiante de cuarto año de Ingeniería Biomédica con interés en el área de ingeniería clínica. | ![](images/Erick.jpg)              |
+| Diego Taquiri (colaborador) - diego.taquiri@upch.pe. <p align="justify"> Estudiante de último año de Biología UPCH. Mi área de investigación es la bioinformática y genómica. | ![](Documentación/fotos/diego.jpeg)              |
+| Armando Flórez (colaborador) - armando.florez@upch.pe. <p align="justify"> Estudiante de Ingeniería Biomédica PUCP- UPCH. | ![](Documentación/fotos/Armando.jpeg)              |
+| Ana Belen Mantilla (colaborador) - ana.mantilla@upch.pe. <p align="justify"> Estudiante de Ingeniería Biomédica de la Pontificia Universidad Católica del Perú (PUCP) y la Universidad Peruana Cayetano Heredia (UPCH). | ![](Documentación/fotos/ana.jpg)              |
+| Erick Alexander Valdivia Esteba (colaborador) - erick.valdivia@upch.pe. <p align="justify">Estudiante de cuarto año de Ingeniería Biomédica con interés en el área de ingeniería clínica. | ![](Documentación/fotos/Erick.jpg)              |
 
 <p align="justify">
 ¡Gracias por visitar nuestro repositorio y por ser parte de nuestro viaje hacia el conocimiento y la innovación en señales biomédicas!
@@ -34,6 +35,8 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 ## Métodos
 
 ## Temática del proyecto
+
+## Problemática
 
 ## Contenido del curso
 
