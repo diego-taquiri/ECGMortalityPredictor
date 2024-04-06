@@ -31,7 +31,7 @@ Posteriormente, se procedió a evaluar una señal proveniente del generador de s
 
 <div style="text-align: center;">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/05.jpg" alt="Descripción de la primera imagen" width="300">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/08.jpg" alt="Descripción de la segunda imagen" width="300">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/10.jpg" alt="Descripción de la segunda imagen" width="300">
 </div>
 
 Podemos observar que la señal del osciloscopio tiene un parecido con la señal ploteada sin el condensador pero difiere bastante de la gráfica cuando el condensador es añadido.
@@ -48,6 +48,11 @@ Si bien mantenemos una clara diferencia visual con la señal con condensador aho
 
 #### Señal 3
 Finalmente, se experimentó con una tercera señal del generador, ajustando la frecuencia de muestreo del Arduino a 1000 Hz. 
+
+<div style="text-align: center;">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/08.jpg" alt="Descripción de la primera imagen" width="300">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/09.jpg" alt="Descripción de la segunda imagen" width="300">
+</div>
 
 Se observa que la gráfica ploteada sin condensador vuelve a ser más similar a la gráfica obtenida en el osciloscopio, aunque esto también puede ser influenciado por el cambio de escala. Sin embargo la señal ploteada también mantiene algunos picos randomizados que pueden ser efectos del ruido lo cual no se observaba en la señal con frecuencia de muestreo de 50 Hz
 
