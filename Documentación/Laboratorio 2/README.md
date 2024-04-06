@@ -8,15 +8,26 @@
 Se configuró el Generador de Señales para proporcionar una señal sinusoidal de 1 KHz de frecuencia, 3.3V de Amplitud y 0V de offset. Su amplitud (3.32V) y periodo (1.01ms) son mostrados a continuación:
 
 
+## Ploteo de las señales
+Para comenzar, se llevó a cabo la medición del ruido ambiental utilizando el Arduino IoT, aplicando una tasa de sampleo de 10 Hz. Notamos que el ruido ambiental registró una forma sinusoidal. Para mejorar la calidad de la señal recogida, se incorporó un condensador como parte de un circuito de filtrado, actuando junto con la resistencia interna del ADC del Arduino para conformar un filtro tipo RC básico. Esta configuración permitió filtrar eficazmente la mayor parte del ruido ambiental, como se puede apreciar en la gráfica derecha de la figura 3.
+
+Posteriormente, se procedió a evaluar una señal proveniente del generador de señales, utilizando esta vez una frecuencia de muestreo de 50 Hz en el Arduino. Se capturó una señal limpia en el ploteo con el arduino (Figura 4). Los resultados fueron similares a los obtenidos con el ruido ambiental, el condensador filtró la señal del generador. 
+
+Podemos observar que la señal del osciloscopio tiene un parecido con la señal ploteada sin el condensador pero difiere bastante de la gráfica cuando el condensador es añadido.
+
+A continuación, se analizó una segunda señal del generador, aplicando una frecuencia de muestreo de 500 Hz. La gráfica resultante reveló una señal de mayor frecuencia, y el condensador de igual manera filtró la mayoría de la señal, pero no hubo una atenuación como la de 50Hz (Figura 6). 
+
+Si bien mantenemos una clara diferencia visual con la señal con condensador ahora la señal ploteada sin condensador no coincide de igual manera con la señal obtenida en el osciloscopio. Esto se debe a que la frecuencia de muestreo determina la cantidad de puntos de datos que se toman por unidad de tiempo así que su aumento lleva a una mayor cantidad de picos.
+
+Finalmente, se experimentó con una tercera señal del generador, ajustando la frecuencia de muestreo del Arduino a 1000 Hz. 
+
+Se observa que la gráfica ploteada sin condensador vuelve a ser más similar a la gráfica obtenida en el osciloscopio, aunque esto también puede ser influenciado por el cambio de escala. Sin embargo la señal ploteada también mantiene algunos picos randomizados que pueden ser efectos del ruido lo cual no se observaba en la señal con frecuencia de muestreo de 50 Hz
+
+Como se mencionó previamente, la conexión realizada con el condensador de 470uF actúa como un filtro pasa altos, considerando la resistencia interna del arduino. 
+
+
 
 ### Bibliografía
 
-1. Mayo Clinic. “Fibrilación auricular - Síntomas y causas - Mayo Clinic”. Top-ranked Hospital in the Nation - Mayo Clinic. [En línea]. Disponible: https://www.mayoclinic.org/es/diseases-conditions/atrial-fibrillation/symptoms-causes/syc-20350624#:~:text=La%20fibrilación%20auricular%20es%20un,coágulos%20sanguíneos%20en%20el%20corazón
-2. J. E. Valdiviezo. “Factores asociados al éxito agudo de cardioversión eléctrica o farmacológica en pacientes con fibrilación auricular de reciente diagnóstico. Hospital Nacional Arzobispo Loayza 2023 – 2024”. Universidad Nacional Mayor de San Marcos. [En línea]. Disponible: https://cybertesis.unmsm.edu.pe/bitstream/handle/20.500.12672/20604/Valdiviezo_cj.pdf?sequence=1&amp;isAllowed=y 
-3. J. Gallegos. “Registro Peruano de Fibrilación Auricular (REPERFA). Reporte preliminar.” Hospital Militar Central. [En línea]. Disponible: https://sopecard.org/wp-content/uploads/2021/08/Registro-Peruano-de-Fibrilacion-Auricular.pdf
-4. A. Mubarik y A. M. Iqbal, “Holter Monitor”, StatPearls, 2022.
-5. A. N. Sharma y A. Baranchuk, “Ambulatory external electrocardiography monitoring: Holter, extended Holter, mobile cardiac telemetry monitoring”, Card. Electrophysiol. Clin., vol. 13, núm. 3, pp. 427–438, 2021.
-6. S. S. Lobodzinski, “ECG patch monitors for assessment of cardiac rhythm abnormalities”, Prog. Cardiovasc. Dis., vol. 56, núm. 2, pp. 224–229, 2013.
-7. N. Rafie, A. H. Kashou, y P. A. Noseworthy, “ECG interpretation: Clinical relevance, challenges, and advances”, Hearts (Basel), vol. 2, núm. 4, pp. 505–513, 2021.
-8. Y. Hu, Y. Zhao, J. Liu, J. Pang, C. Zhang, y P. Li, «An effective frequency-domain feature of atrial fibrillation based on time–frequency analysis», BMC Med Inform Decis Mak, vol. 20, n.o 1, p. 308, dic. 2020, doi: 10.1186/s12911-020-01337-1.
-9. V. B. Traykov, R. Pap, y L. Saghy, «Frequency Domain Mapping of Atrial Fibrillation - Methodology Experimental Data and Clinical Implications», CCR, vol. 8, n.o 3, pp. 231-238, sep. 2012, doi: 10.2174/157340312803217229.
+[1] “Calculadora de Filtro Paso Alto”, Learningaboutelectronics.com. [En línea]. Disponible en: https://www.learningaboutelectronics.com/Articulos/Calculadora-de-filtro-paso-alto.php. 
+
