@@ -1,6 +1,6 @@
 # ADQUISICIÓN DE SEÑALES Y GRAFICACIÓN EN ARDUINO
-Mantilla M., Ana Belen; 
-Valdivia Esteba, Erick Alexander;
+-Mantilla M., Ana Belen; 
+-Valdivia Esteba, Erick Alexander;
 ## Tabla de contenidos
 1. [Uso del Generador de Señales y Osciloscopio](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/README.md#uso-del-generador-de-se%C3%B1ales-y-osciloscopio)
 2. [Ploteo de las señales](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%202#ploteo-de-las-se%C3%B1ales)
