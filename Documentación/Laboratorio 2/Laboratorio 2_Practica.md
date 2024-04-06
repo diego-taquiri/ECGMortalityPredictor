@@ -1,8 +1,9 @@
 # ADQUISICIÓN DE SEÑALES Y GRAFICACIÓN EN ARDUINO
-Lista de participantes:
+Lista de participantes:  
 -Mantilla M., Ana Belen  
 -Valdivia E., Erick Alexander   
 -Flórez T., Armando Antonio  
+-Taquiri D., Diego Alejandro  
 ## Tabla de contenidos
 1. [Uso del Generador de Señales y Osciloscopio](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/README.md#uso-del-generador-de-se%C3%B1ales-y-osciloscopio)
 2. [Ploteo de las señales](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%202#ploteo-de-las-se%C3%B1ales)
@@ -74,7 +75,9 @@ Figura 7. Señal 3 sin condensador y con condensador, respectivamente. <br><br>
 Figura 8. Señal 3 sin condensador representada en el osciloscopio.
 
 ### Filtro paso alto
-<p align="justify">Como se mencionó previamente, la conexión realizada con el condensador de 470uF actúa como un filtro paso alto, considerando la resistencia interna del arduino. Esto es posible de visualizar a través de la atenuación realizada por cada cambio de frecuencia. Observamos que, al aumentar la frecuencia, la cantidad de información deseada es mayor; a diferencia de las frecuencias bajas, se obtiene una mayor amplitud en las señales. Aún así, el condensador sigue actuando como un atenuador en todos los casos. Si bien nuestras señales fueron obtenidas con ruido, es posible su interpretación gracias al circuito realizado en el protoboard y los mínimos cambios visibles del arduino. El comportamiento gráfico de este proceso se oberva en la Figura 9.<br> 
+<p align="justify">Como se mencionó previamente, la conexión realizada con el condensador de 470uF actúa como un filtro paso alto, considerando la resistencia interna del arduino. Existe una atenuación de la onda sinusoidal obtenida a partir del generador de ondas, la cual a frecuencias bajas como 1 Hz filtra completamente la señal.<br> 
+<p align="justify">La frecuencia de corte se puede obtener a partir de los valores de R y C, utilizando la fórmula Fc=1/(2*π*RC). En el caso del laboratorio se utilizó un condensador de 470 uF. Si bien el datasheet de arduino menciona una resistencia asociada en los pines analógicos de 100 Mohms, esta no interfiere con la medición de la señal. Para el cálculo de la frecuencia de corte, asumiendo interferencia mínima de la resistencia interna, (1 ohm), se obtendría una Fc de 339 Hz, la cual disminuye a medida que se incrementa el valor de R. <br>
+<p align="justify">Pese al ruido observado, el incremento de la frecuencia de la señal de entrada por encima de la frecuencia de corte máxima calculada y el subsecuente incremento de la tasa de muestreo, resultan en la aparición de la señal de entrada en la lectura del arduino. Aún así, el condensador sigue actuando como un atenuador en todos los casos. Si bien nuestras señales fueron obtenidas con ruido, es posible su interpretación gracias al circuito realizado en el protoboard y los mínimos cambios visibles del arduino. El comportamiento gráfico de este proceso se oberva en la Figura 9.<br> 
 
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/Diagrama-de-filtro-RC-paso-alto.png" alt="Descripción de la imagen" width="300"><br> 
 Figura 9. Filtro paso alto. [1]
