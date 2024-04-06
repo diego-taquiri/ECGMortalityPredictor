@@ -1,7 +1,7 @@
 # Fibrilación Auricular
 
 ### Tabla de contenidos
-1. [Definición de la arritmia]
+1. [Definición de la arritmia](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%201/README.md#definici%C3%B3n-de-la-arritmia)
 2. [Contexto nacional y mundial]
 3. [Definición de la arritmia]
 4. [Planteamiento del problema]
