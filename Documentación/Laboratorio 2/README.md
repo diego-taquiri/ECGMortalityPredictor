@@ -66,7 +66,7 @@ Se observa que la gráfica ploteada sin condensador vuelve a ser más similar a 
 ### Filtro pasa altas
 Como se mencionó previamente, la conexión realizada con el condensador de 470uF actúa como un filtro pasa altos, considerando la resistencia interna del arduino. 
 
-
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/Diagrama-de-filtro-RC-paso-alto.jpg" alt="Descripción de la imagen" width="300">
 
 ### Bibliografía
 
