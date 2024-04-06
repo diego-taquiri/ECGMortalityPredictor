@@ -49,7 +49,7 @@ A continuación, se analizó una segunda señal del generador, aplicando una fre
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/06.jpg" alt="Descripción de la primera imagen" width="300">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/07.jpg" alt="Descripción de la segunda imagen" width="300">
 </div>
-Figura 5.Señal 2 sin condensador y con condensador, respectivamente. <br>
+Figura 5.Señal 2 sin condensador y con condensador, respectivamente. <br><br>
 
 Si bien mantenemos una clara diferencia visual con la señal con condensador ahora la señal ploteada sin condensador no coincide de igual manera con la señal obtenida en el osciloscopio. Esto se debe a que la frecuencia de muestreo determina la cantidad de puntos de datos que se toman por unidad de tiempo así que su aumento lleva a una mayor cantidad de picos.
 
@@ -63,7 +63,7 @@ Finalmente, se experimentó con una tercera señal del generador, ajustando la f
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/08.jpg" alt="Descripción de la primera imagen" width="300">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/09.jpg" alt="Descripción de la segunda imagen" width="300">
 </div>
-Figura 7. Señal 3 sin condensador y con condensador, respectivamente. <br>
+Figura 7. Señal 3 sin condensador y con condensador, respectivamente. <br><br>
 
 Se observa que la gráfica ploteada sin condensador vuelve a ser más similar a la gráfica obtenida en el osciloscopio, aunque esto también puede ser influenciado por el cambio de escala. Sin embargo la señal ploteada también mantiene algunos picos randomizados que pueden ser efectos del ruido lo cual no se observaba en la señal con frecuencia de muestreo de 50 Hz.
 
