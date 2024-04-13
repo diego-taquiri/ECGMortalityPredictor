@@ -22,8 +22,8 @@ Figura X. Conexiones de cable de electrodo en BITalino. <br>
 
 <p align="justify">Los electrodos positivo y negativo se colocaron en el tercio medio del brazo, en la confluencia de los brazos corto y largo del bíceps braquial a una distancia de 2 centímetros uno de otro, mientras que el electrodo de tierra se colocó en el tercio proximal del antebrazo en la zona correspondiente al olécranon del cúbito. Las posiciones pueden observarse en las figuras X.1 y X.2. <br> 
 
-<p align="center">
    <div style="text-align: center;">
+      <p align="center">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/Images/PosicionAr.jpg" alt="Descripción de la primera imagen" width="300">
     <img src="" alt="Descripción de la segunda imagen" width="300">
 </div>
