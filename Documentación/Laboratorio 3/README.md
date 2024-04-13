@@ -7,8 +7,8 @@ Lista de participantes:
 
 ## Tabla de contenidos
 1. [Introducción]()
-2. [Materiales y métodos]()
-3. [Resultados]()
+2. [Materiales y métodos](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/README.md#materiales-y-m%C3%A9todos)
+3. [Resultados](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/README.md#resultados)
    - [Ploteo de la señal en OpenSignals]()
    - [Archivo de los datos de la señal ploteada]()
    - [Ploteo de las señales en Python](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#ploteo-de-las-se%C3%B1ales-en-python)
