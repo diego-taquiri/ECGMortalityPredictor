@@ -6,11 +6,10 @@ Lista de participantes:
 -Taquiri D., Diego Alejandro  
 
 ## Tabla de contenidos
-1. [Introducción]()
+1. [Introducción](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#introducci%C3%B3n)
 2. [Materiales y métodos](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/README.md#materiales-y-m%C3%A9todos)
 3. [Resultados](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/README.md#resultados)
-   - [Ploteo de la señal en OpenSignals]()
-   - [Archivo de los datos de la señal ploteada]()
+   - [Archivo de los datos de la señal ploteada](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#archivo-de-los-datos-de-la-se%C3%B1al-ploteada)
    - [Ploteo de las señales en Python](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#ploteo-de-las-se%C3%B1ales-en-python)
 
 ### Introducción
@@ -34,7 +33,6 @@ Figura X. Conexiones de cable de electrodo en BITalino. <br>
 <p align="justify">El protocolo seguido fue el de la guía experimental de BITalino. Se evaluaron tres situaciones. Una primera correspondiente a reposo del grupo muscular, una segunda correspondiente a la flexión del antebrazo sin resistencia y una tercera correspondiente a la flexión del antebrazo con resistencia al movimiento. Este estudio se realizó a dos participantes en igualdad de condiciones, tanto en posicionamiento de electrodos, como movimientos realizados; esto con el objetivo de realizar la comparación de las señales obtenidas.
 
 ### Resultados
-#### Archivo de los datos de la señal ploteada
 <p align="justify">Se realizó la evaluación de las tres condiciones planteadas en el primer participante; sin embargo, solo se realizaron las condiciones de reposo y contracción sin resistencia en el segundo participante. Se pudieron apreciar patrones distintos en la amplitud de la señal EMG de acuerdo al movimiento realizado.<br> 
    
 <p align="justify">Señal del músculo en reposo: En ambos casos se observa una señal casi aplanada con una muy leve actividad eléctrica visible, la cual puede corresponder a ruido en la señal o a la actividad muscular que proporciona el tono muscular. No hay mayores diferencias entre ambos participantes. Las señales de contracción en ambos participantes se observan en la figura X. <br> 
@@ -48,7 +46,9 @@ Figura X. Conexiones de cable de electrodo en BITalino. <br>
 <p align="justify">Señal del músculo en contracción isométrica: Se observa una onda sostenida durante el periodo de contracción similar en amplitud a la flexión del músculo en su momento de máxima contracción. Esta contracción no es uniforme en el tiempo, puesto que se puede apreciar una tendencia a la disminución de la amplitud a medida que la contracción se sostiene por un tiempo mayor, lo cual se debe a la fatiga progresiva del músculo. Debido a problemas de conexión del dispositivo con el software en la parte final del estudio, este solo se pudo realizar en el primer participante; motivo por el cual no se tiene un punto de comparación. La señal de la contracción isométrica se puede observar en la figura X.
 
 <p align="center">Figura X. Señal de sEMG de bíceps braquial en contracción isométrica -Participante 1.
-
+   
+#### Archivo de los datos de la señal ploteada
+   
 #### Ploteo de las señales en Python
 <table style="width:100%;">
   <tr>
