@@ -6,13 +6,16 @@ Lista de participantes:
 -Taquiri D., Diego Alejandro  
 
 ## Tabla de contenidos
-1. [Introducción](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#introducci%C3%B3n)
+1. [Objetivos específicos de la práctica](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#introducci%C3%B3n)
 2. [Materiales y métodos](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/README.md#materiales-y-m%C3%A9todos)
 3. [Resultados](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/README.md#resultados)
    - [Archivo de los datos de la señal ploteada](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#archivo-de-los-datos-de-la-se%C3%B1al-ploteada)
    - [Ploteo de las señales en Python](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#ploteo-de-las-se%C3%B1ales-en-python)
 
-### Introducción
+### Objetivos específicos de la práctica
+- Adquirir señales biomédicas de EMG.
+- Hacer una correcta configuración de BiTalino.
+- Extraer la información de las señales EMG del software OpenSignals (r)evolution.
 
 ### Materiales y métodos
 <p align="justify">Se realizó la medición de EMG de acuerdo a las instrucciones de la guía experimental de BITalino sobre electromiografía. La medición se realizó utilizando un cable de electrodo de tres derivaciones conectado al terminal del BITalino correspondiente a EMG (Figura X). <br> 
