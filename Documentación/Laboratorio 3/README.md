@@ -42,7 +42,6 @@ Figura 1. Conexiones de cable de electrodo en BITalino. <br>
    
 <video width="320" height="240" controls>
   <source src="https://github.com/diego-taquiri/ISB-equipo11/raw/main/Documentaci%C3%B3n/Laboratorio%203/Images/ReposoAr.mp4" type="video/mp4">
-  Tu navegador no soporta la etiqueta de video.
 </video>
 
 <p align="center">Figura 3. Señal de sEMG de bíceps braquial en reposo del Participante 1.<br> 
