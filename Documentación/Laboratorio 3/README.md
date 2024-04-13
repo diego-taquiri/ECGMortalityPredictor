@@ -88,5 +88,5 @@ Figura 1. Conexiones de cable de electrodo en BITalino. <br>
 
 | Reposo  | Isotónico | Isométrico |
 |---------|---------|---------|
-| [![Watch Video](https://img.youtube.com/vi/w6lvBY4gCGw/maxresdefault.jpg)](https://youtu.be/w6lvBY4gCGw) | [![Watch Video](https://img.youtube.com/vi/SkaapTFie_k/maxresdefault.jpg)](https://youtu.be/SkaapTFie_k) | [![Watch Video](https://img.youtube.com/vi/h5vRF8iDmkY/maxresdefault.jpg)](https://youtu.be/h5vRF8iDmkY) |
+| [![Watch Video](https://img.youtube.com/vi/w6lvBY4gCGw/maxresdefault.jpg)](https://youtu.be/w6lvBY4gCGw) [![Alt text](https://i9.ytimg.com/vi/Z3UT4b5ZMPE/mqdefault.jpg?sqp=CIzt6rAG-oaymwEmCMACELQB8quKqQMa8AEB-AG-B4AC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCE0jMgaWn3mjqcb9M9TbJOXsGGGA)](https://youtu.be/Z3UT4b5ZMPE) | [![Watch Video](https://img.youtube.com/vi/SkaapTFie_k/maxresdefault.jpg)](https://youtu.be/SkaapTFie_k) | [![Watch Video](https://img.youtube.com/vi/h5vRF8iDmkY/maxresdefault.jpg)](https://youtu.be/h5vRF8iDmkY) |
 [![Watch Video](https://img.youtube.com/vi/ZKdAlPd_Is0/maxresdefault.jpg)](https://youtu.be/ZKdAlPd_Is0) | [![Watch Video](https://img.youtube.com/vi/SzPdHHC3beI/maxresdefault.jpg)](https://youtu.be/SzPdHHC3beI) | |
