@@ -39,7 +39,9 @@ Figura 1. Conexiones de cable de electrodo en BITalino. <br>
 <p align="justify">Se realizó la evaluación de las tres condiciones planteadas en el primer participante; sin embargo, solo se realizaron las condiciones de reposo y contracción sin resistencia en el segundo participante. Se pudieron apreciar patrones distintos en la amplitud de la señal EMG de acuerdo al movimiento realizado.<br> 
    
 <p align="justify">Señal del músculo en reposo: En ambos casos se observa una señal casi aplanada con una muy leve actividad eléctrica visible, la cual puede corresponder a ruido en la señal o a la actividad muscular que proporciona el tono muscular. No hay mayores diferencias entre ambos participantes. Las señales de contracción en ambos participantes se observan en las figuras 3 y 4. <br> 
-
+   
+<video width="320" height="240" controls>
+  <source src="[video.mp4](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/Images/ReposoAr.mp4)" type="video/mp4">
 <p align="center">Figura 3. Señal de sEMG de bíceps braquial en reposo del Participante 1.<br> 
 <p align="center">Figura 4. Señal de sEMG de bíceps braquial en reposo del Participante 2.<br> 
    
