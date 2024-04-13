@@ -48,6 +48,7 @@ Figura X. Conexiones de cable de electrodo en BITalino. <br>
 <p align="center">Figura X. Señal de sEMG de bíceps braquial en contracción isométrica -Participante 1.
    
 #### Archivo de los datos de la señal ploteada
+- [EMG raw data](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203/emg_raw_data)
    
 #### Ploteo de las señales en Python
 <div>
