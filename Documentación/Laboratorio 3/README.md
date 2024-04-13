@@ -14,17 +14,20 @@ Lista de participantes:
    - [Ploteo de las señales en Python](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#ploteo-de-las-se%C3%B1ales-en-python)
 
 ### Materiales y métodos
-<p align="justify">Se realizó la medición de EMG de acuerdo a las instrucciones de la guía experimental de BITalino sobre electromiografía. La medición se realizó utilizando un cable de electrodo de tres derivaciones conectado al terminal del BITalino correspondiente a EMG (Figura X).  Los electrodos positivo y negativo se colocaron en el tercio medio del brazo, en la confluencia de los brazos corto y largo del bíceps braquial a una distancia de 2 centímetros uno de otro, mientras que el electrodo de tierra se colocó en el tercio proximal del antebrazo en la zona correspondiente al olécranon del cúbito. Las posiciones pueden observarse en las figuras X.1 y X.2. <br> 
+<p align="justify">Se realizó la medición de EMG de acuerdo a las instrucciones de la guía experimental de BITalino sobre electromiografía. La medición se realizó utilizando un cable de electrodo de tres derivaciones conectado al terminal del BITalino correspondiente a EMG (Figura X). <br> 
 
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/Images/Bitalino.jpg" alt="Descripción de la imagen" width="300"><br> 
 Figura X. Conexiones de cable de electrodo en BITalino. <br> 
 
+<p align="justify">Los electrodos positivo y negativo se colocaron en el tercio medio del brazo, en la confluencia de los brazos corto y largo del bíceps braquial a una distancia de 2 centímetros uno de otro, mientras que el electrodo de tierra se colocó en el tercio proximal del antebrazo en la zona correspondiente al olécranon del cúbito. Las posiciones pueden observarse en las figuras X.1 y X.2. <br> 
+
 <p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/Images/PosicionAr.jpg" alt="Descripción de la imagen" width="300"><br> 
-Figura X.1. Posicionamiento de electrodos en primer estudio.<br> 
- 
-Figura X.2. Posicionamiento de electrodos en segundo estudio.<br> 
+   <div style="text-align: center;">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/Images/PosicionAr.jpg.jpg" alt="Descripción de la primera imagen" width="300">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/0002.jpg" alt="Descripción de la segunda imagen" width="300">
+</div>
+Figura X. (a) Posicionamiento de electrodos en primer estudio y (b) Posicionamiento de electrodos en segundo estudio.<br> 
 
 <p align="justify">El protocolo seguido fue el de la guía experimental de BITalino. Se evaluaron tres situaciones. Una primera correspondiente a reposo del grupo muscular, una segunda correspondiente a la flexión del antebrazo sin resistencia y una tercera correspondiente a la flexión del antebrazo con resistencia al movimiento. Este estudio se realizó a dos participantes en igualdad de condiciones, tanto en posicionamiento de electrodos como movimientos realizados con el objetivo de realizar la comparación de las señales obtenidas.
 
