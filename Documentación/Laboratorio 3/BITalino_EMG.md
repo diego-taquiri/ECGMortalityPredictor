@@ -1,9 +1,9 @@
 # Uso de BITalino para EMG
 Lista de participantes:  
--Mantilla M., Ana Belen  
--Valdivia E., Erick Alexander   
--Flórez T., Armando Antonio  
--Taquiri D., Diego Alejandro  
+- Mantilla M., Ana Belen  
+- Valdivia E., Erick Alexander   
+- Flórez T., Armando Antonio  
+- Taquiri D., Diego Alejandro  
 
 ## Tabla de contenidos
 1. [Objetivos específicos de la práctica](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#objetivos-espec%C3%ADficos-de-la-pr%C3%A1ctica)
