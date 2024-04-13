@@ -9,8 +9,10 @@ Lista de participantes:
 1. [Introducción]()
 2. [Materiales y métodos]()
 3. [Resultados]()
-   - [Ploteo de las señales en Python](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#ploteo-de-las-se%C3%B1ales-en-python)
    - [Archivo de los datos de la señal ploteada]()
+   - [Ploteo de las señales en Python](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#ploteo-de-las-se%C3%B1ales-en-python)
+
+#### Archivo de los datos de la señal ploteada
 
 #### Ploteo de las señales en Python
 <table style="width:100%;">
@@ -28,5 +30,3 @@ Lista de participantes:
     <td><img src="plots/isb-reposo-anabelen.png" style="width:100%;"></td>
     <td><img src="plots/isb-isometrico-anabelen.png" style="width:100%;"></td>
     <td></
-<br> <br>
-#### Archivo de los datos de la señal ploteada
