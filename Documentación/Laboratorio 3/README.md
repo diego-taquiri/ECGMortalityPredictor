@@ -9,7 +9,9 @@ Lista de participantes:
 1. [Introducción]()
 2. [Materiales y métodos]()
 3. [Resultados]()
+   - [Ploteo de las señales en Python]()
 
+#### Ploteo de las señales en Python
 <table style="width:100%;">
   <tr>
     <th style="width:33%;">Reposo</th>
