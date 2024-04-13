@@ -1,3 +1,15 @@
+# Uso de BiTalino para EMG y ECG
+Lista de participantes:  
+-Mantilla M., Ana Belen  
+-Valdivia E., Erick Alexander   
+-Flórez T., Armando Antonio  
+-Taquiri D., Diego Alejandro  
+
+## Tabla de contenidos
+1. [Introducción]()
+2. [Materiales y métodos]()
+3. [Resultados]()
+
 <table style="width:100%;">
   <tr>
     <th style="width:33%;">Reposo</th>
