@@ -28,5 +28,5 @@ Lista de participantes:
     <td><img src="plots/isb-reposo-anabelen.png" style="width:100%;"></td>
     <td><img src="plots/isb-isometrico-anabelen.png" style="width:100%;"></td>
     <td></
-
+<br> <br>
 #### Archivo de los datos de la señal ploteada
