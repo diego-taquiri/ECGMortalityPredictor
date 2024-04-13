@@ -12,6 +12,7 @@ Lista de participantes:
    - [Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#videos-mostrando-las-conexiones-electrodos-cuerpo-y-la-se%C3%B1al-ploteada-en-opensignals)
    - [Archivo de los datos de la señal ploteada](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#archivo-de-los-datos-de-la-se%C3%B1al-ploteada)
    - [Ploteo de las señales en Python](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#ploteo-de-las-se%C3%B1ales-en-python)
+   - [Bibliografía]()
 
 ### Objetivos específicos de la práctica
 - Adquirir señales biomédicas de EMG.
@@ -19,7 +20,7 @@ Lista de participantes:
 - Extraer la información de las señales EMG del software OpenSignals (r)evolution.
 
 ### Materiales y métodos
-<p align="justify">Se realizó la medición de EMG de acuerdo a las instrucciones de la guía experimental de BITalino sobre electromiografía. La medición se realizó utilizando un cable de electrodo de tres derivaciones conectado al terminal del BITalino correspondiente a EMG (Figura 1). <br> 
+<p align="justify">Se realizó la medición de EMG de acuerdo a las instrucciones de la guía experimental de BITalino sobre electromiografía. [1] La medición se realizó utilizando un cable de electrodo de tres derivaciones conectado al terminal del BITalino correspondiente a EMG (Figura 1). <br>
 
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/Images/Bitalino.jpg" alt="Descripción de la imagen" width="300"><br> 
@@ -75,3 +76,6 @@ Figura 1. Conexiones de cable de electrodo en BITalino. <br>
         </tr>
     </table>
 </div>
+
+### Bibliografía
+<p align="justify">[1] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Available at: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide1_EMG.pdf 
