@@ -63,8 +63,8 @@ Figura 1. Conexiones de cable de electrodo en BITalino. <br>
     <table style="width:100%;">
         <tr>
             <th style="width:33%;">Reposo</th>
-            <th style="width:33%;">Isométrico</th>
-            <th style="width:33%;">Contrafuerza</th>
+            <th style="width:33%;">Isotónica</th>
+            <th style="width:33%;">isométrico</th>
         </tr>
         <tr>
             <td><img src="plots/isb-reposo-armando.png" style="width:100%;"></td>
