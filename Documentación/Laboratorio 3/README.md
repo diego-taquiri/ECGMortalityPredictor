@@ -38,11 +38,9 @@ Figura 1. Conexiones de cable de electrodo en BITalino. <br>
 ### Resultados
 <p align="justify">Se realizó la evaluación de las tres condiciones planteadas en el primer participante; sin embargo, solo se realizaron las condiciones de reposo y contracción sin resistencia en el segundo participante. Se pudieron apreciar patrones distintos en la amplitud de la señal EMG de acuerdo al movimiento realizado.<br> 
    
-<p align="justify"><b>Señal del músculo en reposo:</b> En ambos casos se observa una señal casi aplanada con una muy leve actividad eléctrica visible, la cual puede corresponder a ruido en la señal o a la actividad muscular que proporciona el tono muscular. No hay mayores diferencias entre ambos participantes. Las señales de contracción en ambos participantes se observan en las figuras 3 y 4. <br> 
+<p align="justify"><b>Señal del músculo en reposo:</b> En ambos casos se observa una señal casi aplanada con una muy leve actividad eléctrica visible, la cual puede corresponder a ruido en la señal o a la actividad muscular que proporciona el tono muscular. No hay mayores diferencias entre ambos participantes. Las señales de contracción en ambos participantes se observan en los videos siguientes. <br> 
 
-<video width="320" height="240" controls>
-  <source src="https://github.com/diego-taquiri/ISB-equipo11/raw/main/Documentaci%C3%B3n/Laboratorio%203/Images/ReposoAr.mp4" type="video/mp4">
-</video>
+ [![Alt text](https://i9.ytimg.com/vi/Z3UT4b5ZMPE/mqdefault.jpg?sqp=CIzt6rAG-oaymwEmCMACELQB8quKqQMa8AEB-AG-B4AC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCE0jMgaWn3mjqcb9M9TbJOXsGGGA)](https://youtu.be/Z3UT4b5ZMPE)
 <p align="center">Figura 3. Señal de sEMG de bíceps braquial en reposo del Participante 1.<br> 
 <p align="center">Figura 4. Señal de sEMG de bíceps braquial en reposo del Participante 2.<br> 
    
@@ -63,8 +61,8 @@ Figura 1. Conexiones de cable de electrodo en BITalino. <br>
     <table style="width:100%;">
         <tr>
             <th style="width:33%;">Reposo</th>
-            <th style="width:33%;">Isotónica</th>
-            <th style="width:33%;">isométrico</th>
+            <th style="width:33%;">Isotónico</th>
+            <th style="width:33%;">Isométrico</th>
         </tr>
         <tr>
             <td><img src="plots/isb-reposo-armando.png" style="width:100%;"></td>
