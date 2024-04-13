@@ -6,7 +6,7 @@ Lista de participantes:
 -Taquiri D., Diego Alejandro  
 
 ## Tabla de contenidos
-1. [Objetivos específicos de la práctica](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#introducci%C3%B3n)
+1. [Objetivos específicos de la práctica](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#objetivos-espec%C3%ADficos-de-la-pr%C3%A1ctica)
 2. [Materiales y métodos](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/README.md#materiales-y-m%C3%A9todos)
 3. [Resultados](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/README.md#resultados)
    - [Archivo de los datos de la señal ploteada](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203#archivo-de-los-datos-de-la-se%C3%B1al-ploteada)
