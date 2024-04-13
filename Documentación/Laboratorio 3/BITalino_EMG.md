@@ -12,7 +12,7 @@ Lista de participantes:
    - [Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#videos-mostrando-las-conexiones-electrodos-cuerpo-y-la-se%C3%B1al-ploteada-en-opensignals)
    - [Archivo de los datos de la señal ploteada](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#archivo-de-los-datos-de-la-se%C3%B1al-ploteada)
    - [Ploteo de las señales en Python](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#ploteo-de-las-se%C3%B1ales-en-python)
-   - [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#bibliograf%C3%ADa)
+4. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#bibliograf%C3%ADa)
 
 ### Objetivos específicos de la práctica
 - Adquirir señales biomédicas de EMG.
