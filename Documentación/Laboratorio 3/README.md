@@ -40,20 +40,20 @@ Figura 1. Conexiones de cable de electrodo en BITalino. <br>
    
 <p align="justify"><b>Señal del músculo en reposo:</b> En ambos casos se observa una señal casi aplanada con una muy leve actividad eléctrica visible, la cual puede corresponder a ruido en la señal o a la actividad muscular que proporciona el tono muscular. No hay mayores diferencias entre ambos participantes. Las señales de contracción en ambos participantes se observan en los siguientes videos (dar click en las imágenes). <br> 
 
-[<p align="center">![Alt text](https://i9.ytimg.com/vi/Z3UT4b5ZMPE/mqdefault.jpg?sqp=CIzt6rAG-oaymwEmCMACELQB8quKqQMa8AEB-AG-B4AC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCE0jMgaWn3mjqcb9M9TbJOXsGGGA)](https://youtu.be/Z3UT4b5ZMPE)
+[![Alt text](https://i9.ytimg.com/vi/Z3UT4b5ZMPE/mqdefault.jpg?sqp=CIzt6rAG-oaymwEmCMACELQB8quKqQMa8AEB-AG-B4AC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCE0jMgaWn3mjqcb9M9TbJOXsGGGA)](https://youtu.be/Z3UT4b5ZMPE)
 
 <p align="center">Video 1. Señal de sEMG de bíceps braquial en reposo del Participante 1. (a) Conexiones electrodos-cuerpo y (b) señal ploteada.<br> 
 <p align="center">Video 2. Señal de sEMG de bíceps braquial en reposo del Participante 2. (a) Conexiones electrodos-cuerpo y (b) señal ploteada.<br> 
    
 <p align="justify"><b>Señal del músculo en flexión:</b> Se observa el reclutamiento de fibras musculares, acompañado del subsecuente cambio en la amplitud de la señal, que lleva a su máxima expresión en la flexión completa del antebrazo y disminuye al regresar el antebrazo al estado de reposo. Diferencias en la masa muscular entre ambos participantes se traducen en la tasa de reclutamiento de fibras musculares y la amplitud de la señal resultante. Asimismo, la activación de fascículos musculares correspondientes a músculos cercanos al estudiado como el braquial anterior podrían haber contribuido con el reclutamiento en la señal. Respecto a la medición en el segundo participante, cabe añadir que existieron interferencias durante la medición, ocasionadas por la adhesión incompleta de los electrodos de superficie a la piel y posiblemente por la batería del BITalino, los cuales también han podido resultar en la diferencia marcada entre ambos participantes. Las señales de contracción muscular de ambos participantes se observan en los siguientes videos (dar click en las imágenes).<br> 
 
-[<p align="center">![Alt text](https://i9.ytimg.com/vi/7H6ylkbZ7Pk/mqdefault.jpg?sqp=CIzt6rAG-oaymwEmCMACELQB8quKqQMa8AEB-AG-B4AC0AWKAgwIABABGF4gXiheMA8=&rs=AOn4CLAjJG8Xv4ZZRHmF7K_vxbGTkZVxew)](https://youtu.be/7H6ylkbZ7Pk)
+[![Alt text](https://i9.ytimg.com/vi/7H6ylkbZ7Pk/mqdefault.jpg?sqp=CIzt6rAG-oaymwEmCMACELQB8quKqQMa8AEB-AG-B4AC0AWKAgwIABABGF4gXiheMA8=&rs=AOn4CLAjJG8Xv4ZZRHmF7K_vxbGTkZVxew)](https://youtu.be/7H6ylkbZ7Pk)
 <p align="center">Video 3. Señal de sEMG de bíceps braquial en contracción sin resistencia del Participante 1. (a) Conexiones electrodos-cuerpo y (b) señal ploteada. <br> 
 <p align="center">Video 4. Señal de sEMG de bíceps braquial en contracción sin resistencia del Participante 2. (a) Conexiones electrodos-cuerpo y (b) señal ploteada.<br> 
 
 <p align="justify"><b>Señal del músculo en contracción isométrica:</b> Se observa una onda sostenida durante el periodo de contracción similar en amplitud a la flexión del músculo en su momento de máxima contracción. Esta contracción no es uniforme en el tiempo, puesto que se puede apreciar una tendencia a la disminución de la amplitud a medida que la contracción se sostiene por un tiempo mayor, lo cual se debe a la fatiga progresiva del músculo. Debido a problemas de conexión del dispositivo con el software en la parte final del estudio, este solo se pudo realizar en el primer participante; motivo por el cual no se tiene un punto de comparación. La señal de la contracción isométrica se puede observar en los siguientes videos (dar click en las imágenes).
 
-[<p align="center">![Alt text](https://i9.ytimg.com/vi/Y4NwXM0n310/mqdefault.jpg?sqp=CIzt6rAG-oaymwEmCMACELQB8quKqQMa8AEB-AG-B4AC0AWKAgwIABABGHIgSSg8MA8=&rs=AOn4CLC8UAhLbKlLH1cspEp4bxZHfw7cIw)](https://youtu.be/Y4NwXM0n310)
+[![Alt text](https://i9.ytimg.com/vi/Y4NwXM0n310/mqdefault.jpg?sqp=CIzt6rAG-oaymwEmCMACELQB8quKqQMa8AEB-AG-B4AC0AWKAgwIABABGHIgSSg8MA8=&rs=AOn4CLC8UAhLbKlLH1cspEp4bxZHfw7cIw)](https://youtu.be/Y4NwXM0n310)
 <p align="center">Video 5. Señal de sEMG de bíceps braquial en contracción isométrica del Participante 1. (a) Conexiones electrodos-cuerpo y (b) señal ploteada.
    
 #### Archivo de los datos de la señal ploteada
