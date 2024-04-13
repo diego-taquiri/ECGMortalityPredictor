@@ -25,7 +25,7 @@ Figura X. Conexiones de cable de electrodo en BITalino. <br>
 <p align="center">
    <div style="text-align: center;">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/Images/PosicionAr.jpg.jpg" alt="Descripción de la primera imagen" width="300">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%202/images%20lab%202/0002.jpg" alt="Descripción de la segunda imagen" width="300">
+    <img src="" alt="Descripción de la segunda imagen" width="300">
 </div>
 Figura X. (a) Posicionamiento de electrodos en primer estudio y (b) Posicionamiento de electrodos en segundo estudio.<br> 
 
