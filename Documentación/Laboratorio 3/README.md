@@ -40,8 +40,26 @@ Figura 1. Conexiones de cable de electrodo en BITalino. <br>
    
 <p align="justify"><b>Señal del músculo en reposo:</b> En ambos casos se observa una señal casi aplanada con una muy leve actividad eléctrica visible, la cual puede corresponder a ruido en la señal o a la actividad muscular que proporciona el tono muscular. No hay mayores diferencias entre ambos participantes. Las señales de contracción en ambos participantes se observan en los siguientes videos. <br> 
 
-<p align="center">
-[![Alt text](https://i9.ytimg.com/vi/Z3UT4b5ZMPE/mqdefault.jpg?sqp=CIzt6rAG-oaymwEmCMACELQB8quKqQMa8AEB-AG-B4AC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCE0jMgaWn3mjqcb9M9TbJOXsGGGA)](https://youtu.be/Z3UT4b5ZMPE)
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .centrado {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="centrado">
+    <a href="https://youtu.be/Z3UT4b5ZMPE">
+        <img src="https://i9.ytimg.com/vi/Z3UT4b5ZMPE/mqdefault.jpg?sqp=CIzt6rAG-oaymwEmCMACELQB8quKqQMa8AEB-AG-B4AC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCE0jMgaWn3mjqcb9M9TbJOXsGGGA" alt="Texto alternativo">
+    </a>
+</div>
+
+</body>
+</html>
+
 <p align="center">Video 1. Señal de sEMG de bíceps braquial en reposo del Participante 1. (a) Conexiones electrodos-cuerpo y (b) señal ploteada.<br> 
 <p align="center">Video 2. Señal de sEMG de bíceps braquial en reposo del Participante 2. (a) Conexiones electrodos-cuerpo y (b) señal ploteada.<br> 
    
