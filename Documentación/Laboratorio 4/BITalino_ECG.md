@@ -10,6 +10,7 @@ Lista de participantes:
 2. [Materiales y métodos]
 3. [Resultados]
 4. [Bibliografía]
+
 ### Objetivos específicos de la práctica
 - Adquirir señales biomédicas de ECG.
 - Hacer una correcta configuración de BiTalino.
