@@ -6,7 +6,7 @@ Lista de participantes:
 - Taquiri D., Diego Alejandro  
 
 ## Tabla de contenidos
-1. [Objetivos específicos de la práctica](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_ECG.md#objetivos-espec%C3%ADficos-de-la-pr%C3%A1ctica)
+1. [Objetivos específicos de la práctica](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EM  G.md#objetivos-espec%C3%ADficos-de-la-pr%C3%A1ctica)
 2. [Materiales y métodos]
 3. [Resultados]
 4. [Bibliografía]
