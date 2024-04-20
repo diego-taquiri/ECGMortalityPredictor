@@ -151,17 +151,17 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 <p align="center"><b>Tabla 4.</b> Ploteo de la simulación de un paro cardíaco en Python. <br> 
 
 ### Discusión
-- <p align="justify"><b>Respiración normal:</b>
+<p align="justify"><b>Respiración normal:</b>
 <p align="justify">Durante la respiración normal, se ve una variación rítmica en el ECG debido a la influencia del sistema nervioso autónomo en el corazón. Esto se manifiesta como un aumento en la frecuencia cardíaca durante la inhalación y una disminución durante la exhalación. <br> 
-- <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER (5 segundos):</b>
+<p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER (5 segundos):</b>
 <p align="justify">Durante la inhalación, es probable que veas un ligero aumento en la frecuencia cardíaca debido a la activación del sistema nervioso simpático, que prepara al cuerpo para la absorción de oxígeno. Durante la exhalación, es probable que la frecuencia cardíaca disminuya ligeramente a medida que el sistema nervioso parasimpático predomina, facilitando la relajación. Esta variabilidad en la frecuencia cardíaca es un indicador de un sistema nervioso autónomo saludable y una función cardiovascular adecuada. [3] <br> 
-- <p align="justify"><b>Fase inicial antes del entrenamiento - frecuencia cardíaca:</b>
+<p align="justify"><b>Fase inicial antes del entrenamiento - frecuencia cardíaca:</b>
 <p align="justify">La frecuencia cardíaca en reposo puede variar significativamente entre personas y se ve influenciada por factores como la edad, el nivel de condición física, el estado emocional y la salud cardiovascular general. Una frecuencia cardíaca en reposo más baja generalmente se asocia con una mejor condición física y una función cardiovascular más eficiente.[4] <br> 
-- <p align="justify"><b>Fase inicial después del entrenamiento - frecuencia cardíaca:</b>
+<p align="justify"><b>Fase inicial después del entrenamiento - frecuencia cardíaca:</b>
 <p align="justify">Durante el ejercicio intenso como los burpees, se ve un aumento sustancial en la frecuencia cardíaca y posiblemente en la amplitud y la forma de las ondas del ECG. Este aumento en la frecuencia cardíaca es una respuesta fisiológica normal al aumento de la demanda de oxígeno y energía durante el ejercicio. Además, es posible observar cambios en la forma de onda del ECG debido al estrés físico inducido por el ejercicio, como una mayor variabilidad en el intervalo RR (intervalo entre latidos). [5] Después del ejercicio, esperarías ver una disminución gradual en la frecuencia cardíaca a medida que el cuerpo se recupera del esfuerzo. Durante esta fase, es posible que también observes una disminución en la variabilidad de la frecuencia cardíaca a medida que el sistema nervioso autónomo regresa a un estado de equilibrio. <br> 
-- <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER (10 segundos):</b>
+<p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER (10 segundos):</b>
 <p align="justify">Un ciclo de respiración más prolongado puede tener efectos más pronunciados en la variabilidad del ritmo cardíaco. Durante la fase de inhalación profunda, es probable que veas un aumento en la frecuencia cardíaca debido a la activación del sistema nervioso simpático y la mayor demanda de oxígeno. Durante la fase de exhalación prolongada, es probable que observes una disminución en la frecuencia cardíaca a medida que el sistema nervioso parasimpático predomina y el cuerpo se relaja aún más. <br> 
-- <p align="justify"><b>Simulación de un paro cardíaco:</b> 
+<p align="justify"><b>Simulación de un paro cardíaco:</b> 
 <p align="justify">Durante la simulación de paro cardíaco, vemos patrones anormales en el ECG que indican una función cardíaca comprometida. El ProSim4 genera 4 pulsos distintivos para representar un paro cardiaco, el CVP, la taquicardia ventricular, la fibrilacion ventricular severa y finalmente la asistolia:
    <li>Fase de CVP (Compresión Ventricular Prematura):
       En esta fase, se observan irregularidades en el trazado del ECG que sugieren la presencia de contracciones prematuras de los ventrículos. Estas                    contracciones pueden ocurrir fuera del ritmo cardíaco normal y podrían indicar una disfunción eléctrica del corazón. [6]
