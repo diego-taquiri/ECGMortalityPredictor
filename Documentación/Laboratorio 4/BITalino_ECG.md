@@ -42,11 +42,11 @@ Lista de participantes:
   <li> Realizar una inhalación larga (~10 segundos) seguida de contener la respiración durante varios segundos (~10 segundos).</li>
 </ol>
 
-Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso del ProSim 4 - Vital signs simulator. 
+Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso del ProSim 4 - Vital signs simulator. Como puede observarse en la figura 3, hubo una equivocación en la colocación de los electrodos, ya que 
    
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/fluke.jpg" alt="Descripción de la imagen" width="300"><br> 
-<b>Figura 1.</b> Conexiones de cable de electrodo en el Fluke <br> 
+<b>Figura 3.</b> Conexiones de cable de electrodo en el Fluke <br> 
 
 ### Resultados
 - <p align="justify"><b>Respiración normal:</b>
