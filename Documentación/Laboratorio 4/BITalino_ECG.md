@@ -106,6 +106,27 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
     </table>
 </div>
 
+<div>
+    <table style="width:100%;">
+        <tr>
+            <th style="width:50%;">Paro cardíaco 1</th>
+            <th style="width:50%;">Paro cardíaco 2</th>
+        </tr>
+        <tr>
+            <td><img src="plots/ecg-paro_cardiaco-1.png" style="width:100%;"></td>
+            <td><img src="plots/ecg-paro_cardiaco-2.png" style="width:100%;"></td>
+        </tr>
+        <tr>
+            <th style="width:50%;">Paro cardíaco 3</th>
+            <th style="width:50%;">Paro cardíaco 4</th>
+        </tr>
+        <tr>
+            <td><img src="plots/ecg-paro_cardiaco-3.png" style="width:100%;"></td>
+            <td><img src="plots/ecg-paro_cardiaco-4.png" style="width:100%;"></td>
+        </tr>
+    </table>
+</div>
+
 ### Discusión
 - <p align="justify"><b>Respiración normal:</b>
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER:</b>
