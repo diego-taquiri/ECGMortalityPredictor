@@ -71,6 +71,27 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 - <p align="justify">Protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía.
 
 <p align="center">
+  <a href="https://youtu.be/8PnidbbtLkQ">
+    <img src="https://img.youtube.com/vi/8PnidbbtLkQ/0.jpg" alt="Miniatura del video" width="350">
+  </a>
+</p>
+<p align="center"><b>Video X.</b> Video de la respiración normal. <br> 
+
+<p align="center">
+  <a href="https://youtu.be/u8qXzgWzAVI">
+    <img src="https://img.youtube.com/vi/u8qXzgWzAVI/0.jpg" alt="Miniatura del video" width="350">
+  </a>
+</p>
+<p align="center"><b>Video X.</b> Video de ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER largo. <br> 
+
+<p align="center">
+  <a href="https://youtu.be/9TthaNQQPNw">
+    <img src="https://img.youtube.com/vi/9TthaNQQPNw/0.jpg" alt="Miniatura del video" width="350">
+  </a>
+</p>
+<p align="center"><b>Video X.</b> Video de la fase inicial de 30 segundos. <br> 
+   
+<p align="center">
   <a href="https://youtu.be/GUYjouPUTFM">
     <img src="https://img.youtube.com/vi/GUYjouPUTFM/0.jpg" alt="Miniatura del video" width="350">
   </a>
