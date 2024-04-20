@@ -28,4 +28,4 @@ Lista de participantes:
 #### Archivo de los datos de la señal ploteada
 #### Ploteo de las señales en Python
 
-### BibliografÍa 
+### Bibliografía 
