@@ -162,11 +162,23 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER (10 segundos):</b>
 <p align="justify">Un ciclo de respiración más prolongado puede tener efectos más pronunciados en la variabilidad del ritmo cardíaco. Durante la fase de inhalación profunda, es probable que veas un aumento en la frecuencia cardíaca debido a la activación del sistema nervioso simpático y la mayor demanda de oxígeno. Durante la fase de exhalación prolongada, es probable que observes una disminución en la frecuencia cardíaca a medida que el sistema nervioso parasimpático predomina y el cuerpo se relaja aún más.
 - <p align="justify"><b>Simulación de un paro cardíaco:</b> 
-<p align="justify">
-
+<p align="justify">Durante la simulación de paro cardíaco, vemos patrones anormales en el ECG que indican una función cardíaca comprometida. El ProSim4 genera 4 pulsos distintivos para representar un paro cardiaco, el CVP, la taquicardia ventricular, la fibrilacion ventricular severa y finalmente la asistolia:
+   <li>Fase de CVP (Compresión Ventricular Prematura):
+      En esta fase, se observan irregularidades en el trazado del ECG que sugieren la presencia de contracciones prematuras de los ventrículos. Estas                    contracciones pueden ocurrir fuera del ritmo cardíaco normal y podrían indicar una disfunción eléctrica del corazón. [6]
+   <li>Fase de Taquicardia Ventricular:
+      Durante la taquicardia ventricular, se ve un patrón de onda en el ECG que indica una rápida y descoordinada actividad eléctrica en los ventrículos.                Esto se manifestaría como una serie de complejos ventriculares amplios y rápidos en el trazado del ECG. Este tipo de arritmia puede llevar a una fibrilacion       auricular, lo cual coincide con la siguiente fase que tiene programada el ProSim . [7]
+   <li>Fase de Fibrilación Auricular Severa:
+      La fibrilación auricular severa se caracteriza por la presencia de ondas irregulares y caóticas en el ECG, que reflejan una actividad eléctrica                    desorganizada en las aurículas. Esto se traduce en una ausencia de contracciones auriculares efectivas y puede resultar en una disminución significativa           del gasto cardíaco y la perfusión de órganos vitales. [8]
+   <li>Fase de Asistolia:
+      La asistolia se define como la ausencia total de actividad eléctrica en el corazón, lo que resulta en una línea plana en el trazado del ECG. Esta fase             representa una emergencia médica grave y requiere intervención inmediata, como la administración de RCP y desfibrilación y en la mayoria de casos como este        implica la muerte del paciente. [9]
+      
 ### Bibliografía 
 <p align="justify">[1] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide2_ECG.pdf
 <p align="justify">[2] Users Manual, “Vital Signs Simulator”, Flukebiomedical.com. [En línea]. Disponible en: https://www.flukebiomedical.com/sites/default/files/resources/Pro4____umeng0300.pdf.
 <p align="justify">[3] “Cómo el cuerpo controla la respiración”. NHLBI, NIH. Accedido el 20 de abril de 2024. [En línea]. Disponible: https://www.nhlbi.nih.gov/es/salud/pulmones/controles-respiratorios-del-cuerpo
 <p align="justify">[4] E. Laskowski. “Dos maneras fáciles y precisas de medir tu frecuencia cardíaca”. Mayo Clinic. Accedido el 20 de abril de 2024. [En línea]. Disponible: https://www.mayoclinic.org/es/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979#:~:text=Generalmente,%20una%20frecuencia%20cardíaca%20más,a%2040%20latidos%20por%20minuto.
 <p align="justify">[5] D. Anderson. “Real-time ECG for objective stress level measurement”. Diva Portal. Accedido el 20 de abril de 2024. [En línea]. Disponible: https://www.diva-portal.org/smash/get/diva2:1119950/FULLTEXT01.pdf
+<p align="justify">[6] S. Sánchez-Morago. “CONTRACCIONES VENTRICULARES PREMATURAS : ¿SON TODAS IGUALES?” SEEUE - Sociedad Española de Enfermería de Urgencias y Emergencias. Accedido el 20 de abril de 2024. [En línea]. Disponible: https://www.enfermeriadeurgencias.com/ciber/PRIMERA_EPOCA/2006/octubre/contraccionesventriculares.htm
+<p align="justify">[7] B. Benito y M. Josephson. “Taquicardia ventricular en la enfermedad coronaria | Revista Española de Cardiología”. Revista Española de Cardiología. Accedido el 20 de abril de 2024. [En línea]. Disponible: https://www.revespcardiol.org/es-taquicardia-ventricular-enfermedad-coronaria-articulo-S0300893212003284
+<p align="justify">[8] M. Cardenas. “Fibrilación auricular”. Scielo. Accedido el 20 de abril de 2024. [En línea]. Disponible: https://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S1405-99402007000600003
+<p align="justify">[9] M. Bravo. “ACLS/ Asistolía – AESP”. Síntesis de Conocimientos. Accedido el 20 de abril de 2024. [En línea]. Disponible: https://sintesis.med.uchile.cl/revision/r-de-urgencias/14186-acls-asistolia-aesp
