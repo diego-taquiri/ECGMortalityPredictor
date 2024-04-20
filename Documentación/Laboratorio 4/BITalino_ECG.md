@@ -58,6 +58,9 @@ Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso d
 - <p align="justify"><b>Simulación de un paro cardíaco:</b>
 
 #### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
+- <p align="justify">Protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía.
+- <p align="justify">Simulación de un paro cardíaco.
+
 #### Archivo de los datos de la señal ploteada
 #### Ploteo de las señales en Python
 
