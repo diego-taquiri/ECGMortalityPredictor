@@ -34,17 +34,13 @@ Lista de participantes:
 <p align="center"><b>Figura 2.</b> Colocación de electrodos para la derivación I: IN+ (rojo) e IN-(negro) en las muñecas y REF (blanco) en la cresta ilíaca. [1] <br> <br> 
 
 <p align="justify">El protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía fue el de la guía experimental de BITalino [1]: <br>
-  <p align="justify"> 1. Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal) durante 30 segundos.<br>
-  <p align="justify"> 2. Repetir un ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER tres veces, manteniendo la respiración y fases de reposo durante cinco segundos.<br>
-  <p align="justify"> 3. Registrar otra fase inicial de 30 segundos.<br>
-  <p align="justify"> 4. Realizar 10 burpees y observa tu frecuencia cardíaca antes y después del entrenamiento.<br>
-  <p align="justify"> 5. Registrar otra fase inicial de 30 segundos.<br>
-  <p align="justify"> 6. Realizar una inhalación larga (~10 segundos) seguida de contener la respiración durante varios segundos (~10 segundos).<br>
-
 <ol>
-  <li>Elemento 1</li>Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal) durante 30 segundos.
-  <li>Elemento 2</li>Repetir un ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER tres veces, manteniendo la respiración y fases de reposo durante cinco segundos.
-  <li>Elemento 3</li>Registrar otra fase inicial de 30 segundos.
+  <li>Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal) durante 30 segundos.</li>
+  <li>Repetir un ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER tres veces, manteniendo la respiración y fases de reposo durante cinco segundos.</li>
+  <li> Registrar otra fase inicial de 30 segundos.</li>
+  <li> Realizar 10 burpees y observa tu frecuencia cardíaca antes y después del entrenamiento.</li>
+  <li> Registrar otra fase inicial de 30 segundos.</li>
+  <li> Realizar una inhalación larga (~10 segundos) seguida de contener la respiración durante varios segundos (~10 segundos).</li>
 </ol>
 
 ### Resultados
