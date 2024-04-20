@@ -70,9 +70,8 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 #### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
 - <p align="justify">Protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía.
 - <p align="justify">Simulación de un paro cardíaco.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9JaGJ30xAS8?si=te9lJH_X4mWTFH7d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9JaGJ30xAS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9JaGJ30xAS8?si=te9lJH_X4mWTFH7d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Ploteo de las señales en Python
 
