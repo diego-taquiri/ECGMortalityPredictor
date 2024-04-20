@@ -43,6 +43,8 @@ Lista de participantes:
   <li> Realizar una inhalación larga (~10 segundos) seguida de contener la respiración durante varios segundos (~10 segundos).</li>
 </ol>
 
+Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso del ProSim 4 - Vital signs simulator. 
+
 ### Resultados
 - <p align="justify"><b>Respiración normal:</b>
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER:</b>
@@ -50,6 +52,7 @@ Lista de participantes:
 - <p align="justify"><b>Frecuencia cardíaca antes y después del entrenamiento:</b>
 - <p align="justify"><b>Respiración normal:</b>
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER largo:</b>
+- <p align="justify"><b>Simulación de un paro cardíaco:</b>
 
 #### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
 #### Archivo de los datos de la señal ploteada
