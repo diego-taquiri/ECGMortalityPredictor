@@ -70,47 +70,14 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 #### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
 - <p align="justify">Protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía.
 
-<p align="center">
-  <a href="https://youtu.be/8PnidbbtLkQ">
-    <img src="https://img.youtube.com/vi/8PnidbbtLkQ/0.jpg" alt="Miniatura del video" width="350">
-  </a>
-</p>
-<p align="center"><b>Video X.</b> Video de la respiración normal. <br> 
-
-<p align="center">
-  <a href="https://youtu.be/u8qXzgWzAVI">
-    <img src="https://img.youtube.com/vi/u8qXzgWzAVI/0.jpg" alt="Miniatura del video" width="350">
-  </a>
-</p>
-<p align="center"><b>Video X.</b> Video de ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER largo. <br> 
-
-<p align="center">
-  <a href="https://youtu.be/9TthaNQQPNw">
-    <img src="https://img.youtube.com/vi/9TthaNQQPNw/0.jpg" alt="Miniatura del video" width="350">
-  </a>
-</p>
-<p align="center"><b>Video X.</b> Video de la fase inicial de 30 segundos. <br> 
-   
-<p align="center">
-  <a href="https://youtu.be/GUYjouPUTFM">
-    <img src="https://img.youtube.com/vi/GUYjouPUTFM/0.jpg" alt="Miniatura del video" width="350">
-  </a>
-</p>
-<p align="center"><b>Video X.</b> Video de los 10 burpees realizados. <br> 
-   
-<p align="center">
-  <a href="https://youtu.be/IL7Me2n_vhA">
-    <img src="https://img.youtube.com/vi/IL7Me2n_vhA/0.jpg" alt="Miniatura del video" width="350">
-  </a>
-</p>
-<p align="center"><b>Video X.</b> Video de la fase inicial de 30 segundos después de los burpees. <br> 
-
-<p align="center">
-  <a href="https://youtu.be/av1N9T9M1a4">
-    <img src="https://img.youtube.com/vi/av1N9T9M1a4/0.jpg" alt="Miniatura del video" width="350">
-  </a>
-</p>
-<p align="center"><b>Video X.</b> Video del ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER largo. <br> 
+| Columna 1 | Columna 2 | Columna 3 |
+| --------- | --------- | --------- |
+| Texto     | <p align="center"><a href="https://youtu.be/8PnidbbtLkQ"><img src="https://img.youtube.com/vi/8PnidbbtLkQ/0.jpg" alt="Miniatura del video" width="350"></a></p><p align="center"><b>Video X.</b> Video de la respiración normal.</p> | Texto     |
+| Texto     | <p align="center"><a href="https://youtu.be/u8qXzgWzAVI"><img src="https://img.youtube.com/vi/u8qXzgWzAVI/0.jpg" alt="Miniatura del video" width="350"></a></p><p align="center"><b>Video X.</b> Video de ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER largo.</p> | Texto     |
+| Texto     | <p align="center"><a href="https://youtu.be/9TthaNQQPNw"><img src="https://img.youtube.com/vi/9TthaNQQPNw/0.jpg" alt="Miniatura del video" width="350"></a></p><p align="center"><b>Video X.</b> Video de la fase inicial de 30 segundos.</p> | Texto     |
+| Texto     | <p align="center"><a href="https://youtu.be/GUYjouPUTFM"><img src="https://img.youtube.com/vi/GUYjouPUTFM/0.jpg" alt="Miniatura del video" width="350"></a></p><p align="center"><b>Video X.</b> Video de los 10 burpees realizados.</p> | Texto     |
+| Texto     | <p align="center"><a href="https://youtu.be/IL7Me2n_vhA"><img src="https://img.youtube.com/vi/IL7Me2n_vhA/0.jpg" alt="Miniatura del video" width="350"></a></p><p align="center"><b>Video X.</b> Video de la fase inicial de 30 segundos después de los burpees.</p> | Texto     |
+| Texto     | <p align="center"><a href="https://youtu.be/av1N9T9M1a4"><img src="https://img.youtube.com/vi/av1N9T9M1a4/0.jpg" alt="Miniatura del video" width="350"></a></p><p align="center"><b>Video X.</b> Video del ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER largo.</p> | Texto     |
 
 - <p align="justify">Simulación de un paro cardíaco.
 
