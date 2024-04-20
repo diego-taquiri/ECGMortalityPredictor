@@ -58,7 +58,7 @@ Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso d
 - <p align="justify"><b>Simulación de un paro cardíaco:</b> Siendo las autosecuencias una serie de pasos que cambian la salida del producto automáticamente, se tiene la siguiente tabla que representa los 5 pasos antes de producirse un paro cardíaco. [2]
 
 <p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/heartf.png" alt="Descripción de la imagen" width="300"><br> 
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/heartf.png" alt="Descripción de la imagen" width="400"><br> 
 <b>Figura 4.</b>Secuencia de parada cardíaca. [2] <br> 
 
 Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 5).
