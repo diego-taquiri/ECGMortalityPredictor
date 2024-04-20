@@ -156,14 +156,17 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER (5 segundos):</b>
 <p align="justify">Durante la inhalación, es probable que veas un ligero aumento en la frecuencia cardíaca debido a la activación del sistema nervioso simpático, que prepara al cuerpo para la absorción de oxígeno. Durante la exhalación, es probable que la frecuencia cardíaca disminuya ligeramente a medida que el sistema nervioso parasimpático predomina, facilitando la relajación. Esta variabilidad en la frecuencia cardíaca es un indicador de un sistema nervioso autónomo saludable y una función cardiovascular adecuada. [3]
 - <p align="justify"><b>Fase inicial antes del entrenamiento - frecuencia cardíaca:</b>
-<p align="justify">
+<p align="justify">La frecuencia cardíaca en reposo puede variar significativamente entre personas y se ve influenciada por factores como la edad, el nivel de condición física, el estado emocional y la salud cardiovascular general. Una frecuencia cardíaca en reposo más baja generalmente se asocia con una mejor condición física y una función cardiovascular más eficiente.[4]
 - <p align="justify"><b>Fase inicial después del entrenamiento - frecuencia cardíaca:</b>
-<p align="justify">
+<p align="justify">Durante el ejercicio intenso como los burpees, se ve un aumento sustancial en la frecuencia cardíaca y posiblemente en la amplitud y la forma de las ondas del ECG. Este aumento en la frecuencia cardíaca es una respuesta fisiológica normal al aumento de la demanda de oxígeno y energía durante el ejercicio. Además, es posible observar cambios en la forma de onda del ECG debido al estrés físico inducido por el ejercicio, como una mayor variabilidad en el intervalo RR (intervalo entre latidos). [5] Después del ejercicio, esperarías ver una disminución gradual en la frecuencia cardíaca a medida que el cuerpo se recupera del esfuerzo. Durante esta fase, es posible que también observes una disminución en la variabilidad de la frecuencia cardíaca a medida que el sistema nervioso autónomo regresa a un estado de equilibrio.
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER (10 segundos):</b>
-<p align="justify">
+<p align="justify">Un ciclo de respiración más prolongado puede tener efectos más pronunciados en la variabilidad del ritmo cardíaco. Durante la fase de inhalación profunda, es probable que veas un aumento en la frecuencia cardíaca debido a la activación del sistema nervioso simpático y la mayor demanda de oxígeno. Durante la fase de exhalación prolongada, es probable que observes una disminución en la frecuencia cardíaca a medida que el sistema nervioso parasimpático predomina y el cuerpo se relaja aún más.
 - <p align="justify"><b>Simulación de un paro cardíaco:</b> 
 <p align="justify">
 
 ### Bibliografía 
 <p align="justify">[1] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide2_ECG.pdf
 <p align="justify">[2] Users Manual, “Vital Signs Simulator”, Flukebiomedical.com. [En línea]. Disponible en: https://www.flukebiomedical.com/sites/default/files/resources/Pro4____umeng0300.pdf.
+<p align="justify">[3] “Cómo el cuerpo controla la respiración”. NHLBI, NIH. Accedido el 20 de abril de 2024. [En línea]. Disponible: https://www.nhlbi.nih.gov/es/salud/pulmones/controles-respiratorios-del-cuerpo
+<p align="justify">[4] E. Laskowski. “Dos maneras fáciles y precisas de medir tu frecuencia cardíaca”. Mayo Clinic. Accedido el 20 de abril de 2024. [En línea]. Disponible: https://www.mayoclinic.org/es/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979#:~:text=Generalmente,%20una%20frecuencia%20cardíaca%20más,a%2040%20latidos%20por%20minuto.
+<p align="justify">[5] D. Anderson. “Real-time ECG for objective stress level measurement”. Diva Portal. Accedido el 20 de abril de 2024. [En línea]. Disponible: https://www.diva-portal.org/smash/get/diva2:1119950/FULLTEXT01.pdf
