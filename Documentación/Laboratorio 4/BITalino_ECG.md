@@ -33,13 +33,13 @@ Lista de participantes:
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/position.jpg" alt="Descripción de la imagen" width="300"><br> 
 <p align="center"><b>Figura 2.</b> Colocación de electrodos para la derivación I: IN+ (rojo) e IN-(negro) en las muñecas y REF (blanco) en la cresta ilíaca. [1] <br> <br> 
 
-<p align="justify">El protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía fue el de la guía experimental de BITalino [1]: 
-1. Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal) durante 30 segundos.
-2. Repetir un ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER tres veces, manteniendo la respiración y fases de reposo durante cinco segundos.
-3. Registrar otra fase inicial de 30 segundos.
-4. Realizar 10 burpees y observa tu frecuencia cardíaca antes, durante y después del entrenamiento.
-5. Registrar otra fase inicial de 30 segundos.
-6. Realizar una inhalación larga (~10 segundos) seguida de contener la respiración durante varios segundos (~10 segundos)..
+<p align="justify">El protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía fue el de la guía experimental de BITalino [1]: <br>
+   1. Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal) durante 30 segundos.<br>
+   2. Repetir un ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER tres veces, manteniendo la respiración y fases de reposo durante cinco segundos.<br>
+   3. Registrar otra fase inicial de 30 segundos.<br>
+   4. Realizar 10 burpees y observa tu frecuencia cardíaca antes, durante y después del entrenamiento.<br>
+   5. Registrar otra fase inicial de 30 segundos.<br>
+   6. Realizar una inhalación larga (~10 segundos) seguida de contener la respiración durante varios segundos (~10 segundos).<br>
 
 ### Resultados
 
