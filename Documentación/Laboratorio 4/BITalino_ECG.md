@@ -71,11 +71,25 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 - <p align="justify">Protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía.
 
 <p align="center">
+  <a href="https://youtu.be/GUYjouPUTFM">
+    <img src="https://img.youtube.com/vi/GUYjouPUTFM/0.jpg" alt="Miniatura del video" width="350">
+  </a>
+</p>
+<p align="center"><b>Video X.</b> Video de los 10 burpees realizados. <br> 
+   
+<p align="center">
   <a href="https://youtu.be/IL7Me2n_vhA">
     <img src="https://img.youtube.com/vi/IL7Me2n_vhA/0.jpg" alt="Miniatura del video" width="350">
   </a>
 </p>
 <p align="center"><b>Video X.</b> Video de la fase inicial de 30 segundos después de los burpees. <br> 
+
+<p align="center">
+  <a href="https://youtu.be/av1N9T9M1a4">
+    <img src="https://img.youtube.com/vi/av1N9T9M1a4/0.jpg" alt="Miniatura del video" width="350">
+  </a>
+</p>
+<p align="center"><b>Video X.</b> Video del ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER largo. <br> 
 
 - <p align="justify">Simulación de un paro cardíaco.
 
