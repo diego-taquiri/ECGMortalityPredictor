@@ -152,6 +152,7 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 
 ### Discusión
 - <p align="justify"><b>Respiración normal:</b>
+<p align="justify">Durante la respiración normal, se ve una variación rítmica en el ECG debido a la influencia del sistema nervioso autónomo en el corazón. Esto se manifiesta como un aumento en la frecuencia cardíaca durante la inhalación y una disminución durante la exhalación.
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER (5 segundos):</b>
 - <p align="justify"><b>Fase inicial antes del entrenamiento - frecuencia cardíaca:</b>
 - <p align="justify"><b>Fase inicial después del entrenamiento - frecuencia cardíaca:</b>
