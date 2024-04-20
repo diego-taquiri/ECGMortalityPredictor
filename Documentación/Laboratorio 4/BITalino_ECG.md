@@ -46,7 +46,7 @@ Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso d
    
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/fluke.jpg" alt="Descripción de la imagen" width="300"><br> 
-<b>Figura 3.</b> Conexiones de los cables del electrodo en el FLUKE <br> 
+<b>Figura 3.</b> Conexiones de los cables del electrodo en el FLUKE. <br> 
 
 ### Resultados
 - <p align="justify"><b>Respiración normal:</b>
