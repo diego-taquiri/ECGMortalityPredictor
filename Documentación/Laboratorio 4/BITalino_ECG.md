@@ -26,6 +26,15 @@ Lista de participantes:
 <p align="center">
 <img src="" alt="Descripción de la imagen" width="300"><br> 
 Figura 1. Conexiones de cable de electrodo en BITalino. <br> 
+
+<p align="justify"> Los electrodos positivo y negativo se colocaron en las muñecas, mientras que el de referencia sobre la cresta ilíaca. Las posiciones pueden observarse en la figura 2. <br> 
+
+<p align="center">
+<img src="" alt="Descripción de la imagen" width="300"><br> 
+<p align="center">Figura 2. Posicionamiento de electrodos según la guía de BITalino. Colocación de electrodos para la derivación I: IN+ (rojo) e IN-(negro) en las muñecas y REF (blanco) en la cresta ilíaca. [1] <br> <br> 
+
+<p align="justify">El protocolo seguido fue el de la guía experimental de BITalino. Se evaluaron tres situaciones. Una primera correspondiente a reposo del grupo muscular, una segunda correspondiente a la flexión del antebrazo sin resistencia y una tercera correspondiente a la flexión del antebrazo con resistencia al movimiento. Este estudio se realizó a dos participantes en igualdad de condiciones, tanto en posicionamiento de electrodos, como movimientos realizados; esto con el objetivo de realizar la comparación de las señales obtenidas.
+
    
 ### Resultados
 
