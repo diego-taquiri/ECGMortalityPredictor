@@ -27,7 +27,7 @@ Lista de participantes:
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/BITalino.jpg" alt="Descripción de la imagen" width="300"><br> 
 <b>Figura 1.</b> Conexiones de cable de electrodo en BITalino. <br> 
 
-<p align="justify"> Los electrodos positivo y negativo se colocaron en las muñecas, mientras que el de referencia sobre la cresta ilíaca. Las posiciones pueden observarse en la figura 2. <br> 
+<p align="justify"> Una posible configuración del sensor de ECG BITalino para Einthoven Lead I es posicionando los electrodos positivo y negativo en las muñecas, mientras que el de referencia sobre la cresta ilíaca. [1] Las posiciones pueden observarse en la figura 2. <br> 
 
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/position.jpg" alt="Descripción de la imagen" width="300"><br> 
