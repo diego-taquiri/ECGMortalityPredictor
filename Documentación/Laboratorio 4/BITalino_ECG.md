@@ -34,4 +34,4 @@ Figura 1. Conexiones de cable de electrodo en BITalino. <br>
 #### Ploteo de las señales en Python
 
 ### Bibliografía 
-<p align="justify">[1] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Available at: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide1_ECG.pdf 
+<p align="justify">[1] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Available at: https://support.pluxbiosignals.com/knowledge-base/bitalino-lab-guides/
