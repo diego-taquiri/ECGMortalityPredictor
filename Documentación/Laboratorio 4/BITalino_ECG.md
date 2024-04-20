@@ -47,7 +47,7 @@ Lista de participantes:
 - <p align="justify"><b>Respiración normal:</b>
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER:</b>
 - <p align="justify"><b>Respiración normal:</b>
-- <p align="justify"><b>Frecuencia cardíaca antes y después del entrenamiento</b>
+- <p align="justify"><b>Frecuencia cardíaca antes y después del entrenamiento:</b>
 - <p align="justify"><b>Respiración normal:</b>
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER largo:</b>
 
