@@ -151,8 +151,8 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 ### Discusión
 - <p align="justify"><b>Respiración normal:</b>
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER (5 segundos):</b>
-- <p align="justify"><b>Respiración normal antes del entrenamiento - frecuencia cardíaca:</b>
-- <p align="justify"><b>Respiración normal después del entrenamiento - frecuencia cardíaca:</b>
+- <p align="justify"><b>Fase inicial antes del entrenamiento - frecuencia cardíaca:</b>
+- <p align="justify"><b>Fase inicial después del entrenamiento - frecuencia cardíaca:</b>
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER (10 segundos):</b>
 - <p align="justify"><b>Simulación de un paro cardíaco:</b> 
 
