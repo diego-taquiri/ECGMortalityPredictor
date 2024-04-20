@@ -21,7 +21,7 @@ Lista de participantes:
 - Extraer la información de las señales ECG del software OpenSignals (r)evolution.
 
 ### Materiales y métodos
-<p align="justify">Se realizó la medición de EMG de acuerdo a las instrucciones de la guía experimental de BITalino sobre electromiografía. [1] La medición se realizó utilizando un cable de electrodo de tres derivaciones conectado al terminal del BITalino correspondiente a EMG (Figura 1). <br>
+<p align="justify">Se realizó la medición de ECG de acuerdo a las instrucciones de la guía experimental de BITalino sobre electromiografía. [1] La medición se realizó utilizando un cable de electrodo de tres derivaciones conectado al terminal del BITalino correspondiente a ECG (Figura 1). <br>
    
 <p align="center">
 <img src="" alt="Descripción de la imagen" width="300"><br> 
@@ -34,4 +34,4 @@ Figura 1. Conexiones de cable de electrodo en BITalino. <br>
 #### Ploteo de las señales en Python
 
 ### Bibliografía 
-<p align="justify">[1] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Available at: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide1_EMG.pdf 
+<p align="justify">[1] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Available at: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide1_ECG.pdf 
