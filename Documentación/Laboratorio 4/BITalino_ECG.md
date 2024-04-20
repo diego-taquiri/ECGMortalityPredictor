@@ -64,7 +64,7 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/step3.jpg" alt="Descripción de la primera imagen" width="200">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/step4.jpg" alt="Descripción de la primera imagen" width="200">
 </div>
-<p align="center"><b>Figura 5.</b> Secuencia de parada cardíaca: (a)CVP, (b) Taquicardia ventricular, (c) Fibrilación ventricular severa y (d) Asistolia. <br> 
+<p align="center"><b>Figura 5.</b> Secuencia de parada cardíaca: (a) CVP, (b) Taquicardia ventricular, (c) Fibrilación ventricular severa y (d) Asistolia. <br> 
 
 ### Resultados
 #### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
@@ -82,6 +82,7 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 
 - <p align="justify">Simulación de un paro cardíaco.
 
+<p align="center">
 | Protocolo | Conexiones electrodos-cuerpo | Señal ploteada en OpenSignals |
 | --------- | --------- | --------- |
 | Simulación de un paro cardíaco| <p align="center"><a href="https://www.youtube.com/watch?v=9JaGJ30xAS8"><img src="https://img.youtube.com/vi/9JaGJ30xAS8/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
