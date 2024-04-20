@@ -72,8 +72,11 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 - <p align="justify">Simulación de un paro cardíaco.
 
 <p align="center">
-  [![Alt text](https://img.youtube.com/vi/9JaGJ30xAS8/0.jpg)](https://www.youtube.com/watch?v=9JaGJ30xAS8)
+  <a href="https://www.youtube.com/watch?v=9JaGJ30xAS8">
+    <img src="https://img.youtube.com/vi/9JaGJ30xAS8/0.jpg" alt="Miniatura del video">
+  </a>
 </p>
+
 <p align="center"><b>Video X.</b> Video de la simulación de un paro cardíaco. <br> 
 
 #### Ploteo de las señales en Python
