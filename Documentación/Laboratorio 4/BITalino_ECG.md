@@ -14,7 +14,6 @@ Lista de participantes:
    - [Ploteo de las señales en Python](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/BITalino_ECG.md#ploteo-de-las-se%C3%B1ales-en-python)
 4. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/BITalino_ECG.md#bibliograf%C3%ADa)
 
-
 ### Objetivos específicos de la práctica
 - Adquirir señales biomédicas de ECG.
 - Hacer una correcta configuración de BiTalino.
@@ -44,6 +43,10 @@ Lista de participantes:
 </ol>
 
 Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso del ProSim 4 - Vital signs simulator. 
+   
+<p align="center">
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/fluke.jpg" alt="Descripción de la imagen" width="300"><br> 
+<b>Figura 1.</b> Conexiones de cable de electrodo en el Fluke <br> 
 
 ### Resultados
 - <p align="justify"><b>Respiración normal:</b>
