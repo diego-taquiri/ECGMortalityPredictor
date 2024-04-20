@@ -12,7 +12,8 @@ Lista de participantes:
    - [Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/BITalino_ECG.md#videos-mostrando-las-conexiones-electrodos-cuerpo-y-la-se%C3%B1al-ploteada-en-opensignals)
    - [Archivo de los datos de la señal ploteada](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/BITalino_ECG.md#archivo-de-los-datos-de-la-se%C3%B1al-ploteada)
    - [Ploteo de las señales en Python](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/BITalino_ECG.md#ploteo-de-las-se%C3%B1ales-en-python)
-4. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/BITalino_ECG.md#bibliograf%C3%ADa)
+4. [Discusión]()
+5. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/BITalino_ECG.md#bibliograf%C3%ADa)
 
 ### Objetivos específicos de la práctica
 - Adquirir señales biomédicas de ECG.
@@ -49,6 +50,14 @@ Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso d
 <b>Figura 3.</b> Conexiones de los cables del electrodo en el FLUKE. <br> 
 
 ### Resultados
+#### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
+- <p align="justify">Protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía.
+- <p align="justify">Simulación de un paro cardíaco.
+
+#### Archivo de los datos de la señal ploteada
+#### Ploteo de las señales en Python
+
+### Discusión
 - <p align="justify"><b>Respiración normal:</b>
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER:</b>
 - <p align="justify"><b>Respiración normal:</b>
@@ -71,13 +80,6 @@ Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso d
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/step4.jpg" alt="Descripción de la primera imagen" width="200">
 </div>
 <p align="center"><b>Figura 5.</b> Secuencia de parada cardíaca: (a)CVP, (b) Taquicardia ventricular, (c) Fibrilación ventricular severa y (d) Asistolia. <br> 
-
-#### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
-- <p align="justify">Protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía.
-- <p align="justify">Simulación de un paro cardíaco.
-
-#### Archivo de los datos de la señal ploteada
-#### Ploteo de las señales en Python
 
 ### Bibliografía 
 <p align="justify">[1] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide2_ECG.pdf
