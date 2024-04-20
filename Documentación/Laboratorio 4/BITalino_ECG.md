@@ -53,7 +53,7 @@ Siendo las autosecuencias una serie de pasos que cambian la salida del producto 
 
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/heartf.png" alt="Descripción de la imagen" width="400"><br> 
-<b>Figura 4.</b>Secuencia de parada cardíaca. [2] <br> 
+<b>Figura 4.</b> Secuencia de parada cardíaca. [2] <br> 
 
 Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 5). Esta simulación fue posteriormente visualizada en el OpenSignals a través del BITalino.
 
