@@ -1,4 +1,4 @@
-# Uso de BITalino para EMG
+# Uso de BITalino para ECG
 Lista de participantes:  
 - Mantilla M., Ana Belen  
 - Valdivia E., Erick Alexander   
@@ -24,18 +24,17 @@ Lista de participantes:
 <p align="justify">Se realizó la medición de ECG de acuerdo a las instrucciones de la guía experimental de BITalino sobre electromiografía. [1] La medición se realizó utilizando un cable de electrodo de tres derivaciones conectado al terminal del BITalino correspondiente a ECG (Figura 1). <br>
    
 <p align="center">
-<img src="" alt="Descripción de la imagen" width="300"><br> 
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/BITalino.jpg" alt="Descripción de la imagen" width="300"><br> 
 Figura 1. Conexiones de cable de electrodo en BITalino. <br> 
 
 <p align="justify"> Los electrodos positivo y negativo se colocaron en las muñecas, mientras que el de referencia sobre la cresta ilíaca. Las posiciones pueden observarse en la figura 2. <br> 
 
 <p align="center">
-<img src="" alt="Descripción de la imagen" width="300"><br> 
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/position.jpg" alt="Descripción de la imagen" width="300"><br> 
 <p align="center">Figura 2. Colocación de electrodos para la derivación I: IN+ (rojo) e IN-(negro) en las muñecas y REF (blanco) en la cresta ilíaca. [1] <br> <br> 
 
 <p align="justify">El protocolo seguido fue el de la guía experimental de BITalino. Se evaluaron tres situaciones. Una primera correspondiente a reposo del grupo muscular, una segunda correspondiente a la flexión del antebrazo sin resistencia y una tercera correspondiente a la flexión del antebrazo con resistencia al movimiento. Este estudio se realizó a dos participantes en igualdad de condiciones, tanto en posicionamiento de electrodos, como movimientos realizados; esto con el objetivo de realizar la comparación de las señales obtenidas.
 
-   
 ### Resultados
 
 #### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
