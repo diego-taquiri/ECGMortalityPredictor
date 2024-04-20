@@ -130,16 +130,16 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 <div>
     <table style="width:100%;">
         <tr>
-            <th style="width:50%;">Paro cardíaco 1</th>
-            <th style="width:50%;">Paro cardíaco 2</th>
+            <th style="width:50%;">CVP</th>
+            <th style="width:50%;">Taquicardia ventricular</th>
         </tr>
         <tr>
             <td><img src="plots/ecg-paro_cardiaco-1.png" style="width:100%;"></td>
             <td><img src="plots/ecg-paro_cardiaco-2.png" style="width:100%;"></td>
         </tr>
         <tr>
-            <th style="width:50%;">Paro cardíaco 3</th>
-            <th style="width:50%;">Paro cardíaco 4</th>
+            <th style="width:50%;">Fibrilación ventricular severa</th>
+            <th style="width:50%;">Asistolia</th>
         </tr>
         <tr>
             <td><img src="plots/ecg-paro_cardiaco-3.png" style="width:100%;"></td>
