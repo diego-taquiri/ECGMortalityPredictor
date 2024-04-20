@@ -71,9 +71,8 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 - <p align="justify">Protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía.
 - <p align="justify">Simulación de un paro cardíaco.
 
-<p align="center">
 [![Alt text](https://img.youtube.com/vi/9JaGJ30xAS8/0.jpg)](https://www.youtube.com/watch?v=9JaGJ30xAS8)
-<b>Figura 3.</b> Video de la simulación de un paro cardíaco. <br> 
+<p align="center"><b>Video X.</b> Video de la simulación de un paro cardíaco. <br> 
 
 #### Ploteo de las señales en Python
 
