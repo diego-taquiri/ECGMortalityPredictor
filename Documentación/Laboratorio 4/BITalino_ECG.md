@@ -82,10 +82,9 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 
 - <p align="justify">Simulación de un paro cardíaco.
 
-<p align="center">
 | Protocolo | Conexiones electrodos-cuerpo | Señal ploteada en OpenSignals |
-| --------- | --------- | --------- |
-| Simulación de un paro cardíaco| <p align="center"><a href="https://www.youtube.com/watch?v=9JaGJ30xAS8"><img src="https://img.youtube.com/vi/9JaGJ30xAS8/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
+| :--------: | :---------------------------: | :-----------------------------: |
+| Simulación de un paro cardíaco | <p align="center"><a href="https://www.youtube.com/watch?v=9JaGJ30xAS8"><img src="https://img.youtube.com/vi/9JaGJ30xAS8/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto |
 <p align="center"><b>Tabla 2.</b> Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals de la simulación de un paro cardíaco. <br> 
 
 #### Archivo de los datos de la señal ploteada
