@@ -71,6 +71,31 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 - <p align="justify">Protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía.
 - <p align="justify">Simulación de un paro cardíaco.
 
+#### Ploteo de las señales en Python
+
+<div>
+    <table style="width:100%;">
+        <tr>
+            <th>Reposo</th>
+        </tr>
+        <tr>
+            <td><img src="plots/ecg-reposo.png" style="width:100%;"></td>
+        </tr>
+        <tr>
+            <th>Respiración</th>
+        </tr>
+        <tr>
+            <td><img src="plots/ecg-respiracion.png" style="width:100%;"></td>
+        </tr>
+        <tr>
+            <th>Ejercicio</th>
+        </tr>
+        <tr>
+            <td><img src="plots/ecg-ejericicio.png" style="width:100%;"></td>
+        </tr>
+    </table>
+</div>
+
 #### Archivo de los datos de la señal ploteada
 #### Ploteo de las señales en Python
 
