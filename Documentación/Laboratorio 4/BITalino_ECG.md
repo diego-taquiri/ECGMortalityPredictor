@@ -82,7 +82,7 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 - [ECG raw data](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%204/ecg_raw_data)
 
 #### Ploteo de las señales en Python
-
+- <p align="justify">Protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía.
 <div>
     <table style="width:100%;">
         <tr>
@@ -106,6 +106,7 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
     </table>
 </div>
 
+- <p align="justify">Simulación de un paro cardíaco.
 <div>
     <table style="width:100%;">
         <tr>
