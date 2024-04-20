@@ -70,10 +70,10 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 #### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
 - <p align="justify">Protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía.
 
-| Columna 1 | Columna 2 | Columna 3 |
+| Columna 1 | Video de la respiración normal | Columna 3 |
 | --------- | --------- | --------- |
-| Texto     | <p align="center"><a href="https://youtu.be/8PnidbbtLkQ"><img src="https://img.youtube.com/vi/8PnidbbtLkQ/0.jpg" alt="Miniatura del video" width="350"></a></p><p align="center"><b>Video X.</b> Video de la respiración normal.</p> | Texto     |
-| Texto     | <p align="center"><a href="https://youtu.be/u8qXzgWzAVI"><img src="https://img.youtube.com/vi/u8qXzgWzAVI/0.jpg" alt="Miniatura del video" width="350"></a></p><p align="center"><b>Video X.</b> Video de ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER largo.</p> | Texto     |
+| Respiración normal     | <p align="center"><a href="https://youtu.be/8PnidbbtLkQ"><img src="https://img.youtube.com/vi/8PnidbbtLkQ/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
+| Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER largo     | <p align="center"><a href="https://youtu.be/u8qXzgWzAVI"><img src="https://img.youtube.com/vi/u8qXzgWzAVI/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
 | Texto     | <p align="center"><a href="https://youtu.be/9TthaNQQPNw"><img src="https://img.youtube.com/vi/9TthaNQQPNw/0.jpg" alt="Miniatura del video" width="350"></a></p><p align="center"><b>Video X.</b> Video de la fase inicial de 30 segundos.</p> | Texto     |
 | Texto     | <p align="center"><a href="https://youtu.be/GUYjouPUTFM"><img src="https://img.youtube.com/vi/GUYjouPUTFM/0.jpg" alt="Miniatura del video" width="350"></a></p><p align="center"><b>Video X.</b> Video de los 10 burpees realizados.</p> | Texto     |
 | Texto     | <p align="center"><a href="https://youtu.be/IL7Me2n_vhA"><img src="https://img.youtube.com/vi/IL7Me2n_vhA/0.jpg" alt="Miniatura del video" width="350"></a></p><p align="center"><b>Video X.</b> Video de la fase inicial de 30 segundos después de los burpees.</p> | Texto     |
