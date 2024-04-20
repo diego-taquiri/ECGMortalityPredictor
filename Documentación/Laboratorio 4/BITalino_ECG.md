@@ -78,6 +78,9 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 </p>
 <p align="center"><b>Video X.</b> Video de la simulación de un paro cardíaco. <br> 
 
+#### Archivo de los datos de la señal ploteada
+- [ECG raw data](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%204/ecg_raw_data)
+
 #### Ploteo de las señales en Python
 
 <div>
@@ -102,10 +105,6 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
         </tr>
     </table>
 </div>
-
-#### Archivo de los datos de la señal ploteada
-- [ECG raw data](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%204/ecg_raw_data)
-#### Ploteo de las señales en Python
 
 ### Discusión
 - <p align="justify"><b>Respiración normal:</b>
