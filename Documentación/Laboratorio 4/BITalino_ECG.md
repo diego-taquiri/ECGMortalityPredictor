@@ -21,10 +21,11 @@ Lista de participantes:
 - Extraer la información de las señales ECG del software OpenSignals (r)evolution.
 
 ### Materiales y métodos
+
+### Resultados
+
 #### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
 #### Archivo de los datos de la señal ploteada
 #### Ploteo de las señales en Python
-
-### Resultados
 
 ### Bibliografia 
