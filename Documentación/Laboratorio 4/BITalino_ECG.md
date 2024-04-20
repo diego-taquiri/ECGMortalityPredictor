@@ -73,11 +73,11 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 | Protocolo | Conexiones electrodos-cuerpo | Señal ploteada en OpenSignals |
 | --------- | --------- | --------- |
 | Respiración normal| <p align="center"><a href="https://youtu.be/8PnidbbtLkQ"><img src="https://img.youtube.com/vi/8PnidbbtLkQ/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
-| Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER largo| <p align="center"><a href="https://youtu.be/u8qXzgWzAVI"><img src="https://img.youtube.com/vi/u8qXzgWzAVI/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
+| Ciclo de INHALACIÓN-EXHALACIÓN largo| <p align="center"><a href="https://youtu.be/u8qXzgWzAVI"><img src="https://img.youtube.com/vi/u8qXzgWzAVI/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
 | Fase inicial de 30 segundos| <p align="center"><a href="https://youtu.be/9TthaNQQPNw"><img src="https://img.youtube.com/vi/9TthaNQQPNw/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
 | 10 burpees| <p align="center"><a href="https://youtu.be/GUYjouPUTFM"><img src="https://img.youtube.com/vi/GUYjouPUTFM/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
 | Fase inicial de 30 segundos después de los burpees| <p align="center"><a href="https://youtu.be/IL7Me2n_vhA"><img src="https://img.youtube.com/vi/IL7Me2n_vhA/0.jpg" alt="Miniatura del video" width="350"></a> | Texto     |
-| Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER largo| <p align="center"><a href="https://youtu.be/av1N9T9M1a4"><img src="https://img.youtube.com/vi/av1N9T9M1a4/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
+| Ciclo de INHALACIÓN-EXHALACIÓN largo| <p align="center"><a href="https://youtu.be/av1N9T9M1a4"><img src="https://img.youtube.com/vi/av1N9T9M1a4/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
 <p align="center"><b>Tabla 1.</b> Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals del protocolo. <br> 
 
 - <p align="justify">Simulación de un paro cardíaco.
