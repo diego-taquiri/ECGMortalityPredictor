@@ -61,7 +61,7 @@ Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso d
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/heartf.png" alt="Descripción de la imagen" width="400"><br> 
 <b>Figura 4.</b>Secuencia de parada cardíaca. [2] <br> 
 
-      Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 5).
+   Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 5).
 
 <div style="text-align: center;">
       <p align="center">
