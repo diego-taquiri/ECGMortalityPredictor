@@ -125,6 +125,7 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
         </tr>
     </table>
 </div>
+<p align="center"><b>Tabla 3.</b> Ploteo del protocolo en Python. <br> 
 
 - <p align="justify">Simulación de un paro cardíaco.
 <div>
@@ -147,6 +148,7 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
         </tr>
     </table>
 </div>
+<p align="center"><b>Tabla 4.</b> Ploteo de la simulación de un paro cardíaco en Python. <br> 
 
 ### Discusión
 - <p align="justify"><b>Respiración normal:</b>
