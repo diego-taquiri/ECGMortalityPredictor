@@ -41,6 +41,12 @@ Lista de participantes:
   <p align="justify"> 5. Registrar otra fase inicial de 30 segundos.<br>
   <p align="justify"> 6. Realizar una inhalación larga (~10 segundos) seguida de contener la respiración durante varios segundos (~10 segundos).<br>
 
+<ol>
+  <li>Elemento 1</li>Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal) durante 30 segundos.
+  <li>Elemento 2</li>Repetir un ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER tres veces, manteniendo la respiración y fases de reposo durante cinco segundos.
+  <li>Elemento 3</li>Registrar otra fase inicial de 30 segundos.
+</ol>
+
 ### Resultados
 - <p align="justify"><b>Respiración normal:</b>
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER:</b>
