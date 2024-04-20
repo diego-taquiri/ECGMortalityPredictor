@@ -61,7 +61,7 @@ Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso d
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/heartf.png" alt="Descripción de la imagen" width="400"><br> 
 <b>Figura 4.</b>Secuencia de parada cardíaca. [2] <br> 
 
-Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 5).
+   Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 5).
 
 <div style="text-align: center;">
       <p align="center">
@@ -70,7 +70,7 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/step3.jpg" alt="Descripción de la primera imagen" width="200">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/step4.jpg" alt="Descripción de la primera imagen" width="200">
 </div>
-<b>Figura 5.</b>Secuencia de parada cardíaca observada en FLUKE: (a)CVP, (b) Taquicardia ventricular, (c) Fibrilación ventricular severa y (d) Asistolia. <br> 
+<b>Figura 5.</b> Secuencia de parada cardíaca: (a)CVP, (b) Taquicardia ventricular, (c) Fibrilación ventricular severa y (d) Asistolia. <br> 
 
 #### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
 - <p align="justify">Protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía.
