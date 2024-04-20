@@ -154,7 +154,7 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 - <p align="justify"><b>Respiración normal:</b>
 <p align="justify">Durante la respiración normal, se ve una variación rítmica en el ECG debido a la influencia del sistema nervioso autónomo en el corazón. Esto se manifiesta como un aumento en la frecuencia cardíaca durante la inhalación y una disminución durante la exhalación.
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER (5 segundos):</b>
-<p align="justify">Durante la inhalación, es probable que veas un ligero aumento en la frecuencia cardíaca debido a la activación del sistema nervioso simpático, que prepara al cuerpo para la absorción de oxígeno. Durante la exhalación, es probable que la frecuencia cardíaca disminuya ligeramente a medida que el sistema nervioso parasimpático predomina, facilitando la relajación. Esta variabilidad en la frecuencia cardíaca es un indicador de un sistema nervioso autónomo saludable y una función cardiovascular adecuada. [1]
+<p align="justify">Durante la inhalación, es probable que veas un ligero aumento en la frecuencia cardíaca debido a la activación del sistema nervioso simpático, que prepara al cuerpo para la absorción de oxígeno. Durante la exhalación, es probable que la frecuencia cardíaca disminuya ligeramente a medida que el sistema nervioso parasimpático predomina, facilitando la relajación. Esta variabilidad en la frecuencia cardíaca es un indicador de un sistema nervioso autónomo saludable y una función cardiovascular adecuada. [3]
 - <p align="justify"><b>Fase inicial antes del entrenamiento - frecuencia cardíaca:</b>
 <p align="justify">
 - <p align="justify"><b>Fase inicial después del entrenamiento - frecuencia cardíaca:</b>
