@@ -55,10 +55,10 @@ Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso d
 - <p align="justify"><b>Frecuencia cardíaca antes y después del entrenamiento:</b>
 - <p align="justify"><b>Respiración normal:</b>
 - <p align="justify"><b>Ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER largo:</b>
-- <p align="justify"><b>Simulación de un paro cardíaco:</b> Siendo las autosecuencias una serie de pasos que cambian la salida del producto automáticamente, se tiene la siguiente tabla que representa los 5 pasos antes de producirse un paro cardíaco. 
+- <p align="justify"><b>Simulación de un paro cardíaco:</b> Siendo las autosecuencias una serie de pasos que cambian la salida del producto automáticamente, se tiene la siguiente tabla que representa los 5 pasos antes de producirse un paro cardíaco. [2]
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/heartf.png" alt="Descripción de la imagen" width="300"><br> 
-<b>Figura X.</b>Secuencia de parada cardíaca. <br> 
+<b>Figura X.</b>Secuencia de parada cardíaca. [2] <br> 
 
 #### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
 - <p align="justify">Protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía.
@@ -68,4 +68,5 @@ Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso d
 #### Ploteo de las señales en Python
 
 ### Bibliografía 
-<p align="justify">[1] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Available at: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide2_ECG.pdf
+<p align="justify">[1] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide2_ECG.pdf
+<p align="justify">[2] Users Manual, “Vital Signs Simulator”, Flukebiomedical.com. [En línea]. Disponible en: https://www.flukebiomedical.com/sites/default/files/resources/Pro4____umeng0300.pdf.
