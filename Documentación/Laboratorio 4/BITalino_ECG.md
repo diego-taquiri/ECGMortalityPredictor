@@ -73,7 +73,7 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
 | Protocolo | Conexiones electrodos-cuerpo | Señal ploteada en OpenSignals |
 | --------- | --------- | --------- |
 | Respiración normal| <p align="center"><a href="https://youtu.be/8PnidbbtLkQ"><img src="https://img.youtube.com/vi/8PnidbbtLkQ/0.jpg" alt="Miniatura del video" width="350"></a></p> | <p align="center"><a href="https://youtu.be/eqVNppHUkGQ?t=5m50s"><img src="https://img.youtube.com/vi/eqVNppHUkGQ/0.jpg" alt="Miniatura del video" width="350"></a></p>     |
-| Ciclo de INHALACIÓN-EXHALACIÓN largo| <p align="center"><a href="https://youtu.be/u8qXzgWzAVI"><img src="https://img.youtube.com/vi/u8qXzgWzAVI/0.jpg" alt="Miniatura del video" width="350"></a></p> | <p align="center"><a href="https://youtu.be/eqVNppHUkGQ?t=7m22ss"><img src="https://img.youtube.com/vi/eqVNppHUkGQ/0.jpg" alt="Miniatura del video" width="350"></a></p>     |
+| Ciclo de INHALACIÓN-EXHALACIÓN largo| <p align="center"><a href="https://youtu.be/u8qXzgWzAVI"><img src="https://img.youtube.com/vi/u8qXzgWzAVI/0.jpg" alt="Miniatura del video" width="350"></a></p> | <p align="center"><a href="https://youtu.be/eqVNppHUkGQ?t=7m22s"><img src="https://img.youtube.com/vi/eqVNppHUkGQ/0.jpg" alt="Miniatura del video" width="350"></a></p>     |
 | Fase inicial de 30 segundos| <p align="center"><a href="https://youtu.be/9TthaNQQPNw"><img src="https://img.youtube.com/vi/9TthaNQQPNw/0.jpg" alt="Miniatura del video" width="350"></a></p> | <p align="center"><a href="https://youtu.be/eqVNppHUkGQ?t=8m03s"><img src="https://img.youtube.com/vi/eqVNppHUkGQ/0.jpg" alt="Miniatura del video" width="350"></a></p>     |
 | 10 burpees| <p align="center"><a href="https://youtu.be/GUYjouPUTFM"><img src="https://img.youtube.com/vi/GUYjouPUTFM/0.jpg" alt="Miniatura del video" width="350"></a></p> | <p align="center"><a href="https://youtu.be/eqVNppHUkGQ?t=18m35s"><img src="https://img.youtube.com/vi/eqVNppHUkGQ/0.jpg" alt="Miniatura del video" width="350"></a></p>     |
 | Fase inicial de 30 segundos después de los burpees| <p align="center"><a href="https://youtu.be/IL7Me2n_vhA"><img src="https://img.youtube.com/vi/IL7Me2n_vhA/0.jpg" alt="Miniatura del video" width="350"></a> | <p align="center"><a href="https://youtu.be/eqVNppHUkGQ?t=19m00s"><img src="https://img.youtube.com/vi/eqVNppHUkGQ/0.jpg" alt="Miniatura del video" width="350"></a></p>     |
@@ -92,7 +92,8 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
   <tr>
     <td>Simulación de un paro cardíaco</td>
     <td align="center"><a href="https://www.youtube.com/watch?v=9JaGJ30xAS8"><img src="https://img.youtube.com/vi/9JaGJ30xAS8/0.jpg" alt="Miniatura del video" width="350"></a></td>
-    <td>Texto</td>
+    <td><p align="center"><a href="https://youtu.be/27zfRIN1F1g?t=3m52s"><img src="https://img.youtube.com/vi/27zfRIN1F1g/0.jpg" alt="Miniatura del video" width="350"></a></p>
+</td>
   </tr>
 </table>
 </div>
