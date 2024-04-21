@@ -102,7 +102,6 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
   </tr>
 </table>
 </div>
-<p align="center"><b>Tabla 2.</b> Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals de la simulación de un paro cardíaco. <br> 
 
 #### Archivo de los datos de la señal ploteada
 - [ECG raw data](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%204/ecg_raw_data)
