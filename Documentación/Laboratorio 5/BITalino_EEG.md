@@ -103,16 +103,18 @@ Lista de participantes:
 ### Discusión
 
 <p align="justify"><b>Línea Base - Respiración normal:</b>
-
+Durante la fase inicial de reposo de 30 segundos, la actividad cerebral se mantiene estable, reflejada en una señal EEG con una amplitud constante que no supera los 10 µV. Esta fase representa un estado basal de la actividad cerebral, donde no se observan cambios significativos en la actividad neuronal. Cabe mencionar que JD Tao y AM Mathur clasificaron la actividad encontrada por EEG en los siguiente rangos : normal (banda superior >10 µV y banda inferior <5 µV), moderadamente anormal (banda superior >10 µV y banda inferior <5 µV) o suprimido (banda superior <10 µV y banda inferior <5 µV).[6] Esta clasificación nos puede ayudar a interpretar la intensidad de las señales encontradas en las siguientes fases. 
 <p align="justify"><b>Ciclo de OJOS ABIERTOS - OJOS CERRADOS:</b>
-
+En la fase de abrir y cerrar los ojos, se evidencian fluctuaciones en la amplitud de la señal EEG. Durante los 5 segundos en los que los ojos están abiertos, se registra un aumento en la amplitud, indicativo de una mayor actividad cerebral asociada con la entrada visual. Por el contrario, durante los 5 segundos con los ojos cerrados, se observa una disminución en la amplitud, sugiriendo una reducción en la actividad cerebral relacionada con la visión.
 <p align="justify"><b>Fase de referencia:</b>
-
+En la segunda fase de reposo, las señales de EEG mantienen una amplitud constante entre 5 y 10 µV, sin superar este valor. Aunque puede haber ligeras variaciones, la actividad cerebral permanece en un estado de reposo relativamente estable, indicando una continuidad en el estado basal
 <p align="justify"><b>Ejercicios matemáticos:</b>
-      
+Durante la fase de resolución de problemas matemáticos, se produce un aumento significativo en la amplitud de la señal EEG, especialmente justo antes de que el sujeto dé una respuesta al problema. Este aumento en la amplitud sugiere un mayor compromiso cognitivo y procesamiento de información durante la tarea, reflejando una respuesta neuronal específica a la actividad cognitiva desafiante.
+
 ### Bibliografía 
 <p align="justify">[1] Schomer, Donald L., and others, 'C44EEG Analysis: Theory and Practice', in Donald L. Schomer, and Fernando H. Lopes da Silva (eds), Niedermeyer's Electroencephalography: Basic Principles, Clinical Applications, and Related Fields, 7 edn (New York, 2017; online edn, Oxford Academic, 1 Nov. 2017), https://doi.org/10.1093/med/9780190228484.003.0044
 <p align="justify">[2] Sewell L, Abbas A, Kane N. Introduction to interpretation of the EEG in intensive care. BJA Educ. 2019 Mar;19(3):74-82. doi: 10.1016/j.bjae.2018.11.002. Epub 2018 Dec 17. PMID: 33456874; PMCID: PMC7808102.
 <p align="justify">[3] EXPERIMENTAL GUIDES TO MEET y L. Y. Biosignals, “BITalino (r)evolution Lab Guide”, Pluxbiosignals.com. [En línea]. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide3_EEG.pdf
 <p align="justify">[4] J. Molina del Río, M. A. Guevara, M. Hernández González, R. M. Hidalgo Aguirre, y M. A. Cruz Aguilar, “EEG correlation during the solving of simple and complex logical–mathematical problems”, Cogn. Affect. Behav. Neurosci., vol. 19, núm. 4, pp. 1036–1046, 2019.
 <p align="justify">[5] “Ultracortex Mark IV”, Openbci.com, 2016. [En línea]. Disponible en: https://docs.openbci.com/AddOns/Headwear/MarkIV/
+<p align="justify">[6] Tao JD, Mathur AM. Using amplitude-integrated EEG in neonatal intensive care. J Perinatol. 2010 Oct;30 Suppl:S73-81. doi: 10.1038/jp.2010.93. PMID: 20877412.
