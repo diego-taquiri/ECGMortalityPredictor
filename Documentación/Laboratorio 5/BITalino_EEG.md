@@ -19,9 +19,9 @@ Lista de participantes:
 ### Introducción
 
 ### Objetivos específicos de la práctica
-- Adquirir señales biomédicas de ECG.
-- Hacer una correcta configuración de BiTalino.
-- Extraer la información de las señales EEG del software OpenSignals (r)evolution.
+- Adquirir señales biomédicas de EEG.
+- Hacer una correcta configuración del BiTalino y del UltraCortex.
+- Extraer la información de las señales EEG de los softwares OpenSignals (r)evolution y OpenBCI GUI.
 - Comprender el cambio de señal desencadenado por cambios de actividad neuronal.
 
 ### Materiales y métodos
@@ -46,9 +46,9 @@ Lista de participantes:
   <li>Escuchar una serie de ejercicios matemáticos y resuelver cada uno de ellos mentalmente enfocando la mirada en un punto específico para evitar artefactos. </li>
 </ol>
 
-<p align="justify">Adicionalmente, se incorporó el análisis de la actividad neuronal desde un Ultracortex Mark IV, siguiendo el sistema 10-20. Las imágenes a continuación indican las ubicaciones predeterminadas de 10 a 20 electrodos que espera la interfaz gráfica de usuario de OpenBCI. Utilizando el kit de investigación y desarrollo de 16 canales OpenBCI, los nodos azules indican las 8 ubicaciones predeterminadas (canales 1-8) de la placa Cyton; mientras que los rojos indican las de los canales 9-16. [2]
+<p align="justify">Adicionalmente, se incorporó el análisis de la actividad neuronal desde un UltraCortex Mark IV, siguiendo el sistema 10-20. Las imágenes a continuación indican las ubicaciones predeterminadas de 10 a 20 electrodos que espera la interfaz gráfica de usuario de OpenBCI. Utilizando el kit de investigación y desarrollo de 16 canales OpenBCI, los nodos azules indican las 8 ubicaciones predeterminadas (canales 1-8) de la placa Cyton; mientras que los rojos indican las de los canales 9-16. [2]
 
-<p align="justify">Como puede observarse en la figura 3, algunos componentes no fueron conectados debido al mal estado con el que fue entregado el dispositivo. Asimismo, se incorporaron los dos electrodos de clip para la oreja, los cuales sirven como referencia y polarización (tierra con rechazo de ruido de modo común).
+<p align="justify">Como puede observarse en la figura 3, algunos componentes no fueron conectados debido al mal estado con el que fue entregado el dispositivo. Asimismo, se incorporaron los dos electrodos de clip para la oreja, los cuales sirven como referencia y polarización (tierra con rechazo de ruido de modo común). [2]
 
 <div style="text-align: center;">
       <p align="center">
