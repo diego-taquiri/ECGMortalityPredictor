@@ -49,7 +49,7 @@ Lista de participantes:
 <p align="justify">Adicionalmente, se incorporó el cambio de señal desencadenado por cambios de actividad neuronal analizado desde un Ultracortex Mark IV. Como puede observarse en la figura 3, algunos componentes no fueron conectados debido al mal estado con el que fue entregado el dispositivo. 
    
 <p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/ultracortex.jpg" alt="Descripción de la imagen" width="400"><br> 
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/ultracortex.jpg" alt="Descripción de la imagen" width="300"><br> 
 <b>Figura 3.</b> Conexiones del Ultracortex Mark IV. <br> 
 
 <p align="center">
