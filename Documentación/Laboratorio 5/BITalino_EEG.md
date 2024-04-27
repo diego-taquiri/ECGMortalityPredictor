@@ -17,9 +17,8 @@ Lista de participantes:
 6. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/BITalino_EEG.md#bibliograf%C3%ADa)
 
 ### Introducción
-El EEG es una señal compleja, cuyas propiedades estadísticas dependen tanto del tiempo como del espacio. En cuanto a las características temporales, es esencial tener en cuenta que las señales de EEG están en constante cambio. [1]
-El EEG registra la actividad eléctrica generada por las neuronas cerebrales, en forma de diferencias de potencial entre electrodos posicionados sobre el cuero cabelludo. Esta actividad es digitalizada, amplificada (en un adulto sano típicamente oscila entre 20-100 μV), filtrada para eliminar o reducir el ruido (generalmente de 0.3 a 70 Hz), y se muestra como formas de onda con morfologías y frecuencias variables. La interpretación de estas formas de onda generalmente se realiza mediante inspección visual, pero también puede llevarse a cabo mediante análisis cuantitativo de la frecuencia, amplitud, distribución topográfica, correlación cruzada y reactividad; estos análisis permiten una evaluación objetiva de la actividad cerebral. [2] 
-
+<p align="justify">El EEG es una señal compleja, cuyas propiedades estadísticas dependen tanto del tiempo como del espacio. En cuanto a las características temporales, es esencial tener en cuenta que las señales de EEG están en constante cambio. [1]<br>
+<p align="justify">El EEG registra la actividad eléctrica generada por las neuronas cerebrales, en forma de diferencias de potencial entre electrodos posicionados sobre el cuero cabelludo. Esta actividad es digitalizada, amplificada (en un adulto sano típicamente oscila entre 20-100 μV), filtrada para eliminar o reducir el ruido (generalmente de 0.3 a 70 Hz), y se muestra como formas de onda con morfologías y frecuencias variables. La interpretación de estas formas de onda generalmente se realiza mediante inspección visual, pero también puede llevarse a cabo mediante análisis cuantitativo de la frecuencia, amplitud, distribución topográfica, correlación cruzada y reactividad; estos análisis permiten una evaluación objetiva de la actividad cerebral. [2] 
 
 ### Objetivos específicos de la práctica
 - Adquirir señales biomédicas de EEG.
