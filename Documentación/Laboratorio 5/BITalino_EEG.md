@@ -68,31 +68,21 @@ Lista de participantes:
 
 | Protocolo | Conexiones electrodos-cuerpo | Señal ploteada en OpenSignals |
 | --------- | --------- | --------- |
-| Respiración normal| <p align="center"><a href="https://youtu.be/8PnidbbtLkQ"><img src="https://img.youtube.com/vi/8PnidbbtLkQ/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
-| Ciclo de INHALACIÓN-EXHALACIÓN largo| <p align="center"><a href="https://youtu.be/u8qXzgWzAVI"><img src="https://img.youtube.com/vi/u8qXzgWzAVI/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
-| Fase inicial de 30 segundos| <p align="center"><a href="https://youtu.be/9TthaNQQPNw"><img src="https://img.youtube.com/vi/9TthaNQQPNw/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
-| 10 burpees| <p align="center"><a href="https://youtu.be/GUYjouPUTFM"><img src="https://img.youtube.com/vi/GUYjouPUTFM/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
-| Fase inicial de 30 segundos después de los burpees| <p align="center"><a href="https://youtu.be/IL7Me2n_vhA"><img src="https://img.youtube.com/vi/IL7Me2n_vhA/0.jpg" alt="Miniatura del video" width="350"></a> | Texto     |
-| Ciclo de INHALACIÓN-EXHALACIÓN largo| <p align="center"><a href="https://youtu.be/av1N9T9M1a4"><img src="https://img.youtube.com/vi/av1N9T9M1a4/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
+| Línea Base| <p align="center"><a href="https://youtu.be/8PnidbbtLkQ"><img src="https://img.youtube.com/vi/8PnidbbtLkQ/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
+| Ciclo de ojos abiertos-cerrados| <p align="center"><a href="https://youtu.be/u8qXzgWzAVI"><img src="https://img.youtube.com/vi/u8qXzgWzAVI/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
+| Fase de referencia| <p align="center"><a href="https://youtu.be/9TthaNQQPNw"><img src="https://img.youtube.com/vi/9TthaNQQPNw/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
+| Ejercicios matemáticos| <p align="center"><a href="https://youtu.be/GUYjouPUTFM"><img src="https://img.youtube.com/vi/GUYjouPUTFM/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
 <p align="center"><b>Tabla 1.</b> Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals del protocolo. <br> 
 
 - <p align="justify">Protocolo seguido para evaluar el cambio de actividad neuronal en OpenBCI. 
 
-<div align="center">
-<table>
-  <tr>
-    <th>Protocolo</th>
-    <th>Conexiones electrodos-cuerpo</th>
-    <th>Señal ploteada en OpenSignals</th>
-  </tr>
-  <tr>
-    <td>Simulación de un paro cardíaco</td>
-    <td align="center"><a href="https://www.youtube.com/watch?v=9JaGJ30xAS8"><img src="https://img.youtube.com/vi/9JaGJ30xAS8/0.jpg" alt="Miniatura del video" width="350"></a></td>
-    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=9JaGJ30xAS8" frameborder="0" allowfullscreen></iframe>
-    <td>Texto</td>
-  </tr>
-</table>
-</div>
+| Protocolo | Conexiones electrodos-cuerpo | Señal ploteada en OpenBCI |
+| --------- | --------- | --------- |
+| Línea Base| <p align="center"><a href="https://youtu.be/8PnidbbtLkQ"><img src="https://img.youtube.com/vi/8PnidbbtLkQ/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
+| Ciclo de ojos abiertos-cerrados| <p align="center"><a href="https://youtu.be/u8qXzgWzAVI"><img src="https://img.youtube.com/vi/u8qXzgWzAVI/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
+| Fase de referencia| <p align="center"><a href="https://youtu.be/9TthaNQQPNw"><img src="https://img.youtube.com/vi/9TthaNQQPNw/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
+| Ejercicios matemáticos| <p align="center"><a href="https://youtu.be/GUYjouPUTFM"><img src="https://img.youtube.com/vi/GUYjouPUTFM/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
+<p align="center"><b>Tabla 2.</b> Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenBCI del protocolo. <br> 
 
 #### Archivo de los datos de la señal ploteada
 - [ECG raw data OpenSignals](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%204/ecg_raw_data)
@@ -101,11 +91,11 @@ Lista de participantes:
 #### Ploteo de las señales en Python
 - <p align="justify">Protocolo seguido para evaluar el cambio de actividad neuronal en OpenSignals. 
 
-<p align="center"><b>Tabla 3.</b> Ploteo del protocolo en Python. <br> 
+<p align="center"><b>Tabla 3.</b> Ploteo del protocolo usando BITalino en Python. <br> 
 
 - <p align="justify">Protocolo seguido para evaluar el cambio de actividad neuronal en OpenBCI. 
 
-<p align="center"><b>Tabla 4.</b> Ploteo de la simulación de un paro cardíaco en Python. <br> 
+<p align="center"><b>Tabla 4.</b> Ploteo del protocolo usando UltraCortex en Python. <br> 
 
 ### Discusión
 
