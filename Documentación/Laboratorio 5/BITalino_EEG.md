@@ -35,6 +35,8 @@ Lista de participantes:
 
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/colocacion.jpg" alt="Descripción de la imagen" width="300"><br> 
+![image](https://github.com/diego-taquiri/ISB-equipo11/assets/89550637/8c9c48f7-b77e-45ae-86e2-c14fdfe4ba2d)
+
 <p align="center"><b>Figura 2.</b> Colocación de electrodos para la configuración de medición bipolar: electrodos de medición (IN + e IN-) y de referencia. [1] <br> 
 
 <p align="justify">El protocolo seguido para evaluar el cambio de señal desencadenado por cambios de actividad neuronal fue el siguiente: <br>
@@ -52,7 +54,6 @@ Lista de participantes:
 
 <div style="text-align: center;">
       <p align="center">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/posicion2.png" alt="Descripción de la primera imagen" width="300" height="325">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/tablar.png" alt="Descripción de la primera imagen" width="300" height="325">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/ultracortex.jpg" alt="Descripción de la primera imagen" width="300" height="325">
 </div>
