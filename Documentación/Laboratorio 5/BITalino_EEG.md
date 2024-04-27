@@ -87,8 +87,12 @@ Lista de participantes:
 | Línea Base| <p align="center"><a href="https://youtu.be/XvO9Swg0UOs"><img src="https://img.youtube.com/vi/XvO9Swg0UOs/0.jpg" alt="Miniatura del video" width="350"></a></p>     |
 | Ciclo de ojos abiertos-cerrados| <p align="center"><a href="https://youtu.be/5O7GbBteY9w"><img src="https://img.youtube.com/vi/5O7GbBteY9w/0.jpg" alt="Miniatura del video" width="350"></a></p>     |
 | Fase de referencia| <p align="center"><a href="https://youtu.be/g9LNPO2JDDc"><img src="https://img.youtube.com/vi/g9LNPO2JDDc/0.jpg" alt="Miniatura del video" width="350"></a></p>     |
-| Ejercicios matemáticos| Texto     |
+| Ejercicios matemáticos| <p align="center"><a href="https://youtu.be/p1FOJwmLAsk"><img src="https://img.youtube.com/vi/p1FOJwmLAsk/0.jpg" alt="Miniatura del video" width="350"></a></p>     |
 <p align="center"><b>Tabla 2.</b> Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenBCI del protocolo. <br> 
+   
+| Protocolo | Línea Base | Ciclo de ojos abiertos-cerrados | Fase de referencia | Ejercicios matemáticos |
+| :--------: | :--------: | :-----------------------------: | :----------------: | :--------------------: |
+| Señal ploteada en OpenBCI | <p align="center"><a href="https://youtu.be/XvO9Swg0UOs"><img src="https://img.youtube.com/vi/XvO9Swg0UOs/0.jpg" alt="Miniatura del video" width="200"></a></p> | <p align="center"><a href="https://youtu.be/5O7GbBteY9w"><img src="https://img.youtube.com/vi/5O7GbBteY9w/0.jpg" alt="Miniatura del video" width="200"></a></p> | <p align="center"><a href="https://youtu.be/g9LNPO2JDDc"><img src="https://img.youtube.com/vi/g9LNPO2JDDc/0.jpg" alt="Miniatura del video" width="200"></a></p> | <p align="center"><a href="https://youtu.be/p1FOJwmLAsk"><img src="https://img.youtube.com/vi/p1FOJwmLAsk/0.jpg" alt="Miniatura del video" width="200"></a></p> |
 
 #### Archivo de los datos de la señal ploteada
 - [ECG raw data OpenSignals]()
