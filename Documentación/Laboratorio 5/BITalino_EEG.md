@@ -76,12 +76,12 @@ Lista de participantes:
 
 - <p align="justify">Protocolo seguido para evaluar el cambio de actividad neuronal en OpenBCI. 
 
-| Protocolo | Conexiones electrodos-cuerpo | Señal ploteada en OpenBCI |
-| --------- | --------- | --------- |
-| Línea Base| <p align="center"><a href="https://youtu.be/8PnidbbtLkQ"><img src="https://img.youtube.com/vi/8PnidbbtLkQ/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
-| Ciclo de ojos abiertos-cerrados| <p align="center"><a href="https://youtu.be/u8qXzgWzAVI"><img src="https://img.youtube.com/vi/u8qXzgWzAVI/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
-| Fase de referencia| <p align="center"><a href="https://youtu.be/9TthaNQQPNw"><img src="https://img.youtube.com/vi/9TthaNQQPNw/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
-| Ejercicios matemáticos| <p align="center"><a href="https://youtu.be/GUYjouPUTFM"><img src="https://img.youtube.com/vi/GUYjouPUTFM/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
+| Protocolo | Señal ploteada en OpenBCI |
+| --------- | --------- |
+| Línea Base| Texto     |
+| Ciclo de ojos abiertos-cerrados| Texto     |
+| Fase de referencia| Texto     |
+| Ejercicios matemáticos| Texto     |
 <p align="center"><b>Tabla 2.</b> Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenBCI del protocolo. <br> 
 
 #### Archivo de los datos de la señal ploteada
