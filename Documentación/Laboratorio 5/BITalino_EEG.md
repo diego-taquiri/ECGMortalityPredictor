@@ -31,7 +31,7 @@ Lista de participantes:
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/bitalino.jpg" alt="Descripción de la imagen" width="300"><br> 
 <b>Figura 1.</b> Conexiones de los cables del electrodo en el BITalino. <br> 
 
-<p align="justify"> Una posible configuración del sensor de EEG BITalino es la de medición bipolar, la cual contiene dos electrodos de medición (IN + e IN-) y uno de referencia que debe ser conectado de manera adicional en una zona ósea. Siguiendo el sistema internacional 10-20, se colocaron los dos electrodos de medición en FP1 con una distancia predefinida por los broches del sensor; mientras que el electrodo de referencia se colocó en una región neutra. [1] Las posiciones pueden observarse en la figura 2. <br> 
+<p align="justify"> Una posible configuración del sensor de EEG BITalino es la de medición bipolar, la cual contiene dos electrodos de medición (IN + e IN-) y uno de referencia que debe ser conectado de manera adicional en una zona ósea. Siguiendo el sistema internacional 10-20, , el cual es el estándar aceptado internacionalmente para la colocación de electrodos en el contexto del EEG, se colocaron los dos electrodos de medición en FP1 con una distancia predefinida por los broches del sensor; mientras que el electrodo de referencia se colocó en una región neutra. [1] Las posiciones pueden observarse en la figura 2. <br> 
 
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/colocacion.jpg" alt="Descripción de la imagen" width="300"><br> 
@@ -46,27 +46,12 @@ Lista de participantes:
   <li>Escuchar una serie de ejercicios matemáticos y resuelver cada uno de ellos mentalmente enfocando la mirada en un punto específico para evitar artefactos. </li>
 </ol>
 
-<p align="justify">Adicionalmente, se incorporó el cambio de señal desencadenado por cambios de actividad neuronal analizado desde un Ultracortex Mark IV. Como puede observarse en la figura 3, algunos componentes no fueron conectados debido al mal estado con el que fue entregado el dispositivo. 
-   
-<p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/ultracortex.jpg" alt="Descripción de la imagen" width="300"><br> 
-<b>Figura 3.</b> Conexiones del Ultracortex Mark IV. <br> 
+<p align="justify">Adicionalmente, se incorporó el análisis de la actividad neuronal desde un Ultracortex Mark IV, siguiendo el sistema 10-20. Las imágenes a continuación indican las ubicaciones predeterminadas de 10 a 20 electrodos que espera la interfaz gráfica de usuario de OpenBCI. Utilizando el kit de investigación y desarrollo de 16 canales OpenBCI, los nodos azules indican las 8 ubicaciones predeterminadas (canales 1-8) de la placa Cyton; mientras que los rojos indican las de los canales 9-16.
 
-<p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/heartf.png" alt="Descripción de la imagen" width="400"><br> 
-<b>Figura 4.</b> Secuencia de parada cardíaca. [3] <br> 
 
-Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 5). Esta simulación fue posteriormente visualizada en el OpenSignals a través del BITalino.
 
-<div style="text-align: center;">
-      <p align="center">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/step1.jpg" alt="Descripción de la primera imagen" width="200">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/step2.jpg" alt="Descripción de la primera imagen" width="200">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/step3.jpg" alt="Descripción de la primera imagen" width="200">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/step4.jpg" alt="Descripción de la primera imagen" width="200">
-</div>
-<p align="center"><b>Figura 5.</b> Secuencia de parada cardíaca: (a) CVP, (b) Taquicardia ventricular, (c) Fibrilación ventricular severa y (d) Asistolia. <br> 
-
+Como puede observarse en la figura X, algunos componentes no fueron conectados debido al mal estado con el que fue entregado el dispositivo.
+ 
 ### Resultados
 #### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
 - <p align="justify">Protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía.
