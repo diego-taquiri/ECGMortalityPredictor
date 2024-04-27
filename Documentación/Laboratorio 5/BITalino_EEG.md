@@ -25,17 +25,17 @@ Lista de participantes:
 - Comprender el cambio de señal desencadenado por cambios de actividad neuronal.
 
 ### Materiales y métodos
-<p align="justify">Se realizó la medición de EEG de acuerdo a las instrucciones de la guía experimental de BITalino sobre bioseñales. [2] La medición se realizó utilizando un cable de electrodo de tres derivaciones conectado al terminal del BITalino correspondiente a EEG (Figura 1). <br>
+<p align="justify">Se realizó la medición de EEG de acuerdo a las instrucciones de la guía experimental de BITalino sobre bioseñales. [1] La medición se realizó utilizando un cable de electrodo de tres derivaciones conectado al terminal del BITalino correspondiente a EEG (Figura 1). <br>
    
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/bitalino.jpg" alt="Descripción de la imagen" width="300"><br> 
 <b>Figura 1.</b> Conexiones de los cables del electrodo en el BITalino. <br> 
 
-<p align="justify"> Una posible configuración del sensor de EEG BITalino es la de medición bipolar, la cual contiene dos electrodos de medición (IN + e IN-) y uno de referencia que debe ser conectado de manera adicional en una zona ósea. Siguiendo el sistema internacional 10-20, se colocan los dos electrodos de medición en FP1 con una distancia entre los electrodos predefinida por los broches del sensor de EEG ensamblados. Por otro lado, el electrodo de referencia se coloca en una región neutra. [2] Las posiciones pueden observarse en la figura 2. <br> 
+<p align="justify"> Una posible configuración del sensor de EEG BITalino es la de medición bipolar, la cual contiene dos electrodos de medición (IN + e IN-) y uno de referencia que debe ser conectado de manera adicional en una zona ósea. Siguiendo el sistema internacional 10-20, se colocaron los dos electrodos de medición en FP1 con una distancia predefinida por los broches del sensor; mientras que el electrodo de referencia se colocó en una región neutra. [1] Las posiciones pueden observarse en la figura 2. <br> 
 
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/colocacion.jpg" alt="Descripción de la imagen" width="300"><br> 
-<p align="center"><b>Figura 2.</b> Colocación de electrodos para la configuración de medición bipolar: 2 electrodos de medición (IN + e IN-) y 1 de referencia [2] <br> 
+<p align="center"><b>Figura 2.</b> Colocación de electrodos para la configuración de medición bipolar: 2 electrodos de medición (IN + e IN-) y 1 de referencia [1] <br> 
 
 <p align="justify">El protocolo seguido para evaluar el cambio de señal desencadenado por cambios de actividad neuronal fue el siguiente: <br>
 
@@ -46,11 +46,11 @@ Lista de participantes:
   <li>Escuchar una serie de ejercicios matemáticos y resuelver cada uno de ellos mentalmente enfocando la mirada en un punto específico para evitar artefactos. </li>
 </ol>
 
-Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso del ProSim 4 - Vital signs simulator. Como puede observarse en la figura 3, hubo una equivocación en la colocación de los electrodos, lo cual podría afectar la calidad de la señal registrada y la interpretación de los datos. 
+<p align="justify">Adicionalmente, se incorporó el cambio de señal desencadenado por cambios de actividad neuronal analizado desde un Ultracortex Mark IV. Como puede observarse en la figura 3, algunos componentes no fueron conectados debido al mal estado con el que fue entregado el dispositivo. 
    
 <p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/fluke.jpg" alt="Descripción de la imagen" width="400"><br> 
-<b>Figura 3.</b> Conexiones de los cables del electrodo en el FLUKE. <br> 
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/ultracortex" alt="Descripción de la imagen" width="400"><br> 
+<b>Figura 3.</b> Conexiones del Ultracortex Mark IV. <br> 
 
 Siendo las autosecuencias una serie de pasos que cambian la salida del producto automáticamente, se tiene la siguiente tabla que representa los 5 pasos antes de producirse un paro cardíaco. [2]
 
