@@ -77,12 +77,14 @@ Lista de participantes:
 - <p align="justify">Protocolo seguido para evaluar el cambio de actividad neuronal en OpenBCI. 
 
 <p align="center">
+
 | Protocolo | Señal ploteada en OpenBCI |
-| --------- | --------- |
+| :--------: | :--------: |
 | Línea Base| Texto     |
 | Ciclo de ojos abiertos-cerrados| Texto     |
 | Fase de referencia| Texto     |
 | Ejercicios matemáticos| Texto     |
+
 </p>
 <p align="center"><b>Tabla 2.</b> Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenBCI del protocolo. <br> 
 
