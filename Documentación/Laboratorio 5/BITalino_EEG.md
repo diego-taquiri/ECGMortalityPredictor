@@ -46,7 +46,7 @@ Lista de participantes:
   <li>Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal, sin movimientos oculares/ojos cerrados) durante 30 segundos. </li>
   <li>Repetir un ciclo de OJOS ABIERTOS - OJOS CERRADOS cinco veces, manteniendo ambas fases durante cinco segundos. </li>
   <li>Registrar otra fase de referencia de 30 segundos. </li>
-  <li>Escuchar una serie de ejercicios matemáticos y resuelver cada uno de ellos mentalmente enfocando la mirada en un punto específico para evitar artefactos. [2] </li>
+  <li>Escuchar una serie de ejercicios matemáticos y resolver cada uno de ellos mentalmente enfocando la mirada en un punto específico para evitar artefactos. [2] </li>
 </ol>
 
 <p align="justify">Adicionalmente, se incorporó el análisis de la actividad neuronal desde un UltraCortex Mark IV, siguiendo el sistema 10-20. Las imágenes a continuación indican las ubicaciones predeterminadas de 10 a 20 electrodos que espera la interfaz gráfica de usuario de OpenBCI. Utilizando el kit de investigación y desarrollo de 16 canales OpenBCI, los nodos azules indican las 8 ubicaciones predeterminadas (canales 1-8) de la placa Cyton; mientras que los rojos indican las de los canales 9-16. [3]
