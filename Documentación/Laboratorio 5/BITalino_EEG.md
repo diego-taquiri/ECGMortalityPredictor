@@ -29,7 +29,7 @@ Lista de participantes:
    
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/bitalino.jpg" alt="Descripción de la imagen" width="300"><br> 
-<b>Figura 1.</b> Conexiones de los cables del electrodo en el BITalino. <br> 
+<p align="center"><b>Figura 1.</b> Conexiones de los cables del electrodo en el BITalino. <br> 
 
 <p align="justify"> Una posible configuración del sensor de EEG BITalino es la de medición bipolar, la cual contiene dos electrodos de medición (IN + e IN-) y uno de referencia que debe ser conectado de manera adicional en una zona ósea. Siguiendo el sistema internacional 10-20, , el cual es el estándar aceptado internacionalmente para la colocación de electrodos en el contexto del EEG, se colocaron los dos electrodos de medición en FP1 con una distancia predefinida por los broches del sensor; mientras que el electrodo de referencia se colocó en una región neutra. [1] Las posiciones pueden observarse en la figura 2. <br> 
 
@@ -61,6 +61,12 @@ Lista de participantes:
 <p align="center"><b>Figura 3.</b> Colocación del Ultracortex Mark IV siguiendo el sistema 10-20. [2] <br> 
 
 <p align="justify">Realizando los cambios respectivos mediante el ajuste de los resortes al tamaño de la cabeza, se logró que el UltraCortex esté ubicado de modo que el nodo central posterior esté aproximadamente a la misma distancia por encima del inion que el nodo central frontal esté por encima del puente de su nariz. [2]
+
+<p align="justify">A continuación, se muestra una captura de pantalla de cómo se ve la GUI con el OpenBCI Cyton + Ultracortex (16 canales) conectado.<br>
+
+<p align="center">
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/senal.png" alt="Descripción de la imagen" width="300"><br> 
+<p align="center"><b>Figura 4.</b> OpenBCI GUI. <br> 
 
 ### Resultados
 #### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada
