@@ -35,7 +35,7 @@ Lista de participantes:
 
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/colocacion.jpg" alt="Descripción de la imagen" width="300"><br> 
-<p align="center"><b>Figura 2.</b> Colocación de electrodos para la configuración de medición bipolar: 2 electrodos de medición (IN + e IN-) y 1 de referencia [1] <br> 
+<p align="center"><b>Figura 2.</b> Colocación de electrodos para la configuración de medición bipolar: electrodos de medición (IN + e IN-) y de referencia. [1] <br> 
 
 <p align="justify">El protocolo seguido para evaluar el cambio de señal desencadenado por cambios de actividad neuronal fue el siguiente: <br>
 
@@ -46,16 +46,16 @@ Lista de participantes:
   <li>Escuchar una serie de ejercicios matemáticos y resuelver cada uno de ellos mentalmente enfocando la mirada en un punto específico para evitar artefactos. </li>
 </ol>
 
-<p align="justify">Adicionalmente, se incorporó el análisis de la actividad neuronal desde un Ultracortex Mark IV, siguiendo el sistema 10-20. Las imágenes a continuación indican las ubicaciones predeterminadas de 10 a 20 electrodos que espera la interfaz gráfica de usuario de OpenBCI. Utilizando el kit de investigación y desarrollo de 16 canales OpenBCI, los nodos azules indican las 8 ubicaciones predeterminadas (canales 1-8) de la placa Cyton; mientras que los rojos indican las de los canales 9-16.
+<p align="justify">Adicionalmente, se incorporó el análisis de la actividad neuronal desde un Ultracortex Mark IV, siguiendo el sistema 10-20. Las imágenes a continuación indican las ubicaciones predeterminadas de 10 a 20 electrodos que espera la interfaz gráfica de usuario de OpenBCI. Utilizando el kit de investigación y desarrollo de 16 canales OpenBCI, los nodos azules indican las 8 ubicaciones predeterminadas (canales 1-8) de la placa Cyton; mientras que los rojos indican las de los canales 9-16. [2]
 
 Como puede observarse en la figura 3, algunos componentes no fueron conectados debido al mal estado con el que fue entregado el dispositivo.
 <div style="text-align: center;">
       <p align="center">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/posicion2.png" alt="Descripción de la primera imagen" width="300">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/tabla.png" alt="Descripción de la primera imagen" width="300">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/tablar.png" alt="Descripción de la primera imagen" width="300">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/ultracortex.jpg" alt="Descripción de la primera imagen" width="300">
 </div>
-<p align="center"><b>Figura 3.</b> Colocación del Ultracortex Mark IV siguiendo el sistema 10-20. [1] <br> 
+<p align="center"><b>Figura 3.</b> Colocación del Ultracortex Mark IV siguiendo el sistema 10-20. [2] <br> 
 
 ### Resultados
 #### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
