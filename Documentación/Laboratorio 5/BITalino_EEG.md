@@ -17,6 +17,9 @@ Lista de participantes:
 6. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/BITalino_EEG.md#bibliograf%C3%ADa)
 
 ### Introducción
+El EEG es una señal compleja, cuyas propiedades estadísticas dependen tanto del tiempo como del espacio. En cuanto a las características temporales, es esencial tener en cuenta que las señales de EEG están en constante cambio. [x]
+El EEG registra la actividad eléctrica generada por las neuronas cerebrales, en forma de diferencias de potencial entre electrodos posicionados sobre el cuero cabelludo. Esta actividad es digitalizada, amplificada (en un adulto sano típicamente oscila entre 20-100 μV), filtrada para eliminar o reducir el ruido (generalmente de 0.3 a 70 Hz), y se muestra como formas de onda con morfologías y frecuencias variables. La interpretación de estas formas de onda generalmente se realiza mediante inspección visual, pero también puede llevarse a cabo mediante análisis cuantitativo de la frecuencia, amplitud, distribución topográfica, correlación cruzada y reactividad; estos análisis permiten una evaluación objetiva de la actividad cerebral. [y] 
+
 
 ### Objetivos específicos de la práctica
 - Adquirir señales biomédicas de EEG.
@@ -109,6 +112,8 @@ Lista de participantes:
 <p align="justify"><b>Ejercicios matemáticos:</b>
       
 ### Bibliografía 
+<p align="justify">[x] Schomer, Donald L., and others, 'C44EEG Analysis: Theory and Practice', in Donald L. Schomer, and Fernando H. Lopes da Silva (eds), Niedermeyer's Electroencephalography: Basic Principles, Clinical Applications, and Related Fields, 7 edn (New York, 2017; online edn, Oxford Academic, 1 Nov. 2017), https://doi.org/10.1093/med/9780190228484.003.0044
+<p align="justify">[y] Sewell L, Abbas A, Kane N. Introduction to interpretation of the EEG in intensive care. BJA Educ. 2019 Mar;19(3):74-82. doi: 10.1016/j.bjae.2018.11.002. Epub 2018 Dec 17. PMID: 33456874; PMCID: PMC7808102.
 <p align="justify">[1] EXPERIMENTAL GUIDES TO MEET y L. Y. Biosignals, “BITalino (r)evolution Lab Guide”, Pluxbiosignals.com. [En línea]. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide3_EEG.pdf
 <p align="justify">[2] J. Molina del Río, M. A. Guevara, M. Hernández González, R. M. Hidalgo Aguirre, y M. A. Cruz Aguilar, “EEG correlation during the solving of simple and complex logical–mathematical problems”, Cogn. Affect. Behav. Neurosci., vol. 19, núm. 4, pp. 1036–1046, 2019.
 <p align="justify">[3] “Ultracortex Mark IV”, Openbci.com, 2016. [En línea]. Disponible en: https://docs.openbci.com/AddOns/Headwear/MarkIV/
