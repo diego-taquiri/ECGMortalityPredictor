@@ -85,8 +85,8 @@ Lista de participantes:
 <p align="center"><b>Tabla 2.</b> Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenBCI del protocolo. <br> 
 
 #### Archivo de los datos de la señal ploteada
-- [ECG raw data OpenSignals](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%204/ecg_raw_data)
-- [ECG raw data OpenBCI](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%204/ecg_raw_data)
+- [ECG raw data OpenSignals]()
+- [ECG raw data OpenBCI](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%205/Raw%20data/Raw%20Data%20UltraCortex)
 
 #### Ploteo de las señales en Python
 - <p align="justify">Protocolo seguido para evaluar el cambio de actividad neuronal en OpenSignals. 
