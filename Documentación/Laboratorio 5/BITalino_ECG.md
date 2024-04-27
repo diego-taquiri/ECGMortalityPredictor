@@ -17,8 +17,6 @@ Lista de participantes:
 6. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/BITalino_ECG.md#bibliograf%C3%ADa)
 
 ### Introducción
-<p align="justify"> El electrocardiograma (ECG) es una método diagnóstico utilizado para evaluar la actividad eléctrica del corazón. Es un procedimiento no invasivo y costo efectivo que permite determinar tanto anomalías en la conducción del impulso eléctrico como disfunciones en la función del corazón como bomba. Como herramienta diagnóstica, su aporte es invaluable puesto que complementa a la clínica en el diagnóstico de arritmias y enfermedad isquémica del corazón [1].<br>
-<p align="justify"> La interpretación correcta del ECG a partir de las características de la onda requiere del posicionamiento adecuado de los electrodos y de un equipo que sea capaz de filtrar y procesar la señal. Conocimiento sobre ambos es necesario si se desea realizar innovaciones en el campo.  <br>
 
 ### Objetivos específicos de la práctica
 - Adquirir señales biomédicas de ECG.
@@ -26,10 +24,10 @@ Lista de participantes:
 - Extraer la información de las señales ECG del software OpenSignals (r)evolution.
 
 ### Materiales y métodos
-<p align="justify">Se realizó la medición de ECG de acuerdo a las instrucciones de la guía experimental de BITalino sobre bioseñales. [2] La medición se realizó utilizando un cable de electrodo de tres derivaciones conectado al terminal del BITalino correspondiente a ECG (Figura 1). <br>
+<p align="justify">Se realizó la medición de EEG de acuerdo a las instrucciones de la guía experimental de BITalino sobre bioseñales. [2] La medición se realizó utilizando un cable de electrodo de tres derivaciones conectado al terminal del BITalino correspondiente a EEG (Figura 1). <br>
    
 <p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/BITalino.jpg" alt="Descripción de la imagen" width="300"><br> 
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/bitalino.jpg" alt="Descripción de la imagen" width="300"><br> 
 <b>Figura 1.</b> Conexiones de los cables del electrodo en el BITalino. <br> 
 
 <p align="justify"> Una posible configuración del sensor de ECG BITalino para Einthoven Lead I es posicionando los electrodos positivo y negativo en las muñecas, mientras que el de referencia sobre la cresta ilíaca. [2] Las posiciones pueden observarse en la figura 2. <br> 
