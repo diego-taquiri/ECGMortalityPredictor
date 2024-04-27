@@ -49,7 +49,7 @@ Lista de participantes:
   <li>Escuchar una serie de ejercicios matemáticos y resolver cada uno de ellos mentalmente enfocando la mirada en un punto específico para evitar artefactos. [2] </li>
 </ol>
 
-<p align="justify">Adicionalmente, siguiendo el sistema 10-20, también se incorporó el análisis de la actividad neuronal desde un UltraCortex Mark IV. Las imágenes a continuación indican las ubicaciones predeterminadas de 10 a 20 electrodos que espera la interfaz gráfica de usuario de OpenBCI. Utilizando el kit de investigación y desarrollo de 16 canales OpenBCI, los nodos azules indican las 8 ubicaciones predeterminadas (canales 1-8) de la placa Cyton; mientras que los rojos indican las de los canales 9-16. [3]
+<p align="justify">Adicionalmente, siguiendo el sistema 10-20, también se incorporó el análisis de la actividad neuronal desde un UltraCortex Mark IV. Las imágenes a continuación indican las ubicaciones predeterminadas de 10 a 20 electrodos que espera la interfaz gráfica de usuario de OpenBCI. Utilizando el kit de investigación y desarrollo de 16 canales OpenBCI, los nodos azules indicaron las 8 ubicaciones predeterminadas (canales 1-8) de la placa Cyton; mientras que los rojos indicaron las de los canales 9-16. [3]
 
 <p align="justify">Como puede observarse en la figura 3, algunos componentes no fueron conectados debido al mal estado con el que fue entregado el dispositivo. Asimismo, se incorporaron los dos electrodos de clip para la oreja, los cuales sirven como referencia y polarización (tierra con rechazo de ruido de modo común). [3]
 
