@@ -21,7 +21,8 @@ Lista de participantes:
 ### Objetivos específicos de la práctica
 - Adquirir señales biomédicas de ECG.
 - Hacer una correcta configuración de BiTalino.
-- Extraer la información de las señales ECG del software OpenSignals (r)evolution.
+- Extraer la información de las señales EEG del software OpenSignals (r)evolution.
+- Comprender el cambio de señal desencadenado por cambios de actividad neuronal.
 
 ### Materiales y métodos
 <p align="justify">Se realizó la medición de EEG de acuerdo a las instrucciones de la guía experimental de BITalino sobre bioseñales. [2] La medición se realizó utilizando un cable de electrodo de tres derivaciones conectado al terminal del BITalino correspondiente a EEG (Figura 1). <br>
@@ -30,20 +31,19 @@ Lista de participantes:
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/bitalino.jpg" alt="Descripción de la imagen" width="300"><br> 
 <b>Figura 1.</b> Conexiones de los cables del electrodo en el BITalino. <br> 
 
-<p align="justify"> Una posible configuración del sensor de ECG BITalino para Einthoven Lead I es posicionando los electrodos positivo y negativo en las muñecas, mientras que el de referencia sobre la cresta ilíaca. [2] Las posiciones pueden observarse en la figura 2. <br> 
+<p align="justify"> Una posible configuración del sensor de EEG BITalino es la de medición bipolar, la cual contiene dos electrodos de medición (IN + e IN-) y uno de referencia que debe ser conectado de manera adicional en una zona ósea. Siguiendo el sistema internacional 10-20, se colocan los dos electrodos de medición en FP1 con una distancia entre los electrodos predefinida por los broches del sensor de EEG ensamblados. Por otro lado, el electrodo de referencia se coloca en una región neutra. [2] Las posiciones pueden observarse en la figura 2. <br> 
 
 <p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/images/position.jpg" alt="Descripción de la imagen" width="300"><br> 
-<p align="center"><b>Figura 2.</b> Colocación de electrodos para la derivación I: IN+ (rojo) e IN-(negro) en las muñecas y REF (blanco) en la cresta ilíaca. [2] <br> 
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/colocacion.jpg" alt="Descripción de la imagen" width="300"><br> 
+<p align="center"><b>Figura 2.</b> Colocación de electrodos para la configuración de medición bipolar: 2 electrodos de medición (IN + e IN-) y 1 de referencia [2] <br> 
 
-<p align="justify">El protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía fue el de la guía experimental de BITalino [21]: <br>
+<p align="justify">El protocolo seguido para evaluar el cambio de señal desencadenado por cambios de actividad neuronal fue el siguiente: <br>
+
 <ol>
-  <li>Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal) durante 30 segundos.</li>
-  <li>Repetir un ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER tres veces, manteniendo la respiración y fases de reposo durante cinco segundos.</li>
-  <li> Registrar otra fase inicial de 30 segundos.</li>
-  <li> Realizar 10 burpees y observa tu frecuencia cardíaca antes y después del entrenamiento.</li>
-  <li> Registrar otra fase inicial de 30 segundos.</li>
-  <li> Realizar una inhalación larga (~10 segundos) seguida de contener la respiración durante varios segundos (~10 segundos).</li>
+  <li>Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal, sin movimientos oculares/ojos cerrados) durante 30 segundos. </li>
+  <li>Repetir un ciclo de OJOS ABIERTOS - OJOS CERRADOS cinco veces, manteniendo ambas fases durante cinco segundos. </li>
+  <li>Registrar otra fase de referencia de 30 segundos. </li>
+  <li>Escuchar una serie de ejercicios matemáticos y resuelver cada uno de ellos mentalmente enfocando la mirada en un punto específico para evitar artefactos. </li>
 </ol>
 
 Adicionalmente, se incorporó la simulación de un paro cardíaco haciendo uso del ProSim 4 - Vital signs simulator. Como puede observarse en la figura 3, hubo una equivocación en la colocación de los electrodos, lo cual podría afectar la calidad de la señal registrada y la interpretación de los datos. 
@@ -176,13 +176,4 @@ Asimismo, se puede observar lo descrito en esta tabla en el mismo FLUKE (Figura 
       La asistolia se define como la ausencia total de actividad eléctrica en el corazón, lo que resulta en una línea plana en el trazado del ECG. Esta fase  representa hasta el 40-50% de causas de muerte súbita en adultos a nivel mundial y es secundario a daño estructural del miocardio. requiere intervención inmediata, como la administración de RCP y desfibrilación y en la mayoria de casos como este implica la muerte del paciente. [10] En el ECG observado se aprecia una linea plana, con cierto ruido leve pero sin ninguna de las características de la onda de ECG.
       
 ### Bibliografía 
-<p align="justify">[1] M. AlGhatrif y J. Lindsay, «A brief review: history to understand fundamentals of electrocardiography», Journal of Community Hospital Internal Medicine Perspectives, vol. 2, n.o 1, p. 14383, ene. 2012, doi: 10.3402/jchimp.v2i1.14383.
-<p align="justify">[2] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide2_ECG.pdf
-<p align="justify">[3] Users Manual, “Vital Signs Simulator”, Flukebiomedical.com. [En línea]. Disponible en: https://www.flukebiomedical.com/sites/default/files/resources/Pro4____umeng0300.pdf.
-<p align="justify">[4] S. Hosseini y M. Jamshir, «Valsalva maneuver and strain-related ECG changes», Res Cardiovasc Med, vol. 4, n.º 4, p. 8, 2015, doi: 10.5812/cardiovascmed.28136.
-<p align="justify">[5] F. S. Martinelli et al., “Heart rate variability in athletes and nonathletes at rest and during head-up tilt,” Brazilian Journal of Medical and Biological Research, vol. 38, no. 4, pp. 639–647, Apr. 2005, doi: https://doi.org/10.1590/s0100-879x2005000400019.‌
-<p align="justify">[6] J. Deckers, R. Vinke, J. Vos, and Maarten Simoons, “Changes in the electrocardiographic response to exercise in healthy women.,” Heart, vol. 64, no. 6, pp. 376–380, Dec. 1990, doi: https://doi.org/10.1136/hrt.64.6.376.‌
-<p align="justify">[7] S. Sánchez-Morago. “CONTRACCIONES VENTRICULARES PREMATURAS : ¿SON TODAS IGUALES?” SEEUE - Sociedad Española de Enfermería de Urgencias y Emergencias. Accedido el 20 de abril de 2024. [En línea]. Disponible: https://www.enfermeriadeurgencias.com/ciber/PRIMERA_EPOCA/2006/octubre/contraccionesventriculares.htm
-<p align="justify">[8] B. Benito y M. Josephson. “Taquicardia ventricular en la enfermedad coronaria | Revista Española de Cardiología”. Revista Española de Cardiología. Accedido el 20 de abril de 2024. [En línea]. Disponible: https://www.revespcardiol.org/es-taquicardia-ventricular-enfermedad-coronaria-articulo-S0300893212003284
-<p align="justify">[9] Zoltán Szabó, Dóra Ujvárosy, Tamás Ötvös, V. Sebestyén, and P. P. Nánási, “Handling of Ventricular Fibrillation in the Emergency Setting,” Frontiers in pharmacology, vol. 10, Jan. 2020, doi: https://doi.org/10.3389/fphar.2019.01640.
-<p align="justify">[10] H. Rodríguez-Reyes, Mayela Muñoz-Gutiérrez, and J. L. Salas-Pacheco, “Current behavior of sudden cardiac arrest and sudden death,” Deleted Journal, vol. 90, no. 2, Sep. 2020, doi: https://doi.org/10.24875/acme.m20000114.
+<p align="justify">[1] 
