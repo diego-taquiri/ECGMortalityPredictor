@@ -76,7 +76,7 @@ Lista de participantes:
 | --------- | --------- | --------- |
 | Línea Base| <p align="center"><a href="https://youtu.be/Aakm-yAOVgY"><img src="https://img.youtube.com/vi/Aakm-yAOVgY/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
 | Ciclo de ojos abiertos-cerrados| <p align="center"><a href="https://youtu.be/pgSb1oMOQ-0"><img src="https://img.youtube.com/vi/pgSb1oMOQ-0/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
-| Fase de referencia| <p align="center"><a href="https://youtu.be/9TthaNQQPNw"><img src="https://img.youtube.com/vi/9TthaNQQPNw/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
+| Fase de referencia| <p align="center"><a href="https://youtu.be/Bp8uORbIjmg"><img src="https://img.youtube.com/vi/Bp8uORbIjmg/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
 | Ejercicios matemáticos| <p align="center"><a href="https://youtu.be/GUYjouPUTFM"><img src="https://img.youtube.com/vi/GUYjouPUTFM/0.jpg" alt="Miniatura del video" width="350"></a></p> | Texto     |
 <p align="center"><b>Tabla 1.</b> Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals del protocolo. <br> 
 
