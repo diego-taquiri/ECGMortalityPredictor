@@ -10,11 +10,11 @@ Lista de participantes:
 2. [Objetivos específicos de la práctica](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/BITalino_EEG.md#objetivos-espec%C3%ADficos-de-la-pr%C3%A1ctica)
 3. [Materiales y métodos](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/BITalino_EEG.md#materiales-y-m%C3%A9todos)
 4. [Resultados](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/BITalino_EEG.md#resultados)
-   - [Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/BITalino_EEG.md#videos-mostrando-las-conexiones-electrodos-cuerpo-y-la-se%C3%B1al-ploteada-en-opensignals)
-   - [Archivo de los datos de la señal ploteada](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/BITalino_EEG.md#archivo-de-los-datos-de-la-se%C3%B1al-ploteada)
-   - [Ploteo de las señales en Python](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/BITalino_EEG.md#ploteo-de-las-se%C3%B1ales-en-python)
-5. [Discusión](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/BITalino_EEG.md#discusi%C3%B3n)
-6. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/BITalino_EEG.md#bibliograf%C3%ADa)
+   - [Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%204/BITalino_EEG.md#videos-mostrando-las-conexiones-electrodos-cuerpo-y-la-se%C3%B1al-ploteada-en-opensignals)
+   - [Archivo de los datos de la señal ploteada](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/BITalino_EEG.md#archivo-de-los-datos-de-la-se%C3%B1al-ploteada)
+   - [Ploteo de las señales en Python](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/BITalino_EEG.md#ploteo-de-las-se%C3%B1ales-en-python)
+5. [Discusión](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/BITalino_EEG.md#discusi%C3%B3n)
+6. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/BITalino_EEG.md#bibliograf%C3%ADa)
 
 ### Introducción
 
@@ -63,7 +63,7 @@ Lista de participantes:
 <p align="justify">Realizando los cambios respectivos mediante el ajuste de los resortes al tamaño de la cabeza, se logró que el UltraCortex esté ubicado de modo que el nodo central posterior esté aproximadamente a la misma distancia por encima del inion que el nodo central frontal esté por encima del puente de su nariz. [2]
 
 ### Resultados
-#### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals
+#### Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada
 - <p align="justify">Protocolo seguido para evaluar el cambio de actividad neuronal en OpenSignals. 
 
 | Protocolo | Conexiones electrodos-cuerpo | Señal ploteada en OpenSignals |
