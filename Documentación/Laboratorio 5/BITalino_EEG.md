@@ -118,4 +118,5 @@ Lista de participantes:
 <p align="justify"><b>Ejercicios matemáticos:</b>
       
 ### Bibliografía 
-<p align="justify">[1] 
+<p align="justify">[1] EXPERIMENTAL GUIDES TO MEET y L. Y. Biosignals, “BITalino (r)evolution Lab Guide”, Pluxbiosignals.com. [En línea]. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide3_EEG.pdf
+<p align="justify">[2] “Ultracortex Mark IV”, Openbci.com, 2016. [En línea]. Disponible en: https://docs.openbci.com/AddOns/Headwear/MarkIV/
