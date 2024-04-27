@@ -84,7 +84,7 @@ Lista de participantes:
 
 | Protocolo | Señal ploteada en OpenBCI |
 | :--------: | :--------: |
-| Línea Base| Texto     |
+| Línea Base| <p align="center"><a href="https://youtu.be/XvO9Swg0UOs"><img src="https://img.youtube.com/vi/XvO9Swg0UOs/0.jpg" alt="Miniatura del video" width="350"></a></p>     |
 | Ciclo de ojos abiertos-cerrados| Texto     |
 | Fase de referencia| Texto     |
 | Ejercicios matemáticos| Texto     |
