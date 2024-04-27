@@ -35,7 +35,7 @@ Lista de participantes:
 
 <div style="text-align: center;">
       <p align="center">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/posicion1.png" alt="Descripción de la primera imagen" width="300" height="300">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/posicion1.png" alt="Descripción de la primera imagen" width="300" height="350">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%205/Images/colocacion.jpg" alt="Descripción de la primera imagen" width="300">
 </div>
 <p align="center"><b>Figura 2.</b> (a) Sistema internacional 10-20 para la (b) colocación de electrodos para la configuración de medición bipolar: electrodos de medición (IN + e IN-) y de referencia. [1] <br> 
