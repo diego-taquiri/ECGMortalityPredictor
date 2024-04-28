@@ -77,7 +77,7 @@ Lista de participantes:
 | Protocolo | Línea Base | Ciclo de ojos abiertos-cerrados | Fase de referencia | Ejercicios matemáticos |
 | --------- | ---------- | ------------------------------ | ------------------ | ---------------------- |
 | Conexiones electrodos-cuerpo | <p align="center"><a href="https://youtu.be/Aakm-yAOVgY"><img src="https://img.youtube.com/vi/Aakm-yAOVgY/0.jpg" alt="Miniatura del video" width="350"></a></p> | <p align="center"><a href="https://youtu.be/pgSb1oMOQ-0"><img src="https://img.youtube.com/vi/pgSb1oMOQ-0/0.jpg" alt="Miniatura del video" width="350"></a></p> | <p align="center"><a href="https://youtu.be/Bp8uORbIjmg"><img src="https://img.youtube.com/vi/Bp8uORbIjmg/0.jpg" alt="Miniatura del video" width="350"></a></p> | <p align="center"><a href="https://youtu.be/8Rho--2nGmg"><img src="https://img.youtube.com/vi/8Rho--2nGmg/0.jpg" alt="Miniatura del video" width="350"></a></p> |
-| Señal ploteada en OpenSignals | Texto | Texto | Texto | Texto |
+| Señal ploteada en OpenSignals | <img src="plots/eeg-base1.png" style="width:100%;"> | Texto | Texto | Texto |
 <p align="center"><b>Tabla 1.</b> Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals del protocolo. <br> 
 
 - <p align="justify">Protocolo seguido para evaluar el cambio de actividad neuronal en OpenBCI. 
