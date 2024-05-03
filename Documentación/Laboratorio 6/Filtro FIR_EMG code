@@ -1,6 +1,1 @@
-import numpy as np
-import matplotlib.pyplot as plt
-data = np.loadtxt("emg_raw_data/isb-reposo-armando/opensignals_98D3B1FD3DA9_2024-04-12_12-12-05.txt",skiprows=3)
-data_mV = data[:,5]/1024 *3.223 - 3.223/2 #De acuerdo a la cuantización de 3.223 mV a 1024 bits del manual de Bitalino
-time = np.arange(len(data_mV))/1000 
 
