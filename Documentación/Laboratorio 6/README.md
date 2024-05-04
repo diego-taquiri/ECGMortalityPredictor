@@ -7,6 +7,6 @@
 
 | Estado | Señal cruda | Filtro IIR | Filtro FIR |
 | ------------ | -------------- | ------------------ | ------------------ |
-| Reposo | ![Imagen de EMG](plots/emg-reposo-cruda.png) | - | ![Imagen de EMG](plots/emg-reposo-FIR.png) |
-| Contracción leve | ![Imagen de EMG](plots/emg-contraccion-leve-cruda.png) | - | ![Imagen de EMG](plots/emg-contraccion-leve-FIR.png) |
-| Contracción fuerte | ![Imagen de EMG](plots/emg-contraccion-fuerte-cruda.png) | - | ![Imagen de EMG](plots/emg-contraccion-fuerte-FIR.png) |
+| Reposo | ![Imagen de EMG](plots/emg-reposo-cruda.png) | ![Imagen de EMG](plots/emg-reposo-IIR.png) | ![Imagen de EMG](plots/emg-reposo-FIR.png) |
+| Contracción leve | ![Imagen de EMG](plots/emg-contraccion-leve-cruda.png) | ![Imagen de EMG](plots/emg-contraccion-leve-IIR.png) | ![Imagen de EMG](plots/emg-contraccion-leve-FIR.png) |
+| Contracción fuerte | ![Imagen de EMG](plots/emg-contraccion-fuerte-cruda.png) | ![Imagen de EMG](plots/emg-contraccion-fuerte-IIR.png) | ![Imagen de EMG](plots/emg-contraccion-fuerte-FIR.png) |
