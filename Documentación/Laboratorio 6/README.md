@@ -55,15 +55,15 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 
 <p align="justify">Para reducir este ruido se consideraron las siguientes características en el filtrado:
 
-Diseñar un filtro IIR:
+<b>Diseñar un filtro IIR:</b>
 - Opciones de filtro: Bessel, Butterworth, Chebyshev, Eliptico.
 - Objetivo: Suprimir la interferencia de frecuencia alta y artefactos.
 - Especificaciones sugeridas: Fc = 30 Hz, Wp = 94 rad/s, Ws = 157 rad/s.
 
-2. Diseñar un filtro FIR:
-○ Métodos de ventana: Hanning, Bartlett.
-○ Objetivo: Extraer bandas de frecuencia específicas (alfa, beta, etc.).
-○ Especificaciones sugeridas: Fc = 12 Hz, paso banda para ondas alfa.
+<b>Diseñar un filtro FIR:</b>
+- Métodos de ventana: Hanning, Bartlett.
+- Objetivo: Extraer bandas de frecuencia específicas (alfa, beta, etc.).
+- Especificaciones sugeridas: Fc = 12 Hz, paso banda para ondas alfa.
 
 <p align="justify">Cinco subbandas de frecuencia definen las frecuencias de la señal EEG que se pueden medir desde el cerebro, siendo gamma la más rápida y delta de las frecuencias más lentas [7]. 
    
