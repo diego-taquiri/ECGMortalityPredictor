@@ -17,6 +17,8 @@ Lista de participantes:
 6. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/README.md#bibliograf%C3%ADa)
 
 ### Introducción
+<p align="justify">Históricamente, los filtros IIR digitales se han derivado de sus homólogos analógicos. Hay varios tipos comunes de filtros analógicos: Butterworth, que tienen bandas de paso máximamente planas en filtros del mismo orden, Chebyshev tipo I que son equivariables en la banda de paso, Chebyshev tipo II que son equivariables en la banda de parada, y filtros elípticos que son equivariables tanto en la banda de paso y la banda de parada. La versión digital de estos se puede obtener a partir de diseños analógicos a través de la transformación bilineal. [1] En comparación, las técnicas de diseño para filtros digitales FIR generalmente se llevan a cabo directamente en el dominio del tiempo discreto. Hay tres técnicas de diseño principales, las cuales incluyem el método de la ventana, el método de muestreo de frecuencia y el diseño algorítmico de filtros óptimos. En este laboratorio se trabajará con el método de ventana, el cual comienza con una respuesta de muestra unitaria deseada que luego se trunca mediante una ventana de duración finita. [2]
+   
 ### Objetivos específicos de la práctica
 - Diseñar filtros FIR e IIR con los datasets de los laboratorios anteriores.
 - Filtrar de manera óptima las frecuencias altas de las señales de ECG que corresponden a ruido.
