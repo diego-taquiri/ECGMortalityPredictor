@@ -54,11 +54,12 @@ La señal electromiográfica de superficie (sEMG) que se origina en el músculo 
 
 <p align="justify">Para reducir este ruido se consideraron las siguientes características en el filtrado:
    
-Diseñar un filtro IIR:
+<b>Diseñar un filtro IIR:</b>
 - Opciones de filtro: Bessel, Butterworth, Chebyshev, Eliptico.
 - Objetivo: Eliminar frecuencias altas que correspondan a ruido eléctrico y artefactos de movimiento.
 - Especificaciones sugeridas: Fc = 60 Hz, Wp = 188 rad/s, Ws = 300 rad/s.
-Diseñar un filtro FIR:
+  
+<b>Diseñar un filtro FIR:</b>
 - Métodos de ventana: Hamming, Blackman.
 - Objetivo: Aislar la banda de frecuencia de interés que corresponde a la actividad muscular.
 - Especificaciones sugeridas: Fc = 40 Hz, paso banda bajo.
