@@ -51,7 +51,19 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 #### ECG
 #### EMG
 #### EEG
-Las fuentes de ruido también se manifiestan como frecuencias oscilantes que son captadas por el EEG. El ruido de baja frecuencia proviene de fuentes como el movimiento de la cabeza y los cables de los electrodos, y la transpiración en el cuero cabelludo. Este aparece como derivas lentas en la señal del EEG durante muchos segundos. Por el contrario, el ruido de alta frecuencia proviene de fuentes que incluyen interferencias electromagnéticas y contracciones musculares. Este parece cambios rápidos de arriba a abajo (como los dientes de una sierra) en el EEG. La frecuencia de las fuentes de ruido de alta y baja frecuencia puede superponerse con la banda de interés del EEG de 1-30 Hz, pero en general tienden a ser más bajas y más altas, respectivamente, que el EEG humano. Esto significa que al reducir la potencia de la señal en las frecuencias por encima y por debajo del rango de interés experimental, podemos reducir el ruido con un impacto mínimo en las señales de interés. [6]
+<p align="justify">Las fuentes de ruido también se manifiestan como frecuencias oscilantes que son captadas por el EEG. El ruido de baja frecuencia proviene de fuentes como el movimiento de la cabeza y los cables de los electrodos, y la transpiración en el cuero cabelludo. Este aparece como derivas lentas en la señal del EEG durante muchos segundos. Por el contrario, el ruido de alta frecuencia proviene de fuentes que incluyen interferencias electromagnéticas y contracciones musculares. Este parece cambios rápidos de arriba a abajo (como los dientes de una sierra) en el EEG. La frecuencia de las fuentes de ruido de alta y baja frecuencia puede superponerse con la banda de interés del EEG de 1-30 Hz, pero en general tienden a ser más bajas y más altas, respectivamente, que el EEG humano. Esto significa que al reducir la potencia de la señal en las frecuencias por encima y por debajo del rango de interés experimental, podemos reducir el ruido con un impacto mínimo en las señales de interés. [6]
+
+<p align="justify">Para reducir este ruido se consideraron las siguientes características en el filtrado:
+
+Diseñar un filtro IIR:
+- Opciones de filtro: Bessel, Butterworth, Chebyshev, Eliptico.
+- Objetivo: Suprimir la interferencia de frecuencia alta y artefactos.
+- Especificaciones sugeridas: Fc = 30 Hz, Wp = 94 rad/s, Ws = 157 rad/s.
+
+2. Diseñar un filtro FIR:
+○ Métodos de ventana: Hanning, Bartlett.
+○ Objetivo: Extraer bandas de frecuencia específicas (alfa, beta, etc.).
+○ Especificaciones sugeridas: Fc = 12 Hz, paso banda para ondas alfa.
 
 <p align="justify">Cinco subbandas de frecuencia definen las frecuencias de la señal EEG que se pueden medir desde el cerebro, siendo gamma la más rápida y delta de las frecuencias más lentas [7]. 
    
