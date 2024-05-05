@@ -37,7 +37,7 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 <div style="text-align: center;">
       <p align="center">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/iir.png" alt="Descripción de la primera imagen" width="300">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/ventana.png" alt="Descripción de la primera imagen" width="500">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/ventana.png" alt="Descripción de la primera imagen" width="525">
 </div>
 <p align="center"><b>Figura 3.</b> (a) Módulo de las respuestas de los filtros de Bessel y Butterworth de orden N = 4 y (b) formas de varias funciones de ventana [3]. <br> 
       
@@ -52,7 +52,7 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 #### EMG
 #### EEG
 <p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/Screenshot%202024-05-04%20192312.png" alt="Descripción de la imagen" width="425"><br> 
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/Screenshot%202024-05-04%20192312.png" alt="Descripción de la imagen" width="400"><br> 
 <p align="center"><b>Figura 1.</b> Bandas de frecuencia de EEG, ocurrencia y tareas para activar la potencia de la banda. <br> 
 
 ### Resultados
