@@ -49,6 +49,21 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 
 ### Materiales y métodos
 #### ECG
+<p align="justify">Para reducir este ruido se consideraron las siguientes características en el filtrado:
+
+<b>Diseñar un filtro IIR:</b>
+- Opciones de filtro: Bessel, Butterworth, Chebyshev, Eliptico.
+- Especificaciones sugeridas: Fc = 60 Hz, Wp = 188 rad/s, Ws = 300 rad/s.
+  
+<b>Diseñar un filtro FIR:</b>
+- Métodos de ventana: Hanning, Hamming, Bartlett, rectangular o Blackman.
+- Especificaciones sugeridas: Fc = 40 Hz, paso banda bajo.
+
+<b>Características del filtro: </b>
+- Fc = 20 hz
+- Wp = 94 rad/s
+- Ws = 157 rad/s
+
 #### EMG
 <p align="justify">La señal electromiográfica de superficie (sEMG) que se origina en el músculo está inevitablemente contaminada por varias señales de ruido o artefactos que se originan en la interfaz piel-electrodo, en la electrónica que amplifica las señales, y en fuentes externas. La tecnología moderna es sustancialmente inmune a algunos de estos ruidos, pero no al ruido de referencia y al ruido de artefacto de movimiento. Estas fuentes de ruido tienen espectros de frecuencia que contaminan la parte de baja frecuencia de espectro de frecuencia. Hay muchos factores que deben tenerse en cuenta al determinar las especificaciones de filtro adecuadas para eliminar estos artefactos; Incluyen el músculo probado y el tipo de contracción, la configuración del sensor y la fuente de ruido específica. La determinación del paso de banda es siempre un compromiso entre (a) reducir el ruido y la contaminación por artefactos, y (b) preservar la información deseada [6].
 
