@@ -30,13 +30,16 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/filtro.png" alt="Descripción de la imagen" width="400"><br> 
-<p align="center"><b>Figura 1.</b> Módulo de los filtros físicamente realizables [3]. <br> 
+<p align="center"><b>Figura 2.</b> Módulo de los filtros físicamente realizables [3]. <br> 
    
 <p align="justify">En este laboratorio, se abordará el diseño de filtros IIR por medio de transformación bilineal. Hay varios tipos comunes de filtros analógicos: Butterworth, que tienen bandas de paso máximamente planas en filtros del mismo orden, Chebyshev tipo I que son equivariables en la banda de paso, Chebyshev tipo II que son equivariables en la banda de parada, y filtros elípticos que son equivariables tanto en la banda de paso y la banda de parada. La versión digital de estos se puede obtener a partir de diseños analógicos a través de la transformación bilineal [4]. En comparación, para FIR, las técnicas de diseño para filtros digitales, se trabajarán con el método de ventana, el cual comienza con una respuesta de muestra unitaria deseada que luego se trunca mediante una ventana de duración finita [5]. Los distintos tipos de filtro FIR e IIR son visualizados a continuación.
-   
-<p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/ventana.png" alt="Descripción de la imagen" width="400"><br> 
-<p align="center"><b>Figura 1.</b> Formas de varias funciones de ventana [3]. <br> 
+
+<div style="text-align: center;">
+      <p align="center">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/iir.png" alt="Descripción de la primera imagen" width="300" height="270">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/ventana.png" alt="Descripción de la primera imagen" width="300" height="270">
+</div>
+<p align="center"><b>Figura 3.</b> (a) Sistema internacional 10-20 para la (b) formas de varias funciones de ventana [3]. <br> 
       
 ### Objetivos específicos de la práctica
 - Diseñar filtros FIR e IIR con los datasets de los laboratorios anteriores.
@@ -51,7 +54,7 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/Screenshot%202024-05-04%20192312.png" alt="Descripción de la imagen" width="400"><br> 
 <p align="center"><b>Figura 1.</b> Bandas de frecuencia de EEG, ocurrencia y tareas para activar la potencia de la banda. <br> 
-   
+
 ### Resultados
 #### Tabla resumen ECG 
 | Campo | Señal cruda | Filtro IIR | Filtro FIR |
