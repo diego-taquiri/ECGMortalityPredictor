@@ -50,8 +50,9 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 ### Materiales y métodos
 #### ECG
 #### EMG
+La señal electromiográfica de superficie (sEMG) que se origina en el músculo está inevitablemente contaminada por varias señales de ruido o artefactos que se originan en la interfaz piel-electrodo, en la electrónica que amplifica las señales, y en fuentes externas [6].
 #### EEG
-<p align="justify">Las fuentes de ruido también se manifiestan como frecuencias oscilantes que son captadas por el EEG. El ruido de baja frecuencia proviene de fuentes como el movimiento de la cabeza y los cables de los electrodos, y la transpiración en el cuero cabelludo. Este aparece como derivas lentas en la señal del EEG durante muchos segundos. Por el contrario, el ruido de alta frecuencia proviene de fuentes que incluyen interferencias electromagnéticas y contracciones musculares. Este parece cambios rápidos de arriba a abajo (como los dientes de una sierra) en el EEG. La frecuencia de las fuentes de ruido de alta y baja frecuencia puede superponerse con la banda de interés del EEG de 1-30 Hz, pero en general tienden a ser más bajas y más altas, respectivamente, que el EEG humano. Esto significa que al reducir la potencia de la señal en las frecuencias por encima y por debajo del rango de interés experimental, podemos reducir el ruido con un impacto mínimo en las señales de interés. [6]
+<p align="justify">Las fuentes de ruido también se manifiestan como frecuencias oscilantes que son captadas por el EEG. El ruido de baja frecuencia proviene de fuentes como el movimiento de la cabeza y los cables de los electrodos, y la transpiración en el cuero cabelludo. Este aparece como derivas lentas en la señal del EEG durante muchos segundos. Por el contrario, el ruido de alta frecuencia proviene de fuentes que incluyen interferencias electromagnéticas y contracciones musculares. Este parece cambios rápidos de arriba a abajo (como los dientes de una sierra) en el EEG. La frecuencia de las fuentes de ruido de alta y baja frecuencia puede superponerse con la banda de interés del EEG de 1-30 Hz, pero en general tienden a ser más bajas y más altas, respectivamente, que el EEG humano. Esto significa que al reducir la potencia de la señal en las frecuencias por encima y por debajo del rango de interés experimental, podemos reducir el ruido con un impacto mínimo en las señales de interés. [7]
 
 <p align="justify">Para reducir este ruido se consideraron las siguientes características en el filtrado:
 
@@ -65,21 +66,21 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 - Objetivo: Extraer bandas de frecuencia específicas (alfa, beta, etc.).
 - Especificaciones sugeridas: Fc = 12 Hz, paso banda para ondas alfa.
 
-<p align="justify">Cinco subbandas de frecuencia definen las frecuencias de la señal EEG que se pueden medir desde el cerebro, siendo gamma la más rápida y delta de las frecuencias más lentas [7]. 
+<p align="justify">Cinco subbandas de frecuencia definen las frecuencias de la señal EEG que se pueden medir desde el cerebro, siendo gamma la más rápida y delta de las frecuencias más lentas [8]. 
    
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/Screenshot%202024-05-04%20192312.png" alt="Descripción de la imagen" width="400"><br> 
-<p align="center"><b>Figura 4.</b> Bandas de frecuencia de EEG, ocurrencia y tareas para activar la potencia de la banda [7]. <br> 
+<p align="center"><b>Figura 4.</b> Bandas de frecuencia de EEG, ocurrencia y tareas para activar la potencia de la banda [8]. <br> 
 
-<p align="justify"><b>Banda delta:</b> Oscila en frecuencias de 0 a 4 Hz y están presentes en diferentes fases del sueño [7].
+<p align="justify"><b>Banda delta:</b> Oscila en frecuencias de 0 a 4 Hz y están presentes en diferentes fases del sueño [8].
 
-<p align="justify"><b>Banda theta:</b> Varían en frecuencias de 4 a 8 Hz y se originan en el tálamo y son más fuertes en el lado derecho del cerebro. Las ondas theta están asociadas con el área frontal del cerebro y se correlacionan con tareas metálicas e indican una mayor potencia de banda con mayor dificultad de la tarea, aunque se puede medir en todas las áreas de la corteza y se relaciona con la región del cerebro transportador [7].
+<p align="justify"><b>Banda theta:</b> Varían en frecuencias de 4 a 8 Hz y se originan en el tálamo y son más fuertes en el lado derecho del cerebro. Las ondas theta están asociadas con el área frontal del cerebro y se correlacionan con tareas metálicas e indican una mayor potencia de banda con mayor dificultad de la tarea, aunque se puede medir en todas las áreas de la corteza y se relaciona con la región del cerebro transportador [8].
 
-<p align="justify"><b>Banda alfa:</b> Varían en frecuencias de 8 a 12 Hz y reflejan funciones correlacionadas con la memoria, la motricidad y los sentidos. Un aumento de la potencia de la banda alfa puede ser provocado por la relajación en estado de vigilia cuando los ojos están cerrados. En comparación, las ondas alfa se suprimen al abrir los ojos y al realizar actividad física o mental [7].
+<p align="justify"><b>Banda alfa:</b> Varían en frecuencias de 8 a 12 Hz y reflejan funciones correlacionadas con la memoria, la motricidad y los sentidos. Un aumento de la potencia de la banda alfa puede ser provocado por la relajación en estado de vigilia cuando los ojos están cerrados. En comparación, las ondas alfa se suprimen al abrir los ojos y al realizar actividad física o mental [8].
 
-<p align="justify"><b>Banda beta:</b> Oscilan entre 12 y 25 Hz y se generan en las regiones posterior y frontal. Se correlacionan con el pensamiento activo y concentración. A mayor concentración, las oscilaciones beta se disparan en una frecuencia más rápida [7].
+<p align="justify"><b>Banda beta:</b> Oscilan entre 12 y 25 Hz y se generan en las regiones posterior y frontal. Se correlacionan con el pensamiento activo y concentración. A mayor concentración, las oscilaciones beta se disparan en una frecuencia más rápida [8].
 
-<p align="justify"><b>Banda gamma:</b> Frecuencias superiores a 25 Hz. El origen y el reflejo de estas oscilaciones no es notablemente claro [7].
+<p align="justify"><b>Banda gamma:</b> Frecuencias superiores a 25 Hz. El origen y el reflejo de estas oscilaciones no es notablemente claro [8].
 
 ### Resultados
 #### Tabla resumen ECG 
@@ -100,7 +101,7 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 ### Discusión
 <p align="justify"><b>Filtración de ECG:</b>
 <p align="justify"><b>Filtración de EMG:</b>
-<p align="justify">A traves de los resultados obtenidos por el filtro FIR de ventana Hamming y el filtro IIR de metodo Butterworth, podemos observar que el filtro FIR proporciona resultados más entendibles con menos ruido y picos más pronunciados. Este resultado coincide con el estudio realizado por Liu, S. [8], el cual hizo uso de los mismos tipos de filtros en señales EMG y encontro que el SNR o Signal to Noise Ratio es mayor en los filtros FIR ademas de mostrar un tiempo de ejecución mucho menor. Estos parametros son indicadores de una mejor filtración de señal.
+<p align="justify">A traves de los resultados obtenidos por el filtro FIR de ventana Hamming y el filtro IIR de metodo Butterworth, podemos observar que el filtro FIR proporciona resultados más entendibles con menos ruido y picos más pronunciados. Este resultado coincide con el estudio realizado por Liu, S. [9], el cual hizo uso de los mismos tipos de filtros en señales EMG y encontro que el SNR o Signal to Noise Ratio es mayor en los filtros FIR ademas de mostrar un tiempo de ejecución mucho menor. Estos parametros son indicadores de una mejor filtración de señal.
 <p align="justify"><b>Filtración de EEG:</b>
    
 ### Bibliografía
@@ -109,6 +110,7 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 <p align="justify">[3] J. G. Proakis y D. G. Manolakis, Tratamiento digital de señales. Old Tappan, NJ, Estados Unidos de América: Prentice Hall, 2007.
 <p align="justify">[4] “DT Filter Design: IIR Filters”, Mit.edu, 2006. [En línea]. Disponible en: https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/51e3beff8c8ce2289ba292fcdb0040f4_lec08.pdf.
 <p align="justify">[5] A. V. Oppenheim, “Design of FIR digital filters”, Mit.edu, 2011. [En línea]. Disponible en: https://ocw.mit.edu/courses/res-6-008-digital-signal-processing-spring-2011/aea8444ff81fdeed9c2b66dccebbce47_MITRES_6_008S11_lec17.pdf.
-<p align="justify">[6] “Filtering EEG data — neural data science in python”, Neuraldatascience.io. [En línea]. Disponible en: https://neuraldatascience.io/7-eeg/erp_filtering.html.
-<p align="justify">[7] EXPERIMENTAL GUIDES TO MEET y L. Y. Biosignals, “BITalino (r)evolution Lab Guide”, Pluxbiosignals.com. [En línea]. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide3_EEG.pdf. [Consultado: 05-may-2024].
-<p align="justify">[8] Liu, S., Sabrina, N., & Hardson, H. (2023). Comparison of FIR and IIR Filters for Audio Signal Noise Reduction. Ultima Computing : Jurnal Sistem Komputer, 15(1), 19-24. https://doi.org/https://doi.org/10.31937/sk.v15i1.3171
+<p align="justify">[6]
+<p align="justify">[7] “Filtering EEG data — neural data science in python”, Neuraldatascience.io. [En línea]. Disponible en: https://neuraldatascience.io/7-eeg/erp_filtering.html.
+<p align="justify">[8] EXPERIMENTAL GUIDES TO MEET y L. Y. Biosignals, “BITalino (r)evolution Lab Guide”, Pluxbiosignals.com. [En línea]. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide3_EEG.pdf. [Consultado: 05-may-2024].
+<p align="justify">[9] Liu, S., Sabrina, N., & Hardson, H. (2023). Comparison of FIR and IIR Filters for Audio Signal Noise Reduction. Ultima Computing : Jurnal Sistem Komputer, 15(1), 19-24. https://doi.org/https://doi.org/10.31937/sk.v15i1.3171
