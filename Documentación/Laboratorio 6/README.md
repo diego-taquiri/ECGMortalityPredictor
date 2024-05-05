@@ -72,6 +72,10 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 
 #### Tabla resumen EEG 
 ### Discusión
+
+<p align="justify">Filtración de EMG
+<p align="justify">A traves de los resultados obtenidos por el filtro FIR de ventana Hamming y el filtro IIR de metodo Butterworth, podemos observar que el filtro FIR proporciona resultados más entendibles con menos ruido y picos más pronunciados. Este resultado coincide con el estudio realizado por Liu, S. [6], el cual hizo uso de los mismos tipos de filtros en señales EMG y encontro que el SNR o Signal to Noise Ratio es mayor en los filtros FIR ademas de mostrar un tiempo de ejecución mucho menor. Estos parametros son indicadores de una mejor filtración de señal.
+
 ### Bibliografía
 <p align="justify">[1]  Martinek R, Ladrova M, Sidikova M, Jaros R, Behbehani K, Kahankova R, Kawala-Sterniuk A. Advanced Bioelectrical Signal Processing Methods: Past, Present and Future Approach-Part I: Cardiac Signals. Sensors (Basel). 2021 Jul 30;21(15):5186. doi: 10.3390/s21155186. PMID: 34372424; PMCID: PMC8346990. 
 <p align="justify">[2] Adimulam, M. K., & Srinivas, M. . (2016). Modeling of EXG (ECG, EMG and EEG) non-idealities using MATLAB. 2016 9th International Congress on Image and Signal Processing, BioMedical Engineering and Informatics (CISP-BMEI). doi:10.1109/cisp-bmei.2016.7852968
