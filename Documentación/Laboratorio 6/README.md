@@ -51,6 +51,18 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 #### ECG
 #### EMG
 La señal electromiográfica de superficie (sEMG) que se origina en el músculo está inevitablemente contaminada por varias señales de ruido o artefactos que se originan en la interfaz piel-electrodo, en la electrónica que amplifica las señales, y en fuentes externas [6].
+
+<p align="justify">Para reducir este ruido se consideraron las siguientes características en el filtrado:
+   
+Diseñar un filtro IIR:
+- Opciones de filtro: Bessel, Butterworth, Chebyshev, Eliptico.
+- Objetivo: Eliminar frecuencias altas que correspondan a ruido eléctrico y artefactos de movimiento.
+- Especificaciones sugeridas: Fc = 60 Hz, Wp = 188 rad/s, Ws = 300 rad/s.
+Diseñar un filtro FIR:
+- Métodos de ventana: Hamming, Blackman.
+- Objetivo: Aislar la banda de frecuencia de interés que corresponde a la actividad muscular.
+- Especificaciones sugeridas: Fc = 40 Hz, paso banda bajo.
+
 #### EEG
 <p align="justify">Las fuentes de ruido también se manifiestan como frecuencias oscilantes que son captadas por el EEG. El ruido de baja frecuencia proviene de fuentes como el movimiento de la cabeza y los cables de los electrodos, y la transpiración en el cuero cabelludo. Este aparece como derivas lentas en la señal del EEG durante muchos segundos. Por el contrario, el ruido de alta frecuencia proviene de fuentes que incluyen interferencias electromagnéticas y contracciones musculares. Este parece cambios rápidos de arriba a abajo (como los dientes de una sierra) en el EEG. La frecuencia de las fuentes de ruido de alta y baja frecuencia puede superponerse con la banda de interés del EEG de 1-30 Hz, pero en general tienden a ser más bajas y más altas, respectivamente, que el EEG humano. Esto significa que al reducir la potencia de la señal en las frecuencias por encima y por debajo del rango de interés experimental, podemos reducir el ruido con un impacto mínimo en las señales de interés. [7]
 
