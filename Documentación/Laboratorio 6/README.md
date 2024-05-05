@@ -49,9 +49,9 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 
 ### Materiales y métodos
 #### ECG
-<p align="justify">La contaminación de una señal de ECG proviene de diversas fuentes dentro y fuera del cuerpo de los pacientes. Las señales eléctricas de otros músculos además del corazón, así como la respiración, la tos y otros tipos de movimiento, pueden crear artefactos. El ruido también puede deberse a conexiones eléctricas deficientes si los electrodos no se colocan correctamente sobre el paciente. Además, los cables de ECG son antenas eficaces que captan fácilmente fuentes de ruido eléctrico del entorno inmediato, incluidas luces fluorescentes, teléfonos móviles o dispositivos con Bluetooth. [6]
+<p align="justify">La contaminación de una señal de ECG proviene de diversas fuentes dentro y fuera del cuerpo de los pacientes. Las señales eléctricas de otros músculos además del corazón, así como la respiración, la tos y otros tipos de movimiento, pueden crear artefactos. El ruido también puede deberse a conexiones eléctricas deficientes si los electrodos no se colocan correctamente sobre el paciente. Además, los cables de ECG son antenas eficaces que captan fácilmente fuentes de ruido eléctrico del entorno inmediato, incluidas luces fluorescentes, teléfonos móviles o dispositivos con Bluetooth. Todas estas cosas pueden crear una lectura de ECG borrosa [6].
 
-<p align="justify">Todas estas cosas pueden crear una lectura de ECG borrosa. Afortunadamente, existen varios tipos de filtros que puede utilizar para mitigar esta interferencia. Las frecuencias de ECG suelen estar en el rango de 0,5 a 150 Hz, y los filtros diseñados para eliminar el ruido fuera de ese rango (en el extremo alto o bajo) son relativamente sencillos. El proceso se vuelve más complicado cuando la interferencia se superpone con el rango de frecuencia del ECG. [6]
+<p align="justify">Adicionalmente, los filtros de muesca combinan filtros de paso alto y bajo para crear una pequeña región de frecuencias que se eliminarán. Para los ECG, el objetivo principal es eliminar el ruido de 50 Hz o 60 Hz. Dado que el ruido de la red eléctrica se sitúa en la zona de interés (especialmente en los ECG de diagnóstico),. El equipo de ECG ya tiene cierta capacidad para rechazar el ruido de la red incluso sin un filtro, por lo que, dependiendo de la cantidad de ruido de CA en el ambiente, es posible que no se requiera este filtro. [7]
 
 <p align="justify">Para reducir este ruido se consideraron las siguientes características en el filtrado:
 
@@ -63,12 +63,12 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 - Métodos de ventana: Hanning, Hamming, Bartlett, rectangular o Blackman.
 - Especificaciones sugeridas: Fc = 40 Hz, paso banda bajo.
 
-Para diferentes propósitos (monitorización, cuidados intensivos, diagnóstico, ambulatorio, monitorización del segmento ST, etc.) el equilibrio cambia, por lo que terminamos con una gama de filtros ajustados para obtener el mejor equilibrio. Algunos ejemplos comunes de filtros de ECG son: Diagnóstico: 0,05 Hz ~ 150 Hz; Monitorización ambulatoria de pacientes: 0,67 Hz ~ 40 Hz; Segmento ST: 0,05 Hz ~; y Músculo, ruido ESU: ~ 15 Hz. [7]
-
 <b>Características del filtro: </b>
 - Fc = 20 hz
 - Wp = 94 rad/s
 - Ws = 157 rad/s
+
+<p align="justify">Afortunadamente, existen varios tipos de filtros que puede utilizar para mitigar esta interferencia. Las frecuencias de ECG suelen estar en el rango de 0,5 a 150 Hz, y los filtros diseñados para eliminar el ruido fuera de ese rango (en el extremo alto o bajo) son relativamente sencillos. El proceso se vuelve más complicado cuando la interferencia se superpone con el rango de frecuencia del ECG [6]. Para diferentes propósitos (monitorización, cuidados intensivos, diagnóstico, ambulatorio, monitorización del segmento ST, etc.) el equilibrio cambia, por lo que terminamos con una gama de filtros ajustados para obtener el mejor equilibrio. Algunos ejemplos comunes de filtros de ECG son: Diagnóstico: 0,05 Hz ~ 150 Hz; Monitorización ambulatoria de pacientes: 0,67 Hz ~ 40 Hz; Segmento ST: 0,05 Hz ~; y Músculo, ruido ESU: ~ 15 Hz [7].
 
 #### EMG
 <p align="justify">La señal electromiográfica de superficie (sEMG) que se origina en el músculo está inevitablemente contaminada por varias señales de ruido o artefactos que se originan en la interfaz piel-electrodo, en la electrónica que amplifica las señales, y en fuentes externas. La tecnología moderna es sustancialmente inmune a algunos de estos ruidos, pero no al ruido de referencia y al ruido de artefacto de movimiento. Estas fuentes de ruido tienen espectros de frecuencia que contaminan la parte de baja frecuencia de espectro de frecuencia. Hay muchos factores que deben tenerse en cuenta al determinar las especificaciones de filtro adecuadas para eliminar estos artefactos; Incluyen el músculo probado y el tipo de contracción, la configuración del sensor y la fuente de ruido específica. La determinación del paso de banda es siempre un compromiso entre (a) reducir el ruido y la contaminación por artefactos, y (b) preservar la información deseada [8].
