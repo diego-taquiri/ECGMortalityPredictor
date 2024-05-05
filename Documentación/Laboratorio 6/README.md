@@ -18,6 +18,11 @@ Lista de participantes:
 
 ### Introducción
 ### Objetivos específicos de la práctica
+- Diseñar filtros FIR e IIR con los datasets de los laboratorios anteriores.
+- Filtrar de manera óptima las frecuencias altas de las señales de ECG que corresponden a ruido.
+- Filtrar las señales EMG para eliminar ruido y artefactos, y aislar la actividad muscular efectiva.
+- Preprocesar señales EEG para reducir el ruido y extraer características de interés como ondas cerebrales específicas.
+
 ### Materiales y métodos
 ### Resultados
 #### Tabla resumen ECG 
