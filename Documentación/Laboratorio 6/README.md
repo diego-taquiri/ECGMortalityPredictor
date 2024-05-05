@@ -56,26 +56,16 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/Screenshot%202024-05-04%20192312.png" alt="Descripción de la imagen" width="400"><br> 
 <p align="center"><b>Figura 1.</b> Bandas de frecuencia de EEG, ocurrencia y tareas para activar la potencia de la banda. <br> 
-**Banda delta:**
-- Oscila en frecuencias de 0 a 4 Hz y están presentes en diferentes fases del sueño.
 
-**Banda theta [6]:**
-- Varían en frecuencias de 4 a 8 Hz y se originan en el tálamo y son más fuertes en el lado derecho del cerebro.
-- Las ondas theta están asociadas con el área frontal del cerebro y se correlacionan con tareas metálicas e indican una mayor potencia de banda con mayor dificultad de la tarea, aunque se puede medir en todas las áreas de la corteza y se relaciona con la región del cerebro transportador.
+**Banda delta:** Oscila en frecuencias de 0 a 4 Hz y están presentes en diferentes fases del sueño [6].
 
-**Banda alfa [6]:**
-- Varían en frecuencias de 8 a 12 Hz y reflejan funciones correlacionadas con la memoria, la motricidad y los sentidos.
-- Un aumento de la potencia de la banda alfa puede ser provocado por la relajación en estado de vigilia cuando los ojos están cerrados.
-- En comparación, las ondas alfa se suprimen al abrir los ojos y al realizar actividad física o mental.
+**Banda theta:** Varían en frecuencias de 4 a 8 Hz y se originan en el tálamo y son más fuertes en el lado derecho del cerebro. Las ondas theta están asociadas con el área frontal del cerebro y se correlacionan con tareas metálicas e indican una mayor potencia de banda con mayor dificultad de la tarea, aunque se puede medir en todas las áreas de la corteza y se relaciona con la región del cerebro transportador [6].
 
-**Banda beta [6]:**
-- Oscilan entre 12 y 25 Hz y se generan en las regiones posterior y frontal.
-- Se correlacionan con el pensamiento activo y concentración.
-- A mayor concentración, las oscilaciones beta se disparan en una frecuencia más rápida.
+**Banda alfa:** Varían en frecuencias de 8 a 12 Hz y reflejan funciones correlacionadas con la memoria, la motricidad y los sentidos. Un aumento de la potencia de la banda alfa puede ser provocado por la relajación en estado de vigilia cuando los ojos están cerrados. En comparación, las ondas alfa se suprimen al abrir los ojos y al realizar actividad física o mental [6].
 
-**Banda gamma [6]:**
-- Frecuencias superiores a 25 Hz.
-- El origen y el reflejo de estas oscilaciones no es notablemente claro.
+**Banda beta:** Oscilan entre 12 y 25 Hz y se generan en las regiones posterior y frontal. Se correlacionan con el pensamiento activo y concentración. A mayor concentración, las oscilaciones beta se disparan en una frecuencia más rápida [6].
+
+**Banda gamma:** Frecuencias superiores a 25 Hz. El origen y el reflejo de estas oscilaciones no es notablemente claro [6].
 
 ### Resultados
 #### Tabla resumen ECG 
