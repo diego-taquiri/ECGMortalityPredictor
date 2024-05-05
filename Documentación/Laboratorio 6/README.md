@@ -25,13 +25,15 @@ Lista de participantes:
 <p align="justify">Sin embargo, también es conveniente subdividir la clase de sistemas lineales invariantes en el tiempo en dos tipos: aquellos que tienen una repuesta al impulso de duración finita (FIR, finite-duration impulse response) y aquellos que tienen una respuesta al impulso de duración infinita (IIR, infinite-duration impulse response). En la práctica, los filtros FIR se emplean en problemas de filtrado en los que se precisa una característica de fase dentro de la banda de paso del filtro. Si no se necesita esta característica de fase lineal, puede emplearse un filtro IIR o FIR. Por regla general, un filtro IIR tiene lóbulos secundarios más pequeños en la banda eliminada que un filtro FIR con el mismo número de parámetros. Por esta razón, si es tolerable cierta distorsión, es preferible un filtro IIR, principalmente porque su implementación precisa muy pocos parámetros, requiere menos memoria y presenta menos complejidad de cálculo. [1]
 
 <p align="center">
-<img src="" alt="Descripción de la imagen" width="400"><br> 
-
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/filtro.png" alt="Descripción de la imagen" width="400"><br> 
+<p align="center"><b>Figura 1.</b> Módulo de los filtros físicamente realizables. <br> 
+   
 <p align="justify">En este laboratorio, se abordará el diseño de filtros IIR por medio de transformación bilineal. Hay varios tipos comunes de filtros analógicos: Butterworth, que tienen bandas de paso máximamente planas en filtros del mismo orden, Chebyshev tipo I que son equivariables en la banda de paso, Chebyshev tipo II que son equivariables en la banda de parada, y filtros elípticos que son equivariables tanto en la banda de paso y la banda de parada. La versión digital de estos se puede obtener a partir de diseños analógicos a través de la transformación bilineal. [2] En comparación, las técnicas de diseño para filtros digitales, en este laboratorio se trabajará con el método de ventana, el cual comienza con una respuesta de muestra unitaria deseada que luego se trunca mediante una ventana de duración finita. [3] Los distintos tipos de ventana son visualizados a continuación.
    
 <p align="center">
-<img src="" alt="Descripción de la imagen" width="400"><br> 
-   
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/ventana.png" alt="Descripción de la imagen" width="400"><br> 
+<p align="center"><b>Figura 1.</b> Formas de varias funciones de ventana. <br> 
+      
 ### Objetivos específicos de la práctica
 - Diseñar filtros FIR e IIR con los datasets de los laboratorios anteriores.
 - Filtrar de manera óptima las frecuencias altas de las señales de ECG que corresponden a ruido.
