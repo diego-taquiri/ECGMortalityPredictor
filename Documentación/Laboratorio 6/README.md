@@ -24,6 +24,11 @@ Lista de participantes:
 - Preprocesar señales EEG para reducir el ruido y extraer características de interés como ondas cerebrales específicas.
 
 ### Materiales y métodos
+#### EEG
+<p align="center">
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%206/images/Screenshot%202024-05-04%20192312.png" alt="Descripción de la imagen" width="300"><br> 
+<p align="center"><b>Figura 1.</b> Bandas de frecuencia de EEG, ocurrencia y tareas para activar la potencia de la banda. <br> 
+   
 ### Resultados
 #### Tabla resumen ECG 
 | Campo | Señal cruda | Filtro IIR | Filtro FIR |
