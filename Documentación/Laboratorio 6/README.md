@@ -129,9 +129,9 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 #### Tabla resumen EEG 
 | Estado | Señal cruda | Filtro IIR | Filtro FIR |
 | ------------ | -------------- | ------------------ | ------------------ |
-| Reposo | ![Imagen de EEG](plots/EEG-base1 o.png) | ![Imagen de EEG](plots/EEG-base1 IIR.png) | ![Imagen de EEG](plots/plots/EEG-base1 FIR.png) |
-| Apertura y cierre de ojos | ![Imagen de EEG](plots/EEG-abc o.png) | ![Imagen de EEG](plots/EEG-abc IIR.png) | ![Imagen de EEG](plots/EEG-abc FIR.png) |
-| Resolución de ejercicios matemáticos | ![Imagen de EEG](plots/EEG-eje o.png) | ![Imagen de EEG](plots/EEG-eje IIR.png) | ![Imagen de EEG](plots/EEG-eje FIR.png) |
+| Reposo | ![Imagen de EEG](plots/EEG-base1-o.png) | ![Imagen de EEG](plots/EEG-base1-IIR.png) | ![Imagen de EEG](plots/plots/EEG-base1-FIR.png) |
+| Apertura y cierre de ojos | ![Imagen de EEG](plots/EEG-abc-o.png) | ![Imagen de EEG](plots/EEG-abc-IIR.png) | ![Imagen de EEG](plots/EEG-abc-FIR.png) |
+| Resolución de ejercicios matemáticos | ![Imagen de EEG](plots/EEG-eje-o.png) | ![Imagen de EEG](plots/EEG-eje-IIR.png) | ![Imagen de EEG](plots/EEG-eje-FIR.png) |
 
 ### Discusión
 <p align="justify"><b>Filtración de ECG:</b>
