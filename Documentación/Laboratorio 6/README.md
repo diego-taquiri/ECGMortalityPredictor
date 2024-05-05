@@ -92,15 +92,7 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 
 <p align="justify">Para reducir este ruido se consideraron las siguientes características en el filtrado:
 
-<b>Diseñar un filtro IIR:</b>
-- Opciones de filtro: Bessel, Butterworth, Chebyshev, Eliptico.
-- Objetivo: Suprimir la interferencia de frecuencia alta y artefactos.
-- Especificaciones sugeridas: Fc = 30 Hz, Wp = 94 rad/s, Ws = 157 rad/s.
-
-<b>Diseñar un filtro FIR:</b>
-- Métodos de ventana: Hanning, Bartlett.
-- Objetivo: Extraer bandas de frecuencia específicas (alfa, beta, etc.).
-- Especificaciones sugeridas: Fc = 12 Hz, paso banda para ondas alfa.
+<p align="justify">El filtrado de EEG fue realizado de acuerdo a las conclusiones de los estudios realizados por Anshul et al para el filtro FIR [13] y Rayhan et al para el filtro IIR [14]. Para el filtro FIR se utilizó un filtro Kaiser de orden 4 y frecuencia de corte de 50 Hz, y un filtro Chebyshev tipo II de orden 4 pasabanda con frecuencias de corte de 12.5-17.5 Hz. En ambos casos se utilizó un filtrado notch de la frecuencia de 60 Hz
 
 <p align="justify">Cinco subbandas de frecuencia definen las frecuencias de la señal EEG que se pueden medir desde el cerebro, siendo gamma la más rápida y delta de las frecuencias más lentas [11]. 
    
@@ -134,11 +126,20 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 | Contracción fuerte | ![Imagen de EMG](plots/emg-contraccion-fuerte-cruda.png) | ![Imagen de EMG](plots/emg-contraccion-fuerte-IIR.png) | ![Imagen de EMG](plots/emg-contraccion-fuerte-FIR.png) |
 
 #### Tabla resumen EEG 
+#### Tabla resumen EEG 
+| Estado | Señal cruda | Filtro IIR | Filtro FIR |
+| ------------ | -------------- | ------------------ | ------------------ |
+| Reposo | ![Imagen de EEG](plots/emg-reposo-cruda.png) | ![Imagen de EEG](plots/emg-reposo-IIR.png) | ![Imagen de EEG](plots/emg-reposo-FIR.png) |
+| Apertura y cierre de ojos | ![Imagen de EEG](plots/emg-contraccion-leve-cruda.png) | ![Imagen de EEG](plots/emg-contraccion-leve-IIR.png) | ![Imagen de EEG](plots/emg-contraccion-leve-FIR.png) |
+| Resolución de ejercicios matemáticos | ![Imagen de EEG](plots/emg-contraccion-fuerte-cruda.png) | ![Imagen de EEG](plots/emg-contraccion-fuerte-IIR.png) | ![Imagen de EEG](plots/emg-contraccion-fuerte-FIR.png) |
+
 ### Discusión
 <p align="justify"><b>Filtración de ECG:</b>
+<p align="justify"><b>El filtrado de la señal ECG se realizó utilizando el trabajo de Basu et al para el filtrado IIR[15]. Se utilizó un filtro Chebyshev I pasabajo de orden 4 con filtro en 40 Hz, y un filtro Hanning con ventana de 37 y threshold de 20. En ambos casos se observa un suavizado de la señal con una desaparición del ruido de scattering que se superpone al las ondas. Diversas configuraciones de filtrado de frecuencias elevadas afectan los componentes de la señal ECG, tal y como lo describe Basu et al [12]. Frecuencias de corte muy bajas como 20Hz  resultan en un complejo QRS irreconocible, mientras que órdenes bajos en el filtro resultan en pérdida de la señal de la onda T. </b>
 <p align="justify"><b>Filtración de EMG:</b>
 <p align="justify">A traves de los resultados obtenidos por el filtro FIR de ventana Hamming y el filtro IIR de metodo Butterworth, podemos observar que el filtro FIR proporciona resultados más entendibles con menos ruido y picos más pronunciados. Este resultado coincide con el estudio realizado por Liu, S. [12], el cual hizo uso de los mismos tipos de filtros en señales EMG y encontro que el SNR o Signal to Noise Ratio es mayor en los filtros FIR ademas de mostrar un tiempo de ejecución mucho menor. Estos parametros son indicadores de una mejor filtración de señal.
 <p align="justify"><b>Filtración de EEG:</b>
+<p align="justify"><b> Los resultados para el EEG no fueron satisfactorios. Si bien se puede observar el resultado del filtrado en el espectro de la frecuencia,los cambios ocasionados por los filtros en la señal en el tiempo son muy variados en efectividad de acuerdo al momento evaluado. Asimismo, hubieron problemas relacionados a la interpretación. Se utilizaron señales del Ultracortex Mk IV. Los datos en el dominio del tiempo presentan amplitudes que no corresponden a los parámetros obtenidos. Si bien se intentó normalizar la data a valores conocidos (-15-15 uV), la gran variabilidad de datos no permitió obtener una respuesta estable en las señales estudiadas. Si bien en teoría el filtro IIR que es un filtro pasabanda debería resaltar las frecuencias correspondientes al patrón beta, esto no es visible en el dominio del tiempo. Una segunda dificultad concierne a la forma realizada por el estudio, en la cual no es posible determinar la zona cerebral sensada por el electrodo utilizado, por tanto tampoco es posible determinar la efectividad de la señal basados en la misma.</b>
    
 ### Bibliografía
 <p align="justify">[1]  Martinek R, Ladrova M, Sidikova M, Jaros R, Behbehani K, Kahankova R, Kawala-Sterniuk A. Advanced Bioelectrical Signal Processing Methods: Past, Present and Future Approach-Part I: Cardiac Signals. Sensors (Basel). 2021 Jul 30;21(15):5186. doi: 10.3390/s21155186. PMID: 34372424; PMCID: PMC8346990. 
@@ -153,3 +154,6 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 <p align="justify">[10] “Filtering EEG data — neural data science in python”, Neuraldatascience.io. [En línea]. Disponible en: https://neuraldatascience.io/7-eeg/erp_filtering.html.
 <p align="justify">[11] EXPERIMENTAL GUIDES TO MEET y L. Y. Biosignals, “BITalino (r)evolution Lab Guide”, Pluxbiosignals.com. [En línea]. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide3_EEG.pdf. [Consultado: 05-may-2024].
 <p align="justify">[12] Liu, S., Sabrina, N., & Hardson, H. (2023). Comparison of FIR and IIR Filters for Audio Signal Noise Reduction. Ultima Computing : Jurnal Sistem Komputer, 15(1), 19-24. https://doi.org/https://doi.org/10.31937/sk.v15i1.3171
+<p align="justify">[13] Anshul Khatter, D. Bansal, and R. Mahajan, “Performance Analysis of IIR & FIR Windowing Techniques in Electroencephalography Signal Processing,” ResearchGate, Sep. 03, 2019. https://www.researchgate.net/publication/335570147_Performance_Analysis_of_IIR_FIR_Windowing_Techniques_in_Electroencephalography_Signal_Processing (accessed May 05, 2024).
+<p align="justify">[14] Rayhan Habib Jibon, Etu Podder, Abdullah Al-Mamun Bulbul, and Imtiaj Ahmmed Shohagh, “Performance analysis of IIR filter in removing PLI from EEG signal,” ResearchGate, Mar. 28, 2019. https://www.researchgate.net/publication/332106332_Performance_analysis_of_IIR_filter_in_removing_PLI_from_EEG_signal (accessed May 05, 2024).
+<p align="justify">[15] S. Basu and Samiul Mamud, “Comparative Study on the Effect of Order and Cut off Frequency of Butterworth Low Pass Filter for Removal...,” ResearchGate, Sep. 05, 2020. https://www.researchgate.net/publication/347930656_Comparative_Study_on_the_Effect_of_Order_and_Cut_off_Frequency_of_Butterworth_Low_Pass_Filter_for_Removal_of_Noise_in_ECG_Signal (accessed May 05, 2024).
