@@ -147,7 +147,7 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 <p align="justify">[4] “DT Filter Design: IIR Filters”, Mit.edu, 2006. [En línea]. Disponible en: https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/51e3beff8c8ce2289ba292fcdb0040f4_lec08.pdf.
 <p align="justify">[5] A. V. Oppenheim, “Design of FIR digital filters”, Mit.edu, 2011. [En línea]. Disponible en: https://ocw.mit.edu/courses/res-6-008-digital-signal-processing-spring-2011/aea8444ff81fdeed9c2b66dccebbce47_MITRES_6_008S11_lec17.pdf.
 <p align="justify">[6] GE HealthCare, “A guide to ECG signal filtering”, Gehealthcare.com. [En línea]. Disponible en: https://www.gehealthcare.com/insights/article/a-guide-to-ecg-signal-filtering.
-<p align="justify">[7]
+<p align="justify">[7] P. Selvey, “ECG filters”, MEDTEQ, 27-feb-2017. [En línea]. Disponible en: https://www.medteq.net/article/2017/4/1/ecg-filters.
 <p align="justify">[8] C. J. De Luca, L. Donald Gilmore, M. Kuznetsov, y S. H. Roy, “Filtering the surface EMG signal: Movement artifact and baseline noise contamination”, J. Biomech., vol. 43, núm. 8, pp. 1573–1579, 2010.
 <p align="justify">[9] EXPERIMENTAL GUIDES TO MEET y L. Y. Biosignals, “BITalino (r)evolution Lab Guide”, Pluxbiosignals.com. [En línea]. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide1_EMG.pdf. [Consultado: 05-may-2024].
 <p align="justify">[10] “Filtering EEG data — neural data science in python”, Neuraldatascience.io. [En línea]. Disponible en: https://neuraldatascience.io/7-eeg/erp_filtering.html.
