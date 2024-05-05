@@ -97,6 +97,6 @@ Las fuentes de ruido también se manifiestan como frecuencias oscilantes que son
 <p align="justify">[3] J. G. Proakis y D. G. Manolakis, Tratamiento digital de señales. Old Tappan, NJ, Estados Unidos de América: Prentice Hall, 2007.
 <p align="justify">[4] “DT Filter Design: IIR Filters”, Mit.edu, 2006. [En línea]. Disponible en: https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/51e3beff8c8ce2289ba292fcdb0040f4_lec08.pdf.
 <p align="justify">[5] A. V. Oppenheim, “Design of FIR digital filters”, Mit.edu, 2011. [En línea]. Disponible en: https://ocw.mit.edu/courses/res-6-008-digital-signal-processing-spring-2011/aea8444ff81fdeed9c2b66dccebbce47_MITRES_6_008S11_lec17.pdf.
-<p align="justify">[6]
+<p align="justify">[6] “Filtering EEG data — neural data science in python”, Neuraldatascience.io. [En línea]. Disponible en: https://neuraldatascience.io/7-eeg/erp_filtering.html.
 <p align="justify">[7] EXPERIMENTAL GUIDES TO MEET y L. Y. Biosignals, “BITalino (r)evolution Lab Guide”, Pluxbiosignals.com. [En línea]. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide3_EEG.pdf. [Consultado: 05-may-2024].
 <p align="justify">[8] Liu, S., Sabrina, N., & Hardson, H. (2023). Comparison of FIR and IIR Filters for Audio Signal Noise Reduction. Ultima Computing : Jurnal Sistem Komputer, 15(1), 19-24. https://doi.org/https://doi.org/10.31937/sk.v15i1.3171
