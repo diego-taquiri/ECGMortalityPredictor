@@ -1,4 +1,4 @@
-# Filtros FIR e IIR
+# Transformada Wavelet
 Lista de participantes:  
 - Mantilla M., Ana Belen  
 - Valdivia E., Erick Alexander   
