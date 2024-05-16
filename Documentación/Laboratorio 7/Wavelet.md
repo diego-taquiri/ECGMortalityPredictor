@@ -86,7 +86,7 @@ Donde:
 #### Tabla resumen ECG 
 | Campo        | Señal cruda                                                   | Señal + Wavelet                                                    |
 |--------------|---------------------------------------------------------------|---------------------------------------------------------------|
-| Basal        | ![Imagen de ECG](plots/ECG-reposo-cruda.png)       | ![Imagen de ECG](plots/ECG-reposo-wavelet.png)              |
+| Basal        | ![Imagen de ECG](plots/ecg-reposo-cruda.png)       | ![Imagen de ECG](plots/ecg-reposo-wavelet.png)              |
 | Respiración  | ![Imagen de ECG](plots/ecg-respiracion-cruda.png)             | ![Imagen de ECG](plots/ecg-respiracion-wavelet.png)               |
 | Ejercicio    | ![Imagen de ECG](plots/ecg-ejercicio-cruda.png)   | ![Imagen de ECG](plots/ecg-ejercicio-wavelet.png)          |
 
