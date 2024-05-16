@@ -84,11 +84,12 @@ Donde:
 
 ### Resultados
 #### Tabla resumen ECG 
-| Campo | Señal cruda | Filtro IIR | Filtro FIR |
-| --------- | ---------- | ------------------------------ | ---------------------- |
-| Basal | ![Imagen de ECG](plots/2nd-try/ECG-rest-unfiltered.png) | ![Imagen de ECG](plots/2nd-try/ECG-rest-IIR.png) | ![Imagen de ECG](plots/2nd-try/ECG-rest-FIR.png) |
-| Respiración | ![Imagen de ECG](plots/ecg-respiracion-cruda.png) | ![Imagen de ECG](plots/ecg-respiracion-IIR.png) | ![Imagen de ECG](plots/ecg-respiracion-FIR.png) |
-| Ejercicio | ![Imagen de ECG](plots/2nd-try/ECG-exercise-unfiltered.png) | ![Imagen de ECG](plots/2nd-try/ECG-exercise-IIR.png) | ![Imagen de ECG](plots/2nd-try/ECG-exercise-FIR.png) |
+| Campo        | Señal cruda                                                   | Señal + Wavelet                                                    |
+|--------------|---------------------------------------------------------------|---------------------------------------------------------------|
+| Basal        | ![Imagen de ECG](plots/ECG-reposo-cruda.png)       | ![Imagen de ECG](plots/ECG-reposo-wavelet.png)              |
+| Respiración  | ![Imagen de ECG](plots/ecg-respiracion-cruda.png)             | ![Imagen de ECG](plots/ecg-respiracion-wavelet.png)               |
+| Ejercicio    | ![Imagen de ECG](plots/ecg-ejercicio-cruda.png)   | ![Imagen de ECG](plots/ecg-ejercicio-wavelet.png)          |
+
 
 #### Tabla resumen EMG 
 | Estado | Señal cruda | Filtro IIR | Filtro FIR |
