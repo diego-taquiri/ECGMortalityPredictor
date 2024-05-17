@@ -111,6 +111,81 @@ data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
    ```
 
 #### EMG
+<p align="justify">En el paper "Arm EMG Wavelet-Based Denoising System" se describe un sistema para la eliminación de ruido en señales EMG utilizando técnicas de transformada wavelet. Aquí está la traducción de la explicación y el análisis de cada parte del código Python proporcionado:
+
+   - Función de base wavelet: Los autores usaron la wavelet Daubechies de orden 4 (db4). La elección de la wavelet es crucial porque afecta la eficiencia en la reducción de ruido y la preservación de las características de la señal.
+
+   - Nivel de descomposición: La señal EMG fue descompuesta hasta el nivel 10. Este nivel de descomposición asegura que tanto el ruido de alta frecuencia como los artefactos de baja frecuencia puedan ser efectivamente aislados de la verdadera señal EMG.
+
+   - Algoritmo de selección de umbral: Utilizaron un enfoque heurístico para la umbralización. Esto significa que los umbrales no son fijos, sino que se determinan dinámicamente en función de las características de la señal en cada nivel de descomposición.
+
+   - Reescalado del umbral: El método heurístico de umbralización se acopla con un método de reescalado de umbral universal ('sln'), que ajusta los umbrales basándose en el nivel de ruido dentro de la señal.
+
+Análisis del Código
+Importación de Librerías:
+
+```python
+import numpy as np
+import pywt
+import matplotlib.pyplot as plt
+```
+<p align="justify">Se importan las librerías necesarias: numpy para operaciones numéricas, pywt para transformadas wavelet y matplotlib para la visualización de las señales.
+
+Función de Denoising con Wavelet:
+
+```python
+def wavelet_denoise(signal, wavelet='db4', level=10):
+```
+<p align="justify">Se define una función wavelet_denoise que toma una señal, el tipo de wavelet y el nivel de descomposición como parámetros.
+
+Descomposición de la Señal:
+
+```python
+coeffs = pywt.wavedec(signal, wavelet, level=level)
+```
+<p align="justify">La señal se descompone en sus coeficientes wavelet utilizando la función wavedec de la librería pywt.
+
+Estimación del Umbral de Ruido:
+
+```python
+sigma = np.median(np.abs(coeffs[-level])) / 0.6745
+uthresh = sigma * np.sqrt(2 * np.log(len(signal)))
+```
+<p align="justify">Se calcula el umbral de ruido usando la mediana de los coeficientes de detalle de mayor nivel. Este cálculo está basado en la estimación robusta de la desviación estándar.
+
+Umbralización de los Coeficientes:
+
+```python
+denoised_coeffs = [pywt.threshold(c, uthresh, mode='soft') for c in coeffs]
+```
+<p align="justify">Se aplica la umbralización suave a cada conjunto de coeficientes wavelet, reduciendo así el ruido.
+
+Reconstrucción de la Señal:
+
+```python
+denoised_signal = pywt.waverec(denoised_coeffs, wavelet)
+```
+<p align="justify">La señal se reconstruye a partir de los coeficientes umbralizados utilizando la función waverec.
+
+Uso del Script:
+
+```python
+if __name__ == "__main__":
+    t = np.linspace(0, 1, 200)
+    emg_signal = np.sin(40 * np.pi * t) + 0.5 * np.random.randn(t.size)
+    
+    denoised_emg_signal = wavelet_denoise(emg_signal, wavelet='db4', level=10)
+    
+    plt.figure(figsize=(10, 6))
+    plt.subplot(2, 1, 1)
+    plt.plot(t, emg_signal, label='Señal EMG Original')
+    plt.legend()
+    plt.subplot(2, 1, 2)
+    plt.plot(t, denoised_emg_signal, label='Señal EMG Filtrada', color='red')
+    plt.legend()
+    plt.show()
+```
+<p align="justify">Se genera una señal EMG de ejemplo con ruido, se aplica la función de denoising y se visualizan tanto la señal original como la filtrada.
 
 #### EEG
 <p align="justify">Para el filtrado de señal EEG, se utilizó la señal de EEG tomada mediante BITalino en tres instancias, reposo, apertura y cierre de ojos, y resolución mental de ejercicios matemáticos. El filtrado de la señal se realizó utilizando los criterios mencionados por Zikov et al.[T. Zikov, S. Bibian, G. A. Dumont, M. Huzmezan and C. R. Ries, "A wavelet based de-noising technique for ocular artifact correction of the electroencephalogram," Proceedings of the Second Joint 24th Annual Conference and the Annual Fall Meeting of the Biomedical Engineering Society] [Engineering in Medicine and Biology, Houston, TX, USA, 2002, pp. 98-105 vol.1, doi: 10.1109/IEMBS.2002.1134407.] Se utilizó una función Coiflet 3 con 5 niveles de descomposición y un método de hard thresholding solo aplicado en los tres primeros niveles, es decir a frecuencias menores de 16 Hz, el cual utiliza un umbral de ruido o threshold determinado por la siguiente ecuación: <br>
