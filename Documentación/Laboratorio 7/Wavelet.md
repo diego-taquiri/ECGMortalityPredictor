@@ -122,18 +122,18 @@ data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
 
 
 #### Tabla resumen EMG 
-| Estado | Señal cruda | Filtro IIR | Filtro FIR |
-| ------------ | -------------- | ------------------ | ------------------ |
-| Reposo | ![Imagen de EMG](plots/2nd-try/EMG-rest-unfiltered.png) | ![Imagen de EMG](plots/2nd-try/EMG-rest-IIR.png) | ![Imagen de EMG](plots/2nd-try/EMG-rest-FIR.png) |
-| Flexión isotónica | ![Imagen de EMG](plots/2nd-try/EMG-flexion-unfiltered.png) | ![Imagen de EMG](plots/2nd-try/EMG-flexion-IIR.png) | ![Imagen de EMG](plots/2nd-try/EMG-flexion-FIR.png) |
-| Flexión isométrica | ![Imagen de EMG](plots/2nd-try/EMG-isometric-unfiltered.png) | ![Imagen de EMG](plots/2nd-try/EMG-isometric-IIR.png) | ![Imagen de EMG](plots/2nd-try/EMG-isometric-FIR.png) |
+| Campo        | Señal cruda                                                   | Señal + Wavelet                                                    |
+|--------------|---------------------------------------------------------------|---------------------------------------------------------------|
+| Reposo        |        |               |
+| Flexión isotónica  |              |                |
+| Flexión isométrica    |    |           |
 
 #### Tabla resumen EEG 
-| Estado | Señal cruda | Filtro IIR | Filtro FIR |
-| ------------ | -------------- | ------------------ | ------------------ |
-| Reposo | ![Imagen de EEG](plots/EEG-base1-o.png) | ![Imagen de EEG](plots/EEG-base1-IIR.png) | ![Imagen de EEG](plots/EEG-base1-FIR.png) |
-| Apertura y cierre de ojos | ![Imagen de EEG](plots/EEG-abc-o.png) | ![Imagen de EEG](plots/EEG-abc-IIR.png) | ![Imagen de EEG](plots/EEG-abc-FIR.png) |
-| Resolución de ejercicios matemáticos | ![Imagen de EEG](plots/EEG-eje-o.png) | ![Imagen de EEG](plots/EEG-eje-IIR.png) | ![Imagen de EEG](plots/EEG-eje-FIR.png) |
+| Campo        | Señal cruda                                                   | Señal + Wavelet                                                    |
+|--------------|---------------------------------------------------------------|---------------------------------------------------------------|
+| Reposo        |        |               |
+| Apertura y cierre de ojos  |              |                |
+| Resolución de ejercicios matemáticos    |    |           |
 
 ### Discusión
 <p align="justify"><b>Filtración de ECG:</b>
