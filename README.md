@@ -11,14 +11,14 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 - [Docentes del curso](#Docentes-del-curso)
 - [Participantes](#Participantes)
 
-## Temática del proyecto
+### Temática del proyecto
 - [Avance del proyecto](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2010/Avance_Proyecto.md)
 
-## Contenido del curso
+### Contenido del curso
 
-## Docentes del curso
+### Docentes del curso
 
-## Participantes
+### Participantes
 
 | Descripción  | Foto |
 | ------------- | ------------- |
