@@ -50,7 +50,9 @@ Siguiendo la implentación del artículo, se utilizó la aplicación de wavelets
 
 <p align="center">
 <img src="./plots/images/ecg-equation.png" alt="ECG Equation" width="200">
-<p align="center"><b>Figura 1.</b> Fórmula para el cálculo de los umbrales  donde \(C\) es una constante (0.01 en nuestro caso, elegida experimentalmente para nuestras señales), \(\sigma_{Vs}\) es la desviación estándar de la señal original, \(\sigma_{dj}\) es la desviación estándar de los coeficientes de detalle en cada nivel, y \(n\) es el número de muestras de la señal. j representa el número de niveles (en nuestro caso hasta 5 niveles), donde \(d_j\) son los coeficientes de detalle y \(n\) es el número de muestras para cada señal. <br> 
+<p align="center"><b>Figura 1.</b> Fórmula para el cálculo de los umbrales. <br> 
+
+ donde \(C\) es una constante (0.01 en nuestro caso, elegida experimentalmente para nuestras señales), \(\sigma_{Vs}\) es la desviación estándar de la señal original, \(\sigma_{dj}\) es la desviación estándar de los coeficientes de detalle en cada nivel, y \(n\) es el número de muestras de la señal. j representa el número de niveles (en nuestro caso hasta 5 niveles), donde \(d_j\) son los coeficientes de detalle y \(n\) es el número de muestras para cada señal.
 
 ```python
     def calculate_T(coeffs, n, C):
