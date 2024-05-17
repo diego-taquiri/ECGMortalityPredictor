@@ -33,6 +33,8 @@ Lista de participantes:
 
 4. <p align="justify">La generación de wavelets y el cálculo de la transformada de wavelets discreta se adaptan bien a la computadora digital. No se utiliza cálculo, no hay derivadas ni integrales, solo operaciones de multiplicación y suma que son básicas para un sistema digital computadora. [3]
 
+<p align="justify">Finalmente, se ha demostrado que el umbral de los coeficientes wavelet tiene una propiedad de reducción de ruido casi óptima para muchas clases de señales [122].
+
 ### Objetivos específicos de la práctica
 - Familiarizarse con los conceptos básicos y la teoría detrás de las wavelets, incluyendo su definición, propiedades y diferencias clave respecto a la transformada de Fourier.
 - Comparar la eficiencia y efectividad de las wavelets con la transformada de Fourier en el análisis de señales ECG, EEG y EMG.
