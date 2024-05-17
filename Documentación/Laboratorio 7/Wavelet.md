@@ -48,6 +48,66 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 - Preprocesar señales EEG para reducir el ruido y extraer características de interés como ondas cerebrales específicas.
 
 ### Materiales y métodos
+
+#### Filtrado de ECG usando Wavelet
+
+La señal ECG utilizada en este trabajo fue adquirida mediante un dispositivo BITalino, utilizando el canal 2 para la recolección de datos. La frecuencia de muestreo fue de 1000 Hz y el BITalino realiza la cuantización de la señal a 10 bits. Inicialmente, la cuantización de 10 bits cubre un rango de 0 a 3.223 mV. Para convertir la señal cruda de bits a milivoltios y centrarla, se utilizó la siguiente relación de conversión:
+
+\[ \text{data\_mV} = \left( \frac{\text{data}[:, 5] \cdot \text{volt\_range}}{2^{\text{bits}} - 1} \right) - \text{media}(\text{data\_mV}) \]
+
+Esta conversión permitió adecuar la señal para el posterior procesamiento.
+
+La metodología utilizada para el filtrado de la señal ECG usando wavelet se basa en la implementación propuesta por Alfaouri y Daqrouq en su artículo "ECG signal denoising by wavelet transform thresholding" [1]. En este estudio, se destaca la importancia del uso de la transformada wavelet para la eliminación de ruido en señales ECG no estacionarias. Los autores proponen un método de umbralización de coeficientes wavelet para la mejora de la relación señal-ruido y que preserva las características morfológicas de la señal ECG. 
+
+Siguiendo la implentación del artículo, se utilizó la aplicación de wavelets Daubechies 4 (db4) y un umbral suave para la eliminación de ruido. A continuación, se detallan los pasos seguidos en la metodología:
+
+1. **Descomposición de la señal**: La señal ECG fue descompuesta utilizando la función `pywt.wavedec` con wavelets db4 hasta un nivel de descomposición de 5. Esta función descompone la señal original en un conjunto de coeficientes de aproximación y detalle, que representan las diferentes frecuencias presentes en la señal.
+
+    ```python
+    coeffs = pywt.wavedec(y_1, 'db4', level=5)
+    ```
+
+2. **Cálculo de umbrales**: Se calculó un umbral adaptativo para cada nivel de detalle utilizando la desviación estándar de la señal y los coeficientes de detalle. El umbral \(T\) para cada nivel se calculó usando la siguiente fórmula:
+
+    \[
+    T = C \sqrt{\frac{\sigma(V_s(n))}{\sigma(d_j(n))} n}
+    \]
+
+    donde \(C\) es una constante (0.01 en nuestro caso, elegida experimentalmente para nuestras señales), \(\sigma_{Vs}\) es la desviación estándar de la señal original, \(\sigma_{dj}\) es la desviación estándar de los coeficientes de detalle en cada nivel, y \(n\) es el número de muestras de la señal. j representa el número de niveles (en nuestro caso hasta 5 niveles), donde \(d_j\) son los coeficientes de detalle y \(n\) es el número de muestras para cada señal.
+
+
+    ```python
+    def calculate_T(coeffs, n, C):
+        sigma_Vs = np.std(y_1)
+        dj = [coeffs[i] for i in range(1, len(coeffs))]
+        sigma_dj = [np.std(d) for d in dj]
+        T = [C * np.sqrt((sigma_Vs / sigma) * n) for sigma in sigma_dj]
+        return T
+
+    n = len(y_1)
+    T_values = calculate_T(coeffs, n, C)
+    ```
+
+3. **Aplicación de umbrales suaves**: Los coeficientes de detalle fueron umbralizados utilizando el umbral suave (`soft thresholding`). Este proceso reduce los coeficientes menores al umbral, manteniendo la estructura general de la señal pero eliminando el ruido. Se utilizó la función `pywt.threshold` para aplicar este umbral.
+
+    ```python
+    def soft_threshold(coeffs, T_values):
+        thresholded_coeffs = coeffs.copy()
+        for i in range(1, len(coeffs)):
+            thresholded_coeffs[i] = pywt.threshold(coeffs[i], T_values[i-1], mode='soft')
+        return thresholded_coeffs
+
+    thresholded_coeffs = soft_threshold(coeffs, T_values)
+    ```
+
+4. **Reconstrucción de la señal**: Finalmente, la señal fue reconstruida a partir de los coeficientes umbralizados utilizando la función `pywt.waverec`, obteniendo una señal denoised y filtrada.
+
+    ```python
+    y_denoised = pywt.waverec(thresholded_coeffs, 'db4')
+    ```
+
+Esta metodología permitió reducir el ruido presente en la señal ECG de manera efectiva.
+
 #### ECG
 <p align="justify">La contaminación de una señal de ECG proviene de diversas fuentes dentro y fuera del cuerpo de los pacientes. Las señales eléctricas de otros músculos además del corazón, así como la respiración, la tos y otros tipos de movimiento, pueden crear artefactos. El ruido también puede deberse a conexiones eléctricas deficientes si los electrodos no se colocan correctamente sobre el paciente. Además, los cables de ECG son antenas eficaces que captan fácilmente fuentes de ruido eléctrico del entorno inmediato, incluidas luces fluorescentes, teléfonos móviles o dispositivos con Bluetooth. Todas estas cosas pueden crear una lectura de ECG borrosa [6].
 
@@ -116,21 +176,9 @@ Donde:
 <p align="justify">La literatura indica tres orígenes fisiológicos de ruido en las señales EEG. Los movimientos de ojo ocasionan un cambio en el campo eléctrico que rodea los mismos mediante la formación de dipolos en la retina y movimientos de las pestañas, generando potenciales en el cuero cabelludo [R. J. Croft and R. J. Barry, “Removal of ocular artifact from the EEG: a review,” Neurophysiologie clinique, vol. 30, no. 1, pp. 5–19, Feb. 2000, doi: https://doi.org/10.1016/s0987-7053(00)00055-1.]. Su espectro se sobrelapa con las ondas alfa del EEG en tareas mentales, y debido a su mayor amplitud, pueden llegar a suprimirlas [S. Zahan, "Removing EOG artifacts from EEG signal using noise-assisted multivariate empirical mode decomposition," 2016 2nd International Conference on Electrical, Computer & Telecommunication Engineering (ICECTE), Rajshahi, Bangladesh, 2016, pp. 1-5, doi: 10.1109/ICECTE.2016.7879634.].  Las señales electromiográficas son un ruido común en mediciones de ondas beta y gamma, y debido a su amplitud ocluyen la señal EEG a partir de los 20 Hz, siendo esta oclusión mayor a partir de los 50Hz. [K. J. Pope et al., “Managing electromyogram contamination in scalp recordings: An approach identifying reliable beta and gamma EEG features of psychoses or other disorders,” Brain and behavior, vol. 12, no. 9, Aug. 2022, doi: https://doi.org/10.1002/brb3.2721.] 
 
 ### Bibliografía
-<p align="justify">[1]  Martinek R, Ladrova M, Sidikova M, Jaros R, Behbehani K, Kahankova R, Kawala-Sterniuk A. Advanced Bioelectrical Signal Processing Methods: Past, Present and Future Approach-Part I: Cardiac Signals. Sensors (Basel). 2021 Jul 30;21(15):5186. doi: 10.3390/s21155186. PMID: 34372424; PMCID: PMC8346990. 
-<p align="justify">[2] Adimulam, M. K., & Srinivas, M. . (2016). Modeling of EXG (ECG, EMG and EEG) non-idealities using MATLAB. 2016 9th International Congress on Image and Signal Processing, BioMedical Engineering and Informatics (CISP-BMEI). doi:10.1109/cisp-bmei.2016.7852968
-<p align="justify">[3] J. G. Proakis y D. G. Manolakis, Tratamiento digital de señales. Old Tappan, NJ, Estados Unidos de América: Prentice Hall, 2007.
-<p align="justify">[4] “DT Filter Design: IIR Filters”, Mit.edu, 2006. [En línea]. Disponible en: https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/51e3beff8c8ce2289ba292fcdb0040f4_lec08.pdf.
-<p align="justify">[5] A. V. Oppenheim, “Design of FIR digital filters”, Mit.edu, 2011. [En línea]. Disponible en: https://ocw.mit.edu/courses/res-6-008-digital-signal-processing-spring-2011/aea8444ff81fdeed9c2b66dccebbce47_MITRES_6_008S11_lec17.pdf.
-<p align="justify">[6] GE HealthCare, “A guide to ECG signal filtering”, Gehealthcare.com. [En línea]. Disponible en: https://www.gehealthcare.com/insights/article/a-guide-to-ecg-signal-filtering.
-<p align="justify">[7] P. Selvey, “ECG filters”, MEDTEQ, 27-feb-2017. [En línea]. Disponible en: https://www.medteq.net/article/2017/4/1/ecg-filters.
-<p align="justify">[8] C. J. De Luca, L. Donald Gilmore, M. Kuznetsov, y S. H. Roy, “Filtering the surface EMG signal: Movement artifact and baseline noise contamination”, J. Biomech., vol. 43, núm. 8, pp. 1573–1579, 2010.
-<p align="justify">[9] EXPERIMENTAL GUIDES TO MEET y L. Y. Biosignals, “BITalino (r)evolution Lab Guide”, Pluxbiosignals.com. [En línea]. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide1_EMG.pdf. [Consultado: 05-may-2024].
-<p align="justify">[10] “Filtering EEG data — neural data science in python”, Neuraldatascience.io. [En línea]. Disponible en: https://neuraldatascience.io/7-eeg/erp_filtering.html.
-<p align="justify">[11] EXPERIMENTAL GUIDES TO MEET y L. Y. Biosignals, “BITalino (r)evolution Lab Guide”, Pluxbiosignals.com. [En línea]. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide3_EEG.pdf. [Consultado: 05-may-2024].
-<p align="justify">[12] M. Boyer, L. Bouyer, J.-S. Roy, and Alexandre Campeau-Lecours, “Reducing Noise, Artifacts and Interference in Single-Channel EMG Signals: A Review,” Sensors, vol. 23, no. 6, pp. 2927–2927, Mar. 2023, doi: https://doi.org/10.3390/s23062927.
-<p align="justify">[13] Anshul Khatter, D. Bansal, and R. Mahajan. Performance Analysis of IIR & FIR Windowing Techniques in Electroencephalography Signal Processing, IJITEE, vol. 8, n.o 10, pp. 3568-3578, ago. 2019, doi: 10.35940/ijitee.J9771.0881019.
-<p align="justify">[14] Rayhan Habib Jibon, Etu Podder, Abdullah Al-Mamun Bulbul, Ramendra Nath Bairagi, Md. Salim Ahmed, and Imtiaj Ahmmed Shohagh, “Performance analysis of IIR filter in removing PLI from EEG signal,” International Journal of Engineering & Technology, vol. 7, no. 4, pp. 5363–5367, 2018, doi: https://doi.org/10.14419/ijet.v7i4.26715.
-<p align="justify">[15] S. Basu y S. Mamud, «Comparative Study on the Effect of Order and Cut off Frequency of Butterworth Low Pass Filter for Removal of Noise in ECG Signal», en 2020 IEEE 1st International Conference for Convergence in Engineering (ICCE), Kolkata, India: IEEE, sep. 2020, pp. 156-160. doi: 10.1109/ICCE50343.2020.9290646.
-<p align="justify">[16] K. S. Kumar, B. Yazdanpanah and P. R. Kumar, "Removal of noise from electrocardiogram using digital FIR and IIR filters with various methods," 2015 International Conference on Communications and Signal Processing (ICCSP), Melmaruvathur, India, 2015, pp. 0157-0162, doi: 10.1109/ICCSP.2015.7322780.
-<p align="justify">[17] R. G. T. Mello, L. F. Oliveira, y J. Nadal, «Digital Butterworth filter for subtracting noise from low magnitude surface electromyogram», Computer Methods and Programs in Biomedicine, vol. 87, n.º 1, pp. 28-35, jul. 2007, doi: 10.1016/j.cmpb.2007.04.004.
-<p align="justify">[18] Hemant kumar and Anjana Goen (2015); Comparative Study of FIR Digital Filter for Noise Elimination in EMG Signal Int. J. of Adv. Res. 3 (Dec). 598-603] (ISSN 2320-5407). www.journalijar.com
+[1] M. Alfaouri and K. Daqrouq, "ECG signal denoising by wavelet transform thresholding," American Journal of Applied Sciences, vol. 5, no. 3, pp. 276-281, 2008. doi: 10.3844/ajassp.2008.276.281.
+
+
+
+
+
