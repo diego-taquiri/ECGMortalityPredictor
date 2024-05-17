@@ -16,6 +16,10 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 
 ### Contenido del curso
 [Ver PDF del Sílabo](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/S%C3%ADlabo.pdf)
+### Sílabo del Laboratorio 01
+
+[Ver PDF del Sílabo en Google Docs Viewer](https://docs.google.com/viewer?url=https://github.com/diego-taquiri/ISB-equipo11/raw/main/Documentaci%C3%B3n/Laboratorio%2001/S%C3%ADlabo.pdf&embedded=true)
+
 
 ### Docentes del curso
 
