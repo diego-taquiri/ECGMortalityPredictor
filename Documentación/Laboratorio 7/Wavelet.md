@@ -27,11 +27,11 @@ Lista de participantes:
 
 1. <p align="justify">El tamaño de los coeficientes de expansión de las wavelets disminuye rápidamente para una gran clase de señales. Esta propiedad se llama ser una base incondicional y es por eso que las wavelets son muy efectivas en la compresión, eliminación de ruido y detección de señales e imágenes. [3]
 
-<p align="justify">2. La expansión wavelet permite una descripción local más precisa y una separación de las características de la señal. Un coeficiente de Fourier representa un componente que dura para siempre y, por tanto, eventos temporales deben describirse mediante una característica de fase que permita la cancelación o el refuerzo a lo largo del tiempo. Un coeficiente de expansión wavelet representa un componente que es en sí mismo local y es más fácil de interpretar. La expansión wavelet puede permitir una separación de componentes de una señal que se superponen en tanto en tiempo como en frecuencia. [3]
+2. <p align="justify">La expansión wavelet permite una descripción local más precisa y una separación de las características de la señal. Un coeficiente de Fourier representa un componente que dura para siempre y, por tanto, eventos temporales deben describirse mediante una característica de fase que permita la cancelación o el refuerzo a lo largo del tiempo. Un coeficiente de expansión wavelet representa un componente que es en sí mismo local y es más fácil de interpretar. La expansión wavelet puede permitir una separación de componentes de una señal que se superponen en tanto en tiempo como en frecuencia. [3]
 
-3. Las wavelets son ajustables y adaptables. Como no hay una sola wavelet, se pueden diseñar para adaptarse a aplicaciones individuales. Son ideales para sistemas adaptativos que se ajustan solos para adaptarse a la señal. [3]
+3. <p align="justify">Las wavelets son ajustables y adaptables. Como no hay una sola wavelet, se pueden diseñar para adaptarse a aplicaciones individuales. Son ideales para sistemas adaptativos que se ajustan solos para adaptarse a la señal. [3]
 
-4. La generación de wavelets y el cálculo de la transformada de wavelets discreta se adaptan bien a la computadora digital. No se utiliza cálculo, no hay derivadas ni integrales, solo operaciones de multiplicación y suma que son básicas para un sistema digital computadora. [3]
+4. <p align="justify">La generación de wavelets y el cálculo de la transformada de wavelets discreta se adaptan bien a la computadora digital. No se utiliza cálculo, no hay derivadas ni integrales, solo operaciones de multiplicación y suma que son básicas para un sistema digital computadora. [3]
 
 ### Objetivos específicos de la práctica
 - Familiarizarse con los conceptos básicos y la teoría detrás de las wavelets, incluyendo su definición, propiedades y diferencias clave respecto a la transformada de Fourier.
