@@ -21,6 +21,13 @@ Lista de participantes:
 
 <p align="justify"> Una onda generalmente se define como una función oscilante del tiempo o del espacio, como una sinusoide. El análisis de Fourier es un análisis de ondas, el cual amplía señales o funciones en términos de sinusoides (o exponenciales complejas), lo que ha demostrado ser extremadamente valioso en matemáticas, ciencia e ingeniería, especialmente para fenómenos periódicos, invariantes en el tiempo o estacionarios. Por otro lado, una wavelet es una "onda pequeña", cuya energía se concentra en el tiempo para proporcionar una herramienta para el análisis de fenómenos transitorios, no estacionarios o que varían en el tiempo. Todavía tiene la característica de onda oscilante, pero también tiene la capacidad de permitir análisis simultáneos de tiempo y frecuencia con una base matemática flexible. [3]
 
+<div style="text-align: center;">
+      <p align="center">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%207/images/sine.png" alt="Descripción de la primera imagen" width="300">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%207/images/wavelet.png" alt="Descripción de la primera imagen" width="330">
+</div>
+<p align="center"><b>Figura 1.</b> Una onda y una wavelet: (a) Onda seno y (b) Wavelet ψD20 de Daubechies [3]. <br> 
+      
 <p align="justify">Las wavelets se utilizan en una expansión en serie de señales o funciones de la misma manera que una serie de Fourier usa la onda o sinusoide para representar una señal o función. Las señales son funciones de una variable continua, que a menudo representa el tiempo o la distancia. A partir de esta expansión de la serie, se desarrolla una versión de tiempo discreto, similar a la transformada discreta de Fourier, donde la señal está representada por una cadena de números que pueden ser muestras de una señal, de otra cadena de números o productos internos de una señal con algún conjunto de expansión. Finalmente, se describe brevemente la transformada wavelet continua donde tanto la señal, como la transformada, son funciones de variables continuas. Esto es análogo a la transformada de Fourier. [3]
 
 <p align="justify">En este laboratorio, se explorarán las wavelets del procesamiento de señales, las cuales pasaron a primer plano a principios de la década de 1990 como una alternativa atractiva al procesamiento clásico de señales e imágenes basado en la transformada de Fourier [4]. Esto debido a que las expansiones y transformadas de wavelets han demostrado ser muy eficientes y efectivas en el análisis de una amplia clase de señales y fenómenos [3]. 
@@ -69,7 +76,7 @@ data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
 
 <p align="center">
 <img src="./plots/images/ecg-equation.png" alt="ECG Equation" width="200">
-<p align="center"><b>Figura 1.</b> Fórmula para el cálculo de los umbrales. <br> 
+<p align="center"><b>Figura 2.</b> Fórmula para el cálculo de los umbrales. <br> 
 
 <p align="justify">Donde \(C\) es una constante (0.01 en nuestro caso, elegida experimentalmente para nuestras señales), \(\sigma_{Vs}\) es la desviación estándar de la señal original, \(\sigma_{dj}\) es la desviación estándar de los coeficientes de detalle en cada nivel, y \(n\) es el número de muestras de la señal. j representa el número de niveles (en nuestro caso hasta 5 niveles), donde \(d_j\) son los coeficientes de detalle y \(n\) es el número de muestras para cada señal.
 
