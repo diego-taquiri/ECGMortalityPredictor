@@ -120,9 +120,9 @@ Donde:
 
 ### Discusión
 <p align="justify"><b>Filtración de ECG:</b>
-<p align="justify"> En ambos casos se observa un suavizado de la señal con una desaparición del ruido de scattering que se superpone al las ondas. Diversas configuraciones de filtrado de frecuencias elevadas afectan los componentes de la señal ECG, tal y como lo describe Basu et al. Frecuencias de corte muy bajas como 20Hz  resultan en un complejo QRS irreconocible, mientras que órdenes bajos en el filtro resultan en pérdida de la señal de la onda T [15]. En ambos casos no ha sido posible eliminar el ruido que rodea a la onda P, ya que este tiene una frecuencia baja que no es eliminada por el filtro pasabaja.
+<p align="justify"> Easadas
 <p align="justify"><b>Filtración de EMG:</b>
-<p align="justify"> Debido a que las aplicaciones de la señal de EMG de superficie rara vez involucran diagnóstico de patologías musculares, para las cuales se utilizan métodos más precisos como la EMG de aguja, el filtrado de posibles artefactos ocasionados por el movimiento, interferencias de otras señales como el ECG, interferencias de línea eléctrica entre otros [12], el filtrado de frecuencias contaminantes toma un rol más importante dependiendo del uso de la sEMG, como en el caso de uso de prótesis, para la cual se requeriría filtrar de acuerdo al umbral usado.   
+<p align="justify"> sdada
 <p align="justify"><b>Filtración de EEG:</b>
 <p align="justify">Se puede observar un suavizado de la señal eletroencefalográfica como resultado del filtro de wavelet con las características planteadas. Como se puede apreciar en las imágenes de las señales de salida, tras utilizar la transformada de wavelet, la forma de la onda no considera las espículas que son influencia de frecuencias mayores en el espectro.   Debido a que la señal EEG carece de un patrón identificable en el dominio del tiempo, el suavizado de la señal puede apreciarse de mejor forma en un espectrograma, donde se aprecia que las frecuencias por encima de los 50Hz se han visto reducidas en amplitud.
 
