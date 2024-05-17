@@ -49,9 +49,8 @@ Siguiendo la implentación del artículo, se utilizó la aplicación de wavelets
 2. **Cálculo de umbrales**: Se calculó un umbral adaptativo para cada nivel de detalle utilizando la desviación estándar de la señal y los coeficientes de detalle. El umbral \(T\) para cada nivel se calculó usando la siguiente fórmula:
 
 <p align="center">
-<div style="text-align: center;">
-    <img src="./plots/images/ecg-equation.png" alt="ECG Equation" width="200">
-</div>
+<img src="./plots/images/ecg-equation.png" alt="ECG Equation" width="200">
+<p align="center"><b>Figura 1.</b> Fórmula para el cálculo de los umbrales. <br> 
 
    donde \(C\) es una constante (0.01 en nuestro caso, elegida experimentalmente para nuestras señales), \(\sigma_{Vs}\) es la desviación estándar de la señal original, \(\sigma_{dj}\) es la desviación estándar de los coeficientes de detalle en cada nivel, y \(n\) es el número de muestras de la señal. j representa el número de niveles (en nuestro caso hasta 5 niveles), donde \(d_j\) son los coeficientes de detalle y \(n\) es el número de muestras para cada señal.
 
