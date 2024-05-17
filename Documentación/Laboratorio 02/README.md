@@ -1,11 +1,11 @@
 # Fibrilación Auricular
 
 ### Tabla de contenidos
-1. [Definición de la arritmia](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%201/README.md#definici%C3%B3n-de-la-arritmia)
-2. [Contexto nacional y mundial](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%201/README.md#contexto-nacional-y-mundial)
-4. [Planteamiento del problema](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%201/README.md#planteamiento-del-problema)
-5. [Propuesta de solución](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%201/README.md#propuesta-de-soluci%C3%B3n)
-6. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%201/README.md#bibliograf%C3%ADa)
+1. [Definición de la arritmia](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2002/README.md#definici%C3%B3n-de-la-arritmia)
+2. [Contexto nacional y mundial](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2002/README.md#contexto-nacional-y-mundial)
+4. [Planteamiento del problema](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2002/README.md#planteamiento-del-problema)
+5. [Propuesta de solución](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2002/README.md#propuesta-de-soluci%C3%B3n)
+6. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2002/README.md#bibliograf%C3%ADa)
    
 ## Definición de la arritmia
 La definición de este tipo de arritmia describe un ritmo cardíaco irregular y anormal que causa latidos muy rápidos. Los síntomas de esta arritmia incluyen palpitaciones, dolor en el pecho, mareos, fatiga, aturdimiento, menor capacidad para hacer ejercicio, falta de aire y debilidad. Posibles causas pueden ser defectos congénitos, enfermedades cardíacas, presión arterial alta, enfermedades pulmonares, trastornos de la tiroides y factores de estilo de vida, como el consumo excesivo de alcohol y tabaco. [1]
