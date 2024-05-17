@@ -122,7 +122,7 @@ data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
    - Reescalado del umbral: El método heurístico de umbralización se acopla con un método de reescalado de umbral universal ('sln'), que ajusta los umbrales basándose en el nivel de ruido dentro de la señal.
 
 Análisis del Código
-Importación de Librerías:
+\underline{subrayar}Importación de Librerías:
 
 ```python
 import numpy as np
