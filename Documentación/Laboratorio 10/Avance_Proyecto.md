@@ -1,4 +1,4 @@
-# Fibrilación Auricular
+# Avance del proyecto
 
 ### Tabla de contenidos
 1. [Problemática](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2010/Avance_Proyecto.md#problem%C3%A1tica)
