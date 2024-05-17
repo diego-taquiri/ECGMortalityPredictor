@@ -24,7 +24,7 @@ Lista de participantes:
 
 ### Materiales y métodos
 
-#### Filtrado de ECG usando Wavelet
+#### ECG
 
 La señal ECG utilizada en este trabajo fue adquirida mediante un dispositivo BITalino, utilizando el canal 2 para la recolección de datos. La frecuencia de muestreo fue de 1000 Hz y el BITalino realiza la cuantización de la señal a 10 bits. Inicialmente, la cuantización de 10 bits cubre un rango de 0 a 3.3 mV [1]. Para convertir la señal cruda de bits a milivoltios y centrarla, se utilizó la siguiente relación de conversión:
 
@@ -52,8 +52,6 @@ Siguiendo la implentación del artículo, se utilizó la aplicación de wavelets
 </div>
 
    donde \(C\) es una constante (0.01 en nuestro caso, elegida experimentalmente para nuestras señales), \(\sigma_{Vs}\) es la desviación estándar de la señal original, \(\sigma_{dj}\) es la desviación estándar de los coeficientes de detalle en cada nivel, y \(n\) es el número de muestras de la señal. j representa el número de niveles (en nuestro caso hasta 5 niveles), donde \(d_j\) son los coeficientes de detalle y \(n\) es el número de muestras para cada señal.
-
-
 
 ```python
     def calculate_T(coeffs, n, C):
@@ -87,33 +85,10 @@ Siguiendo la implentación del artículo, se utilizó la aplicación de wavelets
 
 Esta metodología permitió reducir el ruido presente en la señal ECG de manera efectiva.
 
-#### ECG
-<p align="justify">La contaminación de una señal de ECG proviene de diversas fuentes dentro y fuera del cuerpo de los pacientes. Las señales eléctricas de otros músculos además del corazón, así como la respiración, la tos y otros tipos de movimiento, pueden crear artefactos. El ruido también puede deberse a conexiones eléctricas deficientes si los electrodos no se colocan correctamente sobre el paciente. Además, los cables de ECG son antenas eficaces que captan fácilmente fuentes de ruido eléctrico del entorno inmediato, incluidas luces fluorescentes, teléfonos móviles o dispositivos con Bluetooth. Todas estas cosas pueden crear una lectura de ECG borrosa [6].
-
-<p align="justify">Adicionalmente, es indispensable saber que la definición de filtros de muesca, los cuales combinan filtros de paso alto y bajo para crear una pequeña región de frecuencias que se eliminarán. Para los ECG, el objetivo principal es eliminar el ruido de 50 Hz o 60 Hz dado que el ruido de la red eléctrica se sitúa en la zona de interés. El equipo de ECG ya tiene cierta capacidad para rechazar el ruido de la red incluso sin un filtro, por lo que, dependiendo de la cantidad de ruido de CA en el ambiente, es posible que no se requiera este filtro [7].
-
-<p align="justify"> En el caso de este trabajo, el filtrado de la señal ECG se realizó utilizando el trabajo de Basu et al para el filtrado IIR[15], y el trabajo de Kumar et al [16] para el filtrado FIR. Se utilizó un filtro Chebyshev I pasabajo de orden 4 con filtro en 40 Hz, y un filtro Kaiser con ventana de orden 56, una frecuencia de corte de 40 y un beta de 6. Debido a que el filtro pasabajos se encuentra por debajo de la frecuencia de interferencia eléctrica (60 Hz), no es necesario implementar un notch en la frecuencia.
-
-
 #### EMG
-<p align="justify">La señal electromiográfica de superficie que se origina en el músculo está inevitablemente contaminada por varias señales de ruido que se originan en la interfaz piel-electrodo, en la electrónica que amplifica las señales, y en fuentes externas. Los dispositivos son sustancialmente inmunes a algunos de estos ruidos, pero no al ruido de referencia y al ruido de artefacto de movimiento. Estas fuentes de ruido tienen espectros de frecuencia que contaminan la parte de baja frecuencia de espectro de frecuencia. Hay muchos factores que deben tenerse en cuenta al determinar las especificaciones de filtro adecuadas para eliminar estos artefactos; Incluyen el músculo probado y el tipo de contracción, la configuración del sensor y la fuente de ruido específica. La determinación del paso de banda es siempre un compromiso entre (a) reducir el ruido y la contaminación por artefactos, y (b) preservar la información deseada [8].
-
-<p align="justify">Para reducir este ruido se consideraron las siguientes características en el filtrado:
-   
-<p align="justify">Se realizó el filtrado IIR de acuerdo a las especificaciones del trabajo realizado por Mello et al[17]. El filtro realizado fue la combinación de varios filtros de Buttersworth. Un filtro pasaalto de segundo orden con una frecuencia de corte de 10 Hz, un filtro pasabajo de 400 Hz de frecuencia de corte, y 6 filtros rechazabanda de segundo orden con bandas de rechazo cercanas las armónicas de 60 Hz hasta los 400 Hz (59-61, 119-121, 179-181, etc)[17].
-
-<p align="justify">Por otro lado, la literatura es más vaga en lo referente a filtros FIR para EMG. Si bien se menciona el uso del filtro de ventana de Bartlett en un estudio[18], este carece de la información requerida para reproducirlo. Por tanto se utiliza el método de ventana de Hamming con los parámetros sugeridos.
-
-<b>Diseñar un filtro FIR:</b>
-- Métodos de ventana: Hamming, Blackman.
-- Objetivo: Aislar la banda de frecuencia de interés que corresponde a la actividad muscular.
-- Especificaciones sugeridas: Fc = 40 Hz, paso banda bajo.
-
-<p align="justify">Como las señales EMG tienen una amplitud muy baja, es necesario amplificarlas con una ganancia de 1000x a una escala que es menos sensible al ruido y puede ser procesada adicionalmente por un convertidor analógico a digital. Para eliminar fuentes de ruido no deseadas o limitar la salida del sensor, también es útil filtrar la señal a una banda de frecuencia específica de interés que aún contiene toda la información de señales musculares como 20-450 Hz que se usa típicamente para superficie EMG. [9]
 
 #### EEG
-<p align="justify">Para el filtrado de señal EEG, se utilizó la señal de EEG tomada mediante BITalino en tres instancias, reposo, apertura y cierre de ojos, y resolución mental de ejercicios matemáticos. El filtrado de la señal se realizó utilizando los criterios mencionados por Mamun et al.[ Md. Mamun, M. Al-Kadi, y Mohd. Marufuzzaman, «Effectiveness of Wavelet Denoising on Electroencephalogram Signals», Journal of Applied Research and Technology, vol. 11, n.o 1, pp. 156-160, feb. 2013, doi: 10.1016/S1665-6423(13)71524-4.] Se utilizó una función Wavelet Daubechies8 (db8) con 4 niveles de descomposición, el cual utiliza un umbral de ruido o threshold determinado por la siguiente ecuación:
-
+<p align="justify">Para el filtrado de señal EEG, se utilizó la señal de EEG tomada mediante BITalino en tres instancias, reposo, apertura y cierre de ojos, y resolución mental de ejercicios matemáticos. El filtrado de la señal se realizó utilizando los criterios mencionados por Mamun et al.[ Md. Mamun, M. Al-Kadi, y Mohd. Marufuzzaman, «Effectiveness of Wavelet Denoising on Electroencephalogram Signals», Journal of Applied Research and Technology, vol. 11, n.o 1, pp. 156-160, feb. 2013, doi: 10.1016/S1665-6423(13)71524-4.] Se utilizó una función Wavelet Daubechies8 (db8) con 4 niveles de descomposición, el cual utiliza un umbral de ruido o threshold determinado por la siguiente ecuación: </b>
 
 Donde:
 -La desviación media absoluta(delta_mad) es la media de los valores absolutos de los coeficientes de wavelet entre 0.6745 (estimador de la desviación estándar para ruido blanco gaussiano)
