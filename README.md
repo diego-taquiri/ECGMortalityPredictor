@@ -21,9 +21,9 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 
 | Descripción  | Foto |
 | ------------- | ------------- |
-| Diego Taquiri (colaborador) - diego.taquiri@upch.pe. <p align="justify"> Estudiante de último año de Biología UPCH. Mi área de investigación es la bioinformática y genómica. | ![](Documentación/fotos/diego.jpeg)              |
-| Armando Flórez (colaborador) - armando.florez@upch.pe. <p align="justify"> Estudiante de Ingeniería Biomédica PUCP- UPCH. | ![](Documentación/fotos/Armando.jpeg)              |
-| Ana Belen Mantilla (colaborador) - ana.mantilla@upch.pe. <p align="justify"> Estudiante de Ingeniería Biomédica de la Pontificia Universidad Católica del Perú (PUCP) y la Universidad Peruana Cayetano Heredia (UPCH). | ![](Documentación/fotos/ana.jpg)              |
-| Erick Alexander Valdivia Esteba (colaborador) - erick.valdivia@upch.pe. <p align="justify">Estudiante de cuarto año de Ingeniería Biomédica con interés en el área de ingeniería clínica. | ![](Documentación/fotos/Erick.jpg)              |
+| Diego Taquiri (colaborador) - diego.taquiri@upch.pe. <p align="justify"> Estudiante de último año de Biología UPCH. Mi área de investigación es la bioinformática y genómica. | ![](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/diego.jpeg)              |
+| Armando Flórez (colaborador) - armando.florez@upch.pe. <p align="justify"> Estudiante de Ingeniería Biomédica PUCP- UPCH. | ![](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/Armando.jpeg)              |
+| Ana Belen Mantilla (colaborador) - ana.mantilla@upch.pe. <p align="justify"> Estudiante de Ingeniería Biomédica de la Pontificia Universidad Católica del Perú (PUCP) y la Universidad Peruana Cayetano Heredia (UPCH). | ![](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/ana.jpeg)              |
+| Erick Alexander Valdivia Esteba (colaborador) - erick.valdivia@upch.pe. <p align="justify">Estudiante de cuarto año de Ingeniería Biomédica con interés en el área de ingeniería clínica. | ![](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/Erick.jpeg)              |
 
 <p align="justify"> ¡Gracias por visitar nuestro repositorio y por ser parte de nuestro viaje hacia el conocimiento y la innovación en señales biomédicas!
