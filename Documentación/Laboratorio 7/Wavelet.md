@@ -42,10 +42,7 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 <p align="center"><b>Figura 3.</b> (a) Módulo de las respuestas de los filtros de Bessel y Butterworth de orden N = 4 y (b) formas de varias funciones de ventana [3]. <br> 
       
 ### Objetivos específicos de la práctica
-- Diseñar filtros FIR e IIR con los datasets de los laboratorios anteriores.
-- Filtrar de manera óptima las frecuencias altas de las señales de ECG que corresponden a ruido.
-- Filtrar las señales EMG para eliminar ruido y artefactos, y aislar la actividad muscular efectiva.
-- Preprocesar señales EEG para reducir el ruido y extraer características de interés como ondas cerebrales específicas.
+- 
 
 ### Materiales y métodos
 
@@ -71,6 +68,7 @@ Siguiendo la implentación del artículo, se utilizó la aplicación de wavelets
 
 2. **Cálculo de umbrales**: Se calculó un umbral adaptativo para cada nivel de detalle utilizando la desviación estándar de la señal y los coeficientes de detalle. El umbral \(T\) para cada nivel se calculó usando la siguiente fórmula:
 
+<p align="center">
 <div style="text-align: center;">
     <img src="./plots/images/ecg-equation.png" alt="ECG Equation" width="200">
 </div>
