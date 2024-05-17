@@ -31,7 +31,7 @@ Figura 1. Conexiones de cable de electrodo en BITalino. <br>
    <div style="text-align: center;">
       <p align="center">
     <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/Images/PosicionAr.jpg" alt="Descripción de la primera imagen" width="300">
-    <img src="https://github.com/anabelen678/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/Images/PosicionAb.jpg" alt="Descripción de la segunda imagen" width="300">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/Images/PosicionAb.jpg" alt="Descripción de la segunda imagen" width="300">
 </div>
 <p align="center">Figura 2. (a) Posicionamiento de electrodos en primer estudio y (b) Posicionamiento de electrodos en segundo estudio.<br> <br> 
 
