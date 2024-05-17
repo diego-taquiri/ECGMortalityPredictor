@@ -15,6 +15,7 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 - [Avance del proyecto](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2010/Avance_Proyecto.md)
 
 ### Contenido del curso
+<iframe src="https://docs.google.com/viewer?url=https://github.com/diego-taquiri/ISB-equipo11/raw/main/Documentaci%C3%B3n/Laboratorio%2001/S%C3%ADlabo.pdf&embedded=true" width="600" height="780" style="border: none;"></iframe>
 
 ### Docentes del curso
 
