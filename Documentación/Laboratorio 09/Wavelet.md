@@ -206,7 +206,10 @@ denoised_signal = pywt.waverec(denoised_coeffs, wavelet)
 
 ### Discusión
 <p align="justify"><b>Filtración de ECG:</b>
-<p align="justify"> Easadas
+<p align="justify"> El filtrado de señales electrocardiográficas (ECG) mediante la transformada wavelet Daubechies 4 (db4) con umbral suave adaptativo ha mostrado mejoras significativas en la calidad de las señales. Esto se debe a que este tipo de filtrado ha demostrado ser eficaz en la eliminación de varios tipos de ruido que afectan las señales ECG, por ejemplo ruido de alta frecuencia, artefactos musculares y ruido de línea base [9]. Según Chatterjee et al. (2020), la aplicación de la transformada wavelet es particularmente efectiva para eliminar el ruido aditivo gaussiano blanco, artefactos musculares y ruido de interferencia de línea eléctrica, entre otros tipos de ruido compuesto​​. La señal ECG cruda, cuando se procesa con la transformada wavelet, muestra una reducción notable del ruido de alta frecuencia. Además, preserva las características morfológicas esenciales de la señal ECG, como el complejo QRS y las ondas P [9]. La técnica de wavelet Daubechies 4 con umbral suave adaptativo mantiene estas características como se observa en los resultados.
+
+En nuestro estudio, utilizamos los siguientes valores de umbral para el filtrado wavelet: 0.49, 0.71, 1.18, 2.12 y 4.39. Estos umbrales fueron calculados en base a la desviación estándar de los coeficientes de la señal de entrada y una constante C. A diferencia del estudio de Alfaouri y Daqrouq [8], donde los umbrales varían entre 1 y 100, e incluso hasta 400, debido a una mayor desviación estándar de las señales utilizadas, nuestros umbrales son más bajos debido a la desviación estándar de nuestras señales (aproximadamente de 1 a 5). Además, seleccionamos una constante C de 0.01, a diferencia de su valor de 5, para evitar la pérdida de características morfológicas importantes de la señal. Esta adaptación fue necesaria debido a las diferencias en el nivel de ruido y las características de las señales capturadas, que en nuestro caso presentan mayor ruido por se capturadas por un dispositivo de bajo costo, el BITalino​​.
+
 <p align="justify"><b>Filtración de EMG:</b>
 <p align="justify"> sdada
 <p align="justify"><b>Filtración de EEG:</b>
@@ -224,3 +227,4 @@ En el caso del trabajo de Zikov et al, este está enfocado en eliminar los artef
 <p align="justify">[6] D. L. Donoho, “De-noising by soft-thresholding”, IEEE Trans. Inf. Theory, vol. 41, núm. 3, pp. 613–627, 1995.
 <p align="justify">[7] PLUX – Wireless Biosignals, S.A., "Electrocardiography (ECG) Sensor Data Sheet," Rev. B, 2020. [Online]. Available: https://bitalino.com/storage/uploads/media/revolution-ecg-sensor-datasheet-revb-1.pdf. 
 <p align="justify">[8] M. Alfaouri and K. Daqrouq, "ECG signal denoising by wavelet transform thresholding," American Journal of Applied Sciences, vol. 5, no. 3, pp. 276-281, 2008. doi: 10.3844/ajassp.2008.276.281.
+<p align="justify">[9] S. Chatterjee, R. S. Thakur, R. N. Yadav, L. Gupta, y D. K. Raghuvanshi, "Review of noise removal techniques in ECG signals," IET Signal Processing, vol. 14, no. 9, pp. 569-590, 2020. doi: 10.1049/iet-spr.2020.0104.
