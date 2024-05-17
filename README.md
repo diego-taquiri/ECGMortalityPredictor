@@ -33,11 +33,11 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 | Licenciado     | José A.   | Cáceres del Águila    | Contratado  | [jose.caceres.d@upch.pe](mailto:jose.caceres.d@upch.pe) |
 
 ### Participantes
-| Imagen                                                                                           | Grado                            | Nombre            | Apellido            | Condición    | Correo electrónico                            |
-|-------------------------------------------------------------------------------------------------|----------------------------------|-------------------|---------------------|--------------|-----------------------------------------------|
-| ![](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/diego.jpeg) | Estudiante de Biología           | Diego             | Taquiri             | Colaborador  | [diego.taquiri@upch.pe](mailto:diego.taquiri@upch.pe)  |
-| ![](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/Armando.jpeg) | Estudiante de Ingeniería Biomédica | Armando           | Flórez              | Colaborador  | [armando.florez@upch.pe](mailto:armando.florez@upch.pe)  |
-| ![](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/ana.jpg)   | Estudiante de Ingeniería Biomédica | Ana Belen         | Mantilla            | Colaborador  | [ana.mantilla@upch.pe](mailto:ana.mantilla@upch.pe)    |
-| ![](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/Erick.jpg)  | Estudiante de Ingeniería Biomédica | Erick             | Valdivia            | Colaborador  | [erick.valdivia@upch.pe](mailto:erick.valdivia@upch.pe) |
+| Imagen                                                                                           | Grado                            | Nombre y Apellido        | Condición   | Correo electrónico                            |
+|-------------------------------------------------------------------------------------------------|----------------------------------|--------------------------|-------------|-----------------------------------------------|
+| ![](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/diego.jpeg) | Estudiante de Biología           | Diego Taquiri            | Colaborador | [diego.taquiri@upch.pe](mailto:diego.taquiri@upch.pe)  |
+| ![](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/Armando.jpeg) | Estudiante de Ingeniería Biomédica | Armando Flórez           | Colaborador | [armando.florez@upch.pe](mailto:armando.florez@upch.pe)  |
+| ![](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/ana.jpg)   | Estudiante de Ingeniería Biomédica | Ana Belen Mantilla       | Colaborador | [ana.mantilla@upch.pe](mailto:ana.mantilla@upch.pe)    |
+| ![](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/Erick.jpg)  | Estudiante de Ingeniería Biomédica | Erick Valdivia           | Colaborador | [erick.valdivia@upch.pe](mailto:erick.valdivia@upch.pe) |
 
 <p align="justify"> ¡Gracias por visitar nuestro repositorio y por ser parte de nuestro viaje hacia el conocimiento y la innovación en señales biomédicas!
