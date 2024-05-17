@@ -53,7 +53,9 @@ Sin embargo, estas señales son bastante complejas asique son propensas a adquir
 
 La señal ECG utilizada en este trabajo fue adquirida mediante un dispositivo BITalino, utilizando el canal 2 para la recolección de datos. La frecuencia de muestreo fue de 1000 Hz y el BITalino realiza la cuantización de la señal a 10 bits. Inicialmente, la cuantización de 10 bits cubre un rango de 0 a 3.3 mV [1]. Para convertir la señal cruda de bits a milivoltios y centrarla, se utilizó la siguiente relación de conversión:
 
-\[ \text{data\_mV} = \left( \frac{\text{data}[:, 5] \cdot \text{volt\_range}}{2^{\text{bits}} - 1} \right) - \text{media}(\text{data\_mV}) \]
+```python
+data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
+```
 
 Esta conversión permitió adecuar la señal para el posterior procesamiento.
 
@@ -69,11 +71,12 @@ Siguiendo la implentación del artículo, se utilizó la aplicación de wavelets
 
 2. **Cálculo de umbrales**: Se calculó un umbral adaptativo para cada nivel de detalle utilizando la desviación estándar de la señal y los coeficientes de detalle. El umbral \(T\) para cada nivel se calculó usando la siguiente fórmula:
 
-    \[
-    T = C \sqrt{\frac{\sigma(V_s(n))}{\sigma(d_j(n))} n}
-    \]
+<div style="text-align: center;">
+    <img src="./plots/images/ecg-equation.png" alt="ECG Equation" width="200">
+</div>
 
-    donde \(C\) es una constante (0.01 en nuestro caso, elegida experimentalmente para nuestras señales), \(\sigma_{Vs}\) es la desviación estándar de la señal original, \(\sigma_{dj}\) es la desviación estándar de los coeficientes de detalle en cada nivel, y \(n\) es el número de muestras de la señal. j representa el número de niveles (en nuestro caso hasta 5 niveles), donde \(d_j\) son los coeficientes de detalle y \(n\) es el número de muestras para cada señal.
+   donde \(C\) es una constante (0.01 en nuestro caso, elegida experimentalmente para nuestras señales), \(\sigma_{Vs}\) es la desviación estándar de la señal original, \(\sigma_{dj}\) es la desviación estándar de los coeficientes de detalle en cada nivel, y \(n\) es el número de muestras de la señal. j representa el número de niveles (en nuestro caso hasta 5 niveles), donde \(d_j\) son los coeficientes de detalle y \(n\) es el número de muestras para cada señal.
+
 
 
     ```python
