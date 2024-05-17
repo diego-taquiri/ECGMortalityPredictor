@@ -6,13 +6,13 @@ Lista de participantes:
 - Taquiri D., Diego Alejandro  
 
 ## Tabla de contenidos
-1. [Objetivos específicos de la práctica](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#objetivos-espec%C3%ADficos-de-la-pr%C3%A1ctica)
-2. [Materiales y métodos](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#materiales-y-m%C3%A9todos)
-3. [Resultados](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#resultados)
-   - [Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#videos-mostrando-las-conexiones-electrodos-cuerpo-y-la-se%C3%B1al-ploteada-en-opensignals)
-   - [Archivo de los datos de la señal ploteada](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#archivo-de-los-datos-de-la-se%C3%B1al-ploteada)
-   - [Ploteo de las señales en Python](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#ploteo-de-las-se%C3%B1ales-en-python)
-4. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/BITalino_EMG.md#bibliograf%C3%ADa)
+1. [Objetivos específicos de la práctica](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/BITalino_EMG.md#objetivos-espec%C3%ADficos-de-la-pr%C3%A1ctica)
+2. [Materiales y métodos](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/BITalino_EMG.md#materiales-y-m%C3%A9todos)
+3. [Resultados](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/BITalino_EMG.md#resultados)
+   - [Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/BITalino_EMG.md#videos-mostrando-las-conexiones-electrodos-cuerpo-y-la-se%C3%B1al-ploteada-en-opensignals)
+   - [Archivo de los datos de la señal ploteada](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/BITalino_EMG.md#archivo-de-los-datos-de-la-se%C3%B1al-ploteada)
+   - [Ploteo de las señales en Python](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/BITalino_EMG.md#ploteo-de-las-se%C3%B1ales-en-python)
+4. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/BITalino_EMG.md#bibliograf%C3%ADa)
 
 ### Objetivos específicos de la práctica
 - Adquirir señales biomédicas de EMG.
@@ -23,15 +23,15 @@ Lista de participantes:
 <p align="justify">Se realizó la medición de EMG de acuerdo a las instrucciones de la guía experimental de BITalino sobre electromiografía. [1] La medición se realizó utilizando un cable de electrodo de tres derivaciones conectado al terminal del BITalino correspondiente a EMG (Figura 1). <br>
 
 <p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/Images/Bitalino.jpg" alt="Descripción de la imagen" width="300"><br> 
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/Images/Bitalino.jpg" alt="Descripción de la imagen" width="300"><br> 
 Figura 1. Conexiones de cable de electrodo en BITalino. <br> 
 
 <p align="justify">Los electrodos positivo y negativo se colocaron en el tercio medio del brazo, en la confluencia de los brazos corto y largo del bíceps braquial a una distancia de 2 centímetros uno de otro, mientras que el electrodo de tierra se colocó en el tercio proximal del antebrazo en la zona correspondiente al olécranon del cúbito. Las posiciones pueden observarse en la figura 2. <br> 
 
    <div style="text-align: center;">
       <p align="center">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/Images/PosicionAr.jpg" alt="Descripción de la primera imagen" width="300">
-    <img src="https://github.com/anabelen678/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%203/Images/PosicionAb.jpg" alt="Descripción de la segunda imagen" width="300">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/Images/PosicionAr.jpg" alt="Descripción de la primera imagen" width="300">
+    <img src="https://github.com/anabelen678/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/Images/PosicionAb.jpg" alt="Descripción de la segunda imagen" width="300">
 </div>
 <p align="center">Figura 2. (a) Posicionamiento de electrodos en primer estudio y (b) Posicionamiento de electrodos en segundo estudio.<br> <br> 
 
@@ -54,7 +54,7 @@ Figura 1. Conexiones de cable de electrodo en BITalino. <br>
 [![Watch Video](https://img.youtube.com/vi/ZKdAlPd_Is0/maxresdefault.jpg)](https://youtu.be/ZKdAlPd_Is0) [![Alt text](https://i9.ytimg.com/vi/95itNS9mFII/mqdefault.jpg?sqp=CMD96rAG-oaymwEmCMACELQB8quKqQMa8AEB-AHOBoAC3gOKAgwIABABGFYgWShlMA8=&rs=AOn4CLDixt3MoApS1fk_C7HHtPLwNUHAXQ)](https://youtu.be/95itNS9mFII) <p align="center"> Paciente 2 | [![Watch Video](https://img.youtube.com/vi/SzPdHHC3beI/maxresdefault.jpg)](https://youtu.be/SzPdHHC3beI) [![Alt text](https://i9.ytimg.com/vi/KyH2pPrcr28/mqdefault.jpg?sqp=CMD96rAG-oaymwEmCMACELQB8quKqQMa8AEB-AHOBoAC3gOKAgwIABABGGUgWShPMA8=&rs=AOn4CLCxCcGqbqWel7w-gceBI7Z56oKhdA)](https://youtu.be/KyH2pPrcr28) <p align="center"> Paciente 2 | |
    
 #### Archivo de los datos de la señal ploteada
-- [EMG raw data](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%203/emg_raw_data)
+- [EMG raw data](https://github.com/diego-taquiri/ISB-equipo11/tree/main/Documentaci%C3%B3n/Laboratorio%2004/emg_raw_data)
    
 #### Ploteo de las señales en Python
 <div>
