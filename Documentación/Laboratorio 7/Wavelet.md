@@ -42,9 +42,9 @@ data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
 
 <p align="justify">1. <b>Descomposición de la señal</b>: La señal ECG fue descompuesta utilizando la función `pywt.wavedec` con wavelets db4 hasta un nivel de descomposición de 5. Esta función descompone la señal original en un conjunto de coeficientes de aproximación y detalle, que representan las diferentes frecuencias presentes en la señal.
 
-    ```python
+ ```python
     coeffs = pywt.wavedec(y_1, 'db4', level=5)
-    ```
+ ```
 
 <p align="justify">2. <b>Cálculo de umbrales</b>: Se calculó un umbral adaptativo para cada nivel de detalle utilizando la desviación estándar de la señal y los coeficientes de detalle. El umbral \(T\) para cada nivel se calculó usando la siguiente fórmula:
 
@@ -68,7 +68,7 @@ data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
 
 <p align="justify">3. <b>Aplicación de umbrales suaves</b>: Los coeficientes de detalle fueron umbralizados utilizando el umbral suave (`soft thresholding`). Este proceso reduce los coeficientes menores al umbral, manteniendo la estructura general de la señal pero eliminando el ruido. Se utilizó la función `pywt.threshold` para aplicar este umbral.
 
-    ```python
+   ```python
     def soft_threshold(coeffs, T_values):
         thresholded_coeffs = coeffs.copy()
         for i in range(1, len(coeffs)):
@@ -76,13 +76,13 @@ data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
         return thresholded_coeffs
 
     thresholded_coeffs = soft_threshold(coeffs, T_values)
-    ```
+   ```
 
 <p align="justify">4. <b>Reconstrucción de la señal</b>: Finalmente, la señal fue reconstruida a partir de los coeficientes umbralizados utilizando la función `pywt.waverec`, obteniendo una señal denoised y filtrada.
 
-    ```python
+   ```python
     y_denoised = pywt.waverec(thresholded_coeffs, 'db4')
-    ```
+   ```
 
 #### EMG
 
