@@ -33,7 +33,7 @@ Lista de participantes:
 
 4. <p align="justify">La generación de wavelets y el cálculo de la transformada de wavelets discreta se adaptan bien a la computadora digital. No se utiliza cálculo, no hay derivadas ni integrales, solo operaciones de multiplicación y suma que son básicas para un sistema digital computadora. [3]
 
-<p align="justify">Finalmente, se ha demostrado que el umbral de los coeficientes wavelet tiene una propiedad de reducción de ruido casi óptima para muchas clases de señales [122].
+<p align="justify">Finalmente, se ha demostrado que el umbral de los coeficientes wavelet tiene una propiedad de reducción de ruido casi óptima para muchas clases de señales [5]. Los métodos actuales utilizan la transformada wavelet discreta (DWT) para procesar una señal, aplicando un umbral que elimina coeficientes por debajo de cierto valor y luego realizando la inversa de la DWT. Este proceso es eficaz para eliminar ruido y lograr alta compresión debido a la capacidad de concentración de las wavelets. En comparación, el procesamiento tradicional basado en Fourier busca minimizar la superposición de señales y ruido en el dominio de frecuencia mediante filtrado lineal. Las wavelets permiten elegir bases que reducen la superposición en el dominio tiempo-frecuencia. El nuevo método no lineal se centra en la diferencia de amplitud en lugar de la ubicación espectral, permitiendo recortar, umbralizar y reducir la amplitud para separar señales o eliminar ruido. Las propiedades de localización de las wavelets son especialmente efectivas para estos métodos, mejorando también la compresión, otro proceso no lineal. [3]
 
 ### Objetivos específicos de la práctica
 - Familiarizarse con los conceptos básicos y la teoría detrás de las wavelets, incluyendo su definición, propiedades y diferencias clave respecto a la transformada de Fourier.
@@ -45,7 +45,7 @@ Lista de participantes:
 
 #### ECG
 
-<p align="justify">La señal ECG utilizada en este trabajo fue adquirida mediante un dispositivo BITalino, utilizando el canal 2 para la recolección de datos. La frecuencia de muestreo fue de 1000 Hz y el BITalino realiza la cuantización de la señal a 10 bits. Inicialmente, la cuantización de 10 bits cubre un rango de 0 a 3.3 mV [5]. Para convertir la señal cruda de bits a milivoltios y centrarla, se utilizó la siguiente relación de conversión:
+<p align="justify">La señal ECG utilizada en este trabajo fue adquirida mediante un dispositivo BITalino, utilizando el canal 2 para la recolección de datos. La frecuencia de muestreo fue de 1000 Hz y el BITalino realiza la cuantización de la señal a 10 bits. Inicialmente, la cuantización de 10 bits cubre un rango de 0 a 3.3 mV [6]. Para convertir la señal cruda de bits a milivoltios y centrarla, se utilizó la siguiente relación de conversión:
 
 ```python
 data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
@@ -53,7 +53,7 @@ data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
 
 <p align="justify">Esta conversión permitió adecuar la señal para el posterior procesamiento.
 
-<p align="justify">La metodología utilizada para el filtrado de la señal ECG usando wavelet se basa en la implementación propuesta por Alfaouri y Daqrouq en su artículo "ECG signal denoising by wavelet transform thresholding" [6]. En este estudio, se destaca la importancia del uso de la transformada wavelet para la eliminación de ruido en señales ECG no estacionarias. Los autores proponen un método de umbralización de coeficientes wavelet para la mejora de la relación señal-ruido y que preserva las características morfológicas de la señal ECG. <br>
+<p align="justify">La metodología utilizada para el filtrado de la señal ECG usando wavelet se basa en la implementación propuesta por Alfaouri y Daqrouq en su artículo "ECG signal denoising by wavelet transform thresholding" [7]. En este estudio, se destaca la importancia del uso de la transformada wavelet para la eliminación de ruido en señales ECG no estacionarias. Los autores proponen un método de umbralización de coeficientes wavelet para la mejora de la relación señal-ruido y que preserva las características morfológicas de la señal ECG. <br>
 
 <p align="justify">Siguiendo la implentación del artículo, se utilizó la aplicación de wavelets Daubechies 4 (db4) y un umbral suave para la eliminación de ruido. A continuación, se detallan los pasos seguidos en la metodología:<br>
 
@@ -148,5 +148,6 @@ data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
 <p align="justify">[2] Adimulam, M. K., & Srinivas, M. . (2016). Modeling of EXG (ECG, EMG and EEG) non-idealities using MATLAB. 2016 9th International Congress on Image and Signal Processing, BioMedical Engineering and Informatics (CISP-BMEI). doi:10.1109/cisp-bmei.2016.7852968
 <p align="justify">[3] C. S. Burrus, R. A. Gopinath, y H. Guo, Introduction to wavelets and wavelet transforms: A primer. Upper Saddle River, NJ, Estados Unidos de América: Pearson, 1997.
 <p align="justify">[4] “Wavelets: Multiscale edge detection and image denoising”, en Embedded Image Processing on the TMS320C6000TM DSP, Boston, MA: Springer US, 2005, pp. 281–378.
-<p align="justify">[5] PLUX – Wireless Biosignals, S.A., "Electrocardiography (ECG) Sensor Data Sheet," Rev. B, 2020. [Online]. Available: https://bitalino.com/storage/uploads/media/revolution-ecg-sensor-datasheet-revb-1.pdf. 
-<p align="justify">[6] M. Alfaouri and K. Daqrouq, "ECG signal denoising by wavelet transform thresholding," American Journal of Applied Sciences, vol. 5, no. 3, pp. 276-281, 2008. doi: 10.3844/ajassp.2008.276.281.
+<p align="justify">[5] D. L. Donoho, “De-noising by soft-thresholding”, IEEE Trans. Inf. Theory, vol. 41, núm. 3, pp. 613–627, 1995.
+<p align="justify">[6] PLUX – Wireless Biosignals, S.A., "Electrocardiography (ECG) Sensor Data Sheet," Rev. B, 2020. [Online]. Available: https://bitalino.com/storage/uploads/media/revolution-ecg-sensor-datasheet-revb-1.pdf. 
+<p align="justify">[7] M. Alfaouri and K. Daqrouq, "ECG signal denoising by wavelet transform thresholding," American Journal of Applied Sciences, vol. 5, no. 3, pp. 276-281, 2008. doi: 10.3844/ajassp.2008.276.281.
