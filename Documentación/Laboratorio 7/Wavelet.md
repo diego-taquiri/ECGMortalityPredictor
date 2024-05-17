@@ -46,7 +46,7 @@ data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
     coeffs = pywt.wavedec(y_1, 'db4', level=5)
     ```
 
-<p align="justify">2. **Cálculo de umbrales**: Se calculó un umbral adaptativo para cada nivel de detalle utilizando la desviación estándar de la señal y los coeficientes de detalle. El umbral \(T\) para cada nivel se calculó usando la siguiente fórmula:
+<p align="justify">2. <b>Cálculo de umbrales</b>: Se calculó un umbral adaptativo para cada nivel de detalle utilizando la desviación estándar de la señal y los coeficientes de detalle. El umbral \(T\) para cada nivel se calculó usando la siguiente fórmula:
 
 <p align="center">
 <img src="./plots/images/ecg-equation.png" alt="ECG Equation" width="200">
@@ -66,7 +66,7 @@ data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
     T_values = calculate_T(coeffs, n, C)
 ```
 
-<p align="justify">3. **Aplicación de umbrales suaves**: Los coeficientes de detalle fueron umbralizados utilizando el umbral suave (`soft thresholding`). Este proceso reduce los coeficientes menores al umbral, manteniendo la estructura general de la señal pero eliminando el ruido. Se utilizó la función `pywt.threshold` para aplicar este umbral.
+<p align="justify">3. <b>Aplicación de umbrales suaves</b>: Los coeficientes de detalle fueron umbralizados utilizando el umbral suave (`soft thresholding`). Este proceso reduce los coeficientes menores al umbral, manteniendo la estructura general de la señal pero eliminando el ruido. Se utilizó la función `pywt.threshold` para aplicar este umbral.
 
     ```python
     def soft_threshold(coeffs, T_values):
@@ -78,7 +78,7 @@ data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
     thresholded_coeffs = soft_threshold(coeffs, T_values)
     ```
 
-<p align="justify">4. **Reconstrucción de la señal**: Finalmente, la señal fue reconstruida a partir de los coeficientes umbralizados utilizando la función `pywt.waverec`, obteniendo una señal denoised y filtrada.
+<p align="justify">4. <b>Reconstrucción de la señal</b>: Finalmente, la señal fue reconstruida a partir de los coeficientes umbralizados utilizando la función `pywt.waverec`, obteniendo una señal denoised y filtrada.
 
     ```python
     y_denoised = pywt.waverec(thresholded_coeffs, 'db4')
