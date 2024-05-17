@@ -167,26 +167,6 @@ denoised_signal = pywt.waverec(denoised_coeffs, wavelet)
 ```
 <p align="justify">La señal se reconstruye a partir de los coeficientes umbralizados utilizando la función waverec.
 
-Uso del Script:
-
-```python
-if __name__ == "__main__":
-    t = np.linspace(0, 1, 200)
-    emg_signal = np.sin(40 * np.pi * t) + 0.5 * np.random.randn(t.size)
-    
-    denoised_emg_signal = wavelet_denoise(emg_signal, wavelet='db4', level=10)
-    
-    plt.figure(figsize=(10, 6))
-    plt.subplot(2, 1, 1)
-    plt.plot(t, emg_signal, label='Señal EMG Original')
-    plt.legend()
-    plt.subplot(2, 1, 2)
-    plt.plot(t, denoised_emg_signal, label='Señal EMG Filtrada', color='red')
-    plt.legend()
-    plt.show()
-```
-<p align="justify">Se genera una señal EMG de ejemplo con ruido, se aplica la función de denoising y se visualizan tanto la señal original como la filtrada.
-
 #### EEG
 <p align="justify">Para el filtrado de señal EEG, se utilizó la señal de EEG tomada mediante BITalino en tres instancias, reposo, apertura y cierre de ojos, y resolución mental de ejercicios matemáticos. El filtrado de la señal se realizó utilizando los criterios mencionados por Zikov et al.[T. Zikov, S. Bibian, G. A. Dumont, M. Huzmezan and C. R. Ries, "A wavelet based de-noising technique for ocular artifact correction of the electroencephalogram," Proceedings of the Second Joint 24th Annual Conference and the Annual Fall Meeting of the Biomedical Engineering Society] [Engineering in Medicine and Biology, Houston, TX, USA, 2002, pp. 98-105 vol.1, doi: 10.1109/IEMBS.2002.1134407.] Se utilizó una función Coiflet 3 con 5 niveles de descomposición y un método de hard thresholding solo aplicado en los tres primeros niveles, es decir a frecuencias menores de 16 Hz, el cual utiliza un umbral de ruido o threshold determinado por la siguiente ecuación: <br>
 <p align="justify"> Tk=media(Hk)+2*std(Hk)
