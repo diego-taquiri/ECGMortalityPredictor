@@ -34,7 +34,10 @@ Lista de participantes:
 4. La generación de wavelets y el cálculo de la transformada de wavelets discreta se adaptan bien a la computadora digital. No se utiliza cálculo, no hay derivadas ni integrales, solo operaciones de multiplicación y suma que son básicas para un sistema digital computadora. [3]
 
 ### Objetivos específicos de la práctica
-- 
+- Familiarizarse con los conceptos básicos y la teoría detrás de las wavelets, incluyendo su definición, propiedades y diferencias clave respecto a la transformada de Fourier.
+- Comparar la eficiencia y efectividad de las wavelets con la transformada de Fourier en el análisis de señales ECG, EEG y EMG.
+- Aplicar técnicas de wavelets para el procesamiento de señales específicas de ECG, EEG y EMG, enfocándose en la eliminación de ruido y la detección de características importantes.
+- Diseñar y probar filtros adaptativos basados en wavelets que puedan ajustarse a las características específicas de las señales bioeléctricas para mejorar su análisis y procesamiento.
 
 ### Materiales y métodos
 
