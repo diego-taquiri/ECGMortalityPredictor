@@ -6,15 +6,15 @@ Lista de participantes:
 - Taquiri D., Diego Alejandro  
 
 ## Tabla de contenidos
-1. [Introducción](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%209/Wavelet.md#introducci%C3%B3n)
-2. [Objetivos específicos de la práctica](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%209/Wavelet.md#objetivos-espec%C3%ADficos-de-la-pr%C3%A1ctica)
-3. [Materiales y métodos](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%209/Wavelet.md#materiales-y-m%C3%A9todos)
-5. [Resultados](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%209/Wavelet.md#resultados)
-   - [Tabla resumen ECG](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%209/Wavelet.md#tabla-resumen-ecg)
-   - [Tabla resumen EMG ](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%209/Wavelet.md#tabla-resumen-emg)
-   - [Tabla resumen EEG](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%209/Wavelet.md#tabla-resumen-ecg)
-6. [Discusión](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%209/Wavelet.md#discusi%C3%B3n)
-7. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%209/Wavelet.md#bibliograf%C3%ADa)
+1. [Introducción](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2009/Wavelet.md#introducci%C3%B3n)
+2. [Objetivos específicos de la práctica](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2009/Wavelet.md#objetivos-espec%C3%ADficos-de-la-pr%C3%A1ctica)
+3. [Materiales y métodos](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2009/Wavelet.md#materiales-y-m%C3%A9todos)
+5. [Resultados](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2009/Wavelet.md#resultados)
+   - [Tabla resumen ECG](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2009/Wavelet.md#tabla-resumen-ecg)
+   - [Tabla resumen EMG ](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2009/Wavelet.md#tabla-resumen-emg)
+   - [Tabla resumen EEG](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2009/Wavelet.md#tabla-resumen-ecg)
+6. [Discusión](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2009/Wavelet.md#discusi%C3%B3n)
+7. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2009/Wavelet.md#bibliograf%C3%ADa)
 
 ### Introducción
 <p align="justify"> Las señales ECG, EEG y EMG, conocidas colectivamente como señales bioeléctricas, representan la suma de las señales eléctricas que acompañan a las contracciones mecánicas de las células cuando son estimuladas por corrientes eléctricas, ya sean de origen neural o externo [1]. Estas señales son intrínsecamente complejas y, al viajar a través de diversos tejidos e interfaces, como electrodos y circuitos de procesamiento, son susceptibles a la adquisición de ruido y no linealidades. Por esta razón, la detección y procesamiento efectivo de señales bioeléctricas se ha convertido en un objetivo crucial dentro de la ingeniería biomédica [2]. El diseño de filtros adecuados para el procesamiento de estas señales es un campo de investigación activo y esencial para mejorar la precisión y fiabilidad del análisis de las señales ECG, EEG y EMG.
@@ -23,8 +23,8 @@ Lista de participantes:
 
 <div style="text-align: center;">
       <p align="center">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%209/images/sine.png" alt="Descripción de la primera imagen" width="300">
-    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%209/images/wavelet.png" alt="Descripción de la primera imagen" width="330">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2009/images/sine.png" alt="Descripción de la primera imagen" width="300">
+    <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2009/images/wavelet.png" alt="Descripción de la primera imagen" width="330">
 </div>
 <p align="center"><b>Figura 1.</b> Una onda y una wavelet: (a) Onda seno y (b) Wavelet ψD20 de Daubechies [3]. <br> 
       
