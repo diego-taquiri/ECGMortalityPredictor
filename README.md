@@ -40,4 +40,37 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 | <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/ana.jpg" alt="Ana Belen" width="100"/>   | Estudiante de Ingeniería Biomédica | Ana Belen Mantilla       | Colaborador | [ana.mantilla@upch.pe](mailto:ana.mantilla@upch.pe)    |
 | <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/Erick.jpg" alt="Erick" width="100"/>  | Estudiante de Ingeniería Biomédica | Erick Valdivia           | Colaborador | [erick.valdivia@upch.pe](mailto:erick.valdivia@upch.pe) |
 
+<div style="display: flex; justify-content: center;">
+  <table>
+    <tr>
+      <th>Imagen</th>
+      <th>Grado</th>
+      <th>Nombre y Apellido</th>
+      <th>Condición</th>
+      <th>Correo electrónico</th>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/diego.jpeg" alt="Diego" width="100"/></td>
+      <td>Estudiante de Biología</td>
+      <td>Diego Taquiri</td>
+      <td>Colaborador</td>
+      <td><a href="mailto:diego.taquiri@upch.pe">diego.taquiri@upch.pe</a></td>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/Armando.jpeg" alt="Armando" width="100"/></td>
+      <td>Estudiante de Ingeniería Biomédica</td>
+      <td>Armando Flórez</td>
+      <td>Colaborador</td>
+      <td><a href="mailto:armando.florez@upch.pe">armando.florez@upch.pe</a></td>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2001/ana.jpg" alt="Ana Belen" width="100"/></td>
+      <td>Estudiante de Ingeniería Biomédica</td>
+      <td>Ana Belen Mantilla</td>
+      <td>Colaborador</td>
+      <td><a href="mailto:ana.mantilla@upch.pe">ana.mantilla@upch.pe</a></td>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/diego-taquiri/ISB-equipo
+
 <p align="justify"> ¡Gracias por visitar nuestro repositorio y por ser parte de nuestro viaje hacia el conocimiento y la innovación en señales biomédicas!
