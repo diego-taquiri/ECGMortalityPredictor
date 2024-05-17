@@ -79,7 +79,7 @@ Siguiendo la implentación del artículo, se utilizó la aplicación de wavelets
 
 
 
-    ```python
+```python
     def calculate_T(coeffs, n, C):
         sigma_Vs = np.std(y_1)
         dj = [coeffs[i] for i in range(1, len(coeffs))]
@@ -89,7 +89,7 @@ Siguiendo la implentación del artículo, se utilizó la aplicación de wavelets
 
     n = len(y_1)
     T_values = calculate_T(coeffs, n, C)
-    ```
+```
 
 3. **Aplicación de umbrales suaves**: Los coeficientes de detalle fueron umbralizados utilizando el umbral suave (`soft thresholding`). Este proceso reduce los coeficientes menores al umbral, manteniendo la estructura general de la señal pero eliminando el ruido. Se utilizó la función `pywt.threshold` para aplicar este umbral.
 
