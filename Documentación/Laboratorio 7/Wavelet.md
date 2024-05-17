@@ -23,7 +23,15 @@ Lista de participantes:
 
 <p align="justify">Las wavelets se utilizan en una expansión en serie de señales o funciones de la misma manera que una serie de Fourier usa la onda o sinusoide para representar una señal o función. Las señales son funciones de una variable continua, que a menudo representa el tiempo o la distancia. A partir de esta expansión de la serie, se desarrolla una versión de tiempo discreto, similar a la transformada discreta de Fourier, donde la señal está representada por una cadena de números que pueden ser muestras de una señal, de otra cadena de números o productos internos de una señal con algún conjunto de expansión. Finalmente, se describe brevemente la transformada wavelet continua donde tanto la señal, como la transformada, son funciones de variables continuas. Esto es análogo a la transformada de Fourier. [3]
 
-<p align="justify">En este laboratorio, se explorarán las wavelets del procesamiento de señales, las cuales pasaron a primer plano a principios de la década de 1990 como una alternativa atractiva al procesamiento clásico de señales e imágenes basado en la transformada de Fourier [4]. Esto debido a que las expansiones y transformadas de wavelets han demostrado ser muy eficientes y efectivas en el análisis de una amplia clase de señales y fenómenos [3].
+<p align="justify">En este laboratorio, se explorarán las wavelets del procesamiento de señales, las cuales pasaron a primer plano a principios de la década de 1990 como una alternativa atractiva al procesamiento clásico de señales e imágenes basado en la transformada de Fourier [4]. Esto debido a que las expansiones y transformadas de wavelets han demostrado ser muy eficientes y efectivas en el análisis de una amplia clase de señales y fenómenos [3]. 
+
+1. El tamaño de los coeficientes de expansión de las wavelets disminuye rápidamente para una gran clase de señales. Esta propiedad se llama ser una base incondicional y es por eso que las wavelets son muy efectivas en la compresión, eliminación de ruido y detección de señales e imágenes. [3]
+
+2. La expansión wavelet permite una descripción local más precisa y una separación de las características de la señal. Un coeficiente de Fourier representa un componente que dura para siempre y, por tanto, eventos temporales deben describirse mediante una característica de fase que permita la cancelación o el refuerzo a lo largo del tiempo. Un coeficiente de expansión wavelet representa un componente que es en sí mismo local y es más fácil de interpretar. La expansión wavelet puede permitir una separación de componentes de una señal que se superponen en tanto en tiempo como en frecuencia. [3]
+
+3. Las wavelets son ajustables y adaptables. Como no hay una sola wavelet, se pueden diseñar para adaptarse a aplicaciones individuales. Son ideales para sistemas adaptativos que se ajustan solos para adaptarse a la señal. [3]
+
+4. La generación de wavelets y el cálculo de la transformada de wavelets discreta se adaptan bien a la computadora digital. No se utiliza cálculo, no hay derivadas ni integrales, solo operaciones de multiplicación y suma que son básicas para un sistema digital computadora. [3]
 
 ### Objetivos específicos de la práctica
 - 
