@@ -14,8 +14,10 @@ La estructura del video y ppt y/o md debe contener como mínimo:
 - Debe estar sustentado por la literatura.
 
 ### Propuesta de solución (máx 5 pts)
-- Debe ayudar a solucionar el problema planteado
-- Debe tener al menos una característica innovadora o enfoque de investigación
+<p align="justify">Nuestro objetivo es desarrollar un sistema de alerta temprana basado en electrocardiografía (ECG) para la detección de pacientes de alto riesgo hospitalizados por la enfermedad de Chagas. Este sistema busca impulsar la atención clínica oportuna y reducir la mortalidad asociada a esta enfermedad. <br>
+
+<p align="justify">Para lograrlo, utilizaremos técnicas avanzadas de procesamiento de señales y aprendizaje automático. Específicamente, emplearemos la extracción de características mediante la Transformada Wavelet y aplicaremos Tiny Machine Learning (TinyML). Esta combinación nos permitirá identificar patrones específicos en las señales cardíacas de los pacientes con Chagas de manera eficiente y a bajo costo, facilitando su implementación en zonas de bajos recursos.
+
 
 ### Materiales y métodos  (máx 12 pts)
 - Debe explicar el protocolo de adquisición de la señal a estudiar, preferente basado en una guía clínica o investigación anterior [consultar con el Prof. Alonso si necesitan ayuda] (máx 3 pts)
@@ -23,9 +25,5 @@ La estructura del video y ppt y/o md debe contener como mínimo:
 - Debe explicar el plan de análisis de los datos resultantes del procesamiento de las señales (pruebas estadísticas como mínimo). (máx 3 pts)
 - Todos los materiales y/o recursos deben estar identificados, incluido bases de datos (máx 3 pts)
 Buenas noches estimados estudiantes,
-
-Algunas webs para buscar dataset : 
-https://physionet.org/ 
-https://www.kaggle.com/
 
 ### Bibliografía
