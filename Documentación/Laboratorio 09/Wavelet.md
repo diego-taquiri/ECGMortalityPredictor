@@ -122,30 +122,22 @@ data_mV = (data[:, 5] * volt_range / (2 ** bits - 1)) - media(data_mV)
    - Reescalado del umbral: El método heurístico de umbralización se acopla con un método de reescalado de umbral universal ('sln'), que ajusta los umbrales basándose en el nivel de ruido dentro de la señal.
 
 Análisis del Código
-Importación de Librerías:
 
-```python
-import numpy as np
-import pywt
-import matplotlib.pyplot as plt
-```
-<p align="justify">Se importan las librerías necesarias: numpy para operaciones numéricas, pywt para transformadas wavelet y matplotlib para la visualización de las señales.
-
-Función de Denoising con Wavelet:
+<p align="justify">1. Función de Denoising con Wavelet:</b>
 
 ```python
 def wavelet_denoise(signal, wavelet='db4', level=10):
 ```
 <p align="justify">Se define una función wavelet_denoise que toma una señal, el tipo de wavelet y el nivel de descomposición como parámetros.
 
-Descomposición de la Señal:
+<p align="justify">2. Descomposición de la Señal:</b>
 
 ```python
 coeffs = pywt.wavedec(signal, wavelet, level=level)
 ```
 <p align="justify">La señal se descompone en sus coeficientes wavelet utilizando la función wavedec de la librería pywt.
 
-Estimación del Umbral de Ruido:
+<p align="justify">3. Estimación del Umbral de Ruido:</b>
 
 ```python
 sigma = np.median(np.abs(coeffs[-level])) / 0.6745
@@ -153,14 +145,14 @@ uthresh = sigma * np.sqrt(2 * np.log(len(signal))) * threshold_scaling_factor
 ```
 <p align="justify">Se calcula el umbral de ruido usando la mediana de los coeficientes de detalle de mayor nivel. Este cálculo está basado en la estimación robusta de la desviación estándar.
 
-Umbralización de los Coeficientes:
+<p align="justify">4. Umbralización de los Coeficientes:</b>
 
 ```python
 denoised_coeffs = [pywt.threshold(c, uthresh, mode='soft') for c in coeffs]
 ```
 <p align="justify">Se aplica la umbralización suave a cada conjunto de coeficientes wavelet, reduciendo así el ruido.
 
-Reconstrucción de la Señal:
+<p align="justify">5. Reconstrucción de la Señal:</b>
 
 ```python
 denoised_signal = pywt.waverec(denoised_coeffs, wavelet)
@@ -176,7 +168,7 @@ denoised_signal = pywt.waverec(denoised_coeffs, wavelet)
 
 <p align="justify">El código resultante fue el que sigue.
 
-Cálculo de umbral de ruido:
+<p align="justify">1. Cálculo de umbral de ruido:</b>
 
 ```python
 def calculate_thresholds(coeffs):
@@ -185,7 +177,7 @@ def calculate_thresholds(coeffs):
 ```
 <p align="justify">Cálculo del umbral o threshold de acuerdo a lo especificado en el trabajo de Zikov.
 
-Thresholding de los coeficientes wavelet:
+<p align="justify">2. Thresholding de los coeficientes wavelet:</b>
 
 ```python
 def apply_threshold(coeffs, thresholds, max_level):
@@ -201,7 +193,7 @@ def apply_threshold(coeffs, thresholds, max_level):
 ```
 <p align="justify">Los coeficientes de Coiflet 3 se modifican utilizando el threshold calculado solo hasta el nivel máximo que en este caso es el tercer coeficiente de detalle y hard thresholding en los coeficientes umbralizados. 
 
-Estimación del Umbral de Ruido:
+<p align="justify">3. Estimación del Umbral de Ruido:</b>
 
 ```python
 sigma = np.median(np.abs(coeffs[-level])) / 0.6745
@@ -209,7 +201,7 @@ uthresh = sigma * np.sqrt(2 * np.log(len(signal))) * threshold_scaling_factor
 ```
 <p align="justify">Se calcula el umbral de ruido usando la mediana de los coeficientes de detalle de mayor nivel. Este cálculo está basado en la estimación robusta de la desviación estándar.
 
-Umbralización de los Coeficientes:
+<p align="justify">4. Umbralización de los Coeficientes:</b>
 
 ```python
     coeffs = pywt.swt(data_mV_notched, wavelet, level=levels, start_level=0)
@@ -242,7 +234,9 @@ Umbralización de los Coeficientes:
 | Apertura y cierre de ojos  |![Imagen de EEG](plots/o_close_original.png)               |![Imagen de EEG](plots/o_close_wavelet.png)                |
 | Resolución de ejercicios matemáticos    |![Imagen de EEG](plots/math_original.png)     | ![Imagen de EEG](plots/math_wavelet.png)          |
 
-#### Tabla espectrogramas EEG 
+#### Tabla espectrogramas EEG
+Se utiliza una tabla de espectrograma en el caso de EEG para poder evaluar el efecto de la transformada wavelet estacionaria en las frecuencias de interés.
+
 | Campo        | Señal cruda                                                   | Señal + Wavelet                                                    |
 |--------------|---------------------------------------------------------------|---------------------------------------------------------------|
 | Reposo        |![Imagen de EEG](plots/spect_rest_original.png)         |![Imagen de EEG](plots/spect_rest_wavelet.png)                |
@@ -257,13 +251,10 @@ En nuestro estudio, utilizamos los siguientes valores de umbral para el filtrado
 
 <p align="justify"><b>Filtración de EMG:</b>
 <p align="justify"> El código que hemos desarrollado para la filtración de señales EMG utiliza la transformada wavelet para descomponer la señal en diferentes niveles de detalle y aplicar umbrales que reducen el ruido. El método wavelet-based descrito en el paper implica varios pasos clave. Primero, la señal EMG se descompone en varios niveles utilizando una transformada wavelet discreta (DWT), empleando wavelets como Daubechies (db4) debido a su eficacia en la detección de características musculares. Luego, se calcula un umbral para cada nivel de descomposición basado en el ruido presente en los coeficientes wavelet, determinado utilizando la desviación estándar del ruido y un factor multiplicativo para ajustar la rigurosidad de la filtración. Estos coeficientes wavelet se umbralizan mediante umbralización suave (soft thresholding) para reducir el ruido mientras se preservan las características importantes de la señal, ajustando el umbral multiplicando la estimación del ruido por un factor determinado. Finalmente, los coeficientes umbralizados se recomponen para formar la señal denoised, recuperando así una versión filtrada de la señal original. 
-   
 <p align="justify">Al aplicar este método a nuestras señales EMG, observamos resultados alentadores. La señal en reposo muestra una eliminación efectiva del ruido, transformándose en una línea horizontal, lo que confirma la eficacia del método. La señal con fuerza isométrica y la señal con contrafuerza también experimentan una reducción significativa del ruido sin alterar la estructura principal de la señal, lo que permite una mejor visualización de los picos y valles que representan las contracciones y relajaciones musculares. Ajustes adicionales en los parámetros del filtro, como el nivel de descomposición y el factor de umbralización, pueden optimizar aún más los resultados para diferentes tipos de señales y necesidades específicas de análisis. Estos resultados coinciden con otros estudios con metodos similares que utilizan umbrales, por ejemplo en el paper "Discrete wavelet transform based processing of embroidered textile-electrode electromyography signal acquired with load and pressure effect" [12] donde se demuestran la eficacia de las técnicas de umbralización de ondas para eliminar el ruido de las señales de sEMG y sugieren la elección correcta de la familia de ondas y el método de umbralización para mejores aplicaciones de eliminación de ruido.
 <p align="justify"><b>Filtración de EEG:</b>
-<p align="justify">Se puede observar un suavizado de la señal eletroencefalográfica como resultado del filtro de wavelet con las características planteadas. Como se puede apreciar en las imágenes de las señales de salida, tras utilizar la transformada de wavelet, la forma de la onda no considera las espículas que son influencia de frecuencias mayores en el espectro, el cual es visible a amplitudes bajas pero se pierde a amplitudes mayores, como las que se observan en la señal de apertura y cierre de ojos tratada con la transformada que contiene oscilaciones cuyo suavizado es menos notorio. El suavizado de la señal puede apreciarse de mejor forma en un espectrograma, donde se aprecia que las frecuencias por encima de los 50Hz se reducen en amplitud si están por debajo de un umbral de poder. Esto se correlaciona con la señal tratada con la transformada wavelet, la cual atenua más levemente porciones de la señal con amplitudes elevadas. 
-<p align="justify">Los resultados del trabajo de Zikov[10] muestran un suavizado de la imagen similar con la excepción de la atenuación de mesetas, las cuales se atenúan en gran manera dejando intactas las frecuencias menores. Las oscilaciones evaluadas en la instancia de apertura y cierre de ojos son demasiado pronunciadas para determinar la presencia de mesetas comparables al trabajo de Zikov. No obstante en los resultados obtenidos, la señal de entrada muestra oscilaciones muy pronunciadas en amplitud, lo cual podría afectar la capacidad de la transformada de Wavelet de suavizar las mismas. 
-<p align="justify">La literatura indica tres orígenes fisiológicos de ruido en las señales EEG. Los movimientos de ojo ocasionan un cambio en el campo eléctrico que rodea los mismos mediante la formación de dipolos en la retina y movimientos de las pestañas, generando potenciales en el cuero cabelludo [13]. Su espectro se sobrelapa con las ondas alfa del EEG en tareas mentales, y debido a su mayor amplitud, pueden llegar a suprimirlas [14].  Las señales electromiográficas son un ruido común en mediciones de ondas beta y gamma, y debido a su amplitud ocluyen la señal EEG a partir de los 20 Hz, siendo esta oclusión mayor a partir de los 50Hz. [K. J. Pope et al., “Managing electromyogram contamination in scalp recordings: An approach identifying reliable beta and gamma EEG features of psychoses or other disorders,” Brain and behavior, vol. 12, no. 9, Aug. 2022, doi: https://doi.org/10.1002/brb3.2721.].
-En el caso del trabajo de Zikov et al, este está enfocado en eliminar los artefactos causados por el movimiento de ojos, los que se presentan en un rango de frecuencias de 0-7 Hz mediante el filtrado de frecuencias menores. No obstante dependiendo de la zona estudiada, otros tipos de ruido pueden ser más prevalentes. La atenuación del ruido de la señal EEG debe considerar no solo el lugar sino las frecuencias de interés, puesto que los métodos de filtrado trabajan principalmente en el dominio de la frecuencia, y diversas fuentes de ruido pueden ser más o menos prevalentes dependiendo del lugar estudiado. Ese es el caso con este estudio, el cual evaluó señales EEG correspondientes a las áreas frontales Fp1 y Fp2, las cuales debido a su posición, tienen mayor contaminación por señales provenientes del movimiento de los ojos.   
+<p align="justify">Se puede observar un suavizado de la señal eletroencefalográfica como resultado del filtro de wavelet con las características planteadas. Como se puede apreciar en las imágenes de las señales de salida, tras utilizar la transformada de wavelet, la forma de la onda no considera las espículas que son influencia de frecuencias mayores en el espectro, el cual es visible a amplitudes bajas pero se pierde a amplitudes mayores, como las que se observan en la señal de apertura y cierre de ojos tratada con la transformada que contiene oscilaciones cuyo suavizado es menos notorio. El suavizado de la señal puede apreciarse de mejor forma en un espectrograma, donde se aprecia que las frecuencias por encima de los 50Hz se reducen en amplitud si están por debajo de un umbral de poder. Esto se correlaciona con la señal tratada con la transformada wavelet, la cual atenua más levemente porciones de la señal con amplitudes elevadas. Los resultados del trabajo de Zikov[10] muestran un suavizado de la imagen similar con la excepción de la atenuación de mesetas, las cuales se atenúan en gran manera dejando intactas las frecuencias menores. Las oscilaciones evaluadas en la instancia de apertura y cierre de ojos son demasiado pronunciadas para determinar la presencia de mesetas comparables al trabajo de Zikov. En los resultados obtenidos, la señal de entrada muestra oscilaciones muy pronunciadas en amplitud, lo cual podría afectar la capacidad de la transformada estacionaria de Wavelet de suavizar las mismas. 
+<p align="justify">La literatura indica tres orígenes fisiológicos de ruido en las señales EEG. Los movimientos de ojo ocasionan un cambio en el campo eléctrico que rodea los mismos mediante la formación de dipolos en la retina y movimientos de las pestañas, generando potenciales en el cuero cabelludo [13]. Su espectro se sobrelapa con las ondas alfa del EEG en tareas mentales, y debido a su mayor amplitud, pueden llegar a suprimirlas [14].  Las señales electromiográficas son un ruido común en mediciones de ondas beta y gamma, y debido a su amplitud ocluyen la señal EEG a partir de los 20 Hz, siendo esta oclusión mayor a partir de los 50Hz. [15]. En el caso del trabajo de Zikov et al, este está enfocado en eliminar los artefactos causados por el movimiento de ojos, los que se presentan en un rango de frecuencias de 0-7 Hz mediante el filtrado de frecuencias menores. No obstante dependiendo de la zona estudiada, otros tipos de ruido pueden ser más prevalentes. La atenuación del ruido de la señal EEG debe considerar no solo el lugar sino las frecuencias de interés, puesto que los métodos de filtrado trabajan principalmente en el dominio de la frecuencia, y diversas fuentes de ruido pueden ser más o menos prevalentes dependiendo del lugar estudiado. Ese es el caso con este estudio, el cual evaluó señales EEG correspondientes a las áreas frontales Fp1 y Fp2, las cuales debido a su posición, tienen mayor contaminación por señales provenientes del movimiento de los ojos. Un análisis más completo de EEG, requeriría diversos tipos de filtros considerando el posicionamiento de los electrodos, el tipo de montaje y las características del paciente.   
 
 ### Bibliografía
 <p align="justify">[1]  Martinek R, Ladrova M, Sidikova M, Jaros R, Behbehani K, Kahankova R, Kawala-Sterniuk A. Advanced Bioelectrical Signal Processing Methods: Past, Present and Future Approach-Part I: Cardiac Signals. Sensors (Basel). 2021 Jul 30;21(15):5186. doi: 10.3390/s21155186. PMID: 34372424; PMCID: PMC8346990. 
@@ -280,3 +271,4 @@ En el caso del trabajo de Zikov et al, este está enfocado en eliminar los artef
 <p align="justify">[12] Belay, Bulcha & Dawud, Ahmed & Malengier, B. & Sitek, Wojciech & Gemechu, Wendimu & Krishnamoorthy, Janarthanan & Van Langenhove, Lieva. (2024). Discrete wavelet transform based processing of embroidered textile-electrode electromyography signal acquired with load and pressure effect. Journal of Industrial Textiles. 54. 10.1177/15280837241232449. 
 <p align="justify">[13] R. J. Croft and R. J. Barry, “Removal of ocular artifact from the EEG: a review,” Neurophysiologie clinique, vol. 30, no. 1, pp. 5–19, Feb. 2000, doi: https://doi.org/10.1016/s0987-7053(00)00055-1.
 <p align="justify">[14] S. Zahan, "Removing EOG artifacts from EEG signal using noise-assisted multivariate empirical mode decomposition," 2016 2nd International Conference on Electrical, Computer & Telecommunication Engineering (ICECTE), Rajshahi, Bangladesh, 2016, pp. 1-5, doi: 10.1109/ICECTE.2016.7879634.
+<p align="justify">[15] K. J. Pope et al., “Managing electromyogram contamination in scalp recordings: An approach identifying reliable beta and gamma EEG features of psychoses or other disorders,” Brain and behavior, vol. 12, no. 9, Aug. 2022, doi: https://doi.org/10.1002/brb3.2721.
