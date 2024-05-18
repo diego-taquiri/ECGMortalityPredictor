@@ -186,9 +186,9 @@ denoised_signal = pywt.waverec(denoised_coeffs, wavelet)
 #### Tabla resumen EMG 
 | Campo        | Señal cruda                                                   | Señal + Wavelet                                                    |
 |--------------|---------------------------------------------------------------|---------------------------------------------------------------|
-| Reposo        |        |               |
-| Flexión isotónica  |              |                |
-| Flexión isométrica    |    |           |
+| Reposo        |  ![Imagen de ECG](plots/emg.reposo.png)        |   ![Imagen de ECG](plots/emg.reposo.filtrado.png)               |
+| Flexión isotónica  |     ![Imagen de ECG](plots/emg.contrafuerza.png)           |   ![Imagen de ECG](plots/emg.contrafuerza.filtrado.png)             |
+| Flexión isométrica    |    ![Imagen de ECG](plots/emg.fuerza.isometrica.png)   |  ![Imagen de ECG](plots/emg.fuerza.isometrica.filtrada.png)       |
 
 #### Tabla resumen EEG 
 | Campo        | Señal cruda                                                   | Señal + Wavelet                                                    |
