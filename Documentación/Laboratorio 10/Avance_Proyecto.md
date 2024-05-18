@@ -14,7 +14,7 @@ La estructura del video y ppt y/o md debe contener como mínimo:
 - Debe estar sustentado por la literatura.
 
 ### Propuesta de solución (máx 5 pts)
-<p align="justify">Nuestro objetivo es desarrollar un sistema de alerta temprana basado en electrocardiografía (ECG) para la detección de pacientes de alto riesgo hospitalizados por la enfermedad de Chagas. Este sistema busca impulsar la atención clínica oportuna y reducir la mortalidad asociada a esta enfermedad. <br>
+<p align="justify">Nuestro objetivo es desarrollar un sistema de alerta temprana basado en electrocardiografía (ECG) para la detección de pacientes de alto riesgo de mortalidad por la enfermedad de Chagas en Perú. Este sistema busca impulsar la atención clínica oportuna y reducir la mortalidad asociada a esta enfermedad. <br>
 
 <p align="justify">Para lograrlo, utilizaremos técnicas avanzadas de procesamiento de señales y aprendizaje automático. Específicamente, emplearemos la extracción de características mediante la Transformada Wavelet y aplicaremos Tiny Machine Learning (TinyML). Esta combinación nos permitirá identificar patrones específicos en las señales cardíacas de los pacientes con Chagas de manera eficiente y a bajo costo, facilitando su implementación en zonas de bajos recursos.
 
