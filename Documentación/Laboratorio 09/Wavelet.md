@@ -149,7 +149,7 @@ Estimación del Umbral de Ruido:
 
 ```python
 sigma = np.median(np.abs(coeffs[-level])) / 0.6745
-uthresh = sigma * np.sqrt(2 * np.log(len(signal)))
+uthresh = sigma * np.sqrt(2 * np.log(len(signal))) * threshold_scaling_factor
 ```
 <p align="justify">Se calcula el umbral de ruido usando la mediana de los coeficientes de detalle de mayor nivel. Este cálculo está basado en la estimación robusta de la desviación estándar.
 
