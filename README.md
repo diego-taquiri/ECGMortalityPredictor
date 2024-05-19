@@ -12,6 +12,7 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 - [Participantes](#Participantes)
 
 ### Temática del proyecto
+Alerta temprana de ECG para pacientes con chagas: Implementación de TinyML para áreas de bajos recursos del Perú.
 - [Avance del proyecto](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2010/Avance_Proyecto.md)
 
 ### Contenido del curso
