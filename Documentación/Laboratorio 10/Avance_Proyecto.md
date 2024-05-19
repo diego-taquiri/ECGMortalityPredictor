@@ -1,6 +1,6 @@
 # Avance del proyecto
 
-<iframe src="https://drive.google.com/file/d/FILE_ID/preview" width="100%" height="600"></iframe>
+- [Ver PDF del Avance en Google Docs Viewer](https://docs.google.com/viewer?url=https://github.com/diego-taquiri/ISB-equipo11/raw/main/Documentaci%C3%B3n/Laboratorio%2010/PPT%20Avance.pdf&embedded=true)
 
 ### Tabla de contenidos
 1. [Problemática](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2010/Avance_Proyecto.md#problem%C3%A1tica)
