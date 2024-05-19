@@ -54,6 +54,31 @@ Este enfoque  nos permitirá no solo entrenar un modelo eficiente para su implem
 <p align="justify">El principal recurso de este proyecto es la base de datos Sami-Trop, que incluye las señales de ECG y los datos de mortalidad de 2000 pacientes con cardiomiopatía chagásica. A partir del bitalino estaremos registrando las señales de pacientes sano. Además, utilizamos metodologías y enfoques descritos en literatura clave, como los artículos "AI-enabled electrocardiography alert intervention and all-cause mortality: a pragmatic randomized clinical trial" [14] y "Deep neural network-estimated electrocardiographic age as a mortality predictor" [15]. Estas referencias nos proporcionan un marco metodológico robusto para la predicción de mortalidad. Para el procesamiento de las señales de ECG, empleamos técnicas de filtrado por wavelets utilizando herramientas de software como MATLAB y Python con librerías como PyWavelets y SciPy. Las transformadas wavelet, como la transformada wavelet discreta y continua, se usan para filtrar y denoizar las señales, preservando características importantes como los complejos QRS.
 <p align="justify">En términos de hardware y plataformas de desarrollo, utilizamos Edge Impulse para la implementación de modelos de machine learning en dispositivos embebidos, como el Arduino Nano, que se integra con sensores de ECG para la adquisición de nuevas señales. Estos dispositivos permiten realizar un análisis en tiempo real y pueden ser utilizados para validar los modelos desarrollados con el dataset Sami-Trop.
 
+<p align="justify">Determinación de características de Chagas.<br>
+
+La enfermedad de chagas puede causar diversos tipos de alteraciones de ECG, con una evolución desde un ECG normal a alteraciones definidas, pero que son inespecíficas de la enfermedad, destacando extrasístoles ventriculares y anomalías de la repolarización ventricular.[18]
+El estudio de Marques et al[19] reporta anomalías del ECG en poblaciones tanto con tripasonomiasis adquirida por contagio por vector y por contagio oral. Entre los cambios encontrados en pacientes con Chagas, se encuentra en primera instancia la alteración del segmento ST y la onda T (37.86%), la prolongación del segmento QT(2.91%) y bloqueos de la rama derecha (1.94%) y rama izquierda (2.91%). Asimismo reporta arritmias en el 32% de los casos, diagnosticada mediante monitoreo por Holter.
+Las features para el posterior filtrado de la señal se pueden obtener a partir de estas características. Las del primer grupo, o características dependientes de la forma de la señal necesitan de la determinación de la morfología de tanto las ondas P, T y el complejo QRS tanto en amplitud como en duración. Si bien las arritmias son comunes en pacientes con enfermedad de Chagas, los parámetros derivados de la variabilidad de frecuencia cardiaca (TO, TS, SDNN, RMSSD, NN50 y pNN50)[20] permitirían analizar más a fondo las arritmias que se presentan, estas son el resultado de monitoreo continuo para la detección de aceleraciones o desaceleraciones del ritmo cardiaco después de latidos ectópicos, y son propios de estudios con muestras más largas de las que podemos acceder.
+
+<p align="justify">Remoción de ruido<br>
+
+Para remover el ruido usamos un wavelet Daubechies 4 con 5 niveles de descomposición y un soft thresholding de acuerdo al trabajo de Alfaouri et al[21]. El umbral o threshold se obtiene a partir de la siguiente ecuación: 
+T= C** sqrt(n*σ(Vs(n))/σ(dj(n)))
+Donde:
+-C: Constante=0.01
+-σ(Vs(n)): Desviación estándar de señal original.
+-σ(dj(n)): Desviación estándar de coeficientes de detalle.
+-n: Número de muestras.
+
+Un segundo filtrado para identificar la onda R se obtiene de un algoritmo hecho a partir del algoritmo Pan-Tompkins. La señal de extracción atenua todos los componentes menos el mayor y se obtiene con la suma de las primera y segunda derivada de la señal por coeficientes ya determinados en el trabajo de Mazomenos et al.[22]
+
+<p align="justify">Extracción de features<br>
+
+La extracción de features se da a partir de ventanas de búsqueda temporales en un proceso de varios pasos:
+-Identificación de onda R: Se identifica la onda R encontrando los máximos locales en la onda de ECG filtrada por el algoritmo. Se determina evaluando la mayor gradiente en una ventana de 30 ms alrededor de los máximos locales.
+-Límites QRS: Se utiliza un thresholdling adaptativo en ventanas de tiempo ya determinadas alrededor del punto correspondiente al pico de la onda R. Se determinan dos ventanas que limitan al complejo QRS, siendo las ondas Q y S mínimos locales entre las ventanas y el pico de la onda R.
+-Ondas P y T: Se determinan ventanas fuera de las ventanas establecidas por la onda R, específicas para onda P y T, cada una con su determinada duración y distancia a sus respectivos picos. Luego el algoritmo evalúa las gradientes alrededor de los picos encontrados. Cualquier error se corrige refinando las ventanas existentes y repitiendo el proceso.
+
 ### Bibliografía
 <p align="justify">[1] “Enfermedades cardiovasculares”, Who.int. [En línea]. Disponible en: https://www.who.int/es/health-topics/cardiovascular-diseases. 
 <p align="justify">[2]“Las enfermedades del corazón siguen siendo la principal causa de muerte en las Américas”, Paho.org. [En línea]. Disponible en: https://www.paho.org/es/noticias/29-9-2021-enfermedades-corazon-siguen-siendo-principal-causa-muerte-americas. 
@@ -71,5 +96,9 @@ Este enfoque  nos permitirá no solo entrenar un modelo eficiente para su implem
 <p align="justify">[14] Lin, CS., Liu, WT., Tsai, DJ. et al. AI-enabled electrocardiography alert intervention and all-cause mortality: a pragmatic randomized clinical trial. Nat Med (2024). https://doi.org/10.1038/s41591-024-02961-4 (link de acceso libre: https://rdcu.be/dIkU2)
 <p align="justify">[15] Lima, E.M., Ribeiro, A.H., Paixão, G.M.M. et al. Deep neural network-estimated electrocardiographic age as a mortality predictor. Nat Commun 12, 5117 (2021). https://doi.org/10.1038/s41467-021-25351-7
 <p align="justify">[16] H. V. Denysyuk, R. J. Pinto, P. M. Silva, R. P. Duarte, F. A. Marinho, L. Pimenta, and I. M. Pires, "Algorithms for automated diagnosis of cardiovascular diseases based on ECG data: A comprehensive systematic review," Heliyon, vol. 9, no. 2, 2023. https://doi.org/10.1016/j.heliyon.2023.e13601
-<p align="justify">[17] 
-"Adding Custom Learning Blocks," Edge Impulse Documentation, Edge Impulse, [Online]. Available: https://edge-impulse.gitbook.io/docs/edge-impulse-studio/learning-blocks/adding-custom-learning-blocks.
+<p align="justify">[17] "Adding Custom Learning Blocks," Edge Impulse Documentation, Edge Impulse, [Online]. Available: https://edge-impulse.gitbook.io/docs/edge-impulse-studio/learning-blocks/adding-custom-learning-blocks.
+<p align="justify">[18] B. Oliveira and A. Luiz, “Electrocardiogram in Chagas disease,” Revista da Sociedade Brasileira de Medicina Tropical, vol. 51, no. 5, pp. 570–577, Oct. 2018, doi: https://doi.org/10.1590/0037-8682-0184-2018.
+<p align="justify">[19] J. Marques, I. Mendoza, B. Noya, H. Acquatella, I. Palacios, and María Marques-Mejias, “ECG Manifestations of the Biggest Outbreak of Chagas Disease due to Oral Infection in Latin-America,” Arquivos Brasileiros de Cardiologia, Jan. 2013, doi: https://doi.org/10.5935/abc.20130144.
+<p align="justify">[20] A. C. Alberto, G. A. Limeira, R. C. Pedrosa, V. Zarzoso, and J. Nadal, "ECG-Based Predictors of Sudden Cardiac Death in Chagas’ Disease," in Computing in Cardiology, Rennes, France, Sep. 2017, doi: 10.22489/cinc.2017.087-324
+<p align="justify">[21] M. Alfaouri and K. Daqrouq, "ECG signal denoising by wavelet transform thresholding," American Journal of Applied Sciences, vol. 5, no. 3, pp. 276-281, 2008. doi:10.3844/ajassp.2008.276.281.
+<p align="justify">[22] E. B. Mazomenos, T. Chen, A. Acharyya, A. Bhattacharya, J. Rosengarten and K. Maharatna, "A Time-Domain Morphology and Gradient based algorithm for ECG feature extraction," 2012 IEEE International Conference on Industrial Technology, Athens, Greece, 2012, pp. 117-122, doi: 10.1109/ICIT.2012.6209924.
