@@ -1,12 +1,7 @@
 # Avance del proyecto
 
+Puedes ver el video de Grupo 12 haciendo clic [aquí](https://github.com/diego-taquiri/ISB-equipo11/raw/main/Documentaci%C3%B3n/Laboratorio%2010/Video_Grupo12.mp4).
 
-<p align="center">
-  <video width="560" height="315" controls>
-    <source src="https://github.com/diego-taquiri/ISB-equipo11/raw/main/Documentaci%C3%B3n/Laboratorio%2010/Video_Grupo12.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</p>
 
 - [Ver PDF del Avance en Google Docs Viewer](https://docs.google.com/viewer?url=https://github.com/diego-taquiri/ISB-equipo11/raw/main/Documentaci%C3%B3n/Laboratorio%2010/PPT%20Avance.pdf&embedded=true)
 
