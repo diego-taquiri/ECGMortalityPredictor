@@ -1,14 +1,12 @@
 # Avance del proyecto
 
+<iframe src="https://drive.google.com/file/d/FILE_ID/preview" width="100%" height="600"></iframe>
+
 ### Tabla de contenidos
 1. [Problemática](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2010/Avance_Proyecto.md#problem%C3%A1tica)
 2. [Propuesta de solución](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2010/Avance_Proyecto.md#propuesta-de-soluci%C3%B3n)
 3. [Materiales y métodos](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2010/Avance_Proyecto.md#materiales-y-m%C3%A9todos)
 4. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2010/Avance_Proyecto.md#bibliograf%C3%ADa)
-
-Como se acordó, la presentación del avance del proyecto será de manera asíncrona y por video. La fecha de presentación será hasta el sábado 18 de mayo a las 23:55 pm subido en su GitHub.
-
-La estructura del video y ppt y/o md debe contener como mínimo:
 
 ### Problemática
 <p align="justify">Las enfermedades cardiovasculares representan la principal causa de defunción en el mundo, cobrándose aproximadamente 17,9 millones de vidas anualmente [1]. Este grupo de trastornos, que incluye cardiopatías coronarias, enfermedades cerebrovasculares y cardiopatías reumáticas, afecta principalmente a países de bajos y medianos ingresos, donde más del 75% de las muertes ocurren [1]. En las Américas, la prevención y tratamiento de estas enfermedades es vital, ya que se estima que causan 2 millones de muertes al año [2]. En Perú, EsSalud advierte que las enfermedades cardiovasculares son la segunda causa de muerte [3]. Un estudio del INEI reveló que más del 40% de las personas mayores de 15 años tienen un riesgo cardiovascular muy alto, siendo el 60% de estos casos en mujeres de 60 años o más [3, 4]. El Dr. José Ercilla, vicepresidente de la Sociedad Peruana de Cardiología (Sopechard), destaca que estas enfermedades representan un desafío futuro, especialmente ante la proyección de un aumento significativo de la población mayor de 50 años para el año 2050 [4].<br>
