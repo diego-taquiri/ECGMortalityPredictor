@@ -36,3 +36,15 @@ Figura 1. [11]<br>
 Buenas noches estimados estudiantes,
 
 ### Bibliografía
+<p align="justify">[1] “Enfermedades cardiovasculares”, Who.int. [En línea]. Disponible en: https://www.who.int/es/health-topics/cardiovascular-diseases. 
+<p align="justify">[2]“Las enfermedades del corazón siguen siendo la principal causa de muerte en las Américas”, Paho.org. [En línea]. Disponible en: https://www.paho.org/es/noticias/29-9-2021-enfermedades-corazon-siguen-siendo-principal-causa-muerte-americas. 
+<p align="justify">[3] “Enfermedades al corazón son la segunda causa de muerte en el Perú”, Essalud, 12-mar-2022. [En línea]. Disponible en: http://noticias.essalud.gob.pe/?inno-noticia=enfermedades-al-corazon-son-la-segunda-causa-de-muerte-en-el-peru.
+<p align="justify">[4] INEI, “Instituto Nacional de Estadistica e Informatica”, Gob.pe. [En línea]. Disponible en: https://m.inei.gob.pe/prensa/noticias/el-399-de-peruanos-de-15-y-mas-anos-de-edad-tiene-al-menos-una-comorbilidad-12903/. 
+<p align="justify">[5] N. G. Echavarría, L. E. Echeverría, M. Stewart, C. Gallego, y C. Saldarriaga, “Chagas disease: Chronic Chagas cardiomyopathy”, Curr. Probl. Cardiol., vol. 46, núm. 3, p. 100507, 2021.
+<p align="justify">[6] “Enfermedad de Chagas (tripanosomiasis americana)”, Who.int. [En línea]. Disponible en: https://www.who.int/es/news-room/fact-sheets/detail/chagas-disease-(american-trypanosomiasis).
+<p align="justify">[7] “Enfermedad de Chagas”, Paho.org. [En línea]. Disponible en: https://www.paho.org/es/temas/enfermedad-chagas. 
+<p align="justify">[8] M. Martinez Palomino, “Cardiopatía chagásica crónica”, 2022.
+<p align="justify">[9] C. N. Velarde, P. Huapaya, Y. E. Blanco, y S. V. Chirinos, “Enfermedad de Chagas”, Gob.pe, 2001. [En línea]. Disponible en: https://bvs.minsa.gob.pe/local/OGEI/796_MS-OGE109.pdf. 
+<p align="justify">[10] Sala de situación de salud de la enfermedad de Chagas. SE 32”, Gob.pe, 2022. [En línea]. Disponible en: https://www.dge.gob.pe/portal/docs/tools/teleconferencia/2022/SE332022/03.pdf.
+<p align="justify">[11] “Enfermedad de Chagas (tripanosomiasis americana)”, Who.int. [En línea]. Disponible en: https://www.who.int/es/news-room/fact-sheets/detail/chagas-disease-(american-trypanosomiasis).
+<p align="justify">[12] C.-S. Lin et al., “AI-enabled electrocardiography alert intervention and all-cause mortality: a pragmatic randomized clinical trial”, Nat. Med., pp. 1–10, 2024.
