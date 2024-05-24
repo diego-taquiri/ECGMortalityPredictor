@@ -39,13 +39,13 @@ Figura 1. [11]<br>
   
 <p align="justify">Los datos de ECG se almacenaron en formato digital, en archivos que contienen los valores de voltaje para cada derivación a lo largo del tiempo. El preprocesamiento de estos datos incluye la corrección de la línea base para eliminar las derivas y el filtrado para eliminar el ruido. Además, se normalizaron las señales para asegurar la uniformidad en los análisis posteriores. Estos pasos son cruciales para mejorar la calidad de las señales y facilitar su análisis preciso.
 
-<p align="justify">Determinación de características de Chagas.<br>
+<p align="justify"><b>Determinación de características de Chagas</b><br>
 
 <p align="justify">La enfermedad de chagas puede causar diversos tipos de alteraciones de ECG, con una evolución desde un ECG normal a alteraciones definidas, pero que son inespecíficas de la enfermedad, destacando extrasístoles ventriculares y anomalías de la repolarización ventricular.[18]
   
 <p align="justify">El estudio de Marques et al[19] reporta anomalías del ECG en poblaciones tanto con tripasonomiasis adquirida por contagio por vector y por contagio oral. Entre los cambios encontrados en pacientes con Chagas, se encuentra en primera instancia la alteración del segmento ST y la onda T (37.86%), la prolongación del segmento QT(2.91%) y bloqueos de la rama derecha (1.94%) y rama izquierda (2.91%). Asimismo reporta arritmias en el 32% de los casos, diagnosticada mediante monitoreo por Holter. Las features para el posterior filtrado de la señal se pueden obtener a partir de estas características. Las del primer grupo, o características dependientes de la forma de la señal necesitan de la determinación de la morfología de tanto las ondas P, T y el complejo QRS tanto en amplitud como en duración. Si bien las arritmias son comunes en pacientes con enfermedad de Chagas, los parámetros derivados de la variabilidad de frecuencia cardiaca (TO, TS, SDNN, RMSSD, NN50 y pNN50)[20] permitirían analizar más a fondo las arritmias que se presentan, estas son el resultado de monitoreo continuo para la detección de aceleraciones o desaceleraciones del ritmo cardiaco después de latidos ectópicos, y son propios de estudios con muestras más largas de las que podemos acceder.
 
-<p align="justify">Remoción de ruido<br>
+<p align="justify"><b>Remoción de ruido</b><br>
 
 <p align="justify">Para remover el ruido usamos un wavelet Daubechies 4 con 5 niveles de descomposición y un soft thresholding de acuerdo al trabajo de Alfaouri et al[21]. El umbral o threshold se obtiene a partir de la siguiente ecuación: 
 <p align="center">T= C** sqrt(n*σ(Vs(n))/σ(dj(n)))
@@ -57,7 +57,7 @@ Figura 1. [11]<br>
 
 <p align="justify">Un segundo filtrado para identificar la onda R se obtiene de un algoritmo hecho a partir del algoritmo Pan-Tompkins. La señal de extracción atenua todos los componentes menos el mayor y se obtiene con la suma de las primera y segunda derivada de la señal por coeficientes ya determinados en el trabajo de Mazomenos et al.[22]
 
-<p align="justify">Extracción de features<br>
+<p align="justify"><b>Extracción de features</b><br>
 
 <p align="justify">La extracción de features se da a partir de ventanas de búsqueda temporales en un proceso de varios pasos:
 <p align="justify">- Identificación de onda R: Se identifica la onda R encontrando los máximos locales en la onda de ECG filtrada por el algoritmo. Se determina evaluando la mayor gradiente en una ventana de 30 ms alrededor de los máximos locales.
@@ -76,10 +76,11 @@ Figura 1. [11]<br>
 #### Plan de análisis de los datos resultantes del procesamiento de las señales
 <p align="justify">Para la evaluación del modelo, utilizaremos el set de pruebas y aplicaremos diversas métricas para una evaluación integral. La sensibilidad (recall) mide la proporción de verdaderos positivos, es decir, la capacidad del modelo para identificar correctamente las instancias positivas. La especificidad mide la proporción de verdaderos negativos, indicando la capacidad del modelo para identificar correctamente las instancias negativas. El F1 score, que es la media armónica de la precisión (precision) y la sensibilidad, es especialmente útil en casos de clases desbalanceadas, como en nuestro caso, donde hay pocos pacientes con mortalidad en comparación. Además, utilizaremos la curva ROC (Receiver Operating Characteristic) y el AUC (Area Under the Curve) para evaluar la capacidad del modelo para distinguir entre las diferentes clases. La curva ROC es una representación gráfica de la sensibilidad frente a 1-especificidad, y el AUC proporciona una medida agregada del rendimiento del modelo en todas las posibles tasas de clasificación.
 
-<p align="justify">Este enfoque  nos permitirá no solo entrenar un modelo eficiente para su implementación en un Arduino Nano, sino también asegurarnos de su precisión y capacidad de generalización mediante una evaluación rigurosa .
+<p align="justify">Este enfoque  nos permitirá no solo entrenar un modelo eficiente para su implementación en un Arduino Nano, sino también asegurarnos de su precisión y capacidad de generalización mediante una evaluación rigurosa.
 
 #### Materiales
 <p align="justify">El principal recurso de este proyecto es la base de datos Sami-Trop, que incluye las señales de ECG y los datos de mortalidad de 2000 pacientes con cardiomiopatía chagásica. A partir del bitalino estaremos registrando las señales de pacientes sano. Además, utilizamos metodologías y enfoques descritos en literatura clave, como los artículos "AI-enabled electrocardiography alert intervention and all-cause mortality: a pragmatic randomized clinical trial" [14] y "Deep neural network-estimated electrocardiographic age as a mortality predictor" [15]. Estas referencias nos proporcionan un marco metodológico robusto para la predicción de mortalidad. Para el procesamiento de las señales de ECG, empleamos técnicas de filtrado por wavelets utilizando herramientas de software como MATLAB y Python con librerías como PyWavelets y SciPy. Las transformadas wavelet, como la transformada wavelet discreta y continua, se usan para filtrar y denoizar las señales, preservando características importantes como los complejos QRS.
+  
 <p align="justify">En términos de hardware y plataformas de desarrollo, utilizamos Edge Impulse para la implementación de modelos de machine learning en dispositivos embebidos, como el Arduino Nano, que se integra con sensores de ECG para la adquisición de nuevas señales. Estos dispositivos permiten realizar un análisis en tiempo real y pueden ser utilizados para validar los modelos desarrollados con el dataset Sami-Trop.
 
 
