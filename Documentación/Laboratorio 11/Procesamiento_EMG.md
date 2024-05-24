@@ -1,4 +1,4 @@
-# Transformada Wavelet
+# Tratamiento de señal EMG
 Lista de participantes:  
 - Mantilla M., Ana Belen  
 - Valdivia E., Erick Alexander   
@@ -19,10 +19,10 @@ Lista de participantes:
 
 
 ### Materiales y métodos
-- Buscar al menos un artículo que contenga toda la información para el procesamiento de la señal
-- Filtrado (el mejor)
-- Segmentación
-- Extracción de caracteristicas
+
+#### Filtrado 
+#### Segmentación
+#### Extracción de caracteristicas
 
 ### Resultados
 
