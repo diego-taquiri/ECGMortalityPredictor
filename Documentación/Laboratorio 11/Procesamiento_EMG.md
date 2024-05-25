@@ -67,9 +67,9 @@ Lista de participantes:
 ### Objetivos específicos de la práctica
 - <p align="justify"> Adquirir una comprensión sólida de la Electromiografía (EMG) y las técnicas de procesamiento de señales relacionadas.
 - <p align="justify"> Identificar y elegir el filtro más apropiado para cada señal sEMG, asegurando una reducción efectiva del ruido sin comprometer la integridad de los datos.
-- <p align="justify"> Reconocer la importancia fundamental de la segmentación de señales en el análisis eficaz de la Electromiografía (EMG) y valorar su papel en la obtención de resultados precisos.
+- <p align="justify"> Reconocer la importancia fundamental de la segmentación de señales en el análisis eficaz de la EMG y valorar su papel en la obtención de resultados precisos.
 - <p align="justify"> Desarrollar competencias para extraer características relevantes de las señales de EMG en diferentes dominios para una interpretación más completa de los datos.
-- <p align="justify"> Ejecutar las etapas del tratamiento de la señal EMG de manera coherente y precisa en ambas señales, garantizando la comparabilidad y fiabilidad de los resultados obtenidos.
+- <p align="justify"> Ejecutar las etapas del tratamiento de la señal EMG de manera coherente y precisa en dos señales de un mismo individuo realizando diferentes actividades, garantizando la comparabilidad y fiabilidad de los resultados obtenidos.
   
 ### Materiales y métodos
 
