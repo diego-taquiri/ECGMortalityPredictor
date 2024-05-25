@@ -45,9 +45,21 @@ Lista de participantes:
   
 - <p align="justify"><b>Características en el dominio del tiempo:</b> Se evalúan en función de las variaciones de amplitud de la señal a lo largo del tiempo, eliminando la necesidad de transformaciones adicionales y beneficiándose de su simplicidad y bajos requisitos de recursos computacionales. [2] <br>
 
+<p align="center">
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2011/Images/time.png" alt="Descripción de la imagen" width="400"><br> 
+<p align="center"><b>Figura 2.</b> Resumen de las características en el dominio del tiempo. [3]. <br> 
+  
 - <p align="justify"><b>Características en el dominio de la frecuencia:</b> No pueden derivarse directamente de los datos en bruto y se obtienen aplicando la transformada de Fourier a la señal. Estas características abarcan la densidad espectral de potencia de la señal (PSD). [2] <br>
 
+<p align="center">
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2011/Images/freq.png" alt="Descripción de la imagen" width="400"><br> 
+<p align="center"><b>Figura 2.</b> Resumen de las características en el dominio de la frequencia [3]. <br> 
+
 - <p align="justify"><b>Características en el dominio tiempo-frecuencia:</b> Combina información de tiempo y frecuencia, lo que permite la observación de diferentes componentes de frecuencia en diversos intervalos de tiempo. TFD resulta especialmente valioso para capturar componentes localizados, transitorios o intermitentes que a menudo son pasados por alto por métodos solo espectrales como la FFT. Se dispone de varios métodos, como la transformada continua de wavelet (CWT) y la transformada discreta de wavelet (DWT), para la descomposición de señales en el plano tiempo-frecuencia. También existen una variedad de técnicas disponibles para la descomposición de señales en el dominio tiempo-frecuencia, como la distribución de Choi-Williams (CWD), la transformada de Fourier de tiempo corto (STFT), la transformada de Wigner-Ville (WVT) y la CWT. Dentro del ámbito de las características en el dominio tiempo-frecuencia, un enfoque notablemente efectivo es la transformada de wavelet (WT), la cual comprende principalmente dos métodos: la CWT y la DWT. A diferencia de la STFT, la WT no se limita únicamente a funciones sinusoidales; acomoda una amplia variedad de formas de onda, siempre y cuando cumplan con criterios predefinidos. <br>
+
+<p align="center">
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2011/Images/tf.png" alt="Descripción de la imagen" width="400"><br> 
+<p align="center"><b>Figura 2.</b> Resumen de las características en el dominio del tiempo-frequencia. [3]. <br> 
   
 #### Clasificación y evaluación
 <p align="justify"> Hay varios enfoques de aprendizaje automático y aprendizaje profundo para decodificar las señales de sEMG, pero que no serán abarcados este laboratorio. [2] En el campo del diagnóstico clínico y la biomedicina, el análisis de señales de EMG con metodologías potentes y avanzadas se está convirtiendo cada vez más en una herramienta necesaria para los proveedores de atención médica. [1]
