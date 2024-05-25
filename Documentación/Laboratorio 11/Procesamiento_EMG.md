@@ -65,10 +65,11 @@ Lista de participantes:
 <p align="justify"> Hay varios enfoques de aprendizaje automático y aprendizaje profundo para decodificar las señales de sEMG, pero que no serán abarcados este laboratorio. [2] En el campo del diagnóstico clínico y la biomedicina, el análisis de señales de EMG con metodologías potentes y avanzadas se está convirtiendo cada vez más en una herramienta necesaria para los proveedores de atención médica. [1] La posibilidad de estudiar la activación de los músculos esqueléticos, mediante el registro de los potenciales eléctricos producidos durante las contracciones musculares, es de particular relevancia en la ciencia deportiva y la medicina de rehabilitación. [5]
 
 ### Objetivos específicos de la práctica
-- Adquirir conocimientos fundamentales sobre la Electromiografía (EMG) y las técnicas de procesamiento de señales asociadas.
-- Identificar y aplicar métodos de filtrado óptimos para mejorar la calidad de las señales de EMG, reduciendo el ruido y preservando la información relevante.
-- Reconocer y valorar el papel crucial de la segmentación de señales en el análisis efectivo de la Electromiografía (EMG).
-- Desarrollar habilidades para extraer características significativas de las señales de EMG en distintos dominios, tales como el temporal y el frecuencial.
+- Adquirir una comprensión sólida de la Electromiografía (EMG) y las técnicas de procesamiento de señales relacionadas.
+- Identificar y elegir el filtro más apropiado para cada señal sEMG, asegurando una reducción efectiva del ruido sin comprometer la integridad de los datos.
+- Reconocer la importancia fundamental de la segmentación de señales en el análisis eficaz de la Electromiografía (EMG) y valorar su papel en la obtención de resultados precisos.
+- Desarrollar competencias para extraer características relevantes de las señales de EMG en diferentes dominios para una interpretación más completa de los datos.
+- Ejecutar las etapas del tratamiento de la señal EMG de manera coherente y precisa en ambas señales, garantizando la comparabilidad y fiabilidad de los resultados obtenidos.
   
 ### Materiales y métodos
 
