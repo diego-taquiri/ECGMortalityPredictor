@@ -43,9 +43,7 @@ Lista de participantes:
 - Características en el dominio tiempo-frecuencia: Combina información de tiempo y frecuencia, lo que permite la observación de diferentes componentes de frecuencia en diversos intervalos de tiempo. TFD resulta especialmente valioso para capturar componentes localizados, transitorios o intermitentes que a menudo son pasados por alto por métodos solo espectrales como la FFT. Se dispone de varios métodos, como la transformada continua de wavelet (CWT) y la transformada discreta de wavelet (DWT), para la descomposición de señales en el plano tiempo-frecuencia, cada uno ofreciendo ventajas únicas. Existen una variedad de técnicas disponibles para la descomposición de señales en el dominio tiempo-frecuencia, como la distribución de Choi-Williams (CWD), la transformada de Fourier de tiempo corto (STFT), la transformada de Wigner-Ville (WVT) y la CWT. Dentro del ámbito de las características en el dominio tiempo-frecuencia, un enfoque notablemente efectivo es la transformada de wavelet (WT). La WT comprende principalmente dos métodos distintos: la CWT y la DWT. A diferencia de la STFT, la WT no se limita únicamente a funciones sinusoidales; acomoda una amplia variedad de formas de onda, siempre y cuando cumplan con criterios predefinidos. <br>
   
 #### Clasificación y evaluación
-Hay varios enfoques de aprendizaje automático y aprendizaje profundo para decodificar las señales de sEMG, pero que no serán abarcados este laboratorio. 
-
-En el campo del diagnóstico clínico y la biomedicina, el análisis de señales de EMG con metodologías potentes y avanzadas se está convirtiendo cada vez más en una herramienta necesaria para los proveedores de atención médica. [1]
+Hay varios enfoques de aprendizaje automático y aprendizaje profundo para decodificar las señales de sEMG, pero que no serán abarcados este laboratorio. [2] En el campo del diagnóstico clínico y la biomedicina, el análisis de señales de EMG con metodologías potentes y avanzadas se está convirtiendo cada vez más en una herramienta necesaria para los proveedores de atención médica. [1]
 
 ### Objetivos específicos de la práctica
 
