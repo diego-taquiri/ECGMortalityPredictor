@@ -22,6 +22,9 @@ Lista de participantes:
 
 <p align="justify"> En la actualidad, se prefieren este tipo de señales para obtener información sobre el tiempo o la intensidad de la activación muscular superficial. Se consideran muy útiles como señales electrofisiológicas tanto en el campo médico como en el ingenieril. Para utilizar estas aplicaciones de manera efectiva, la adquisición precisa de la señal de EMG es un requisito previo; sin embargo, siempre que se registra una señal de EMG del músculo, varios tipos de ruidos la contaminan (equipos electrónicos y factores fisiológicos). Por lo tanto, analizar y clasificar las señales de EMG es muy difícil debido al patrón complicado de la EMG, especialmente cuando ocurre el movimiento. [1]
 
+<p align="justify"> Otro de los principales desafíos relacionados con las señales de sEMG es su tendencia al sobreajuste, especialmente al cambiar entre diferentes individuos. Cuando los clasificadores entrenados con datos de una persona se aplican a un nuevo usuario, su rendimiento suele ser apenas mejor que el azar. Varios factores contribuyen a la variabilidad de las señales de sEMG entre individuos, como el índice de grasa corporal, la edad, la fatiga, el género y factores externos como la interferencia de la línea eléctrica y la colocación de los electrodos. Por lo tanto, para decodificar eficazmente las señales de sEMG se requiere el uso de algoritmos avanzados de detección, filtrado, procesamiento y clasificación. [3]
+
+
 ### Objetivos específicos de la práctica
 
 
