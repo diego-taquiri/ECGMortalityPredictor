@@ -18,8 +18,9 @@ Lista de participantes:
 
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2011/Images/plot.png" alt="Descripción de la imagen" width="400"><br> 
-<p align="center"><b>Figura 1.</b> Señal EMG cruda [1]. <br> 
+<p align="center"><b>Figura 1.</b> Señal EMG cruda [3]. <br> 
 
+<p align="justify"> En la actualidad, se prefieren este tipo de señales para obtener información sobre el tiempo o la intensidad de la activación muscular superficial. Se consideran muy útiles como señales electrofisiológicas tanto en el campo médico como en el ingenieril. Para utilizar estas aplicaciones de manera efectiva, la adquisición precisa de la señal de EMG es un requisito previo; sin embargo, siempre que se registra una señal de EMG del músculo, varios tipos de ruidos la contaminan (equipos electrónicos y factores fisiológicos). Por lo tanto, analizar y clasificar las señales de EMG es muy difícil debido al patrón complicado de la EMG, especialmente cuando ocurre el movimiento. [1]
 
 ### Objetivos específicos de la práctica
 
