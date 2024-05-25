@@ -73,7 +73,9 @@ Lista de participantes:
   
 ### Materiales y métodos
 
+#### Adquisición
 #### Filtrado 
+#### Rectificación
 #### Segmentación
 #### Extracción de caracteristicas
 
