@@ -81,3 +81,6 @@ Lista de participantes:
 ### Discusión
 
 ### Bibliografía
+<p align="justify"> [1] R. Chowdhury, M. Reaz, M. Ali, A. Bakar, K. Chellappan, y T. Chang, “Surface electromyography signal processing and classification techniques”, Sensors (Basel), vol. 13, núm. 9, pp. 12431–12466, 2013.
+<p align="justify"> [2] A. M. Moslhi, H. H. Aly, y M. ElMessiery, “The impact of feature extraction on classification accuracy examined by employing a Signal Transformer to classify hand gestures using surface electromyography signals”, Sensors (Basel), vol. 24, núm. 4, p. 1259, 2024.
+<p align="justify"> [3] S. M. S. Moctar, I. Rida, y S. Boudaoud, “Time-domain features for sEMG signal classification: A brief survey”, Hal.science. [En línea]. Disponible en: https://hal.science/hal-04199535/document.
