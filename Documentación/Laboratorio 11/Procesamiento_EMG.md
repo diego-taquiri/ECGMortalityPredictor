@@ -62,7 +62,7 @@ Lista de participantes:
 <p align="center"><b>Figura 5.</b> Resumen de las características en el dominio del tiempo-frequencia. [3]. <br> 
   
 #### Clasificación y evaluación
-<p align="justify"> Hay varios enfoques de aprendizaje automático y aprendizaje profundo para decodificar las señales de sEMG, pero que no serán abarcados este laboratorio. [2] En el campo del diagnóstico clínico y la biomedicina, el análisis de señales de EMG con metodologías potentes y avanzadas se está convirtiendo cada vez más en una herramienta necesaria para los proveedores de atención médica. [1]
+<p align="justify"> Hay varios enfoques de aprendizaje automático y aprendizaje profundo para decodificar las señales de sEMG, pero que no serán abarcados este laboratorio. [2] En el campo del diagnóstico clínico y la biomedicina, el análisis de señales de EMG con metodologías potentes y avanzadas se está convirtiendo cada vez más en una herramienta necesaria para los proveedores de atención médica. [1] La posibilidad de estudiar la activación de los músculos esqueléticos, mediante el registro de los potenciales eléctricos producidos durante las contracciones musculares, es de particular relevancia en la ciencia deportiva y la medicina de rehabilitación. [5]
 
 ### Objetivos específicos de la práctica
 - Adquirir conocimientos fundamentales sobre la Electromiografía (EMG) y las técnicas de procesamiento de señales asociadas.
@@ -85,3 +85,4 @@ Lista de participantes:
 <p align="justify"> [2] A. M. Moslhi, H. H. Aly, y M. ElMessiery, “The impact of feature extraction on classification accuracy examined by employing a Signal Transformer to classify hand gestures using surface electromyography signals”, Sensors (Basel), vol. 24, núm. 4, p. 1259, 2024.
 <p align="justify"> [3] S. M. S. Moctar, I. Rida, y S. Boudaoud, “Time-domain features for sEMG signal classification: A brief survey”, Hal.science. [En línea]. Disponible en: https://hal.science/hal-04199535/document.
 <p align="justify"> [4] Y. Wu, X. Hu, Z. Wang, J. Wen, J. Kan, y W. Li, “Exploration of feature extraction methods and dimension for sEMG signal classification”, Appl. Sci. (Basel), vol. 9, núm. 24, p. 5343, 2019.
+<p align="justify"> [5] M. A. Cavalcanti Garcia y T. M. M. Vieira, “Surface electromyography: Why, when and how to use it”, Rev. Andal. Med. Deport., vol. 4, núm. 1, pp. 17–28, 2011.
