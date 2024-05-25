@@ -59,7 +59,7 @@ Lista de participantes:
 
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2011/Images/tf.png" alt="Descripción de la imagen" width="500"><br> 
-<p align="center"><b>Figura 5.</b> Resumen de las características en el dominio del tiempo-frequencia. [3]. <br> 
+<p align="center"><b>Figura 5.</b> Resumen de las características en el dominio del tiempo-frequencia. [2]. <br> 
   
 #### Clasificación y evaluación
 <p align="justify"> Hay varios enfoques de aprendizaje automático y aprendizaje profundo para decodificar las señales de sEMG, pero que no serán abarcados este laboratorio. [2] En el campo del diagnóstico clínico y la biomedicina, el análisis de señales de EMG con metodologías potentes y avanzadas se está convirtiendo cada vez más en una herramienta necesaria para los proveedores de atención médica. [1] La posibilidad de estudiar la activación de los músculos esqueléticos, mediante el registro de los potenciales eléctricos producidos durante las contracciones musculares, es de particular relevancia en la ciencia deportiva y la medicina de rehabilitación. [5]
