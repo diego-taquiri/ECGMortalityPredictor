@@ -24,6 +24,24 @@ Lista de participantes:
 
 <p align="justify"> Otro de los principales desafíos relacionados con las señales de sEMG es su tendencia al sobreajuste, especialmente al cambiar entre diferentes individuos. Cuando los clasificadores entrenados con datos de una persona se aplican a un nuevo usuario, su rendimiento suele ser apenas mejor que el azar. Varios factores contribuyen a la variabilidad de las señales de sEMG entre individuos, como el índice de grasa corporal, la edad, la fatiga, el género y factores externos como la interferencia de la línea eléctrica y la colocación de los electrodos. Por lo tanto, para decodificar eficazmente las señales de sEMG se requiere el uso de algoritmos avanzados de detección, filtrado, procesamiento y clasificación. [3]
 
+<p align="justify">  Las señales de EMG, por su naturaleza, exhiben información compleja y altamente variable. Extraer ideas significativas de estas señales requiere la aplicación de técnicas avanzadas de reconocimiento de patrones y análisis de datos similares a las utilizadas en el análisis de datos. Estudios recientes sobre la decodificación de señales de sEMG revelaron que estos estudios siguen enfoques similares, que pueden resumirse de la siguiente manera [3]: 
+  
+#### Adquisición de señales
+<p align="justify"> A pesar de las características no estacionarias de las señales de sEMG, aún pueden ser detectadas utilizando electrodos de superficie. Los electrodos suelen clasificarse según su tipo (electrodos rellenos de gel o secos) y densidad (lineales o en matriz 2D). El sensor utilizado para la adquisición de sEMG debe adherirse al teorema de Nyquist-Shannon, lo que garantiza una frecuencia de muestreo que sea al menos el doble de la frecuencia más alta de las señales de sEMG, lo que requiere una frecuencia de muestreo superior a 1000 Hz. [3]
+
+#### Preprocesamiento
+<p align="justify"> El desafío con los datos de sEMG en bruto radica en el alto nivel de ruido capturado durante la adquisición de la señal, lo que requiere un procesamiento exhaustivo para una decodificación precisa de la señal. Principalmente, existen tres tipos de ruido en las señales de sEMG: (1) ruido inherente de los componentes electrónicos, (2) interferencia de frecuencia de potencia del sistema eléctrico y (3) ruido originado por los electrodos. El preprocesamiento abarca varios pasos clave, que incluyen  [3]: 
+- Filtrado
+- Rectificación
+- Normalización
+- Segmentación.
+
+#### Extracción de características 
+
+  
+#### Clasificación y evaluación
+
+En el campo del diagnóstico clínico y la biomedicina, el análisis de señales de EMG con metodologías potentes y avanzadas se está convirtiendo cada vez más en una herramienta necesaria para los proveedores de atención médica. [1]
 
 ### Objetivos específicos de la práctica
 
