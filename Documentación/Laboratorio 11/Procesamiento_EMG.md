@@ -21,6 +21,10 @@ Lista de participantes:
 <p align="center"><b>Figura 1.</b> Señal EMG cruda [3]. <br> 
 
 <p align="justify"> En la actualidad, se prefieren este tipo de señales para obtener información sobre el tiempo o la intensidad de la activación muscular superficial. Se consideran muy útiles como señales electrofisiológicas tanto en el campo médico como en el ingenieril. Para utilizar estas aplicaciones de manera efectiva, la adquisición precisa de la señal de EMG es un requisito previo; sin embargo, siempre que se registra una señal de EMG del músculo, varios tipos de ruidos la contaminan (equipos electrónicos y factores fisiológicos). Por lo tanto, analizar y clasificar las señales de EMG es muy difícil debido al patrón complicado de la EMG, especialmente cuando ocurre el movimiento. [1] Extraer ideas significativas de estas señales requiere la aplicación de técnicas avanzadas de reconocimiento de patrones y análisis de datos similares a las utilizadas en el análisis de datos. Estudios recientes sobre la decodificación de señales de sEMG revelaron que estos estudios siguen enfoques similares, que pueden resumirse de la siguiente manera [3]: 
+
+<p align="center">
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2011/Images/clasifica.png" alt="Descripción de la imagen" width="400"><br> 
+<p align="center"><b>Figura 2.</b> Arquitectura de clasificación de señales de sEMG. [5]. <br> 
   
 #### Adquisición de señales
 <p align="justify"> A pesar de las características no estacionarias de las señales de sEMG, aún pueden ser detectadas utilizando electrodos de superficie. Los electrodos suelen clasificarse según su tipo (electrodos rellenos de gel o secos) y densidad (lineales o en matriz 2D). El sensor utilizado para la adquisición de sEMG debe adherirse al teorema de Nyquist-Shannon, lo que garantiza una frecuencia de muestreo que sea al menos el doble de la frecuencia más alta de las señales de sEMG, lo que requiere una frecuencia de muestreo superior a 1000 Hz. [3]
