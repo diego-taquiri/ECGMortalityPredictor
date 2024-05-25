@@ -32,9 +32,9 @@ Lista de participantes:
 #### Preprocesamiento
 <p align="justify"> El desafío con los datos de sEMG en bruto radica en el alto nivel de ruido capturado durante la adquisición de la señal. Principalmente, existen tres tipos de ruido en las señales de sEMG: ruido inherente de los componentes electrónicos, interferencia de frecuencia de potencia del sistema eléctrico y ruido originado por los electrodos. [2] <br>
   
-- <b>Filtrado:</b> El filtrado es esencial para reducir los artefactos en las señales de sEMG. En algunos estudios, se utilizaron tanto un filtro pasa banda como un filtro notch para extraer las señales de sEMG, mientras que otros recomendaron un filtro Butterworth con parámetros específicos. [2] <br>
+- <p align="justify"><b>Filtrado:</b> El filtrado es esencial para reducir los artefactos en las señales de sEMG. En algunos estudios, se utilizaron tanto un filtro pasa banda como un filtro notch para extraer las señales de sEMG, mientras que otros recomendaron un filtro Butterworth con parámetros específicos. [2] <br>
 
-- <b>Rectificación:</b> Dado que las señales de sEMG fluctúan entre -5 y 5 mV durante la contracción muscular, se aborda la parte negativa de la señal. Dos enfoques comunes son la rectificación de onda completa y la rectificación de onda media, siendo la primera preferida debido a su capacidad para representar la señal de activación neural. [2]<br>
+<p align="justify">- <b>Rectificación:</b> Dado que las señales de sEMG fluctúan entre -5 y 5 mV durante la contracción muscular, se aborda la parte negativa de la señal. Dos enfoques comunes son la rectificación de onda completa y la rectificación de onda media, siendo la primera preferida debido a su capacidad para representar la señal de activación neural. [2]<br>
 
 - <b>Normalización:</b> Como se muestra una variabilidad significativa entre individuos, la normalización de amplitud es esencial para comparar las señales entre diferentes sujetos, contribuyendo a la variación en el índice de grasa corporal, la edad, la fatiga, el género y factores externos. La normalización implica dividir las señales de sEMG recopiladas por un valor de referencia de sEMG en condiciones idénticas, lo que facilita las comparaciones entre sujetos y mejora la eficiencia computacional. [2] <br>
 
