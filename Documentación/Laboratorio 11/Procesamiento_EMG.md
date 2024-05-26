@@ -74,11 +74,75 @@ Lista de participantes:
 ### Materiales y métodos
 
 #### Adquisición
+
+La adquisición de la señal EMG se realizó importando los datos de un archivo de texto que contiene datos crudos de EMG. La señal fue convertida de bits a milivoltios (mV) y centrada en torno a su media:
+
+```python
+data = np.loadtxt("./../Laboratorio 04/emg_raw_data/isb-isometrico-armando/opensignals_98D3B1FD3DA9_2024-04-12_12-16-36.txt", skiprows=3)
+
+bits = 10  # Bits de la salida
+volt_range = 3.3  # Rango de voltaje en milivoltios
+data_mV = (data[:, 5] * volt_range / (2**bits - 1))  # Convertir los bits a mV
+data_mV_centered = data_mV - np.mean(data_mV)  # Centrar la señal
+```
+
 #### Filtrado 
 #### Rectificación
+
+En este paso, la señal centrada fue rectificada para prepararla para la extracción de características. La rectificación de onda completa se realizó para obtener valores absolutos de la señal, lo cual es esencial para análisis posteriores ya que convierte todas las variaciones de la señal en positivas:
+
+```python
+data_mV_rectified = np.abs(data_mV_centered)
+```
 #### Segmentación
+
+La señal rectificada fue segmentada en partes más pequeñas para facilitar el análisis y la extracción de características. Cada segmento tenía una duración de 200 ms con un incremento de 40 ms entre segmentos consecutivos. Este método permite capturar detalles finos y dinámicos de la señal:
+
+```python
+def segment_signal(signal, segment_length, increment, sampling_rate):
+    segment_samples = int(segment_length * sampling_rate / 1000)
+    increment_samples = int(increment * sampling_rate / 1000)
+    segments = []
+
+    for start in range(0, len(signal) - segment_samples + 1, increment_samples):
+        end = start + segment_samples
+        segments.append(signal[start:end])
+    
+    return np.array(segments), segment_samples, increment_samples, np.arange(0, len(signal) - segment_samples + 1, increment_samples)
+
+segment_length = 200  # in ms
+increment = 40  # in ms
+sampling_rate = 1000  # Hz
+segments, segment_samples, increment_samples, segment_starts = segment_signal(data_mV_rectified, segment_length, increment, sampling_rate)
+```
 #### Extracción de caracteristicas
 
+Se extrajeron varias características de cada segmento de la señal EMG para analizar diferentes aspectos de la actividad muscular. Las características extraídas incluyeron el valor máximo, mínimo, promedio, desviación estándar, RMS, área bajo la curva, potencia total, frecuencia mediana y frecuencia máxima. Estas características son esenciales para comprender la variabilidad, la intensidad y la frecuencia de la actividad muscular:
+
+```python
+def extract_features(segment, sampling_rate):
+    max_sample_value = np.max(segment)
+    min_sample_value = np.min(segment)
+    avg_sample_value = np.mean(segment)
+    std_sample_value = np.std(segment)
+    rms = np.sqrt(np.mean(segment ** 2))
+    area = np.trapz(segment)
+
+    f, P = welch(segment, fs=sampling_rate, window='hanning', noverlap=0, nfft=int(256.))
+    area_freq = cumtrapz(P, f, initial=0)
+    total_power = area_freq[-1]
+    median_freq = f[np.where(area_freq >= total_power / 2)[0][0]]
+    f_max = f[np.argmax(P)]
+
+    return [avg_sample_value, std_sample_value, max_sample_value, min_sample_value, rms, area, total_power, median_freq, f_max]
+
+features = []
+for segment in segments:
+    features.append(extract_features(segment, sampling_rate))
+
+features_df = pd.DataFrame(features, columns=['Average', 'Standard Deviation', 'Maximum', 'Minimum', 'RMS', 'Area', 'Total Power', 'Median Frequency', 'Max Frequency'])
+print(features_df)
+```
 ### Resultados
 
 | EMG Isometrico        | EMG contrafuerza                                                        |
