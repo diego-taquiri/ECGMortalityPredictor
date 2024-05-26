@@ -159,7 +159,7 @@ print(features_df)
 
 | EMG Isometrico        | EMG contrafuerza                                                        |
 |--------------|---------------------------------------------------------------|
-| ![Imagen de ECG](plots/isb-isometrico-armando-feature-extracion.png)        |        ![Imagen de ECG](plots/isb-contrafuerza-armando-feature-extracion.png)             |
+| ![Imagen de ECG](plots/isb-isometrico-armando-feature-extraction.png)        |        ![Imagen de ECG](plots/isb-contrafuerza-armando-feature-extracion.png)             |
 
 
 ### Discusión
