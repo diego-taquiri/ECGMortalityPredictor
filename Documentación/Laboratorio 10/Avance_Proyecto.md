@@ -50,8 +50,10 @@ Puedes ver el video de Grupo 12 haciendo clic [aquí](https://github.com/diego-t
 <p align="justify"><b>Remoción de ruido</b><br>
 
 <p align="justify">Para remover el ruido usamos un wavelet Daubechies 4 con 5 niveles de descomposición y un soft thresholding de acuerdo al trabajo de Alfaouri et al[21]. El umbral o threshold se obtiene a partir de la siguiente ecuación: 
+  
 <p align="center">T= C** sqrt(n*σ(Vs(n))/σ(dj(n)))
-<p align="justify">Donde:
+  
+<p align="justify">Donde: <br>
 - <p align="justify">C: Constante=0.01
 - <p align="justify">σ(Vs(n)): Desviación estándar de señal original.
 - <p align="justify">σ(dj(n)): Desviación estándar de coeficientes de detalle.
