@@ -122,9 +122,9 @@ def process_eeg_data(url, num_samples, wavelet, levels, max_threshold_level, not
     plt.show()
 
 # Define URLs for eyes and math EEG data
-url_rest = "https://raw.githubusercontent.com/diego-taquiri/ISB-equipo11/main/Documentaci%C3%B3n/Laboratorio%205/Raw%20data/Bitalino/base/opensignals_98D341FD4F50_2024-04-26_12-20-56.txt"
-url_eyes = "https://raw.githubusercontent.com/diego-taquiri/ISB-equipo11/main/Documentaci%C3%B3n/Laboratorio%205/Raw%20data/Bitalino/abrecierra/opensignals_98D341FD4F50_2024-04-26_12-22-23.txt"
-url_math = "https://raw.githubusercontent.com/diego-taquiri/ISB-equipo11/main/Documentaci%C3%B3n/Laboratorio%205/Raw%20data/Bitalino/mate/opensignals_98D341FD4F50_2024-04-26_12-26-32.txt"
+url_rest = "https://raw.githubusercontent.com/diego-taquiri/ISB-equipo11/main/Documentaci%C3%B3n/Laboratorio%2007/Raw%20data/Bitalino/base/opensignals_98D341FD4F50_2024-04-26_12-20-56.txt"
+url_eyes = "https://raw.githubusercontent.com/diego-taquiri/ISB-equipo11/main/Documentaci%C3%B3n/Laboratorio%2007/Raw%20data/Bitalino/abrecierra/opensignals_98D341FD4F50_2024-04-26_12-22-23.txt"
+url_math = "https://raw.githubusercontent.com/diego-taquiri/ISB-equipo11/main/Documentaci%C3%B3n/Laboratorio%2007/Raw%20data/Bitalino/mate/opensignals_98D341FD4F50_2024-04-26_12-26-32.txt"
 
 # Process EEG data for eyes and math tasks
 num_samples = 70144  # Update with the closest lower number divisible by 2^level

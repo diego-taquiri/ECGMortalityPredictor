@@ -4,9 +4,9 @@ from urllib.request import urlopen
 from scipy.signal import butter, filtfilt, firwin
 
 # URL of the raw text file containing EMG data
-#url = "https://raw.githubusercontent.com/diego-taquiri/ISB-equipo11/main/Documentaci%C3%B3n/Laboratorio%203/emg_raw_data/isb-reposo-armando/opensignals_98D3B1FD3DA9_2024-04-12_12-12-05.txt"
-#url = "https://raw.githubusercontent.com/diego-taquiri/ISB-equipo11/main/Documentaci%C3%B3n/Laboratorio%203/emg_raw_data/isb-isometrico-armando/opensignals_98D3B1FD3DA9_2024-04-12_12-17-43.txt"
-url = "https://raw.githubusercontent.com/diego-taquiri/ISB-equipo11/main/Documentaci%C3%B3n/Laboratorio%203/emg_raw_data/isb-contrafuerza-armando/opensignals_98D3B1FD3DA9_2024-04-12_12-19-52.txt"
+url = "https://raw.githubusercontent.com/diego-taquiri/ISB-equipo11/main/Documentaci%C3%B3n/Laboratorio%2004/emg_raw_data/isb-reposo-armando/opensignals_98D3B1FD3DA9_2024-04-12_12-12-05.txt"
+#url = "https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/emg_raw_data/isb-isometrico-armando/opensignals_98D3B1FD3DA9_2024-04-12_12-17-43.txt"
+#url = "https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2004/emg_raw_data/isb-contrafuerza-armando/opensignals_98D3B1FD3DA9_2024-04-12_12-19-52.txt"
 # Download the data from the URL
 response = urlopen(url)
 data = response.read().decode('utf-8').splitlines()
