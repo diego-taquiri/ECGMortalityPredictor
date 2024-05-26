@@ -87,6 +87,15 @@ Lista de participantes:
 
 
 ### Discusión
+<p align="justify"> El análisis de su señal EMG rectificada revela características interesantes asociadas con la contracción muscular:
+•	Los valores medios rectificados de EMG (0,4 mV - 0,8 mV) dentro de los segmentos de contracción son más altos en comparación con el estado de reposo (que se supone que es antes/después de la contracción con valores alrededor de 0,02 mV). Esto se alinea con la investigación de Duran et al., 2013 [7] que informaron un aumento de la amplitud de EMG durante la contracción muscular debido a mayores tasas de disparo de unidades motoras.
+•	La desviación estándar (0,2 mV - 0,4 mV) también aumenta durante la contracción. Esto refleja una mayor variabilidad en los patrones de reclutamiento de fibras musculares.
+•	La presencia de valores máximos que exceden el rango rectificado (1,5 mV) sugiere posibles artefactos o eventos de alta amplitud de corta duración. La actividad muscular puede generar picos que exceden los niveles basales, pero estos deben ser transitorios y no dominar la señal. Considere técnicas de filtrado para abordar posibles artefactos.
+•	Los valores RMS (root mean square) que van desde 0,5 mV hasta un máximo de 1 mV durante la contracción indican una mayor actividad muscular general en comparación con el estado de reposo con un RMS potencialmente más bajo. Esto se alinea con el concepto de RMS como medida de la potencia de la señal, que aumenta con la activación muscular como podemos ver en el estudio realizado por Hermens et al., 2000 [8].
+•	El área bajo la curva (AUC) también respalda esta observación. Los valores más altos de AUC (50 mV - 150 mV) durante la contracción sugieren una mayor actividad eléctrica acumulativa en comparación con el estado de reposo.
+•	La disminución observada en la frecuencia mediana (alrededor de 100 Hz) durante los segmentos de contracción en comparación con el estado de reposo (alrededor de 200 Hz) es un hallazgo interesante. Esto podría deberse al reclutamiento de fibras musculares más grandes y de contracción lenta durante contracciones sostenidas [9]. Además, la fatiga muscular también puede contribuir a una disminución de la frecuencia mediana.
+•	La presencia de frecuencias máximas más altas fuera de los segmentos de contracción sugiere la posibilidad de activaciones musculares breves y de alta frecuencia asociadas con el espasmo muscular o el reclutamiento inicial.
+El análisis respalda los cambios esperados en la señal EMG durante la contracción muscular. El aumento de la amplitud (media, desviación estándar, RMS, AUC), la disminución de la frecuencia mediana y los potenciales ráfagas de alta frecuencia apuntan hacia una mayor actividad de las unidades motoras durante la contracción.
 
 ### Bibliografía
 <p align="justify"> [1] R. Chowdhury, M. Reaz, M. Ali, A. Bakar, K. Chellappan, y T. Chang, “Surface electromyography signal processing and classification techniques”, Sensors (Basel), vol. 13, núm. 9, pp. 12431–12466, 2013.
@@ -95,3 +104,6 @@ Lista de participantes:
 <p align="justify"> [4] A. P. I. to Electromyography, “The ABC of EMG”, Noraxon.com. [En línea]. Disponible en: https://www.noraxon.com/wp-content/uploads/2014/12/ABC-EMG-ISBN.pdf.
 <p align="justify"> [5] Y. Wu, X. Hu, Z. Wang, J. Wen, J. Kan, y W. Li, “Exploration of feature extraction methods and dimension for sEMG signal classification”, Appl. Sci. (Basel), vol. 9, núm. 24, p. 5343, 2019.
 <p align="justify"> [6] M. A. Cavalcanti Garcia y T. M. M. Vieira, “Surface electromyography: Why, when and how to use it”, Rev. Andal. Med. Deport., vol. 4, núm. 1, pp. 17–28, 2011.
+<p align="justify">[7] Durán Acevedo, Cristhian Manuel, & Jaimes Mogollón, Aylen Lisset. (2013). Optimización y clasificación de señales EMG a través de métodos de reconocimiento de patrones. Iteckne, 10(1), 67-76. Retrieved May 25, 2024, from http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S1692-17982013000100009&lng=en&tlng=es.
+<p align="justify">[8] Hermens HJ, Freriks B, Disselhorst-Klug C, Rau G. Development of recommendations for SEMG sensors and sensor placement procedures. J Electromyogr Kinesiol. 2000 Oct;10(5):361-74. doi: 10.1016/s1050-6411(00)00027-4. PMID: 11018445.
+<p align="justify">[9] Wakeling JM, Uehli K, Rozitis AI. Muscle fibre recruitment can respond to the mechanics of the muscle contraction. J R Soc Interface. 2006 Aug 22;3(9):533-44. doi: 10.1098/rsif.2006.0113. PMID: 16849250; PMCID: PMC1664648.
