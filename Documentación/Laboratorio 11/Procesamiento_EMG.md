@@ -81,6 +81,11 @@ Lista de participantes:
 
 ### Resultados
 
+| EMG Isometrico        | EMG contrafuerza                                                        |
+|--------------|---------------------------------------------------------------|
+| ![Imagen de ECG](plots/isb-isometrico-armando-feature-extracion.png)        |        ![Imagen de ECG](plots/isb-contrafuerza-armando-feature-extracion.png)             |
+
+
 ### Discusión
 
 ### Bibliografía
