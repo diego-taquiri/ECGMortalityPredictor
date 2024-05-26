@@ -54,10 +54,10 @@ Puedes ver el video de Grupo 12 haciendo clic [aquí](https://github.com/diego-t
 <p align="center">T= C** sqrt(n*σ(Vs(n))/σ(dj(n)))
   
 <p align="justify">Donde: <br>
-- <p align="justify">C: Constante=0.01
-- <p align="justify">σ(Vs(n)): Desviación estándar de señal original.
-- <p align="justify">σ(dj(n)): Desviación estándar de coeficientes de detalle.
-- <p align="justify">n: Número de muestras.
+- <p align="justify"> C: Constante=0.01<br>
+- <p align="justify"> σ(Vs(n)): Desviación estándar de señal original.<br>
+- <p align="justify">σ(dj(n)): Desviación estándar de coeficientes de detalle.<br>
+- <p align="justify">n: Número de muestras.<br>
 
 <p align="justify">Un segundo filtrado para identificar la onda R se obtiene de un algoritmo hecho a partir del algoritmo Pan-Tompkins. La señal de extracción atenua todos los componentes menos el mayor y se obtiene con la suma de las primera y segunda derivada de la señal por coeficientes ya determinados en el trabajo de Mazomenos et al.[22]
 
