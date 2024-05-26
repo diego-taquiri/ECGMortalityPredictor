@@ -52,19 +52,19 @@ Puedes ver el video de Grupo 12 haciendo clic [aquí](https://github.com/diego-t
 <p align="justify">Para remover el ruido usamos un wavelet Daubechies 4 con 5 niveles de descomposición y un soft thresholding de acuerdo al trabajo de Alfaouri et al[21]. El umbral o threshold se obtiene a partir de la siguiente ecuación: 
 <p align="center">T= C** sqrt(n*σ(Vs(n))/σ(dj(n)))
 <p align="justify">Donde:
-<p align="justify">- C: Constante=0.01
-<p align="justify">- σ(Vs(n)): Desviación estándar de señal original.
-<p align="justify">- σ(dj(n)): Desviación estándar de coeficientes de detalle.
-<p align="justify">- n: Número de muestras.
+- <p align="justify">C: Constante=0.01
+- <p align="justify">σ(Vs(n)): Desviación estándar de señal original.
+- <p align="justify">σ(dj(n)): Desviación estándar de coeficientes de detalle.
+- <p align="justify">n: Número de muestras.
 
 <p align="justify">Un segundo filtrado para identificar la onda R se obtiene de un algoritmo hecho a partir del algoritmo Pan-Tompkins. La señal de extracción atenua todos los componentes menos el mayor y se obtiene con la suma de las primera y segunda derivada de la señal por coeficientes ya determinados en el trabajo de Mazomenos et al.[22]
 
 <p align="justify"><b>Extracción de features</b><br>
 
 <p align="justify">La extracción de features se da a partir de ventanas de búsqueda temporales en un proceso de varios pasos:
-<p align="justify">- Identificación de onda R: Se identifica la onda R encontrando los máximos locales en la onda de ECG filtrada por el algoritmo. Se determina evaluando la mayor gradiente en una ventana de 30 ms alrededor de los máximos locales.
-<p align="justify">- Límites QRS: Se utiliza un thresholdling adaptativo en ventanas de tiempo ya determinadas alrededor del punto correspondiente al pico de la onda R. Se determinan dos ventanas que limitan al complejo QRS, siendo las ondas Q y S mínimos locales entre las ventanas y el pico de la onda R.
-<p align="justify">- Ondas P y T: Se determinan ventanas fuera de las ventanas establecidas por la onda R, específicas para onda P y T, cada una con su determinada duración y distancia a sus respectivos picos. Luego el algoritmo evalúa las gradientes alrededor de los picos encontrados. Cualquier error se corrige refinando las ventanas existentes y repitiendo el proceso.
+- <p align="justify">Identificación de onda R: Se identifica la onda R encontrando los máximos locales en la onda de ECG filtrada por el algoritmo. Se determina evaluando la mayor gradiente en una ventana de 30 ms alrededor de los máximos locales.
+- <p align="justify">Límites QRS: Se utiliza un thresholdling adaptativo en ventanas de tiempo ya determinadas alrededor del punto correspondiente al pico de la onda R. Se determinan dos ventanas que limitan al complejo QRS, siendo las ondas Q y S mínimos locales entre las ventanas y el pico de la onda R.
+- <p align="justify">Ondas P y T: Se determinan ventanas fuera de las ventanas establecidas por la onda R, específicas para onda P y T, cada una con su determinada duración y distancia a sus respectivos picos. Luego el algoritmo evalúa las gradientes alrededor de los picos encontrados. Cualquier error se corrige refinando las ventanas existentes y repitiendo el proceso.
 
 #### Métodos para analizar/procesar la señal
 <p align="justify">Para la sección de análisis de datos, se tomará la extracción de características por wavelet de las señales del paso anterior y se aplicará a un dataset para el entrenamiento del modelo de Machine Learning. Este dataset se dividirá en 80% para el set de entrenamiento, 10% para el set de validación y 10% para el set de pruebas. La división del dataset de esta manera permite entrenar el modelo con la mayoría de los datos disponibles, mientras que se reserva una porción para validar y probar el modelo de manera independiente, para evaluar su capacidad de generalización [16].
