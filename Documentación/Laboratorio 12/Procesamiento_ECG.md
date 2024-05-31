@@ -14,17 +14,20 @@ Lista de participantes:
 7. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Procesamiento_ECG.md#bibliograf%C3%ADa)
 
 ### Introducción
-
-De su dataset de seÃ±ales ECG adquirirdas y filtradas, deben calcular lo siguiente:
-- Los picos de la onda R y graficarlos.
-- Hallar el HRV (basarse en un articulo base).
   
 ### Objetivos específicos de la práctica
 
 ### Materiales y métodos
+#### Dataset de señales ECG adquirirdas y filtradas
+#### Picos de la onda R
+#### HRV 
 
 ### Resultados
+#### Picos de la onda R
+#### HRV 
 
 ### Discusión
+#### Picos de la onda R
+#### HRV 
 
 ### Bibliografía
