@@ -59,7 +59,7 @@ Lista de participantes:
 
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2011/Images/tf.png" alt="Descripción de la imagen" width="500"><br> 
-<p align="center"><b>Figura 5.</b> Resumen de las características en el dominio del tiempo-frequencia. [2]. <br> 
+<p align="center"><b>Figura 5.</b> Resumen de las características en el dominio del tiempo-frequencia [2]. <br> 
   
 #### Clasificación y evaluación
 <p align="justify"> Hay varios enfoques de aprendizaje automático y aprendizaje profundo para decodificar las señales de sEMG, pero que no serán abarcados este laboratorio. [2] En el campo del diagnóstico clínico y la biomedicina, el análisis de señales de EMG con metodologías potentes y avanzadas se está convirtiendo cada vez más en una herramienta necesaria para los proveedores de atención médica. [1] La posibilidad de estudiar la activación de los músculos esqueléticos, mediante el registro de los potenciales eléctricos producidos durante las contracciones musculares, es de particular relevancia en la ciencia deportiva y la medicina de rehabilitación. [6]
@@ -75,7 +75,7 @@ Lista de participantes:
 
 #### Adquisición
 
-La adquisición de la señal EMG se realizó importando los datos de un archivo de texto que contiene datos crudos de EMG. La señal fue convertida de bits a milivoltios (mV) y centrada en torno a su media:
+<p align="justify">La adquisición de la señal EMG se realizó importando los datos de un archivo de texto que contiene datos crudos de EMG. La señal fue convertida de bits a milivoltios (mV) y centrada en torno a su media:
 
 ```python
 data = np.loadtxt("./../Laboratorio 04/emg_raw_data/isb-isometrico-armando/opensignals_98D3B1FD3DA9_2024-04-12_12-16-36.txt", skiprows=3)
@@ -88,9 +88,9 @@ data_mV_centered = data_mV - np.mean(data_mV)  # Centrar la señal
 
 #### Filtrado 
 
-Se realizaron tres tipos de filtrado. Un filtrado FIR, basado en el trabajo de Kumar et al[7], que menciona un filtro de Bartlett de orden 20, el cual fue acondicionado, con una reducción de la frecuencia de corte a 400 Hz para asegurar que la misma cumpla con los requisitos del filtrado, un filtrado IIR tal y como se menciona en el trabajo de Zhou et al [8], Buttersworth pasabanda de cuarto orden con una frecuencia pasabanda de 20-250 Hz, con los acondicionamientos respectivos respecto a la interferencia de corriente alterna , y un filtro wavelet db4 de 10 niveles de descomposición, como se menciona en el trabajo de Gradolewski et al[9]. 
+<p align="justify">Se realizaron tres tipos de filtrado. Un filtrado FIR, basado en el trabajo de Kumar et al. [7], que menciona un filtro de Bartlett de orden 20, el cual fue acondicionado, con una reducción de la frecuencia de corte a 400 Hz para asegurar que la misma cumpla con los requisitos del filtrado, un filtrado IIR tal y como se menciona en el trabajo de Zhou et al [8], Buttersworth pasabanda de cuarto orden con una frecuencia pasabanda de 20-250 Hz, con los acondicionamientos respectivos respecto a la interferencia de corriente alterna , y un filtro wavelet db4 de 10 niveles de descomposición, como se menciona en el trabajo de Gradolewski et al. [9]. 
 
-La determinación de la calidad de la señal fue realizada mediante tres criterios: El SNR, la diferencia de entropía y la diferencia de kurtosis. Se obtuvieron los siguientes resultados a partir de la misma para una señal de flexión:
+<p align="justify">La determinación de la calidad de la señal fue realizada mediante tres criterios: El SNR, la diferencia de entropía y la diferencia de kurtosis. Se obtuvieron los siguientes resultados a partir de la misma para una señal de flexión:
 
 |             | Diferencia de Kurtosis | Diferencia de entropía | SNR |
 |------------|----------|----------|----------| 
@@ -101,14 +101,14 @@ La determinación de la calidad de la señal fue realizada mediante tres criteri
 
 #### Rectificación
 
-En este paso, la señal centrada fue rectificada para prepararla para la extracción de características. La rectificación de onda completa se realizó para obtener valores absolutos de la señal, lo cual es esencial para análisis posteriores ya que convierte todas las variaciones de la señal en positivas:
+<p align="justify">En este paso, la señal centrada fue rectificada para prepararla para la extracción de características. La rectificación de onda completa se realizó para obtener valores absolutos de la señal, lo cual es esencial para análisis posteriores ya que convierte todas las variaciones de la señal en positivas:
 
 ```python
 data_mV_rectified = np.abs(data_mV_centered)
 ```
 #### Segmentación
 
-La señal rectificada fue segmentada en partes más pequeñas para facilitar el análisis y la extracción de características. Cada segmento tenía una duración de 200 ms con un incremento de 40 ms entre segmentos consecutivos. Este método permite capturar detalles finos y dinámicos de la señal:
+<p align="justify">La señal rectificada fue segmentada en partes más pequeñas para facilitar el análisis y la extracción de características. Cada segmento tenía una duración de 200 ms con un incremento de 40 ms entre segmentos consecutivos. Este método permite capturar detalles finos y dinámicos de la señal:
 
 ```python
 def segment_signal(signal, segment_length, increment, sampling_rate):
@@ -129,7 +129,7 @@ segments, segment_samples, increment_samples, segment_starts = segment_signal(da
 ```
 #### Extracción de caracteristicas
 
-Se extrajeron varias características de cada segmento de la señal EMG para analizar diferentes aspectos de la actividad muscular. Las características extraídas incluyeron el valor máximo, mínimo, promedio, desviación estándar, RMS, área bajo la curva, potencia total, frecuencia mediana y frecuencia máxima. Estas características son esenciales para comprender la variabilidad, la intensidad y la frecuencia de la actividad muscular:
+<p align="justify">Se extrajeron varias características de cada segmento de la señal EMG para analizar diferentes aspectos de la actividad muscular. Las características extraídas incluyeron el valor máximo, mínimo, promedio, desviación estándar, RMS, área bajo la curva, potencia total, frecuencia mediana y frecuencia máxima. Estas características son esenciales para comprender la variabilidad, la intensidad y la frecuencia de la actividad muscular:
 
 ```python
 def extract_features(segment, sampling_rate):
@@ -193,6 +193,6 @@ print(features_df)
 <p align="justify">[7] Hemant Kumar and Anjana Goen (2015); Comparative Study of FIR Digital Filter for Noise Elimination in EMG Signal Int. J. of Adv. Res. 3 (Dec). 598-603] (ISSN 2320-5407). www.journalijar.com
 <p align="justify">[8] B. Zhou, H. Wang, Y. Lu and M. A. Gouda, "Ambulation Prediction by Fusing Raw IMU Data and Novel sEMG Time-frequency Features," 2022 3rd International Conference on Big Data, Artificial Intelligence and Internet of Things Engineering (ICBAIE), Xi’an, China, 2022, pp. 284-288, doi: 10.1109/ICBAIE56435.2022.9985791.
 <p align="justify">[9] Gradolewski, D., Tojza, P.M., Jaworski, J., Ambroziak, D., Redlarski, G., Krawczuk, M. (2015). Arm EMG Wavelet-Based Denoising System. In: Awrejcewicz, J., Szewczyk, R., Trojnacki, M., Kaliczyńska, M. (eds) Mechatronics - Ideas for Industrial Application. Advances in Intelligent Systems and Computing, vol 317. Springer, Cham. https://doi.org/10.1007/978-3-319-10990-9_26
-<p align="justify">[7] Durán Acevedo, Cristhian Manuel, & Jaimes Mogollón, Aylen Lisset. (2013). Optimización y clasificación de señales EMG a través de métodos de reconocimiento de patrones. Iteckne, 10(1), 67-76. Retrieved May 25, 2024, from http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S1692-17982013000100009&lng=en&tlng=es.
-<p align="justify">[8] Hermens HJ, Freriks B, Disselhorst-Klug C, Rau G. Development of recommendations for SEMG sensors and sensor placement procedures. J Electromyogr Kinesiol. 2000 Oct;10(5):361-74. doi: 10.1016/s1050-6411(00)00027-4. PMID: 11018445.
-<p align="justify">[9] Wakeling JM, Uehli K, Rozitis AI. Muscle fibre recruitment can respond to the mechanics of the muscle contraction. J R Soc Interface. 2006 Aug 22;3(9):533-44. doi: 10.1098/rsif.2006.0113. PMID: 16849250; PMCID: PMC1664648.
+<p align="justify">[10] Durán Acevedo, Cristhian Manuel, & Jaimes Mogollón, Aylen Lisset. (2013). Optimización y clasificación de señales EMG a través de métodos de reconocimiento de patrones. Iteckne, 10(1), 67-76. Retrieved May 25, 2024, from http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S1692-17982013000100009&lng=en&tlng=es.
+<p align="justify">[11] Hermens HJ, Freriks B, Disselhorst-Klug C, Rau G. Development of recommendations for SEMG sensors and sensor placement procedures. J Electromyogr Kinesiol. 2000 Oct;10(5):361-74. doi: 10.1016/s1050-6411(00)00027-4. PMID: 11018445.
+<p align="justify">[12] Wakeling JM, Uehli K, Rozitis AI. Muscle fibre recruitment can respond to the mechanics of the muscle contraction. J R Soc Interface. 2006 Aug 22;3(9):533-44. doi: 10.1098/rsif.2006.0113. PMID: 16849250; PMCID: PMC1664648.
