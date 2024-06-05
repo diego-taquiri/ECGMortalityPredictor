@@ -27,6 +27,10 @@ Sin embargo,  las características del ECG empiezan con la detección del pico R
 <p align="justify"> Aún se necesita un desarrollo significativo debido al desafío de los efectos de ruido inesperados en la señal de ECG, como la desviación de la línea base, el movimiento y estiramiento de los electrodos, los artefactos de movimiento y el ruido muscular, que impiden que la tecnología de procesamiento automático de ECG funcione de manera efectiva. Las principales fuentes de ruido son las actividades eléctricas de los músculos y la desviación de la línea base causada por la respiración, el mal contacto de los electrodos y los equipos o dispositivos electrónicos. [2] Desafortunadamente, existen grandes desafíos para la detección automatizada porque las morfologías y amplitudes de muchos complejos QRS normales son como los complejos QRS anormales. El ruido superpuesto en la señal de ECG hace que este problema sea más grave. Además, las ondas P/T con mayor amplitud pueden interferir con la detección del complejo QRS. Por lo tanto, el primer paso de la detección del pico R es la eliminación de ruido de la señal, y luego se mejoran y detectan los complejos QRS. [3]
 
 ### Objetivos específicos de la práctica
+- <p align="justify"> Buscar y aprender acerca del procesamiento de señales ECG y la detección de picos R, así como sobre la variabilidad de la frecuencia cardíaca (HRV).
+- <p align="justify"> Aplicar técnicas de filtrado para eliminar el ruido de las señales ECG adquiridas, incluyendo la desviación de la línea base, el ruido muscular y los artefactos de movimiento.
+- <p align="justify"> Detectar con precisión los picos de la onda R en las señales ECG filtradas.
+- <p align="justify"> Calcular la Variabilidad de la Frecuencia Cardíaca (HRV) a partir de los intervalos R-R obtenidos de la señal ECG.
 
 ### Materiales y métodos
 #### Dataset de señales ECG adquirirdas y filtradas
