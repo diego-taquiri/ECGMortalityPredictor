@@ -40,4 +40,5 @@ Lista de participantes:
 #### HRV 
 
 ### Bibliografía
-[1] Q. Qin, J. Li, Y. Yue, y C. Liu, “An adaptive and time-efficient ECG R-peak detection algorithm”, J. Healthc. Eng., vol. 2017, pp. 1–14, 2017.
+<p align="justify"> [1] Q. Qin, J. Li, Y. Yue, y C. Liu, “An adaptive and time-efficient ECG R-peak detection algorithm”, J. Healthc. Eng., vol. 2017, pp. 1–14, 2017.
+<p align="justify"> [2] L. Wu, X. Xie, y Y. Wang, “ECG enhancement and R-peak detection based on window variability”, Healthcare (Basel), vol. 9, núm. 2, p. 227, 2021.
