@@ -21,10 +21,16 @@ Lista de participantes:
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Images/qrs.png" alt="Descripción de la imagen" width="300"><br> 
 <p align="center"><b>Figura 1.</b> El complejo PQRST. [1] <br> 
-  
+
+#### Picos de la onda R
+
 Sin embargo,  las características del ECG empiezan con la detección del pico R, ya que todas las demás se extraen después de la ubicación de este. La detección del complejo QRS, especialmente la detección de la onda R en la señal cardíaca, es más fácil que otras partes de la señal del ECG debido a su forma estructural y alta amplitud. [4] Es fundamental su precisión para el diagnóstico de arritmias como contracción auricular prematura, taquicardia y bradicardia. Aunque la extracción eficiente del pico R sigue siendo difícil en el entorno dinámico y ruidoso debido a la morfología de la forma de onda que varía con el tiempo, es más difícil cuando la señal del ECG se ve abrumada por ruidos con frecuencia similar en la distribución de energía. [2]
 
+#### Fuentes de ruido
+
 <p align="justify"> Aún se necesita un desarrollo significativo debido al desafío de los efectos de ruido inesperados en la señal de ECG, como la desviación de la línea base, el movimiento y estiramiento de los electrodos, los artefactos de movimiento y el ruido muscular, que impiden que la tecnología de procesamiento automático de ECG funcione de manera efectiva. Las principales fuentes de ruido son las actividades eléctricas de los músculos y la desviación de la línea base causada por la respiración, el mal contacto de los electrodos y los equipos o dispositivos electrónicos. [2] Desafortunadamente, existen grandes desafíos para la detección automatizada porque las morfologías y amplitudes de muchos complejos QRS normales son como los complejos QRS anormales. El ruido superpuesto en la señal de ECG hace que este problema sea más grave. Además, las ondas P/T con mayor amplitud pueden interferir con la detección del complejo QRS. Por lo tanto, el primer paso de la detección del pico R es la eliminación de ruido de la señal, y luego se mejoran y detectan los complejos QRS. [3]
+
+#### Variabilidad de la frecuencia cardíaca
 
 <p align="justify"> La variabilidad de la frecuencia cardíaca (VFC) es la evaluación de la actividad eléctrica del corazón a través de un ECG. Se observa que la frecuencia cardíaca puede ser alta o baja dependiendo de las actividades físicas, las condiciones de estrés y las emociones de los individuos. Por lo tanto, la VFC puede reconocerse como la respuesta del corazón ante cualquier tipo de estímulo para que compense las situaciones en consecuencia y, por lo tanto, su variación puede usarse como señales de alerta de enfermedades cardíacas. [5] Esta es simplemente una medida de la variación en el tiempo de la frecuencia entre una sucesión de intervalos R-R; es decir, entre cada latido del corazón. [6, 7] Esta variación está controlada por una parte primitiva del sistema nervioso llamada sistema nervioso autónomo (SNA). Este sistema funciona en segundo plano, regulando automáticamente nuestra frecuencia cardíaca, presión arterial, respiración y digestión, entre otras tareas clave. [7] 
   
