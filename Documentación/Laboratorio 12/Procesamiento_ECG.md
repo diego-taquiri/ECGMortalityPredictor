@@ -31,8 +31,8 @@ Sin embargo,  las características del ECG empiezan con la detección del pico R
 ### Objetivos específicos de la práctica
 - <p align="justify"> Buscar y aprender acerca del procesamiento de señales ECG y la detección de picos R, así como sobre la variabilidad de la frecuencia cardíaca (HRV).
 - <p align="justify"> Aplicar técnicas de filtrado para eliminar el ruido de las señales ECG adquiridas, incluyendo la desviación de la línea base, el ruido muscular y los artefactos de movimiento.
-- <p align="justify"> Detectar con precisión los picos de la onda R en las señales ECG filtradas.
-- <p align="justify"> Calcular la Variabilidad de la Frecuencia Cardíaca (HRV) a partir de los intervalos R-R obtenidos de la señal ECG.
+- <p align="justify"> Detectar con precisión los picos de la onda R en las señales ECG filtradas y graficarlas para visualización.
+- <p align="justify"> Calcular la Variabilidad de la Frecuencia Cardíaca (HRV) a partir de los intervalos R-R obtenidos de la señal ECG y analizar los resultados obtenidos.
 
 ### Materiales y métodos
 #### Dataset de señales ECG adquirirdas y filtradas
