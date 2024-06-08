@@ -129,11 +129,22 @@ peaks, _ = find_peaks(feature_signal, distance=fs/2.5, height=0.02)  # Asumiendo
 
 <p align="justify"> Los resultados de RMSSD a partir de la evaluación de los picos de onda R obtenidas son los siguientes.
 
-|         | RMSSD (ms) |
-|---------|------------|
-| Reposo  | 167.27     |
-| Actividad | 42.81     |
+<p align="justify">Tabla 1: Resultados RMSSD para ECG en reposo y actividad<br>
 
+<table>
+  <tr>
+    <th style="text-align:center;"> </th>
+    <th style="text-align:center;">RMSSD (ms)</th>
+  </tr>
+  <tr>
+    <td style="text-align:center;">Reposo</td>
+    <td style="text-align:center;">167.27</td>
+  </tr>
+  <tr>
+    <td style="text-align:center;">Actividad</td>
+    <td style="text-align:center;">42.81</td>
+  </tr>
+</table>
 
 ### Discusión
 <p align="justify">Se realizó el filtrado y extracción de características de la señal, obteniéndose el RMSSD para los estados de reposo y actividad. Adicionalmente se realizó el filtrado de la señal muestra de ECG de paro cardiaco para probar la robustez del algoritmo. Se observa que si bien el filtrado planteado permite observar a simple vista el complejo QRS y la onda T, la onda P resulta más difícil de identificar debido al ruido y a la presencia de oscilaciones de amplitud similar. No obstante, esto no resultó siendo un obstáculo para identificar el pico de la onda R mediante el algoritmo en ritmos cardiacos regulares. Se identificaron los puntos en el tiempo correspondientes a los picos de onda R, obteniéndose el RMSSD en cada caso. 
