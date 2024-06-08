@@ -87,7 +87,15 @@ feature_signal = 1.3 * first_derivative + 1.1 * second_derivative
 ```
 #### Picos de la onda R
 <p align="justify">Las ondas R en un electrocardiograma (ECG) indican el proceso de activación de la pared ventricular libre y representan la despolarización de los ventrículos en un contexto clínico. Existen numerosas investigaciones médicas que han documentado el análisis de la morfología de la onda R en ECGs tomados a diferentes ritmos cardíacos. Un ejemplo significativo es la progresión deficiente de la onda R (PRWP), un hallazgo crucial en el ECG que puede relacionarse con diversas afecciones cardíacas, las cuales conllevan riesgos de mortalidad relevantes para el director médico. PRWP describe la incapacidad de la onda R para aumentar gradualmente desde las derivaciones V1 hasta V6, algo comúnmente observado en el infarto de miocardio anterior típico, el bloqueo de rama izquierda, la hipertrofia ventricular tanto derecha como izquierda, el síndrome de Wolff-Parkinson-White, entre otros.[9] 
-  
+
+Para identificar los picos R (máximos) en la señal característica, se utilizó la función `find_peaks` de la biblioteca `scipy.signal`. Se asumió una distancia mínima de 0.4 segundos entre los picos R, correspondiente a una distancia de `fs/2.5` muestras, donde `fs` es la frecuencia de muestreo de la señal ECG.
+
+```python
+from scipy.signal import find_peaks
+
+# Encontrar los picos R (máximos) en la señal característica
+peaks, _ = find_peaks(feature_signal, distance=fs/2.5)  # Asumiendo una distancia mínima de 0.4 segundos entre picos R
+```
 #### HRV 
 La variabilidad de la frecuencia cardíaca (HRV) representa las fluctuaciones en los intervalos RR entre latidos, las cuales se deben a la interacción continua entre las dos ramas del sistema nervioso autónomo. Aunque el nodo sinusal, que actúa como el marcapasos principal del corazón, tiene una actividad intrínseca, diversos estímulos internos y externos que afectan el equilibrio entre el tono simpático y el tono vagal pueden influir en la frecuencia cardíaca básica. Los cambios en la frecuencia cardíaca pueden producirse como respuesta al estrés mental o físico, enfermedades cardíacas o de otro tipo, o tratamientos médicos tanto farmacológicos como invasivos. Se ha comprobado que un desequilibrio en el sistema nervioso autónomo, caracterizado por un aumento del tono simpático y una disminución del tono vagal, está relacionado con un mayor riesgo de mortalidad cardíaca. Por lo tanto, la HRV se ha convertido en una herramienta crucial y ampliamente reconocida para identificar a los pacientes con riesgo de muerte cardiovascular.[10] Para evaluar la HRV, existen variso tipos de variables que pueden ser usadas. Estas métricas incluyen SDNN, SDRR, SDANN, índice SDNN, RMSSD, NN50, pNN50, HR Max − HR Min, el índice triangular HRV (HTI) y la interpolación triangular del histograma de intervalo NN. [11] RMSSD es el parámetro más comunmente utilizado para medir el HRV y es igual a la raíz cuadrada de la suma de todas las diferencias entre intervalos R-R sucesivos y es indicativo de actividad parasimpática. [12] La siguiente formula puede ser utilizada para calcular el RMSSD: 
 <p align="center">
