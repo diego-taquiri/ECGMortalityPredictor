@@ -43,19 +43,28 @@ Sin embargo,  las características del ECG empiezan con la detección del pico R
 - <p align="justify"> Calcular la Variabilidad de la Frecuencia Cardíaca (HRV) a partir de los intervalos R-R obtenidos de la señal ECG y analizar los resultados obtenidos.
 
 ### Materiales y métodos
-#### Dataset de señales ECG adquirirdas y filtradas
 
-La señal ECG utilizada en este trabajo fue adquirida mediante un dispositivo BITalino. se realizó el preprocesamiento de la señal tal como lo menciona el trabajo de Masomenos et al[1]. Se empleó un filtro pasabandas de fase cero con frecuencias de corte entre 0.5 Hz y 43 Hz, seguido de un suavizado de la señal de salida mediante un filtro de promedio móvil.
+<p align="justify">La señal ECG utilizada en este trabajo fue adquirida mediante un dispositivo BITalino. se realizó el preprocesamiento de la señal tal como lo menciona el trabajo de Masomenos et al [1]. Se empleó un filtro pasabandas de fase cero con frecuencias de corte entre 0.5 Hz y 43 Hz, seguido de un suavizado de la señal de salida mediante un filtro de promedio móvil.
 
-La identificación de los picos de las ondas R se llevó a cabo utilizando un algoritmo derivado del algoritmo Pan Tompkins, también referido en el mismo trabajo. Este algoritmo atenúa las ondas T y P, dejando prominente el pico de la onda R. La señal característica se calcula de la siguiente forma: 
-f[n]=1.3⋅grad1+1.1⋅grad2f[n] = 1.3 \cdot \text{grad1} + 1.1 \cdot \text{grad2}f[n]=1.3⋅grad1+1.1⋅grad2 
-donde:
-•	f[n]f[n]f[n] es la señal resultante o señal característica.
-•	grad1\text{grad1}grad1 es la primera derivada de la señal filtrada.
-•	grad2\text{grad2}grad2 es la segunda derivada de la señal filtrada.
-Se utilizó la función find_peaks de la biblioteca scipy de Python para identificar los picos en la señal característica. Para evitar que el algoritmo considere picos mínimos por error, se estableció una altura mínima de 0.02 mV para el reconocimiento de picos.
+<p align="justify">La identificación de los picos de las ondas R se llevó a cabo utilizando un algoritmo derivado del algoritmo Pan Tompkins, también referido en el mismo trabajo. Este algoritmo atenúa las ondas T y P, dejando prominente el pico de la onda R. La señal característica se calcula de la siguiente forma: 
 
-Descripción de código:
+<p align="justify">f[n]=1.3⋅grad1+1.1⋅grad2
+
+<p align="justify">donde:
+
+<p align="justify">•	f[n] es la señal resultante o señal característica.
+<p align="justify">•	grad1 es la primera derivada de la señal filtrada.
+<p align="justify">•	grad2 es la segunda derivada de la señal filtrada.
+
+<p align="justify"> Se utilizó la función find_peaks de la biblioteca scipy de Python para identificar los picos en la señal característica. Para evitar que el algoritmo considere picos mínimos por error, se estableció una altura mínima de 0.02 mV para el reconocimiento de picos.
+
+#### HRV 
+<p align="justify">Se utiliza la siguiente formula puede ser utilizada para calcular el RMSSD: 
+<p align="center">
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Images/rmssd-formula (1).jpg" alt="Descripción de la imagen" width="300"><br> 
+<p align="center"><b>Figura 1.</b> Formula de RMSSD [12] <br> 
+
+#### Descripción de código:
 - Diseño del Filtro FIR: para diseñar el filtro FIR se utilizó el método `firwin` con un total de 101 coeficientes (`numtaps`). Este filtro se configuró como un filtro de paso banda con cortes bajos y altos definidos por `low_cutoff` y `high_cutoff` respectivamente.
 
 ```python
@@ -95,24 +104,19 @@ second_derivative = np.append(second_derivative, [0, 0])
 feature_signal = 1.3 * first_derivative + 1.1 * second_derivative
 ```
 #### Picos de la onda R
-<p align="justify">Las ondas R en un electrocardiograma (ECG) indican el proceso de activación de la pared ventricular libre y representan la despolarización de los ventrículos en un contexto clínico. Existen numerosas investigaciones médicas que han documentado el análisis de la morfología de la onda R en ECGs tomados a diferentes ritmos cardíacos. Un ejemplo significativo es la progresión deficiente de la onda R (PRWP), un hallazgo crucial en el ECG que puede relacionarse con diversas afecciones cardíacas, las cuales conllevan riesgos de mortalidad relevantes para el director médico. PRWP describe la incapacidad de la onda R para aumentar gradualmente desde las derivaciones V1 hasta V6, algo comúnmente observado en el infarto de miocardio anterior típico, el bloqueo de rama izquierda, la hipertrofia ventricular tanto derecha como izquierda, el síndrome de Wolff-Parkinson-White, entre otros.[9] 
 
-Para identificar los picos R (máximos) en la señal característica, se utilizó la función `find_peaks` de la biblioteca `scipy.signal`. Se asumió una distancia mínima de 0.4 segundos entre los picos R, correspondiente a una distancia de `fs/2.5` muestras, donde `fs` es la frecuencia de muestreo de la señal ECG.
+Para identificar los picos R (máximos) en la señal característica, se utilizó la función `find_peaks` de la biblioteca `scipy.signal`. Se asumió una distancia mínima de 0.4 segundos entre los picos R, correspondiente a una distancia de `fs/2.5` muestras, donde `fs` es la frecuencia de muestreo de la señal ECG. Se declara la altura mínima de los picos a encontrar para evitar falsos positivos.
 
 ```python
 from scipy.signal import find_peaks
 
 # Encontrar los picos R (máximos) en la señal característica
-peaks, _ = find_peaks(feature_signal, distance=fs/2.5)  # Asumiendo una distancia mínima de 0.4 segundos entre picos R
+peaks, _ = find_peaks(feature_signal, distance=fs/2.5, height=0.02)  # Asumiendo una distancia mínima de 0.4 segundos entre picos R
 ```
-#### HRV 
-La variabilidad de la frecuencia cardíaca (HRV) representa las fluctuaciones en los intervalos RR entre latidos, las cuales se deben a la interacción continua entre las dos ramas del sistema nervioso autónomo. Aunque el nodo sinusal, que actúa como el marcapasos principal del corazón, tiene una actividad intrínseca, diversos estímulos internos y externos que afectan el equilibrio entre el tono simpático y el tono vagal pueden influir en la frecuencia cardíaca básica. Los cambios en la frecuencia cardíaca pueden producirse como respuesta al estrés mental o físico, enfermedades cardíacas o de otro tipo, o tratamientos médicos tanto farmacológicos como invasivos. Se ha comprobado que un desequilibrio en el sistema nervioso autónomo, caracterizado por un aumento del tono simpático y una disminución del tono vagal, está relacionado con un mayor riesgo de mortalidad cardíaca. Por lo tanto, la HRV se ha convertido en una herramienta crucial y ampliamente reconocida para identificar a los pacientes con riesgo de muerte cardiovascular.[10] Para evaluar la HRV, existen variso tipos de variables que pueden ser usadas. Estas métricas incluyen SDNN, SDRR, SDANN, índice SDNN, RMSSD, NN50, pNN50, HR Max − HR Min, el índice triangular HRV (HTI) y la interpolación triangular del histograma de intervalo NN. [11] RMSSD es el parámetro más comunmente utilizado para medir el HRV y es igual a la raíz cuadrada de la suma de todas las diferencias entre intervalos R-R sucesivos y es indicativo de actividad parasimpática. [12] La siguiente formula puede ser utilizada para calcular el RMSSD: 
-<p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Images/rmssd-formula (1).jpg" alt="Descripción de la imagen" width="300"><br> 
-<p align="center"><b>Figura 1.</b> Formula de RMSSD [15] <br> 
+
 
 ### Resultados
-
+<p align="justify"> Se presentan los resultados obtenidos del filtrado y extracción de puntos en el tiempo de picos R producto del algoritmo, para ECG de persona en reposo, aactividad y una simulación realizada con dispositivo Fluke ProSim4 simulando fibrilación ventricular severa.
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Plots/rest.png" <br>
 <p align="center"><b>Figura 2.</b> Evaluación de onda de ECG reposo <br> 
@@ -120,18 +124,24 @@ La variabilidad de la frecuencia cardíaca (HRV) representa las fluctuaciones en
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Plots/activity.png" <br>
 <p align="center"><b>Figura 3.</b> Evaluación de onda de ECG actividad <br> 
 <p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Plots/artificial_2.png" <br> 
-<p align="center"><b>Figura 4.</b> Evaluación de onda de ECG Fibrilación ventricular (simulación <br> 
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Plots/artificial_3.png" <br> 
+<p align="center"><b>Figura 4.</b> Evaluación de onda de ECG Fibrilación ventricular (simulación) <br> 
 
-RMSSD:
--Reposo: 167.27 ms
--Actividad: 42.81 ms
+<p align="justify"> Los resultados de RMSSD a partir de la evaluación de los picos de onda R obtenidas son los siguientes.
+
+|         | RMSSD (ms) |
+|---------|------------|
+| Reposo  | 167.27     |
+| Actividad | 42.81     |
 
 
 ### Discusión
-Se realizó el filtrado y extracción de características de la señal, obteniéndose el RMSSD para los estados de reposo y actividad. Adicionalmente se realizó el filtrado de la señal muestra de ECG de paro cardiaco para probar la robustez del algoritmo. Se observa que si bien el filtrado planteado permite observar a simple vista el complejo QRS y la onda T, la onda P resulta más difícil de identificar debido al ruido y a la presencia de oscilaciones de amplitud similar. No obstante, esto no resultó siendo un obstáculo para identificar el pico de la onda R mediante el algoritmo en ritmos cardiacos regulares. Se identificaron los puntos en el tiempo correspondientes a los picos de onda R, obteniéndose el RMSSD en cada caso. En la onda de ECG de paciente en reposo no obstante se puede apreciar claramente una variabilidad que sale de los límites descritos en la literatura, la cual en este caso puede explicarse por la presencia de ruido ocasionado por movimiento y otros factores cuya contaminación no habría sido completamente filtrada por el filtro propuesto.  En la onda de simulación, si bien es posible identificar los picos en los patrones de ECG regulares, en la completa falta de periodicidad correspondiente a la fibrilación ventricular severa, ubicar un complejo QRS bien definido resulta imposible. Correspondientemente, las ondas R también resultan imposibles de identificar.
-<p align="justify"> Para conocer el estado del HRV utlizamos el RMSSD, calculandolo se encontro un valor de aproximadamente 42.8 ms. Este resultado se encuentra en el rango normal para una persona entre 20 a 29 años, el cual es entre  24-62 ms [14]. En un estudio por el European Journal of Preventive Cardiology se encontro que una media para hombres entre 20 y 24 años es de 57.3 ms, lo que coincide con la persona analizada.  
-Si bien no se ha podido evaluar por falta de datos correspondientes, los datos patológicos del ECG llevan a pensar que, si bien el ECG se comporta de manera apropiada con ritmos regulares, patologías tales como las arritmias podrían resultar en una reducción de la efectividad del algoritmo. El RMSSD, asimismo es dependiente de la ubicación de una onda R definida, por lo cual su efectividad está relacionada a la forma de las oscilaciones en el ritmo cardiaco.
+<p align="justify">Se realizó el filtrado y extracción de características de la señal, obteniéndose el RMSSD para los estados de reposo y actividad. Adicionalmente se realizó el filtrado de la señal muestra de ECG de paro cardiaco para probar la robustez del algoritmo. Se observa que si bien el filtrado planteado permite observar a simple vista el complejo QRS y la onda T, la onda P resulta más difícil de identificar debido al ruido y a la presencia de oscilaciones de amplitud similar. No obstante, esto no resultó siendo un obstáculo para identificar el pico de la onda R mediante el algoritmo en ritmos cardiacos regulares. Se identificaron los puntos en el tiempo correspondientes a los picos de onda R, obteniéndose el RMSSD en cada caso. 
+<p align="justify">La variabilidad de la frecuencia cardíaca (HRV) representa las fluctuaciones en los intervalos RR entre latidos, las cuales se deben a la interacción continua entre las dos ramas del sistema nervioso autónomo. Aunque el nodo sinusal, que actúa como el marcapasos principal del corazón, tiene una actividad intrínseca, diversos estímulos internos y externos que afectan el equilibrio entre el tono simpático y el tono vagal pueden influir en la frecuencia cardíaca básica. Los cambios en la frecuencia cardíaca pueden producirse como respuesta al estrés mental o físico, enfermedades cardíacas o de otro tipo, o tratamientos médicos tanto farmacológicos como invasivos. Se ha comprobado que un desequilibrio en el sistema nervioso autónomo, caracterizado por un aumento del tono simpático y una disminución del tono vagal, está relacionado con un mayor riesgo de mortalidad cardíaca. Por lo tanto, la HRV se ha convertido en una herramienta crucial y ampliamente reconocida para identificar a los pacientes con riesgo de muerte cardiovascular.[9] 
+<p align="justify">Para evaluar la HRV, existen varios tipos de variables que pueden ser usadas. Estas métricas incluyen SDNN, SDRR, SDANN, índice SDNN, RMSSD, NN50, pNN50, HR Max − HR Min, el índice triangular HRV (HTI) y la interpolación triangular del histograma de intervalo NN. [10] RMSSD es el parámetro más comunmente utilizado para medir el HRV y es indicativo de actividad parasimpática. [11] En este estudio, el RMSSD, emcontrado fue de un valor de 42.8 ms para un ECG en actividad. Este resultado se encuentra en el rango normal para una persona entre 20 a 29 años, el cual es entre  24-62 ms [12]. En la onda de ECG de paciente en reposo no obstante se puede apreciar claramente una variabilidad que sale de los límites descritos en la literatura, la cual en este caso puede explicarse por la presencia de ruido ocasionado por movimiento y otros factores cuya contaminación no habría sido completamente filtrada por el filtro propuesto.  En la onda de simulación, se evaluó el patrón irregular correspondiente al ECG de fibrilación ventricular, caracterizado por completa falta de periodicidad y oscilaciones caóticas. En este caso ubicar un complejo QRS bien definido resulta imposible. Correspondientemente, las ondas R también resultan imposibles de identificar, y el RMSSD no puede ser calculado.
+<p align="justify">El RMSSD es solo uno de varias características que pueden extraerse a partir de la distancia entre ondas R, si bien una de las más útiles, puesto que diversos estudios la relacionan no solo a patologías cardiacas sino a progresión y mal pronóstico en otras enfermedades como cáncer [13] epilepsia [14]o diabetes mellitus [15], entre otros. Existen otras características asociadas a la turbulencia de frecuencia cardíaca que son más apropiadas para detectar anomalías en la frecuencia cardiaca, pero estas requieren de mediciones más largas de ECG provenientes de estudios de 24 horas con holter [16]. En comparación, el RMSDD puede ser utilizado en mediciones cortas, haciéndolo idóneo para evaluación del parámetro utilizando dispositivos de menor complejidad como wearables. De la misma manera, identificar los parámetros de variabilidad de frecuencia cardiaca es más preciso desde un punto de vista computacional, que identificar las características de las ondas, las cuales pueden ser difícil de identificar incluso para profesionales entrenados [17], y para las cuales el nivel de filtrado usado habría resultado insuficiente.
+<p align="justify">Si bien no se ha podido evaluar más a fondo por falta de datos correspondientes, los datos patológicos del ECG correspondiente a fibrilación ventricular llevan a pensar que, si bien el ECG se comporta de manera apropiada con ritmos regulares, patologías tales como las arritmias podrían resultar en una reducción de la efectividad del algoritmo. El RMSSD, asimismo es dependiente de la ubicación de una onda R definida, por lo cual su efectividad está relacionada a la forma de las oscilaciones en el ritmo cardiaco.
+<p align="justify">Finalmente si bien se ha tenido éxito para aislar las ondas R al utilizar el algoritmo, el valor anormal obtenido en el RMSSD en reposo implica un filtrado inapropiado de la señal. Este no corresponde al trabajo de Masomenos, el cual muestra una onda filtrada con el ruido completamente atenuado [1]. La presencia de ruido ha podido resultar en la presencia de falsos positivos que el algoritmo habría podido no filtrar completamente. Utilizar otros métodos de filtrado de señal ECG podría reducir la señal y la aparición de picos falsos de onda R, alterando radicalmente el RMSSD. 
 
 ### Bibliografía
 <p align="justify"> [1] E. B. Mazomenos, T. Chen, A. Acharyya, A. Bhattacharya, J. Rosengarten, y K. Maharatna, “A Time-Domain Morphology and Gradient based algorithm for ECG feature extraction”, en 2012 IEEE International Conference on Industrial Technology, 2012, pp. 117–122.
@@ -142,10 +152,12 @@ Si bien no se ha podido evaluar por falta de datos correspondientes, los datos p
 <p align="justify"> [6] J. E. Peabody, R. Ryznar, M. T. Ziesmann, y L. Gillman, “A systematic review of heart rate variability as a measure of stress in medical professionals”, Cureus, 2023.
 <p align="justify"> [7] H. E. LeWine, “Heart rate variability: How it might indicate well-being”, Harvard Health, 03-abr-2024. [En línea]. Disponible en: https://www.health.harvard.edu/blog/heart-rate-variability-new-way-track-well-2017112212789.
 <p align="justify"> [8] F. Shaffer y J. P. Ginsberg, “An overview of heart rate variability metrics and norms”, Front. Public Health, vol. 5, 2017.
-<p align="justify"> [9] Zhan P, Li T, Shi J, Wang G, Wang B, Liu H, Wang W. R-Wave Singularity: A New Morphological Approach to the Analysis of Cardiac Electrical Dyssynchrony. Front Physiol. 2020 Dec 22;11:599838. doi: 10.3389/fphys.2020.599838. PMID: 33414723; PMCID: PMC7783454.
-<p align="justify"> [10] Iwona Cygankiewicz, Wojciech Zareba, Chapter 31 - Heart rate variability, Editor(s): Ruud M. Buijs, Dick F. Swaab, Handbook of Clinical Neurology, Elsevier, Volume 117, 2013, Pages 379-393, ISSN 0072-9752, ISBN 9780444534910, https://doi.org/10.1016/B978-0-444-53491-0.00031-6.
-<p align="justify"> [11] Shaffer F, Ginsberg JP. An Overview of Heart Rate Variability Metrics and Norms. Front Public Health. 2017 Sep 28;5:258. doi: 10.3389/fpubh.2017.00258. PMID: 29034226; PMCID: PMC5624990.
-<p align="justify"> [12] Vintila, A.1; Horumba, M.1; Cristea, G.2; Iordachescu, I.1; Tudorica, S.4; Tudorica, C.1; Vintila, V.3; Ciomag, R.2; Isacoff, D.1. HEART RATE VARIABILITY IN A COHORT OF HYPERTENSIVE PATIENTS - A CLOSER LOOK AT RMSSD. Journal of Hypertension 37():p e192, July 2019. | DOI: 10.1097/01.hjh.0000572476.43951.a0
-<p align="justify"> [13] RMSSD for HRV Analysis | BIOPAC. (s.f.). BIOPAC Systems, Inc. https://www.biopac.com/application/ecg-cardiology/advanced-feature/rmssd-for-hrv-analysis/
-<p align="justify"> [14] What is Heart Rate Variability? (s.f.). Rupa Health. https://www.rupahealth.com/post/what-is-heart-rate-variability#:~:text=While%20there%20is%20a%20normal,women,%20it%20is%20around%2037.
-<p align="justify"> [15] Tegegne, Bale & Man, Tengfei & Roon, Arie & Snieder, Harold & Riese, Harriëtte. (2019). Reference values of heart rate variability from 10-second resting electrocardiograms: the Lifelines Cohort Study. European Journal of Preventive Cardiology. 27. 204748731987256. 10.1177/2047487319872567. 
+<p align="justify"> [9] Iwona Cygankiewicz, Wojciech Zareba, Chapter 31 - Heart rate variability, Editor(s): Ruud M. Buijs, Dick F. Swaab, Handbook of Clinical Neurology, Elsevier, Volume 117, 2013, Pages 379-393, ISSN 0072-9752, ISBN 9780444534910, https://doi.org/10.1016/B978-0-444-53491-0.00031-6.
+<p align="justify"> [10] Shaffer F, Ginsberg JP. An Overview of Heart Rate Variability Metrics and Norms. Front Public Health. 2017 Sep 28;5:258. doi: 10.3389/fpubh.2017.00258. PMID: 29034226; PMCID: PMC5624990.
+<p align="justify"> [11] Vintila, A.1; Horumba, M.1; Cristea, G.2; Iordachescu, I.1; Tudorica, S.4; Tudorica, C.1; Vintila, V.3; Ciomag, R.2; Isacoff, D.1. HEART RATE VARIABILITY IN A COHORT OF HYPERTENSIVE PATIENTS - A CLOSER LOOK AT RMSSD. Journal of Hypertension 37():p e192, July 2019. | DOI: 10.1097/01.hjh.0000572476.43951.a0
+<p align="justify"> [12] B. S. Tegegne, T. Man, A. M. Van Roon, H. Snieder, y H. Riese, «Reference values of heart rate variability from 10-second resting electrocardiograms: the Lifelines Cohort Study», European Journal of Preventive Cardiology, vol. 27, n.o 19, pp. 2191-2194, dic. 2020, doi: 10.1177/2047487319872567.
+<p align="justify"> [13] S. Hu, J. Lou, Y. Zhang, and P. Chen, “Low heart rate variability relates to the progression of gastric cancer,” World journal of surgical oncology, vol. 16, no. 1, Mar. 2018, doi: https://doi.org/10.1186/s12957-018-1348-z.
+<p align="justify"> [14] C. M. DeGiorgio et al., “RMSSD, a measure of vagus-mediated heart rate variability, is associated with risk factors for SUDEP: The SUDEP-7 Inventory,” Epilepsy & behavior, vol. 19, no. 1, pp. 78–81, Sep. 2010, doi: https://doi.org/10.1016/j.yebeh.2010.06.011.
+<p align="justify"> [15] T. Benichou et al., “Heart rate variability in type 2 diabetes mellitus: A systematic review and meta–analysis,” PloS one, vol. 13, no. 4, pp. e0195166–e0195166, Apr. 2018, doi: https://doi.org/10.1371/journal.pone.0195166.
+<p align="justify"> [16] J. Francis, M. A. Watanabe, and G. Schmidt, “Heart Rate Turbulence: A New Predictor for Risk of Sudden Cardiac Death,” Annals of noninvasive electrocardiology, vol. 10, no. 1, pp. 102–109, Jan. 2005, doi: https://doi.org/10.1111/j.1542-474x.2005.10102.x.
+<p align="justify"> [17] D. A. Cook, S.-Y. Oh, and M. V. Pusic, “Accuracy of Physicians’ Electrocardiogram Interpretations,” JAMA internal medicine, vol. 180, no. 11, pp. 1461–1461, Nov. 2020, doi: https://doi.org/10.1001/jamainternmed.2020.3989.
