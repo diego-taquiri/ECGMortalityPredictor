@@ -109,6 +109,8 @@ La variabilidad de la frecuencia cardíaca (HRV) representa las fluctuaciones en
 ### Discusión
 #### Picos de la onda R
 #### HRV 
+<p align="justify"> Para conocer el estado del HRV utlizamos el RMSSD, calculandolo se encontro un valor de aproximadamente 42.8 ms. Este resultado se encuentra en el rango normal para una persona entre 20 a 29 años, el cual es entre  24-62 ms [14]. En un estudio por el European Journal of Preventive Cardiology [15] se encontro que una media para hombres entre 20 y 24 años es de 57.3 ms, lo que coincide con la persona analizada.  
+  
 
 ### Bibliografía
 <p align="justify"> [1] E. B. Mazomenos, T. Chen, A. Acharyya, A. Bhattacharya, J. Rosengarten, y K. Maharatna, “A Time-Domain Morphology and Gradient based algorithm for ECG feature extraction”, en 2012 IEEE International Conference on Industrial Technology, 2012, pp. 117–122.
@@ -124,3 +126,5 @@ La variabilidad de la frecuencia cardíaca (HRV) representa las fluctuaciones en
 <p align="justify"> [11] Shaffer F, Ginsberg JP. An Overview of Heart Rate Variability Metrics and Norms. Front Public Health. 2017 Sep 28;5:258. doi: 10.3389/fpubh.2017.00258. PMID: 29034226; PMCID: PMC5624990.
 <p align="justify"> [12] Vintila, A.1; Horumba, M.1; Cristea, G.2; Iordachescu, I.1; Tudorica, S.4; Tudorica, C.1; Vintila, V.3; Ciomag, R.2; Isacoff, D.1. HEART RATE VARIABILITY IN A COHORT OF HYPERTENSIVE PATIENTS - A CLOSER LOOK AT RMSSD. Journal of Hypertension 37():p e192, July 2019. | DOI: 10.1097/01.hjh.0000572476.43951.a0
 <p align="justify"> [13] RMSSD for HRV Analysis | BIOPAC. (s.f.). BIOPAC Systems, Inc. https://www.biopac.com/application/ecg-cardiology/advanced-feature/rmssd-for-hrv-analysis/
+<p align="justify"> [14] What is Heart Rate Variability? (s.f.). Rupa Health. https://www.rupahealth.com/post/what-is-heart-rate-variability#:~:text=While%20there%20is%20a%20normal,women,%20it%20is%20around%2037.
+<p align="justify"> [15] Tegegne, Bale & Man, Tengfei & Roon, Arie & Snieder, Harold & Riese, Harriëtte. (2019). Reference values of heart rate variability from 10-second resting electrocardiograms: the Lifelines Cohort Study. European Journal of Preventive Cardiology. 27. 204748731987256. 10.1177/2047487319872567. 
