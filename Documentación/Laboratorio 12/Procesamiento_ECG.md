@@ -109,8 +109,10 @@ La variabilidad de la frecuencia cardíaca (HRV) representa las fluctuaciones en
 ### Discusión
 #### Picos de la onda R
 #### HRV 
-<p align="justify"> Para conocer el estado del HRV utlizamos el RMSSD, calculandolo se encontro un valor de aproximadamente 42.8 ms. Este resultado se encuentra en el rango normal para una persona entre 20 a 29 años, el cual es entre  24-62 ms [14]. En un estudio por el European Journal of Preventive Cardiology [15] se encontro que una media para hombres entre 20 y 24 años es de 57.3 ms, lo que coincide con la persona analizada.  
-  
+<p align="justify"> Para conocer el estado del HRV utlizamos el RMSSD, calculandolo se encontro un valor de aproximadamente 42.8 ms. Este resultado se encuentra en el rango normal para una persona entre 20 a 29 años, el cual es entre  24-62 ms [14]. En un estudio por el European Journal of Preventive Cardiology se encontro que una media para hombres entre 20 y 24 años es de 57.3 ms, lo que coincide con la persona analizada.  
+<p align="center">
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Images/rmssd.png" alt="Descripción de la imagen" width="300"><br> 
+<p align="center"><b>Figura 1.</b> RMSSD promedio por edad y género [13] <br> 
 
 ### Bibliografía
 <p align="justify"> [1] E. B. Mazomenos, T. Chen, A. Acharyya, A. Bhattacharya, J. Rosengarten, y K. Maharatna, “A Time-Domain Morphology and Gradient based algorithm for ECG feature extraction”, en 2012 IEEE International Conference on Industrial Technology, 2012, pp. 117–122.
