@@ -44,6 +44,47 @@ Sin embargo,  las características del ECG empiezan con la detección del pico R
 
 ### Materiales y métodos
 #### Dataset de señales ECG adquirirdas y filtradas
+
+La señal ECG utilizada en este trabajo fue adquirida mediante un dispositivo BITalino, utilizando el canal 2 para la recolección de datos. La frecuencia de muestreo fue de 1000 Hz y el BITalino realiza la cuantización de la señal a 10 bits. La cuantización de 10 bits cubre un rango de 0 a 3.3 mV . La señal fue convertida de bits a milivoltios (mV) y centrada en torno a su media. A continuación, se procedió a filtrar la señal antes de la extracción de características.
+
+- Diseño del Filtro FIR: para diseñar el filtro FIR se utilizó el método `firwin` con un total de 101 coeficientes (`numtaps`). Este filtro se configuró como un filtro de paso banda con cortes bajos y altos definidos por `low_cutoff` y `high_cutoff` respectivamente.
+
+```python
+numtaps = 101  # Número de coeficientes en el filtro
+b = firwin(numtaps, [low_cutoff, high_cutoff], pass_zero=False)
+```
+
+- Aplicación del Filtro Digital de Fase Cero: El filtro de fase cero digital de paso banda se aplicó a la señal utilizando la función `filtfilt` para minimizar cualquier desfase introducido por el filtrado.
+
+```python
+filtered_signal = filtfilt(b, 1, data_mV)
+```
+
+- Diseño del Filtro de Promedio Móvil. Para suavizar la señal filtrada, se diseñó un filtro de promedio móvil con un tamaño de ventana de 5 muestras.
+
+```python
+window_size = 5  # Tamaño de la ventana para el filtro de promedio móvil
+moving_avg_filter = np.ones(window_size) / window_size
+```
+
+- Cálculo de la Primera Derivada: Se calculó la primera derivada de la señal suavizada para resaltar los cambios en la pendiente. Se añadió un cero al final de la señal derivada para mantener la longitud original de la señal.
+
+```python
+first_derivative = np.diff(smoothed_signal, n=1)
+first_derivative = np.append(first_derivative, 0)
+```
+
+- Cálculo de la Segunda Derivada: Para resaltar los cambios en la aceleración de la señal, se calculó la segunda derivada. Se añadieron dos ceros al final de la señal derivada para mantener la wxw original.
+
+```python
+second_derivative = np.diff(smoothed_signal, n=2)
+second_derivative = np.append(second_derivative, [0, 0])
+```
+- Combinación de las Derivadas: Las derivadas calculadas se combinaron para formar la señal de características. La primera derivada se ponderó por un factor de 1.3 y la segunda derivada por un factor de 1.1 para obtener la señal final de características.
+
+```python
+feature_signal = 1.3 * first_derivative + 1.1 * second_derivative
+```
 #### Picos de la onda R
 <p align="justify">Las ondas R en un electrocardiograma (ECG) indican el proceso de activación de la pared ventricular libre y representan la despolarización de los ventrículos en un contexto clínico. Existen numerosas investigaciones médicas que han documentado el análisis de la morfología de la onda R en ECGs tomados a diferentes ritmos cardíacos. Un ejemplo significativo es la progresión deficiente de la onda R (PRWP), un hallazgo crucial en el ECG que puede relacionarse con diversas afecciones cardíacas, las cuales conllevan riesgos de mortalidad relevantes para el director médico. PRWP describe la incapacidad de la onda R para aumentar gradualmente desde las derivaciones V1 hasta V6, algo comúnmente observado en el infarto de miocardio anterior típico, el bloqueo de rama izquierda, la hipertrofia ventricular tanto derecha como izquierda, el síndrome de Wolff-Parkinson-White, entre otros.[9] 
   
