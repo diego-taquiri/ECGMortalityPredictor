@@ -45,8 +45,17 @@ Sin embargo,  las características del ECG empiezan con la detección del pico R
 ### Materiales y métodos
 #### Dataset de señales ECG adquirirdas y filtradas
 
-La señal ECG utilizada en este trabajo fue adquirida mediante un dispositivo BITalino, utilizando el canal 2 para la recolección de datos. La frecuencia de muestreo fue de 1000 Hz y el BITalino realiza la cuantización de la señal a 10 bits. La cuantización de 10 bits cubre un rango de 0 a 3.3 mV . La señal fue convertida de bits a milivoltios (mV) y centrada en torno a su media. A continuación, se procedió a filtrar la señal antes de la extracción de características.
+La señal ECG utilizada en este trabajo fue adquirida mediante un dispositivo BITalino. se realizó el preprocesamiento de la señal tal como lo menciona el trabajo de Masomenos et al[1]. Se empleó un filtro pasabandas de fase cero con frecuencias de corte entre 0.5 Hz y 43 Hz, seguido de un suavizado de la señal de salida mediante un filtro de promedio móvil.
 
+La identificación de los picos de las ondas R se llevó a cabo utilizando un algoritmo derivado del algoritmo Pan Tompkins, también referido en el mismo trabajo. Este algoritmo atenúa las ondas T y P, dejando prominente el pico de la onda R. La señal característica se calcula de la siguiente forma: 
+f[n]=1.3⋅grad1+1.1⋅grad2f[n] = 1.3 \cdot \text{grad1} + 1.1 \cdot \text{grad2}f[n]=1.3⋅grad1+1.1⋅grad2 
+donde:
+•	f[n]f[n]f[n] es la señal resultante o señal característica.
+•	grad1\text{grad1}grad1 es la primera derivada de la señal filtrada.
+•	grad2\text{grad2}grad2 es la segunda derivada de la señal filtrada.
+Se utilizó la función find_peaks de la biblioteca scipy de Python para identificar los picos en la señal característica. Para evitar que el algoritmo considere picos mínimos por error, se estableció una altura mínima de 0.02 mV para el reconocimiento de picos.
+
+Descripción de código:
 - Diseño del Filtro FIR: para diseñar el filtro FIR se utilizó el método `firwin` con un total de 101 coeficientes (`numtaps`). Este filtro se configuró como un filtro de paso banda con cortes bajos y altos definidos por `low_cutoff` y `high_cutoff` respectivamente.
 
 ```python
@@ -103,16 +112,25 @@ La variabilidad de la frecuencia cardíaca (HRV) representa las fluctuaciones en
 <p align="center"><b>Figura 1.</b> Formula de RMSSD [15] <br> 
 
 ### Resultados
-#### Picos de la onda R
-#### HRV 
+
+<p align="center">
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Plots/rest.png" alt="Descripción de la imagen" width="300"><br>
+<p align="center"><b>Figura 2.</b> Evaluación de onda de ECG reposo <br> 
+<p align="center">
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Plots/activity.png" alt="Descripción de la imagen" width="300"><br>
+<p align="center"><b>Figura 3.</b> Evaluación de onda de ECG actividad <br> 
+<p align="center">
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Plots/artificial_2.png" alt="Descripción de la imagen" width="300"><br> 
+
+RMSSD:
+Reposo: 167.27 ms
+Actividad: 42.81 ms
+
 
 ### Discusión
-#### Picos de la onda R
-#### HRV 
+Se realizó el filtrado y extracción de características de la señal, obteniéndose el RMSSD para los estados de reposo y actividad. Adicionalmente se realizó el filtrado de la señal muestra de ECG de paro cardiaco para probar la robustez del algoritmo. Se observa que si bien el filtrado planteado permite observar a simple vista el complejo QRS y la onda T, la onda P resulta más difícil de identificar debido al ruido y a la presencia de oscilaciones de amplitud similar. No obstante, esto no resultó siendo un obstáculo para identificar el pico de la onda R mediante el algoritmo en ritmos cardiacos regulares. Se identificaron los puntos en el tiempo correspondientes a los picos de onda R, obteniéndose el RMSSD en cada caso. En la onda de ECG de paciente en reposo no obstante se puede apreciar claramente una variabilidad que sale de los límites descritos en la literatura, la cual en este caso puede explicarse por la presencia de ruido ocasionado por movimiento y otros factores cuya contaminación no habría sido completamente filtrada por el filtro propuesto.  En la onda de simulación, si bien es posible identificar los picos en los patrones de ECG regulares, en la completa falta de periodicidad correspondiente a la fibrilación ventricular severa, ubicar un complejo QRS bien definido resulta imposible. Correspondientemente, las ondas R también resultan imposibles de identificar.
 <p align="justify"> Para conocer el estado del HRV utlizamos el RMSSD, calculandolo se encontro un valor de aproximadamente 42.8 ms. Este resultado se encuentra en el rango normal para una persona entre 20 a 29 años, el cual es entre  24-62 ms [14]. En un estudio por el European Journal of Preventive Cardiology se encontro que una media para hombres entre 20 y 24 años es de 57.3 ms, lo que coincide con la persona analizada.  
-<p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Images/rmssd.png" alt="Descripción de la imagen" width="300"><br> 
-<p align="center"><b>Figura 1.</b> RMSSD promedio por edad y género [13] <br> 
+Si bien no se ha podido evaluar por falta de datos correspondientes, los datos patológicos del ECG llevan a pensar que, si bien el ECG se comporta de manera apropiada con ritmos regulares, patologías tales como las arritmias podrían resultar en una reducción de la efectividad del algoritmo. El RMSSD, asimismo es dependiente de la ubicación de una onda R definida, por lo cual su efectividad está relacionada a la forma de las oscilaciones en el ritmo cardiaco.
 
 ### Bibliografía
 <p align="justify"> [1] E. B. Mazomenos, T. Chen, A. Acharyya, A. Bhattacharya, J. Rosengarten, y K. Maharatna, “A Time-Domain Morphology and Gradient based algorithm for ECG feature extraction”, en 2012 IEEE International Conference on Industrial Technology, 2012, pp. 117–122.
