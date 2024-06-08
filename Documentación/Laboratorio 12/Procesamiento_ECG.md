@@ -114,17 +114,18 @@ La variabilidad de la frecuencia cardíaca (HRV) representa las fluctuaciones en
 ### Resultados
 
 <p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Plots/rest.png" alt="Descripción de la imagen" width="300"><br>
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Plots/rest.png" <br>
 <p align="center"><b>Figura 2.</b> Evaluación de onda de ECG reposo <br> 
 <p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Plots/activity.png" alt="Descripción de la imagen" width="300"><br>
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Plots/activity.png" <br>
 <p align="center"><b>Figura 3.</b> Evaluación de onda de ECG actividad <br> 
 <p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Plots/artificial_2.png" alt="Descripción de la imagen" width="300"><br> 
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2012/Plots/artificial_2.png" <br> 
+<p align="center"><b>Figura 4.</b> Evaluación de onda de ECG Fibrilación ventricular (simulación <br> 
 
 RMSSD:
-Reposo: 167.27 ms
-Actividad: 42.81 ms
+-Reposo: 167.27 ms
+-Actividad: 42.81 ms
 
 
 ### Discusión
