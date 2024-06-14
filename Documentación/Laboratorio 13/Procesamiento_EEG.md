@@ -18,6 +18,10 @@ Lista de participantes:
 ### Objetivos específicos de la práctica
 
 ### Materiales y métodos
+#### Filtrado
+#### Preprocesamiento
+#### Feature extraction
+#### Feature engineering
 
 ### Resultados
 
