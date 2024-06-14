@@ -31,4 +31,4 @@ Lista de participantes:
 ### Discusión
 
 ### Bibliografía
-<p align="justify"> [1] 
+<p align="justify"> [1] S. Coelli et al., “Selecting methods for a modular EEG pre-processing pipeline: An objective comparison”, Biomed. Signal Process. Control, vol. 90, núm. 105830, p. 105830, 2024.
