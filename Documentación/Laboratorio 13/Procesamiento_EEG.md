@@ -15,6 +15,8 @@ Lista de participantes:
 
 ### Introducción
 
+<p align="justify"> Un pipeline de preprocesamiento es un conjunto de métodos aplicados a grabaciones crudas de EEG, destinados a preparar las señales para un análisis posterior y más específico. Puede incluir varios pasos en los que existen diferentes opciones, donde la selección de los algoritmos y herramientas "más apropiados" no es directa.
+
 ### Objetivos específicos de la práctica
 
 ### Materiales y métodos
