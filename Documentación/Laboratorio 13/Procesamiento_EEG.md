@@ -14,8 +14,9 @@ Lista de participantes:
 7. [Bibliografía](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2013/Procesamiento_EEG.md#bibliograf%C3%ADa)
 
 ### Introducción
+<p align="justify"> La electroencefalografía (EEG) se utiliza cada vez más para investigar la actividad cerebral en diversos contextos y aplicaciones (por ejemplo, clínicos, investigación neurocientífica, neuromarketing, interfaces cerebro-computadora, neurofeedback, entre otros). []
 
-<p align="justify"> Un pipeline de preprocesamiento es un conjunto de métodos aplicados a grabaciones crudas de EEG, destinados a preparar las señales para un análisis posterior y más específico. Puede incluir varios pasos en los que existen diferentes opciones, donde la selección de los algoritmos y herramientas "más apropiados" no es directa.
+<p align="justify"> Un pipeline de preprocesamiento es un conjunto de métodos aplicados a grabaciones crudas de EEG, destinados a preparar las señales para un análisis posterior y más específico. Puede incluir varios pasos en los que existen diferentes opciones, donde la selección de los algoritmos y herramientas "más apropiados" no es directa. []
 
 ### Objetivos específicos de la práctica
 
