@@ -36,9 +36,8 @@ Lista de participantes:
 4. <p align="justify"> Queremos separar las señales neurales relevantes de la actividad aleatoria que ocurre durante las grabaciones de EEG.
 
 <p align="justify"> Seguido a ello se tienen 2 pasos principales [3]: <br> 
-- 1. <p align="justify"> <b>Extracción de características: </b> Tiene como objetivo describir las señales EEG mediante idealmente unos pocos valores relevantes llamados "características", las cuales deben capturar la información incrustada en las señales EEG que es relevante para describir los estados mentales a identificar, mientras se rechaza el ruido y otra información no relevante. Todas las características extraídas generalmente se organizan en un vector conocido como vector de características.
-
-- 1. <p align="justify"> <b>Clasificación: </b> Asigna una clase a un conjunto de características extraído de las señales, la cual corresponde al tipo de investigación identificado. Este paso también puede ser denominado "traducción de características" y a sus algoritmos se les conoce como "clasificadores".
+- <p align="justify"> <b>Extracción de características: </b> Tiene como objetivo describir las señales EEG mediante idealmente unos pocos valores relevantes llamados "características", las cuales deben capturar la información incrustada en las señales EEG que es relevante para describir los estados mentales a identificar, mientras se rechaza el ruido y otra información no relevante. Todas las características extraídas generalmente se organizan en un vector conocido como vector de características.
+- <p align="justify"> <b>Clasificación: </b> Asigna una clase a un conjunto de características extraído de las señales, la cual corresponde al tipo de investigación identificado. Este paso también puede ser denominado "traducción de características" y a sus algoritmos se les conoce como "clasificadores".
 
 ### Objetivos específicos de la práctica
 
