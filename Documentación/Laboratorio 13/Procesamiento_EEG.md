@@ -52,10 +52,15 @@ Lista de participantes:
 
 ### Materiales y métodos
 <p align="justify"> El laboratorio se enfoca en el análisis avanzado de datos neurofisiológicos humanos utilizando herramientas modernas y metodologías innovadoras. En particular, utilizamos el paquete de código abierto en Python conocido como MNE-Python. Esta herramienta permite explorar, visualizar y analizar una variedad de datos neurofisiológicos, incluyendo MEG, EEG, sEEG, ECoG, NIRS, entre otros. [7] MNE-Python no solo facilita la manipulación y procesamiento de grandes volúmenes de datos, sino que también ofrece herramientas robustas para la extracción de características, el análisis espectral y la clasificación de patrones. El objetivo de esta herramienta es implementar y proporcionar un conjunto de algoritmos que permitan a los usuarios ensamblar flujos completos de análisis de datos que abarquen la mayoría de las fases del procesamiento de datos M/EEG. [8]
+
+#### Adquisición de datos
   
 #### Filtrado
+  
 #### Preprocesamiento
+
 #### Feature extraction
+
 #### Feature engineering
 
 ### Resultados
