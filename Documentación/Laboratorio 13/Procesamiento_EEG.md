@@ -28,7 +28,7 @@ Lista de participantes:
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2013/images/processing.png" alt="Descripción de la imagen" width="500"><br> 
 <p align="center"><b>Figura 2.</b> El análisis de señales EEG implica cuatro etapas: adquisición, eliminación de ruido, ingeniería de características y clasificación. [1] <br> 
   
-<p align="justify"> Después de la adquisición de la señal, para iniciar con el tratamiento se realiza un pipeline de preprocesamiento, el cual es un conjunto de métodos aplicados a grabaciones crudas de EEG, destinados a preparar las señales para un análisis posterior y más específico. Puede incluir varios pasos en los que existen diferentes opciones, donde la selección de los algoritmos y herramientas "más apropiados" no es directa. [4] Esto es importante debido a lo siguiente [5]:
+<p align="justify"> Después de la adquisición de la señal, para iniciar con el tratamiento, se realiza un pipeline de preprocesamiento, el cual es un conjunto de métodos aplicados a grabaciones crudas de EEG, destinados a preparar las señales para un análisis posterior y más específico. Puede incluir varios pasos en los que existen diferentes opciones, donde la selección de los algoritmos y herramientas "más apropiados" no es directa. [4] Esto es importante debido a lo siguiente [5]:
   
 1. <p align="justify"> Las señales recogidas desde el cuero cabelludo no necesariamente son una representación precisa de las señales que provienen del cerebro.
 2. <p align="justify"> Los datos de EEG contienen mucho ruido que puede ocultar señales de EEG más débiles.
