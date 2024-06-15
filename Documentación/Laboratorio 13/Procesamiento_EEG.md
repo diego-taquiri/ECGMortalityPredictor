@@ -21,8 +21,14 @@ Lista de participantes:
 <p align="center"><b>Figura 1.</b> Ritmos cerebrales dominantes típicos. La onda delta se observa en bebés y adultos durante el sueño, la onda theta en niños y adultos durante el sueño, la onda alfa se detecta en la región occipital del cerebro cuando no hay atención, y la onda beta aparece frontal y parietalmente con baja amplitud. [2] <br> 
   
 <p align="justify"> Para identificar y analizar de manera precisa las señales de EEG, es necesario tener un profundo conocimiento de sus propiedades complejas y teóricas, así como realizar la extracción de características relevantes. Sin embargo, las señales de EEG presentan desafíos significativos debido a sus características únicas. Estos desafíos incluyen la susceptibilidad al ruido, su naturaleza no lineal y la falta de conformidad con una distribución normal, además de factores individuales como la edad, la psicología y el entorno. Las propiedades distintivas de las señales de EEG representan un desafío para extraer información relevante sobre tareas específicas directamente de ellas. Por lo tanto, es crucial desarrollar diversas metodologías para el análisis de estas señales e investigar técnicas de aprendizaje automático para mejorar la comprensión de las señales de EEG. [1]
+
+<p align="justify"> En general, el procesamiento de señales EEG tiene como objetivo traducir las señales EEG crudas en la clase de estas señales. Esta traducción generalmente se logra utilizando un enfoque de reconocimiento de patrones, cuyos pasos se pueden observar en la siguiente imagen. [3]
+
+<p align="center">
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2013/images/processing.png" alt="Descripción de la imagen" width="400"><br> 
+<p align="center"><b>Figura 2.</b> cdvcdv [] <br> 
   
-<p align="justify"> Después de la adquisición de la señal, para iniciar con el tratamiento se realiza un pipeline de preprocesamiento, el cual es un conjunto de métodos aplicados a grabaciones crudas de EEG, destinados a preparar las señales para un análisis posterior y más específico. Puede incluir varios pasos en los que existen diferentes opciones, donde la selección de los algoritmos y herramientas "más apropiados" no es directa. [3] Esto es importante debido a lo siguiente [4]:
+<p align="justify"> Después de la adquisición de la señal, para iniciar con el tratamiento se realiza un pipeline de preprocesamiento, el cual es un conjunto de métodos aplicados a grabaciones crudas de EEG, destinados a preparar las señales para un análisis posterior y más específico. Puede incluir varios pasos en los que existen diferentes opciones, donde la selección de los algoritmos y herramientas "más apropiados" no es directa. [4] Esto es importante debido a lo siguiente [5]:
   
 1. <p align="justify"> Las señales recogidas desde el cuero cabelludo no necesariamente son una representación precisa de las señales que provienen del cerebro.
 2. <p align="justify"> Los datos de EEG contienen mucho ruido que puede ocultar señales de EEG más débiles.
@@ -44,5 +50,6 @@ Lista de participantes:
 ### Bibliografía
 <p align="justify"> [1] A. Chaddad, Y. Wu, R. Kateb, y A. Bouridane, “Electroencephalography signal processing: A comprehensive review and analysis of methods and techniques”, Sensors (Basel), vol. 23, núm. 14, p. 6434, 2023.
 <p align="justify"> [2] S. Sanei y J. A. Chambers, EEG signal processing. Wiley, 2007.
-<p align="justify"> [3] S. Coelli et al., “Selecting methods for a modular EEG pre-processing pipeline: An objective comparison”, Biomed. Signal Process. Control, vol. 90, núm. 105830, p. 105830, 2024.
-<p align="justify"> [4] “Introduction to EEG-preprocessing”, Github.io. [En línea]. Disponible en: https://g0rella.github.io/gorella_mwn/preprocessing_eeg.html.
+<p align="justify"> [3] F. Lotte, “A tutorial on EEG signal-processing techniques for mental-state recognition in brain–computer interfaces”, en Guide to Brain-Computer Music Interfacing, London: Springer London, 2014, pp. 133–161.
+<p align="justify"> [4] S. Coelli et al., “Selecting methods for a modular EEG pre-processing pipeline: An objective comparison”, Biomed. Signal Process. Control, vol. 90, núm. 105830, p. 105830, 2024.
+<p align="justify"> [5] “Introduction to EEG-preprocessing”, Github.io. [En línea]. Disponible en: https://g0rella.github.io/gorella_mwn/preprocessing_eeg.html.
