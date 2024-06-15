@@ -44,8 +44,10 @@ Lista de participantes:
 <p align="justify"> Las señales EEG pueden ser procesadas en dominios de tiempo, frecuencia o espaciales, ofreciendo medios multidimensionales para interpretar las actividades cerebrales. Además de proporcionar información invaluable, las señales EEG tienen la ventaja de capturar patrones neurales complejos a alta velocidad. Como método confiable, portátil y no invasivo para medir la actividad eléctrica en el cerebro, el EEG es una metodología central para la investigación asequible y práctica, así como una herramienta prometedora en la atención clínica. [6]
 
 ### Objetivos específicos de la práctica
-- <p align="justify">Investigar y aplicar técnicas avanzadas de filtrado y normalización para mejorar la calidad de las señales EEG, reduciendo ruido y artefactos, y preparando las señales para análisis detallados.
-- <p align="justify">Extraer y optimizar características clave de las señales EEG que reflejen información neurológica relevante, utilizando modelos para clasificar patrones de actividad cerebral y mejorar la interpretación de los datos.
+- <p align="justify">Aplicar técnicas avanzadas de filtrado para reducir el ruido y eliminar artefactos en las señales EEG, asegurando que la señal esté limpia y lista para un análisis más detallado.
+- <p align="justify">Normalizar y alinear las señales EEG durante el preprocesamiento para garantizar la consistencia y comparabilidad entre las sesiones o sujetos, preparando las señales para una extracción eficaz de características.
+- <p align="justify">Implementar métodos de extracción de características utilizando análisis Wavelet (continuo o discreto) para identificar las características más informativas y relevantes de las señales EEG que pueden estar relacionadas con estados mentales específicos o respuestas cognitivas.
+- <p align="justify">Desarrollar y aplicar técnicas de feature engineering para optimizar las características extraídas, mejorando así la precisión y eficacia de los modelos de machine learning utilizados en la clasificación de patrones de actividad cerebral.
 - <p align="justify">Explorar el uso de MNE-Python para integrar y analizar datos desde múltiples dominios (tiempo, frecuencia, espacio), facilitando una comprensión holística de las dinámicas cerebrales.
 
 ### Materiales y métodos
