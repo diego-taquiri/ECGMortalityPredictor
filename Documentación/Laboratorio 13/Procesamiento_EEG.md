@@ -44,6 +44,12 @@ Lista de participantes:
 <p align="justify"> Las señales EEG pueden ser procesadas en dominios de tiempo, frecuencia o espaciales, ofreciendo medios multidimensionales para interpretar las actividades cerebrales. Además de proporcionar información invaluable, las señales EEG tienen la ventaja de capturar patrones neurales complejos a alta velocidad. Como método confiable, portátil y no invasivo para medir la actividad eléctrica en el cerebro, el EEG es una metodología central para la investigación asequible y práctica, así como una herramienta prometedora en la atención clínica. [6]
 
 ### Objetivos específicos de la práctica
+- <p align="justify">Investigar y aprender acerca de las técnicas avanzadas en el procesamiento de señales EEG para mejorar la interpretación y la utilidad de los datos.
+- <p align="justify">Implementar técnicas de filtrado para minimizar el ruido y artefactos.
+- <p align="justify">Normalizar y alinear señales EEG para prepararlas para análisis posteriores.
+- <p align="justify">Extraer y optimizar características clave de las señales EEG que reflejen información neurológica relevante.
+- <p align="justify">Utilizar y evaluar diferentes algoritmos clasificadores para identificar patrones de actividad cerebral.
+- <p align="justify">Explorar el uso de MNE-Python para integrar y analizar datos desde múltiples dominios (tiempo, frecuencia, espacio).
 
 ### Materiales y métodos
 <p align="justify"> El laboratorio se enfoca en el análisis avanzado de datos neurofisiológicos humanos utilizando herramientas modernas y metodologías innovadoras. En particular, utilizamos el paquete de código abierto en Python conocido como MNE-Python. Esta herramienta permite explorar, visualizar y analizar una variedad de datos neurofisiológicos, incluyendo MEG, EEG, sEEG, ECoG, NIRS, entre otros. [7] MNE-Python no solo facilita la manipulación y procesamiento de grandes volúmenes de datos, sino que también ofrece herramientas robustas para la extracción de características, el análisis espectral y la clasificación de patrones. El objetivo de esta herramienta es implementar y proporcionar un conjunto de algoritmos que permitan a los usuarios ensamblar flujos completos de análisis de datos que abarquen la mayoría de las fases del procesamiento de datos M/EEG. [8]
