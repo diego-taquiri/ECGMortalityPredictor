@@ -56,9 +56,35 @@ Lista de participantes:
 #### Adquisición de datos
 Para la adquisición de datos EEG, se utilizó la Siena Scalp EEG Database de PhysioNet, que contiene registros de 14 pacientes (9 hombres, 5 mujeres, edades 20-71) con epilepsia. Las señales se obtuvieron utilizando amplificadores EB Neuro y Natus Quantum LTM, con electrodos de copa reutilizables siguiendo el sistema internacional 10-20, y un total de 32 canales EEG con una frecuencia de muestreo de 512 Hz. Los datos, organizados en formato EDF, incluyen episodios epilépticos clasificados según los criterios de la Liga Internacional Contra la Epilepsia y se almacenan en carpetas individuales para cada paciente. Además, los registros incluyen señales de EKG y detalles sobre la lateralización de los episodios. Los pacientes dieron su consentimiento informado y la aprobación ética fue otorgada por la Universidad de Siena [9].
 
+#### Preprocesamiento
+
+Para el preprocesamiento de los datos EEG, seleccionamos el archivo correspondiente al primer paciente (PN00-1.edf). Este archivo contiene un episodio de epilepsia que recortamos para analizar específicamente la señal de interés. Recortamos la señal para tomar solo el episodio epiléptico que dura 1 minuto y 10 segundos.
+
+```python
+# Define the path to your .edf file
+edf_file_path = 'PN00-1.edf'  # Replace with the actual file name if it's in the same directory
+
+# Load the EDF file
+raw = mne.io.read_raw_edf(edf_file_path, preload=True)
+
+# Crop the raw data to take only the epilepsy episode
+raw.crop(tmin=1143, tmax=1213)
+```
+
+Luego, seleccionamos solo los canales EEG, excluyendo cualquier canal marcado como "malo". También renombramos los canales según el sistema estándar 10-20 para asegurar la consistencia y compatibilidad con las herramientas de análisis EEG.
+
+Para la digitalización, agregamos las coordenadas espaciales a cada electrodo utilizando el montaje estándar 10-20, lo que es crucial para los análisis espaciales posteriores. Además, excluimos ciertos canales que no son relevantes para el análisis EEG, como aquellos utilizados para monitoreo cardíaco y otros propósitos auxiliares.
+
+```python
+# Drop non-brain channels which are not used in EEG brain signal analysis
+raw.drop_channels(['ECG', 'SPO2', 'HR', '1', '2', 'MK'])
+
+# Define a standard montage (10-20 system)
+montage = mne.channels.make_standard_montage('standard_1020')
+```
+
 #### Filtrado
   
-#### Preprocesamiento
 
 #### Feature extraction
 
