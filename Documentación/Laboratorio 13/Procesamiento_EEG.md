@@ -54,7 +54,8 @@ Lista de participantes:
 <p align="justify"> El laboratorio se enfoca en el análisis avanzado de datos neurofisiológicos humanos utilizando herramientas modernas y metodologías innovadoras. En particular, utilizamos el paquete de código abierto en Python conocido como MNE-Python. Esta herramienta permite explorar, visualizar y analizar una variedad de datos neurofisiológicos, incluyendo MEG, EEG, sEEG, ECoG, NIRS, entre otros. [7] MNE-Python no solo facilita la manipulación y procesamiento de grandes volúmenes de datos, sino que también ofrece herramientas robustas para la extracción de características, el análisis espectral y la clasificación de patrones. El objetivo de esta herramienta es implementar y proporcionar un conjunto de algoritmos que permitan a los usuarios ensamblar flujos completos de análisis de datos que abarquen la mayoría de las fases del procesamiento de datos M/EEG. [8]
 
 #### Adquisición de datos
-  
+Para la adquisición de datos EEG, se utilizó la Siena Scalp EEG Database de PhysioNet, que contiene registros de 14 pacientes (9 hombres, 5 mujeres, edades 20-71) con epilepsia. Las señales se obtuvieron utilizando amplificadores EB Neuro y Natus Quantum LTM, con electrodos de copa reutilizables siguiendo el sistema internacional 10-20, y un total de 32 canales EEG con una frecuencia de muestreo de 512 Hz. Los datos, organizados en formato EDF, incluyen episodios epilépticos clasificados según los criterios de la Liga Internacional Contra la Epilepsia y se almacenan en carpetas individuales para cada paciente. Además, los registros incluyen señales de EKG y detalles sobre la lateralización de los episodios. Los pacientes dieron su consentimiento informado y la aprobación ética fue otorgada por la Universidad de Siena [9].
+
 #### Filtrado
   
 #### Preprocesamiento
@@ -76,3 +77,5 @@ Lista de participantes:
 <p align="justify"> [6] Y. Tran, EEG signal processing for biomedical applications. MDPI, 2023.
 <p align="justify"> [7] E. Larson et al., MNE-Python. Zenodo, 2024.
 <p align="justify"> [8] A. Gramfort, “MEG and EEG data analysis with MNE-Python”, Front. Neurosci., vol. 7, 2013.
+
+<p align="justify"> [9] Detti P. Siena Scalp EEG Database (version 1.0.0). PhysioNet. 2020. Available from: https://doi.org/10.13026/5d4a-j060.
