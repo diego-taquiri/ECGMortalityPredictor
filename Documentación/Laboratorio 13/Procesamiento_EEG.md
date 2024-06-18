@@ -84,7 +84,47 @@ montage = mne.channels.make_standard_montage('standard_1020')
 ```
 
 #### Filtrado
-  
+
+Para mejorar la calidad de las señales EEG, se realizó un proceso de filtrado y eliminación de artefactos. Inicialmente, se aplicó un filtro pasa-altas con una frecuencia de corte de 1 Hz para eliminar componentes de baja frecuencia y mejorar la precisión del análisis posterior.
+
+```python
+# ICA works best with a highpass filter applied
+raw.filter(l_freq=1.0, h_freq=None)
+```
+
+Posteriormente, se empleó un Análisis de Componentes Independientes (ICA) utilizando 10 componentes. Este número de componentes fue ajustado de acuerdo al número de canales disponibles, que son 32.
+
+```python
+ica = mne.preprocessing.ICA(
+    n_components=10, method="picard", max_iter="auto", random_state=97
+)
+ica.fit(raw)
+```
+Para identificar manualmente los artefactos, se plotearon las propiedades de las componentes ICA seleccionadas. Inicialmente, se visualizaron las componentes para identificar señales sospechosas de ser artefactos, como las señales musculares.
+
+```python
+idx = [0, 1, 2, 4, 9]
+ica.plot_properties(raw, picks=idx, log_scale=True)
+
+artifacts_idx = [3,5,6,7,8]
+ica.plot_properties(raw, picks=artifacts_idx, log_scale=True)
+```
+Adicionalmente, se utilizó un algoritmo automático para detectar artefactos musculares. Los índices de las componentes ICA identificadas automáticamente como artefactos fueron comparados con los manualmente seleccionados.
+
+```python
+muscle_idx_auto, scores = ica.find_bads_muscle(raw)
+ica.plot_scores(scores, exclude=muscle_idx_auto)
+print(
+    f"Manually found muscle artifact ICA components:      {artifacts_idx}\n"
+    f"Automatically found muscle artifact ICA components: {muscle_idx_auto}"
+)
+```
+Una vez identificados los artefactos, se aplicó el ICA para eliminar estos componentes y reconstruir la señal EEG.
+```python
+ica.apply(raw)
+ica.plot_overlay(raw, exclude=artifacts_idx)
+```
+Finalmente, se compararon las señales originales y filtradas para verificar la efectividad de la eliminación de artefactos, asegurando que la señal reconstruida estuviera libre de las interferencias detectadas.
 
 #### Feature extraction
 
