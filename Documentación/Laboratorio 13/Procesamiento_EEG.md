@@ -220,6 +220,7 @@ La función plot_features se define para crear gráficos de línea que represent
   
 ### Discusión
 
+
 ### Bibliografía
 <p align="justify"> [1] A. Chaddad, Y. Wu, R. Kateb, y A. Bouridane, “Electroencephalography signal processing: A comprehensive review and analysis of methods and techniques”, Sensors (Basel), vol. 23, núm. 14, p. 6434, 2023.
 <p align="justify"> [2] S. Sanei y J. A. Chambers, EEG signal processing. Wiley, 2007.
