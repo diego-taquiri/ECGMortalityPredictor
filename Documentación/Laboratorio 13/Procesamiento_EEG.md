@@ -85,7 +85,17 @@ montage = mne.channels.make_standard_montage('standard_1020')
 
 #### Filtrado
 
-Para mejorar la calidad de las señales EEG, se realizó un proceso de filtrado y eliminación de artefactos. Inicialmente, se aplicó un filtro pasa-altas con una frecuencia de corte de 1 Hz para eliminar componentes de baja frecuencia y mejorar la precisión del análisis posterior.
+Para mejorar la calidad de las señales EEG, se realizó un proceso de filtrado y eliminación de artefactos. Inicialmente, se aplicaron filtros notch para eliminar el ruido de la línea de alimentación a 50 Hz y sus armónicos, mejorando la precisión del análisis posterior.
+```python
+
+# Apply notch filter to remove power line noise at 50 Hz
+raw.notch_filter(freqs=50.0, notch_widths=1.0)
+
+# Apply notch filter to remove power line noise at 150.0 Hz
+raw.notch_filter(freqs=150.0, notch_widths=1.0)
+```
+Posteriormente, se aplicó un filtro pasa-altas con una frecuencia de corte de 1 Hz para eliminar componentes de baja frecuencia.
+
 
 ```python
 # ICA works best with a highpass filter applied
