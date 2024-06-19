@@ -137,6 +137,51 @@ ica.plot_overlay(raw, exclude=artifacts_idx)
 Finalmente, se compararon las señales originales y filtradas para verificar la efectividad de la eliminación de artefactos, asegurando que la señal reconstruida estuviera libre de las interferencias detectadas.
 
 #### Feature extraction
+A traves del proceso de extracción de propiedades, se busca obtener las variables de kurtosis y entropia. Desde la perspectiva del procesamiento estadístico de señales, los datos de EEG son tan irregulares que pueden considerarse como señales casi gaussianas, mientras que los de los pacientes con condiciones cerebrales son tan regulares que pueden considerarse como señales significativamente gaussianas. Por lo tanto, las señales de EEG pueden evaluarse en términos de su nivel de "gaussianidad", que se cuantifica mediante su valor de Kurtosis (una medida de la no gaussianidad). Cuanto menor sea el valor absoluto de la curtosis, más cercana será la señal a una distribución gaussiana, y viceversa [10]. Por otro lado, la entropía es una medida de la dispersión de los datos. Los datos con una distribución de probabilidad amplia y plana tendrán una entropía alta. Por otro lado, los datos con una distribución estrecha y con un pico tendrán una entropía baja. Aplicado al EEG, la entropía es el descriptor estadístico de la variabilidad dentro de la señal EEG. [11]
+Para realizar la extracción de estas caracteristicas de la señal filtrada se siguen los siguientes pasos: 
+
+- Segmentación de Datos en Épocas:
+```python
+epoch_length = 1  # en segundos
+epoch_samples = int(epoch_length * fs)
+
+def segment_data(data, epoch_samples):
+    n_samples = data.shape[0]
+    n_epochs = n_samples // epoch_samples
+    return data[:n_epochs * epoch_samples].reshape(n_epochs, epoch_samples)
+
+channel_epochs = segment_data(channel_data, epoch_samples)
+```
+Aquí se define la longitud de cada época (epoch_length) en segundos y se calcula el número de muestras por época (epoch_samples) utilizando la frecuencia de muestreo (fs). La función segment_data divide los datos del canal EEG (channel_data) en épocas de longitud epoch_samples, creando así la matriz channel_epochs donde cada fila representa una época y cada columna las muestras de esa época.
+
+- Cálculo de Kurtosis y Entropía:
+```python
+kurtosis_features = np.zeros(channel_epochs.shape[0])
+entropy_features = np.zeros(channel_epochs.shape[0])
+
+for i in range(channel_epochs.shape[0]):
+    kurtosis_features[i] = kurtosis(channel_epochs[i])
+    epoch_normalized = (channel_epochs[i] - np.min(channel_epochs[i])) / (np.max(channel_epochs[i]) - np.min(channel_epochs[i]))
+    hist, _ = np.histogram(epoch_normalized, bins='auto', density=True)
+    prob_density = hist / np.sum(hist)
+    entropy_features[i] = scipy_entropy(prob_density)
+```
+Se proporciona una explicación detallada del procesamiento de datos EEG desde un archivo EDF ("PN00-1.edf"), donde se calcula la curtosis y la entropía para el primer canal, seguido de la representación gráfica de estas características. Se comienza importando las librerías necesarias: pyedflib para leer archivos EDF, numpy para operaciones matemáticas y manejo de matrices, scipy.stats para funciones estadísticas como kurtosis y entropy, y matplotlib.pyplot para la visualización de datos. Luego, se carga el archivo EDF especificado, se obtienen el número de canales y la frecuencia de muestreo, y se lee y almacena los datos del primer canal. Posteriormente, se segmentan estos datos en épocas de un segundo de longitud. Para cada época, se calcula la curtosis y la entropía: la curtosis evalúa la "gaussianidad" de la señal EEG, mientras que la entropía describe la variabilidad dentro de la misma. 
+
+- Graficación de Características:
+```python
+def plot_features(features, feature_name):
+    plt.figure(figsize=(15, 5))
+    plt.plot(features)
+    plt.title(f'{feature_name} across epochs for the first channel')
+    plt.xlabel('Epoch')
+    plt.ylabel(feature_name)
+    plt.show()
+
+plot_features(kurtosis_features, 'Kurtosis')
+plot_features(entropy_features, 'Entropy')
+```
+La función plot_features se define para crear gráficos de línea que representan las características (curtosis o entropía) a lo largo de las épocas. Se utiliza matplotlib.pyplot para visualizar los datos. Primero se grafican las características de la curtosis y luego las características de la entropía para el primer canal.
 
 #### Feature engineering
 
@@ -178,3 +223,5 @@ Finalmente, se compararon las señales originales y filtradas para verificar la 
 <p align="justify"> [8] A. Gramfort, “MEG and EEG data analysis with MNE-Python”, Front. Neurosci., vol. 7, 2013.
 
 <p align="justify"> [9] Detti P. Siena Scalp EEG Database (version 1.0.0). PhysioNet. 2020. Available from: https://doi.org/10.13026/5d4a-j060.
+<p align="justify"> [10] Wang, G., Shepherd, S. J., Beggs, C. B., Rao, N., & Zhang, Y. (2015). The use of kurtosis de-noising for EEG analysis of patients suffering from Alzheimer’s disease. Bio-Medical Materials and Engineering, 26(s1), S1135–S1148. doi:10.3233/bme-151410 
+<p align="justify"> [11] Kannathal, N., Choo, M. L., Acharya, U. R., & Sadasivan, P. K. (2005). Entropies for detection of epilepsy in EEG. Computer Methods and Programs in Biomedicine, 80(3), 187–194. doi:10.1016/j.cmpb.2005.06.012 
