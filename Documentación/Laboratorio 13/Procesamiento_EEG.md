@@ -212,11 +212,11 @@ La función plot_features se define para crear gráficos de línea que represent
 
 <p align="center">
 <img src="./images/eeg-kurtosis.png" alt="Kurtosis de la señal EEG" width="700"><br>
-<p align="center"><b>Figura 9.</b>
+<p align="center"><b>Figura 9.</b> Kurtosis de la señal EEG
 
 <p align="center">
 <img src="./images/eeg-entropy.png" alt="Entropia de la señal EEG" width="700"><br>
-<p align="center"><b>Figura 10.</b>
+<p align="center"><b>Figura 10.</b> Entropia de la señal EEG
   
 ### Discusión
 
