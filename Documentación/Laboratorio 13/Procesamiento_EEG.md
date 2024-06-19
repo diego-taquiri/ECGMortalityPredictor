@@ -131,6 +131,29 @@ Finalmente, se compararon las señales originales y filtradas para verificar la 
 #### Feature engineering
 
 ### Resultados
+<p align="center">
+<img src="./images/raw-data.png" alt="Ploteo de la señal EEG cruda" width="700"><br>
+<p align="center"><b>Figura 3.</b> Ploteo de la señal de electroencefalograma (EEG) cruda del paciente, mostrando la extracción del episodio de epilepsia a través de los 29 canales.</p>
+
+<p align="center">
+<img src="./images/ica-components.png" alt="Ploteo de los componentes ICA de la señal EEG" width="700"><br>
+<p align="center"><b>Figura 4.</b> Ploteo de los 10 componentes ICA (Análisis de Componentes Independientes) de la señal EEG del paciente, mostrando el resultado del filtrado de la señal.</p>
+
+<p align="center">
+<img src="./images/ica000.png" alt="Ploteo del ICA 0" width="700"><br>
+<p align="center"><b>Figura 5.</b> Ploteo del componente ICA 0 de la señal EEG. Este componente muestra un patrón focalizado en el hemisferio derecho, lo que indica una señal profunda relacionada con la lateralización del hemisferio derecho en el paciente con epilepsia.</p>
+
+<p align="center">
+<img src="./images/ica006.png" alt="Ploteo del ICA 6" width="700"><br>
+<p align="center"><b>Figura 6.</b> Ploteo del componente ICA 6 de la señal EEG. Este componente representa un artefacto que ha sido identificado y eliminado mediante el análisis ICA, permitiendo una señal más limpia.</p>
+
+<p align="center">
+<img src="./images/artifacts.png" alt="Identificación de artefactos manuales y automáticos" width="700"><br>
+<p align="center"><b>Figura 7.</b> Identificación de artefactos en la señal EEG. Los artefactos identificados automáticamente como de músculo son los componentes 6, 7 y 9. Además, se muestran otros artefactos identificados manualmente.</p>
+
+<p align="center">
+<img src="./images/signal-before-after-cleaning.png" alt="Señal EEG antes y después de la limpieza" width="700"><br>
+<p align="center"><b>Figura 8.</b> Reconstrucción de la señal EEG antes (en rojo) y después (en negro) de la limpieza. La señal después de la limpieza muestra la eliminación de los componentes ICA que eran artefactos, resultando en una señal más pura.</p>
 
 ### Discusión
 
