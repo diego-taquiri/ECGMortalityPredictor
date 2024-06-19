@@ -136,7 +136,7 @@ ica.plot_overlay(raw, exclude=artifacts_idx)
 ```
 Finalmente, se compararon las señales originales y filtradas para verificar la efectividad de la eliminación de artefactos, asegurando que la señal reconstruida estuviera libre de las interferencias detectadas.
 
-#### Feature extraction
+#### Feature extraction-Kurtosis y Entropía
 A traves del proceso de extracción de propiedades, se busca obtener las variables de kurtosis y entropia. Desde la perspectiva del procesamiento estadístico de señales, los datos de EEG son tan irregulares que pueden considerarse como señales casi gaussianas, mientras que los de los pacientes con condiciones cerebrales son tan regulares que pueden considerarse como señales significativamente gaussianas. Por lo tanto, las señales de EEG pueden evaluarse en términos de su nivel de "gaussianidad", que se cuantifica mediante su valor de Kurtosis (una medida de la no gaussianidad). Cuanto menor sea el valor absoluto de la curtosis, más cercana será la señal a una distribución gaussiana, y viceversa [10]. Por otro lado, la entropía es una medida de la dispersión de los datos. Los datos con una distribución de probabilidad amplia y plana tendrán una entropía alta. Por otro lado, los datos con una distribución estrecha y con un pico tendrán una entropía baja. Aplicado al EEG, la entropía es el descriptor estadístico de la variabilidad dentro de la señal EEG. [11]
 Para realizar la extracción de estas caracteristicas de la señal filtrada se siguen los siguientes pasos: 
 
@@ -183,6 +183,24 @@ plot_features(entropy_features, 'Entropy')
 ```
 La función plot_features se define para crear gráficos de línea que representan las características (curtosis o entropía) a lo largo de las épocas. Se utiliza matplotlib.pyplot para visualizar los datos. Primero se grafican las características de la curtosis y luego las características de la entropía para el primer canal.
 
+#### Feature extraction-Power Spectral Density (PSD)
+La obtención de Densidad Espectral de Poder o PSD se obtuvo mediante el análisis de la transformada de Fourier en tiempo corto o STFT, y la determinación de un espectrograma a partir de los índices en tiempo y frecuencia y la segmentación en ventanas tal y como se describe en el trabajo de Zabidi et al. [12] Python ofrece herramientas para realizar este análisis en la forma de la función Spectrogram, previa conversión a rango de decibeles. El código utilizado es, por tanto, el siguiente a partir de la señal filtrada. 
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.signal import spectrogram, periodogram, welch, iirnotch, filtfilt
+
+    plt.figure(figsize=(12, 10))
+    frequencies, times, spectrogram_orig = spectrogram(signal  , fs= sampling_frequency)
+    plt.pcolormesh(times, frequencies, 10 * np.log10(spectrogram_orig), shading='gouraud', cmap='jet', vmin=-200, vmax=0)
+    plt.title('Espectrograma de señal EEG original')
+    plt.xlabel('Tiempo (segundos)')
+    plt.ylabel('Frecuencia (Hz)')
+    plt.colorbar(label='Densidad Espectral de Poder (dB)')
+    plt.tight_layout()
+```
+
 ### Resultados
 <p align="center">
 <img src="./images/raw-data.png" alt="Ploteo de la señal EEG cruda" width="700"><br>
@@ -194,19 +212,19 @@ La función plot_features se define para crear gráficos de línea que represent
 
 <p align="center">
 <img src="./images/ica000.png" alt="Ploteo del ICA 0" width="700"><br>
-<p align="center"><b>Figura 5.</b> Ploteo del componente ICA 0 de la señal EEG. Este componente muestra un patrón focalizado en el hemisferio derecho, lo que indica una señal profunda relacionada con la lateralización del hemisferio derecho en el paciente con epilepsia.</p>
+<p align="center"><b>Figura 5.</b> Ploteo del componente ICA 0 de la señal EEG. </p>
 
 <p align="center">
 <img src="./images/ica006.png" alt="Ploteo del ICA 6" width="700"><br>
-<p align="center"><b>Figura 6.</b> Ploteo del componente ICA 6 de la señal EEG. Este componente representa un artefacto que ha sido identificado y eliminado mediante el análisis ICA, permitiendo una señal más limpia.</p>
+<p align="center"><b>Figura 6.</b> Ploteo del componente ICA 6 de la señal EEG. Artefacto liminado mediante el análisis ICA.</p>
 
 <p align="center">
 <img src="./images/artifacts.png" alt="Identificación de artefactos manuales y automáticos" width="700"><br>
-<p align="center"><b>Figura 7.</b> Identificación de artefactos en la señal EEG. Los artefactos identificados automáticamente como de músculo son los componentes 6, 7 y 9. Además, se muestran otros artefactos identificados manualmente.</p>
+<p align="center"><b>Figura 7.</b> Identificación de artefactos en la señal EEG. Los artefactos identificados automáticamente como de músculo son los componentes 6, 7 y 9.</p>
 
 <p align="center">
 <img src="./images/signal-before-after-cleaning.png" alt="Señal EEG antes y después de la limpieza" width="700"><br>
-<p align="center"><b>Figura 8.</b> Reconstrucción de la señal EEG antes (en rojo) y después (en negro) de la limpieza. La señal después de la limpieza muestra la eliminación de los componentes ICA que eran artefactos, resultando en una señal más pura.</p>
+<p align="center"><b>Figura 8.</b> Reconstrucción de la señal EEG antes (en rojo) y después (en negro) de la limpieza. La señal después de la limpieza muestra la eliminación de los componentes ICA reconocidos como artefactos</p>
 
 <p align="center">
 <img src="./images/eeg-kurtosis.png" alt="Kurtosis de la señal EEG" width="700"><br>
@@ -215,21 +233,19 @@ La función plot_features se define para crear gráficos de línea que represent
 <p align="center">
 <img src="./images/eeg-entropy.png" alt="Entropia de la señal EEG" width="700"><br>
 <p align="center"><b>Figura 10.</b> Entropia de la señal EEG
+
+<p align="center">
+<img src="./images/PSD.jpeg" alt="Espectrograma de señal" width="700"><br>
+<p align="center"><b>Figura 11.</b> PSD de señal EEG visualizado mediante espectrograma.
   
+
 ### Discusión
-Se realizó un análisis detallado de los componentes ICA obtenidos a partir de la señal EEG del paciente. El componente ICA 0 exhibe un patrón focalizado en el hemisferio derecho, lo cual sugiere una actividad neuronal específica relacionada con la lateralización hemisférica derecha en el contexto de la epilepsia. Este hallazgo es consistente con la literatura que indica una asociación entre la actividad focalizada y los eventos epilépticos en el hemisferio derecho.
+<p align="justify"> Se realizó un análisis detallado de los componentes ICA obtenidos a partir de la señal EEG del paciente. El componente ICA 0 exhibe un patrón focalizado en el hemisferio derecho, lo cual sugiere una actividad neuronal específica relacionada con la lateralización hemisférica derecha en el contexto de la epilepsia. Este hallazgo es consistente con la literatura que indica una asociación entre la actividad focalizada y los eventos epilépticos en el hemisferio derecho. 
+<p align="justify"> Por otro lado, el componente ICA 6 se identificó como un artefacto significativo que fue correctamente eliminado mediante el análisis ICA. Este artefacto probablemente estaba relacionado con interferencias musculares u otros artefactos no cerebrales que afectan la señal EEG. La eliminación eficaz de este componente ha mejorado notablemente la calidad de la señal, permitiendo una interpretación más precisa y confiable de la actividad cerebral subyacente. Durante el proceso de análisis, se identificaron automáticamente varios artefactos, incluidos los componentes 6, 7 y 9, que se asociaron con actividad muscular. Además, se realizaron identificaciones manuales adicionales de otros artefactos presentes en la señal EEG. Este enfoque combinado de detección automática y manual aseguró una limpieza exhaustiva de la señal, suavizando contaminaciones que pudieran distorsionar la interpretación de los datos. La comparación entre la señal EEG vista en la figura 8, antes (en rojo) y después (en negro) de la limpieza muestra claramente los beneficios del análisis ICA en la eliminación de artefactos. La señal post-limpieza exhibe una reducción significativa en la interferencia de artefactos, resultando en una señal más acorde a la actividad cerebral evaluada. 
+<p align="justify"> Debido a que se está utilizando señales EEG de pacientes con epilepsia, se deben tener consideraciones particulares referentes a las manifestaciones de la enfermedad. Estas pueden tener un componente muscular debido a las contracciones en convulsiones tónico clónicas[13], variabilidad cardiaca notable en crisis convulsivas [14] y movimientos bruscos del ojo en el caso de nistagmo [15]. El análisis de ICA,en este trabajo se ha utilizado para aislar las señales EEG de ruidos ocasionados por señales fisiológicas, las cuales ofuscan la señal buscada, ya que en condiciones patológicas, tienen una presencia mayor y más errática en las crisis del paciente con epilepsia. Asimismo, estas manifestaciones permiten ofrecer indicios sobre el pronóstico de la enfermedad a partir de la gravedad de las mismas. Su valor diagnóstico hace que no sea conveniente eliminarlas mediante métodos tradicionales, razón por la que ICA es ideal para aislar dichas señales en lugar de eliminarlas, si se deseara realizar el análisis de todos los componentes de la señal. Si bien no es muy usado, asimismo ICA puede ser usado como herramienta predictiva [16].
+<p align="justify"> Los estudios como el de Harpale[16] y Kannathal[11] muestran que  pacientes con epilepsia pueden exhibir cambios significativos en los valores de kurtosis y entropía en comparación con individuos sanos. La kurtosis, como medida de la "gaussianidad" de la señal EEG, tiende a ser más alta en pacientes con epilepsia. Esto sugiere una mayor concentración de eventos neuronales específicos, como picos de actividad relacionados con descargas epileptiformes o actividad sincrónica anormal dentro de las redes neuronales afectadas. Por otro lado, la entropía, que describe la complejidad y la irregularidad de la señal, puede mostrar variaciones. En algunos estudios, se ha observado que la entropía puede ser menor en pacientes con epilepsia en comparación con individuos sanos. Esto puede reflejar una menor variabilidad o una organización más rígida de la actividad neuronal, posiblemente debido a la presencia de actividad epileptiforme que podría reducir la aleatoriedad y la complejidad temporal de la señal EEG. Estos cambios en kurtosis y entropía pueden ser indicativos de alteraciones en la dinámica neuronal y la organización funcional del cerebro en pacientes con epilepsia. La mayor kurtosis podría ser un marcador de eventos epileptiformes distintivos, mientras que la menor entropía podría sugerir una reducción en la variabilidad de la actividad neuronal normal [17]. Estas características pueden ser utilizadas no solo para diagnosticar la epilepsia, sino también para monitorear la respuesta al tratamiento y evaluar el pronóstico de los pacientes.
+<p align="justify"> Las crisis convulsivas, debido a su naturaleza transitoria y errática hacen que evaluar el EEG del paciente no pueda darse únicamente en la detección de ondas en el dominio de la frecuencia y basado en la ubicación de los electrodos. Se necesita un componente de tiempo en la evaluación por lo que la visualización mediante un espectrograma del PSD del paciente permite evaluar los periodos de tiempo correspondientes a convulsiones. Como se puede observar en la figura 11, esto resulta de gran utilidad para detectar eventos de interés, los cuales resaltan en el estudio y son fácilmente delimitables. Trabajos como el de Liu et al [18] han planteado aprovechar las características de la señal para generar modelos predictivos, lo cual resultaría de gran utilidad en futuro tratamiento de la enfermedad. 
 
-Por otro lado, el componente ICA 6 se identificó como un artefacto significativo que fue correctamente eliminado mediante el análisis ICA. Este artefacto probablemente estaba relacionado con interferencias musculares u otros artefactos no cerebrales que afectan la señal EEG. La eliminación eficaz de este componente ha mejorado notablemente la calidad de la señal, permitiendo una interpretación más precisa y confiable de la actividad cerebral subyacente.
-
-Durante el proceso de análisis, se identificaron automáticamente varios artefactos, incluidos los componentes 6, 7 y 9, que se asociaron con actividad muscular. Además, se realizaron identificaciones manuales adicionales de otros artefactos presentes en la señal EEG. Este enfoque combinado de detección automática y manual aseguró una limpieza exhaustiva de la señal, eliminando cualquier contaminación que pudiera distorsionar la interpretación de los datos.
-
-La comparación entre la señal EEG antes (en rojo) y después (en negro) de la limpieza muestra claramente los beneficios del análisis ICA en la eliminación de artefactos. La señal post-limpieza exhibe una reducción significativa en la interferencia de artefactos, resultando en una señal más pura y fiel a la actividad cerebral genuina. 
-
-Los estudios han demostrado que los pacientes con epilepsia pueden exhibir cambios significativos en los valores de kurtosis y entropía en comparación con individuos sanos. La kurtosis, como medida de la "gaussianidad" de la señal EEG, tiende a ser más alta en pacientes con epilepsia. Esto sugiere una mayor concentración de eventos neuronales específicos, como picos de actividad relacionados con descargas epileptiformes o actividad sincrónica anormal dentro de las redes neuronales afectadas.
-
-Por otro lado, la entropía, que describe la complejidad y la irregularidad de la señal, puede mostrar variaciones. En algunos estudios, se ha observado que la entropía puede ser menor en pacientes con epilepsia en comparación con individuos sanos. Esto puede reflejar una menor variabilidad o una organización más rígida de la actividad neuronal, posiblemente debido a la presencia de actividad epileptiforme que podría reducir la aleatoriedad y la complejidad temporal de la señal EEG.
-
-Estos cambios en kurtosis y entropía pueden ser indicativos de alteraciones en la dinámica neuronal y la organización funcional del cerebro en pacientes con epilepsia. La mayor kurtosis podría ser un marcador de eventos epileptiformes distintivos, mientras que la menor entropía podría sugerir una reducción en la variabilidad de la actividad neuronal normal [12]. Estas características pueden ser utilizadas no solo para diagnosticar la epilepsia, sino también para monitorear la respuesta al tratamiento y evaluar el pronóstico de los pacientes.
 
 ### Bibliografía
 <p align="justify"> [1] A. Chaddad, Y. Wu, R. Kateb, y A. Bouridane, “Electroencephalography signal processing: A comprehensive review and analysis of methods and techniques”, Sensors (Basel), vol. 23, núm. 14, p. 6434, 2023.
@@ -240,8 +256,13 @@ Estos cambios en kurtosis y entropía pueden ser indicativos de alteraciones en 
 <p align="justify"> [6] Y. Tran, EEG signal processing for biomedical applications. MDPI, 2023.
 <p align="justify"> [7] E. Larson et al., MNE-Python. Zenodo, 2024.
 <p align="justify"> [8] A. Gramfort, “MEG and EEG data analysis with MNE-Python”, Front. Neurosci., vol. 7, 2013.
-
 <p align="justify"> [9] Detti P. Siena Scalp EEG Database (version 1.0.0). PhysioNet. 2020. Available from: https://doi.org/10.13026/5d4a-j060.
 <p align="justify"> [10] Wang, G., Shepherd, S. J., Beggs, C. B., Rao, N., & Zhang, Y. (2015). The use of kurtosis de-noising for EEG analysis of patients suffering from Alzheimer’s disease. Bio-Medical Materials and Engineering, 26(s1), S1135–S1148. doi:10.3233/bme-151410 
 <p align="justify"> [11] Kannathal, N., Choo, M. L., Acharya, U. R., & Sadasivan, P. K. (2005). Entropies for detection of epilepsy in EEG. Computer Methods and Programs in Biomedicine, 80(3), 187–194. doi:10.1016/j.cmpb.2005.06.012 
-<p align="justify"> [12] Rosas, Georgina & Santillán Guzmán, Alina. (2017). Detección de Eventos Epilépticos de Ausencia usando Cálculos Estadísticos. 
+<p align="justify"> [12] A. Zabidi, W. Mansor, Y. K. Lee and C. W. N. F. Che Wan Fadzal, "Short-time Fourier Transform analysis of EEG signal generated during imagined writing," 2012 International Conference on System Engineering and Technology (ICSET), Bandung, Indonesia, 2012, pp. 1-4, doi: 10.1109/ICSEngT.2012.6339284.
+<p align="justify"> [13] S. T. Sarmast, Abba Musa Abdullahi, and N. Jahan, “Current Classification of Seizures and Epilepsies: Scope, Limitations and Recommendations for Future Action,” Curēus, Sep. 2020, doi: https://doi.org/10.7759/cureus.10549.
+<p align="justify"> [14] G. Costagliola, A. Orsini, M. Coll, R. Brugada, P. Parisi, and P. Striano, “The brain–heart interaction in epilepsy: implications for diagnosis, therapy, and SUDEP prevention,” Annals of clinical and translational neurology, vol. 8, no. 7, pp. 1557–1568, May 2021, doi: https://doi.org/10.1002/acn3.51382.
+<p align="justify"> [15] K.-S. Kim, Young Hyo Kim, Y. Hwang, B. Kang, Dong Hyun Kim, and Young Se Kwon, “Epileptic Nystagmus and Vertigo Associated with Bilateral Temporal and Frontal Lobe Epilepsy,” Clinical and experimental otorhinolaryngology, vol. 6, no. 4, pp. 259–259, Jan. 2013, doi: https://doi.org/10.3342/ceo.2013.6.4.259.
+<p align="justify"> [16] V. K. Harpale y V. K. Bairagi, «Significance of Independent Component Analysis (ICA) for Epileptic Seizure Detection Using EEG Signals», en Proceedings of the International Conference on Data Engineering and Communication Technology, vol. 469, S. C. Satapathy, V. Bhateja, y A. Joshi, Eds., en Advances in Intelligent Systems and Computing, vol. 469. , Singapore: Springer Singapore, 2017, pp. 829-838. doi: 10.1007/978-981-10-1678-3_80.
+<p align="justify"> [17]‌ Rosas, Georgina & Santillán Guzmán, Alina. (2017). Detección de Eventos Epilépticos de Ausencia usando Cálculos Estadísticos. 
+<p align="justify"> [18]‌ S. Liu, J. Wang, S. Li and L. Cai, "Epileptic Seizure Detection and Prediction in EEGs Using Power Spectra Density Parameterization," in IEEE Transactions on Neural Systems and Rehabilitation Engineering, vol. 31, pp. 3884-3894, 2023, doi: 10.1109/TNSRE.2023.3317093.
