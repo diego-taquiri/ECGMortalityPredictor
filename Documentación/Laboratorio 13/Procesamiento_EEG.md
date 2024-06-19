@@ -183,8 +183,6 @@ plot_features(entropy_features, 'Entropy')
 ```
 La función plot_features se define para crear gráficos de línea que representan las características (curtosis o entropía) a lo largo de las épocas. Se utiliza matplotlib.pyplot para visualizar los datos. Primero se grafican las características de la curtosis y luego las características de la entropía para el primer canal.
 
-#### Feature engineering
-
 ### Resultados
 <p align="center">
 <img src="./images/raw-data.png" alt="Ploteo de la señal EEG cruda" width="700"><br>
@@ -219,7 +217,19 @@ La función plot_features se define para crear gráficos de línea que represent
 <p align="center"><b>Figura 10.</b> Entropia de la señal EEG
   
 ### Discusión
+Se realizó un análisis detallado de los componentes ICA obtenidos a partir de la señal EEG del paciente. El componente ICA 0 exhibe un patrón focalizado en el hemisferio derecho, lo cual sugiere una actividad neuronal específica relacionada con la lateralización hemisférica derecha en el contexto de la epilepsia. Este hallazgo es consistente con la literatura que indica una asociación entre la actividad focalizada y los eventos epilépticos en el hemisferio derecho.
 
+Por otro lado, el componente ICA 6 se identificó como un artefacto significativo que fue correctamente eliminado mediante el análisis ICA. Este artefacto probablemente estaba relacionado con interferencias musculares u otros artefactos no cerebrales que afectan la señal EEG. La eliminación eficaz de este componente ha mejorado notablemente la calidad de la señal, permitiendo una interpretación más precisa y confiable de la actividad cerebral subyacente.
+
+Durante el proceso de análisis, se identificaron automáticamente varios artefactos, incluidos los componentes 6, 7 y 9, que se asociaron con actividad muscular. Además, se realizaron identificaciones manuales adicionales de otros artefactos presentes en la señal EEG. Este enfoque combinado de detección automática y manual aseguró una limpieza exhaustiva de la señal, eliminando cualquier contaminación que pudiera distorsionar la interpretación de los datos.
+
+La comparación entre la señal EEG antes (en rojo) y después (en negro) de la limpieza muestra claramente los beneficios del análisis ICA en la eliminación de artefactos. La señal post-limpieza exhibe una reducción significativa en la interferencia de artefactos, resultando en una señal más pura y fiel a la actividad cerebral genuina. 
+
+Los estudios han demostrado que los pacientes con epilepsia pueden exhibir cambios significativos en los valores de kurtosis y entropía en comparación con individuos sanos. La kurtosis, como medida de la "gaussianidad" de la señal EEG, tiende a ser más alta en pacientes con epilepsia. Esto sugiere una mayor concentración de eventos neuronales específicos, como picos de actividad relacionados con descargas epileptiformes o actividad sincrónica anormal dentro de las redes neuronales afectadas.
+
+Por otro lado, la entropía, que describe la complejidad y la irregularidad de la señal, puede mostrar variaciones. En algunos estudios, se ha observado que la entropía puede ser menor en pacientes con epilepsia en comparación con individuos sanos. Esto puede reflejar una menor variabilidad o una organización más rígida de la actividad neuronal, posiblemente debido a la presencia de actividad epileptiforme que podría reducir la aleatoriedad y la complejidad temporal de la señal EEG.
+
+Estos cambios en kurtosis y entropía pueden ser indicativos de alteraciones en la dinámica neuronal y la organización funcional del cerebro en pacientes con epilepsia. La mayor kurtosis podría ser un marcador de eventos epileptiformes distintivos, mientras que la menor entropía podría sugerir una reducción en la variabilidad de la actividad neuronal normal [12]. Estas características pueden ser utilizadas no solo para diagnosticar la epilepsia, sino también para monitorear la respuesta al tratamiento y evaluar el pronóstico de los pacientes.
 
 ### Bibliografía
 <p align="justify"> [1] A. Chaddad, Y. Wu, R. Kateb, y A. Bouridane, “Electroencephalography signal processing: A comprehensive review and analysis of methods and techniques”, Sensors (Basel), vol. 23, núm. 14, p. 6434, 2023.
@@ -234,3 +244,4 @@ La función plot_features se define para crear gráficos de línea que represent
 <p align="justify"> [9] Detti P. Siena Scalp EEG Database (version 1.0.0). PhysioNet. 2020. Available from: https://doi.org/10.13026/5d4a-j060.
 <p align="justify"> [10] Wang, G., Shepherd, S. J., Beggs, C. B., Rao, N., & Zhang, Y. (2015). The use of kurtosis de-noising for EEG analysis of patients suffering from Alzheimer’s disease. Bio-Medical Materials and Engineering, 26(s1), S1135–S1148. doi:10.3233/bme-151410 
 <p align="justify"> [11] Kannathal, N., Choo, M. L., Acharya, U. R., & Sadasivan, P. K. (2005). Entropies for detection of epilepsy in EEG. Computer Methods and Programs in Biomedicine, 80(3), 187–194. doi:10.1016/j.cmpb.2005.06.012 
+<p align="justify"> [12] Rosas, Georgina & Santillán Guzmán, Alina. (2017). Detección de Eventos Epilépticos de Ausencia usando Cálculos Estadísticos. 
