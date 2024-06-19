@@ -210,6 +210,14 @@ La función plot_features se define para crear gráficos de línea que represent
 <img src="./images/signal-before-after-cleaning.png" alt="Señal EEG antes y después de la limpieza" width="700"><br>
 <p align="center"><b>Figura 8.</b> Reconstrucción de la señal EEG antes (en rojo) y después (en negro) de la limpieza. La señal después de la limpieza muestra la eliminación de los componentes ICA que eran artefactos, resultando en una señal más pura.</p>
 
+<p align="center">
+<img src="./images/eeg-kurtosis.png" alt="Kurtosis de la señal EEG" width="700"><br>
+<p align="center"><b>Figura 9.</b>
+
+<p align="center">
+<img src="./images/eeg-entropy.png" alt="Entropia de la señal EEG" width="700"><br>
+<p align="center"><b>Figura 10.</b>
+  
 ### Discusión
 
 ### Bibliografía
