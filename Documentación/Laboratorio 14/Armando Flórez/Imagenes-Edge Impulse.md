@@ -17,6 +17,18 @@ Link del Edge Impulse: https://studio.edgeimpulse.com/public/431231/live
 <p align="center"><b>Figura 4.</b> Señal EMG - Reposo.
 
 
+
+
+
+
+
+
+
+
+<p align="center">
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/2299d6e8ef41ed2e155b209098decc06a8de4a25/Documentaci%C3%B3n/Laboratorio%2014/Armando%20Fl%C3%B3rez/images/emg_isometrico.png" alt="Descripción de la imagen" width="400"><br> 
+<p align="center"><b>Figura 5.</b> Señal EMG - Esfuerzo isometrico.
+  
 <p align="center">
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/2299d6e8ef41ed2e155b209098decc06a8de4a25/Documentaci%C3%B3n/Laboratorio%2014/Armando%20Fl%C3%B3rez/images/ecg_contrafuerza.png" alt="Descripción de la imagen" width="400"><br> 
 <p align="center"><b>Figura 6.</b> Señal EMG - Contrafuerza.
@@ -33,7 +45,4 @@ Link del Edge Impulse: https://studio.edgeimpulse.com/public/431231/live
 <img src="https://github.com/diego-taquiri/ISB-equipo11/blob/2299d6e8ef41ed2e155b209098decc06a8de4a25/Documentaci%C3%B3n/Laboratorio%2014/Armando%20Fl%C3%B3rez/images/eeg_abrir_cerrar.png" alt="Descripción de la imagen" width="400"><br> 
 <p align="center"><b>Figura 9.</b> Señal EEG - Abrir y cerrar los ojos.
 
-<p align="center">
-<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/2299d6e8ef41ed2e155b209098decc06a8de4a25/Documentaci%C3%B3n/Laboratorio%2014/Armando%20Fl%C3%B3rez/images/emg_isometrico.png" alt="Descripción de la imagen" width="400"><br> 
-<p align="center"><b>Figura 5.</b> Señal EMG - Esfuerzo isometrico.
-  
+
