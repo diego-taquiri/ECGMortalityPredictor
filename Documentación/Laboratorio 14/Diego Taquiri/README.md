@@ -1,3 +1,7 @@
+## Data Adquisition
+
+Para subir los archivos a Edge Impulse, se utilizó la API de la plataforma. Se realizó un 'split' del dataset, asignando el 80% de los archivos para entrenamiento y el 20% restante para pruebas. Los 'labels' de cada archivo se obtuvieron del nombre del archivo, asegurando así un dataset balanceado. Para realizar la carga de los archivos, se utilizó un bucle 'for'. A continuación, el código utilizado:
+
 Link de Edge Impulse EMG: https://studio.edgeimpulse.com/public/431587/live
 
 Para procesar la señal de electromiograma (EMG) obtenida con Arduino, primero se convirtieron los datos de bits a milivoltios y se centraron alrededor de cero. Luego, se eliminaron las porciones iniciales y finales sin actividad muscular, utilizando los límites de recorte definidos en el código (14000 a 50000 muestras). La señal centrada fue rectificada para asegurar valores positivos. Posteriormente, se aplicó un filtro FIR con una ventana de Bartlett para reducir el ruido. Finalmente, se realizó una segmentación de la señal filtrada y rectificada, utilizando ventanas solapadas de 5000 milisegundos con incrementos de 1000 milisegundos, considerando una tasa de muestreo de 1000 Hz. Los segmentos resultantes fueron cargados en Edge Impulse para su análisis.
