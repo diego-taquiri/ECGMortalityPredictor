@@ -5,7 +5,7 @@ Lista de participantes:
 ## Tabla de contenidos
 1. [EMG](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2014/Ana%20Belen%20Mantilla/EdgeImpulse.md#emg)
 
-#### EMG
+### EMG
 
 #### Edge Impulse
 - [Edge impulse project](https://studio.edgeimpulse.com/public/431171/live)
