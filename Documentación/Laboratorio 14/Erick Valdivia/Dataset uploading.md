@@ -5,16 +5,16 @@ Links de Edge Impulse:
 
 Screenshots:
 <p align="center">
-<img src="screenshots/EMG_dataset" alt="Descripción de la imagen" width="800"><br> 
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2014/Erick%20Valdivia/Screenshots/EMG_dataset.png" alt="Descripción de la imagen" width="800"><br> 
 <b>Figura 1.</b> Dataset señales EMG segmentadas
 </p>
 
 <p align="center">
-<img src="screenshots/ECG_dataset.png" alt="Descripción de la imagen" width="800"><br> 
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2014/Erick%20Valdivia/Screenshots/ECG_dataset.png" alt="Descripción de la imagen" width="800"><br> 
 <b>Figura 2.</b> Dataset señales ECG segmentadas
 </p>
 
 <p align="center">
-<img src="screenshots/EEG_dataset" alt="Descripción de la imagen" width="800"><br> 
+<img src="https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2014/Erick%20Valdivia/Screenshots/EEG_dataset.png" alt="Descripción de la imagen" width="800"><br> 
 <b>Figura 3.</b> Dataset señales EEG segmentadas
 </p>
