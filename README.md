@@ -15,6 +15,8 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 #### Alerta temprana de ECG para pacientes con chagas: Implementación de TinyML para áreas de bajos recursos del Perú.
 ###### Early ECG warning for chagas patients: Implementation of TinyML for low-resource areas in Peru.
 
+##### Resumen
+
 - [Avance del proyecto](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2010/Avance_Proyecto.md)
 
 ### Contenido del curso
