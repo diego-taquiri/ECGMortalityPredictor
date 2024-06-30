@@ -16,9 +16,21 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 ###### Early ECG warning for chagas patients: Implementation of TinyML for low-resource areas in Peru.
 
 ##### Resumen
+<p align="justify"> Este proyecto tiene como objetivo desarrollar un sistema de alerta temprana basado en electrocardiografía (ECG) para la detección de pacientes de alto riesgo de mortalidad por la enfermedad de Chagas en Perú. Utiliza técnicas avanzadas de procesamiento de señales y aprendizaje automático, específicamente Tiny Machine Learning (TinyML), para identificar patrones específicos en las señales cardíacas de los pacientes con Chagas de manera eficiente y a bajo costo, facilitando su implementación en zonas de bajos recursos.
 
+##### Motivación
+<p align="justify">Las enfermedades cardiovasculares son la principal causa de muerte a nivel mundial, y en Perú representan la segunda causa de defunción. La enfermedad de Chagas, conocida localmente como Chirimacha, es una enfermedad parasitaria desatendida que afecta a millones de personas en América Latina, incluyendo Perú. Esta enfermedad puede provocar miocardiopatía chagásica, una de las principales causas de miocardiopatía no isquémica en la región.
+
+<p align="justify">El Dr. José Ercilla, vicepresidente de la Sociedad Peruana de Cardiología (Sopechard), destaca el desafío futuro que representan estas enfermedades, especialmente ante el aumento significativo de la población mayor de 50 años proyectado para el año 2050. La migración de poblaciones rurales hacia centros urbanos ha incrementado la relevancia de esta enfermedad en áreas donde el vector no ha sido detectado previamente.
+
+<p align="justify">Con este proyecto, buscamos implementar una solución tecnológica accesible y eficiente que permita la detección temprana de problemas cardíacos en pacientes con Chagas, mejorando así su calidad de vida y reduciendo la mortalidad asociada a esta enfermedad. La implementación de TinyML en dispositivos portátiles y de bajo costo puede transformar el monitoreo de salud en comunidades de bajos recursos, haciendo posible una atención médica más oportuna y precisa.
+
+##### Principales hallazgos
 - [Avance del proyecto](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2010/Avance_Proyecto.md)
 
+##### Informe
+- [Enlace de paperswithcode]
+  
 ### Contenido del curso
 - [Ver PDF del Sílabo en Google Docs Viewer](https://docs.google.com/viewer?url=https://github.com/diego-taquiri/ISB-equipo11/raw/main/Documentaci%C3%B3n/Laboratorio%2001/S%C3%ADlabo.pdf&embedded=true)
 
