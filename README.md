@@ -26,7 +26,14 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 <p align="justify">Con este proyecto, buscamos implementar una solución tecnológica accesible y eficiente que permita la detección temprana de problemas cardíacos en pacientes con Chagas, mejorando así su calidad de vida y reduciendo la mortalidad asociada a esta enfermedad. La implementación de TinyML en dispositivos portátiles y de bajo costo puede transformar el monitoreo de salud en comunidades de bajos recursos, haciendo posible una atención médica más oportuna y precisa.
 
 ##### Principales hallazgos
-- [Avance del proyecto](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2010/Avance_Proyecto.md)
+- <p align="justify">El modelo XGBoost mostró una capacidad predictiva razonable con un R-cuadrado de 0.61.
+- <p align="justify">La media del error cuadrático (MSE) fue de 0.38, indicando una precisión aceptable.
+- <p align="justify">La media del error absoluto (MAE) fue de 0.51, reflejando la precisión en las predicciones.
+- <p align="justify">El modelo fue implementado en un Arduino Nano BLE 33, demostrando viabilidad para entornos con recursos limitados.
+- <p align="justify">Se redujo el número de derivaciones de ECG de 12 a una, haciendo el sistema más accesible y económico.
+- <p align="justify">Se integró una etapa de extracción de características (skewness, entropy) para mejorar la capacidad del modelo de extraer y utilizar información de la señal.
+- <p align="justify">Las predicciones del modelo sobre señales de ECG de sujetos sanos mostraron resultados comparables a los ECGs de pacientes sobrevivientes en el dataset.
+- <p align="justify">Las métricas de evaluación sugieren que el modelo tiene un buen potencial, aunque hay margen para mejoras adicionales en su precisión y generalización.
 
 ##### Informe
 - [Enlace de paperswithcode](https://paperswithcode.com/paper/early-ecg-warning-for-chagas-patients)
