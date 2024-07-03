@@ -29,7 +29,7 @@ Es un placer darles la bienvenida a este espacio donde compartiremos y colaborar
 - [Avance del proyecto](https://github.com/diego-taquiri/ISB-equipo11/blob/main/Documentaci%C3%B3n/Laboratorio%2010/Avance_Proyecto.md)
 
 ##### Informe
-- [[Enlace de paperswithcode]](https://paperswithcode.com/paper/early-ecg-warning-for-chagas-patients)
+- [Enlace de paperswithcode](https://paperswithcode.com/paper/early-ecg-warning-for-chagas-patients)
   
 ### Contenido del curso
 - [Ver PDF del Sílabo en Google Docs Viewer](https://docs.google.com/viewer?url=https://github.com/diego-taquiri/ISB-equipo11/raw/main/Documentaci%C3%B3n/Laboratorio%2001/S%C3%ADlabo.pdf&embedded=true)
