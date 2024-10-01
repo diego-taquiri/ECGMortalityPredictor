@@ -1,44 +1,46 @@
-# Repositorio del Equipo 11 - Introducción a Señales Biomédicas 
-<p align="justify">
-¡Hola a todos y bienvenidos al repositorio del Equipo 11 de Introducción a Señales Biomédicas 2024-1!
+# Early ECG Warning System for Chagas Disease Patients Using TinyML
 
 <p align="justify">
-Es un placer darles la bienvenida a este espacio donde compartiremos y colaboraremos en el desarrollo de nuestro proyecto. Como equipo, estamos emocionados de trabajar juntos en la exploración y análisis de señales biomédicas, ¡y esperamos lograr resultados increíbles!
+This project focuses on the development of an early warning system for predicting high-risk mortality in Chagas disease patients using electrocardiography (ECG) signals and Tiny Machine Learning (TinyML) techniques. Chagas disease, a parasitic illness prevalent in Latin America, leads to severe cardiac complications, often resulting in fatal outcomes if left undetected. In response to this challenge, we have implemented a machine learning solution that processes ECG data using wavelet transforms for denoising and feature extraction. A compact XGBoost model was trained to predict mortality risk, enabling timely medical interventions in low-resource areas where access to healthcare is limited. This system is designed to run efficiently on low-cost, portable devices, such as the Arduino Nano BLE 33, making it a viable solution for remote and underserved communities.
 
-# Tabla de contenidos
-- [Temática del proyecto](#Temática-del-proyecto)
-- [Contenido del curso](#Contenido-del-curso)
-- [Docentes del curso](#Docentes-del-curso)
-- [Participantes](#Participantes)
+<p align="center">
+    <img src="./Documentación/Informe final/figures/abstract.png" alt="Descripción de la imagen" width="800"><br>
+    <b>Figure 1.</b> Abstract
+</p>
 
-### Temática del proyecto
-#### Alerta temprana de ECG para pacientes con chagas: Implementación de TinyML para áreas de bajos recursos del Perú.
-###### Early ECG warning for chagas patients: Implementation of TinyML for low-resource areas in Peru.
-
-##### Resumen
-<p align="justify"> Este proyecto tiene como objetivo desarrollar un sistema de alerta temprana basado en electrocardiografía (ECG) para la detección de pacientes de alto riesgo de mortalidad por la enfermedad de Chagas en Perú. Utiliza técnicas avanzadas de procesamiento de señales y aprendizaje automático, específicamente Tiny Machine Learning (TinyML), para identificar patrones específicos en las señales cardíacas de los pacientes con Chagas de manera eficiente y a bajo costo, facilitando su implementación en zonas de bajos recursos.
-
-##### Motivación
-<p align="justify">Las enfermedades cardiovasculares son la principal causa de muerte a nivel mundial, y en Perú representan la segunda causa de defunción. La enfermedad de Chagas, conocida localmente como Chirimacha, es una enfermedad parasitaria desatendida que afecta a millones de personas en América Latina, incluyendo Perú. Esta enfermedad puede provocar miocardiopatía chagásica, una de las principales causas de miocardiopatía no isquémica en la región.
-
-<p align="justify">El Dr. José Ercilla, vicepresidente de la Sociedad Peruana de Cardiología (Sopechard), destaca el desafío futuro que representan estas enfermedades, especialmente ante el aumento significativo de la población mayor de 50 años proyectado para el año 2050. La migración de poblaciones rurales hacia centros urbanos ha incrementado la relevancia de esta enfermedad en áreas donde el vector no ha sido detectado previamente.
-
-<p align="justify">Con este proyecto, buscamos implementar una solución tecnológica accesible y eficiente que permita la detección temprana de problemas cardíacos en pacientes con Chagas, mejorando así su calidad de vida y reduciendo la mortalidad asociada a esta enfermedad. La implementación de TinyML en dispositivos portátiles y de bajo costo puede transformar el monitoreo de salud en comunidades de bajos recursos, haciendo posible una atención médica más oportuna y precisa.
-
-##### Principales hallazgos
-- <p align="justify">El modelo XGBoost mostró una capacidad predictiva razonable con un R-cuadrado de 0.61.
-- <p align="justify">La media del error cuadrático (MSE) fue de 0.38, indicando una precisión aceptable.
-- <p align="justify">La media del error absoluto (MAE) fue de 0.51, reflejando la precisión en las predicciones.
-- <p align="justify">El modelo fue implementado en un Arduino Nano BLE 33, demostrando viabilidad para entornos con recursos limitados.
-- <p align="justify">Se redujo el número de derivaciones de ECG de 12 a una, haciendo el sistema más accesible y económico.
-- <p align="justify">Se integró una etapa de extracción de características (skewness, entropy) para mejorar la capacidad del modelo de extraer y utilizar información de la señal.
-- <p align="justify">Las predicciones del modelo sobre señales de ECG de sujetos sanos mostraron resultados comparables a los ECGs de pacientes sobrevivientes en el dataset.
-- <p align="justify">Las métricas de evaluación sugieren que el modelo tiene un buen potencial, aunque hay margen para mejoras adicionales en su precisión y generalización.
-
-##### Informe
 - [Enlace de paperswithcode](https://paperswithcode.com/paper/early-ecg-warning-for-chagas-patients) (UPCH 2024 PDF)
   
-### Contenido del curso
+# Table of Contents
+- [Project Overview](#project-overview)
+- [Course Content](#course-content)
+- [Course Instructors](#course-instructors)
+- [Participants](#participants)
+
+### Project Overview
+#### Early ECG Warning for Chagas Patients: Implementation of TinyML for Low-Resource Areas in Peru
+
+##### Summary
+This project aims to develop an early warning system based on electrocardiography (ECG) for the detection of high-risk mortality patients affected by Chagas disease in Peru. It leverages advanced signal processing techniques and machine learning, specifically Tiny Machine Learning (TinyML), to efficiently and cost-effectively identify specific cardiac patterns in Chagas patients, facilitating implementation in low-resource regions.
+
+##### Motivation
+Cardiovascular diseases are the leading cause of death worldwide, and in Peru, they represent the second leading cause of mortality. Chagas disease, locally known as "Chirimacha," is a neglected parasitic disease that affects millions of people across Latin America, including Peru. This disease can lead to Chagas cardiomyopathy, one of the major causes of non-ischemic cardiomyopathy in the region.
+
+Dr. José Ercilla, vice president of the Peruvian Society of Cardiology (Sopechard), highlights the future challenges posed by these diseases, especially given the significant increase in the population over 50 years projected by 2050. The migration of rural populations to urban centers has increased the relevance of this disease in areas where the vector has not previously been detected.
+
+This project seeks to implement an accessible and efficient technological solution that allows for the early detection of cardiac problems in Chagas patients, thereby improving their quality of life and reducing mortality associated with the disease. The use of TinyML in portable, low-cost devices can revolutionize health monitoring in low-resource communities, enabling more timely and accurate medical care.
+
+##### Key Findings
+- The XGBoost model showed reasonable predictive capability with an R-squared value of 0.61.
+- The mean squared error (MSE) was 0.38, indicating acceptable accuracy.
+- The mean absolute error (MAE) was 0.51, reflecting the precision of the predictions.
+- The model was implemented on an Arduino Nano BLE 33, demonstrating feasibility for low-resource environments.
+- The number of ECG leads was reduced from 12 to 1, making the system more accessible and cost-effective.
+- A feature extraction stage (skewness, entropy) was integrated to enhance the model’s ability to extract and use signal information.
+- The model's predictions on ECG signals from healthy subjects showed results comparable to those of surviving patients in the dataset.
+- Evaluation metrics suggest the model has good potential, though there is room for further improvements in accuracy and generalization.
+
+##### Informe
+
 - [Ver PDF del Sílabo en Google Docs Viewer](https://docs.google.com/viewer?url=https://github.com/diego-taquiri/ISB-equipo11/raw/main/Documentaci%C3%B3n/Laboratorio%2001/S%C3%ADlabo.pdf&embedded=true)
 
 ### Docentes del curso
